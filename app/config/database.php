@@ -1,5 +1,10 @@
 <?php
 
+$hostmachine = ['ASUS-PC',];
+$is_local= in_array(gethostname(), $hostmachine);
+$dbname = ($is_local)? 'DesaSerang' : 'DesaSerang';
+$dbuser = ($is_local)? 'root' : 'DesaSerangMaster';
+$dbpass = ($is_local)? '' : '1amYourMaster';
 return array(
 
 	/*
@@ -55,9 +60,9 @@ return array(
 		'mysql' => array(
 			'driver'    => 'mysql',
 			'host'      => 'localhost',
-			'database'  => 'forge',
-			'username'  => 'forge',
-			'password'  => '',
+			'database'  => $dbname,
+			'username'  => $dbuser,
+			'password'  => $dbpass,
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',
