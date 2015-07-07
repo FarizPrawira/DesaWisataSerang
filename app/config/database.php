@@ -2,7 +2,7 @@
 
 $hostmachine = ['ASUS-PC',];
 $is_local= in_array(gethostname(), $hostmachine);
-$dbname = ($is_local)? 'DesaSerang' : 'DesaSerang';
+$dbname = ($is_local)? 'desa_serang' : 'desa_serang';
 $dbuser = ($is_local)? 'root' : 'DesaSerangMaster';
 $dbpass = ($is_local)? '' : '1amYourMaster';
 return array(

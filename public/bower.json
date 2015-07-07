@@ -1,0 +1,12 @@
+{
+  "name": "desaserang",
+  "version": "0.0.1",
+  "devDependencies": {},
+  "dependencies": {
+    "bootstrap": "~3.3.4",
+    "perfect-scrollbar": "~0.6.2",
+    "slick.js": "~1.5.2",
+    "eonasdan-bootstrap-datetimepicker": "~4.7.14",
+    "tooltipster": "~3.3.0"
+  }
+}

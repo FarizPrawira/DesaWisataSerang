@@ -11,7 +11,20 @@
 |
 */
 
-Route::get('/', function()
+Route::get('coba', function()
 {
-	return View::make('hello');
+	// return View::make('hello');
 });
+
+
+Route::get('/', 'HomeController@showHome');
+Route::get('login', 'HomeController@showHome');
+Route::post('user/login', 'UsersController@submitLogin');
+Route::get('user/logout', 'UsersController@sendLogout');
+
+Route::group(['before' => 'auth'], function()
+{
+	Route::get('dashboard', 'UsersController@showDashboard');
+});
+
+Route::post('content', 'ContentsController@store');

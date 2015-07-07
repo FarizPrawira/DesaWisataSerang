@@ -15,9 +15,23 @@ class HomeController extends BaseController {
 	|
 	*/
 
-	public function showWelcome()
+	public function showHome()
 	{
-		return View::make('hello');
+		$results["content"] = DB::table('contents')
+							->select('*')
+							->orderBy('created_at', 'DESC')
+							->get();
+		$results["photo"] = DB::table('photos')
+							->select('*')
+							->orderBy('created_at', 'DESC')
+							->get();					
+		return View::make('home.home')->with('results', $results);
+		// if(!Auth::check())
+		// else{
+		// 	if (Auth::user()->level == 'admin'){
+		// 		// return View::make('home.dashboard');
+		// 		return Redirect::to('dashboard');
+		// 	}
+		// }
 	}
-
 }

@@ -1,0 +1,118 @@
+.post {
+  margin-top: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+
+.media {
+  padding: 10px;
+}
+
+@media (max-width: 991px) {
+  .valign {
+    top: 50%;
+    transform: translateY(-4000%);
+  }
+}
+
+@media (min-width: 992px) {
+  .valign {
+    top: 50%;
+    transform: translateY(45%);
+  }
+}
+
+.vote {
+  list-style: none;
+}
+
+.vote i {
+  font-size: 20px;
+}
+
+.up {
+  color: green;
+}
+
+.down {
+  color: red;
+}
+
+.btn-vote {
+  border: none;
+}
+
+blockquote {
+  border-left: 10px solid #ccc;
+  margin: 0.2em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+
+blockquote:before {
+  content: open-quote;
+  font-size: 1.3em;
+  line-height: 0.1em;
+}
+
+blockquote:after {
+  content: close-quote;
+  font-size: 1.3em;
+  line-height: 0.1em;
+}
+
+blockquote p {
+  display: inline;
+}
+
+.carousel-container {
+  padding-left: 35px;
+  padding-right: 35px;
+}
+
+.affix {
+  top: 20px;
+}
+
+#lean_overlay {
+    position: fixed;
+    z-index:100;
+    top: 0px;
+    left: 0px;
+    height:100%;
+    width:100%;
+    background: #2c3e50;
+    display: none;
+}
+
+/* Popup Styles*/
+
+.popupContainer{
+    position:absolute;
+    width:30%;
+    height: 50%;
+    left:45px;
+    top:40px;
+    background: #fff;
+}
+
+.popupHeader {font-size:16px; text-transform: uppercase;}
+.popupHeader {background:#fff; position:relative; padding:10px 20px; border-bottom:1px solid #DDD; font-weight:bold;}
+.popupHeader .modal_close {position: absolute; right: 0; top:0; padding:10px 10px; background:#E4E4E2; cursor: pointer; color:#aaa; font-size:16px;}
+
+.popupBody {padding:100px;}
+
+.login .checkbox {margin-bottom: 10px; overflow: hidden;}
+
+/* scroll fixes */
+.modal-open .modal {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+  overflow-y: scroll;
+}
