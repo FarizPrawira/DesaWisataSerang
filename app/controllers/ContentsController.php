@@ -49,29 +49,31 @@ class ContentsController extends \BaseController {
 		// $files = Input::get('images');
 		$files = Input::File('images');
 		// echo Input::file('images');
-		// var_dump($files);
+		// var_dump(($files));
 		// die;
 		foreach($files as $file) {
-			$rules = array(
-				'file' => 'mimes:png,gif,jpeg|max:20000'
-				);
-			$validator = Validator::make(array('file'=> $file), $rules);
-			if($validator->passes()){
-				$destinationPath = 'uploads/';
-				$filename = $file->getClientOriginalName();
-				$filename = str_replace(' ', '', $filename);
-				$mime_type = $file->getMimeType();
-				$extension = $file->getClientOriginalExtension();
-				$upload_success = $file->move($destinationPath, $filename);
+			if(!is_null($file)){	
+				$rules = array(
+					'file' => 'mimes:png,gif,jpeg|max:20000'
+					);
+				$validator = Validator::make(array('file'=> $file), $rules);
+				if($validator->passes()){
+					$destinationPath = 'uploads/';
+					$filename = $file->getClientOriginalName();
+					$filename = str_replace(' ', '', $filename);
+					$mime_type = $file->getMimeType();
+					$extension = $file->getClientOriginalExtension();
+					$upload_success = $file->move($destinationPath, $filename);
 
-				$data = [
-				'content_id' => $content_id,
-				'path' => 'uploads/'.$filename
-				];
+					$data = [
+					'content_id' => $content_id,
+					'path' => 'uploads/'.$filename
+					];
 
-				Photo::create($data);
-			} else {
-				return Redirect::back()->with('error', 'I only accept images.');
+					Photo::create($data);
+				} else {
+					return Redirect::back()->with('error', 'I only accept images.');
+				}
 			}
 		}
 
@@ -137,6 +139,56 @@ class ContentsController extends \BaseController {
 		Content::destroy($id);
 
 		return Redirect::route('contents.index');
+	}
+
+	public function showPariwisata()
+	{
+		$results["content"] = DB::table('contents')
+							->where('type', 'pariwisata')
+							->orderBy('created_at', 'DESC')
+							->paginate(4);
+		$results["photo"] = DB::table('photos')->get();
+		return View::make('contents.pariwisata')->with('results', $results);
+	}
+
+	public function showPertanian()
+	{
+		$results["content"] = DB::table('contents')
+							->where('type', 'pertanian')
+							->orderBy('created_at', 'DESC')
+							->paginate(4);
+		$results["photo"] = DB::table('photos')->get();
+		return View::make('contents.pertanian')->with('results', $results);
+	}
+
+	public function showProduk()
+	{
+		$results["content"] = DB::table('contents')
+								->where('type', 'produk')
+								->orderBy('created_at', 'DESC')
+								->paginate(4);
+		$results["photo"] = DB::table('photos')->get();
+		return View::make('contents.produk')->with('results', $results);
+	}
+
+	public function showBudaya()
+	{
+		$results["content"] = DB::table('contents')
+								->where('type', 'budaya')
+								->orderBy('created_at', 'DESC')
+								->paginate(4);
+		$results["photo"] = DB::table('photos')->get();
+		return View::make('contents.budaya')->with('results', $results);
+	}
+
+	public function showUnik()
+	{
+		$results["content"] = DB::table('contents')
+								->where('type', 'unik')
+								->orderBy('created_at', 'DESC')
+								->paginate(4);
+		$results["photo"] = DB::table('photos')->get();
+		return View::make('contents.unik')->with('results', $results);
 	}
 
 }

@@ -1,1 +1,3 @@
-C:\wamp\www\desaserang\app/views/contents/show.blade.php
+<a href="{{URL::to('/')}}">Home</a>
+
+<?php var_dump($results) ?>

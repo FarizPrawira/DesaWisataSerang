@@ -17,14 +17,8 @@ class HomeController extends BaseController {
 
 	public function showHome()
 	{
-		$results["content"] = DB::table('contents')
-							->select('*')
-							->orderBy('created_at', 'DESC')
-							->get();
-		$results["photo"] = DB::table('photos')
-							->select('*')
-							->orderBy('created_at', 'DESC')
-							->get();					
+		$results["content"] = DB::table('contents')->orderBy('created_at', 'DESC')->get();
+		$results["photo"] = DB::table('photos')->get();
 		return View::make('home.home')->with('results', $results);
 		// if(!Auth::check())
 		// else{
