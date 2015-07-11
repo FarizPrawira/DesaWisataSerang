@@ -9,7 +9,7 @@
 	<a href="{{URL::to('user/logout')}}">Keluar</a>
 	<legend>Pengisian Konten</legend> 	
 	<!-- {{ Form::open(array('url'=>'post','files'=>true)) }} -->
-	<form action="{{URL::to('content')}}" method="post" enctype="multipart/form-data" file="true">
+	<form action="{{URL::to('content/store')}}" method="post" enctype="multipart/form-data" file="true">
 		<table>
 			<tr>
 				<td>Judul</td>
@@ -25,6 +25,9 @@
 					<select name="type">
 						<option value="pertanian">Pertanian</option>
 						<option value="pariwisata">Pariwisata</option>
+						<option value="produk">Produk</option>
+						<option value="budaya">Budaya</option>
+						<option value="unik">Unik</option>
 					</select>
 				</td>
 			</tr>

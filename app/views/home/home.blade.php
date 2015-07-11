@@ -42,6 +42,12 @@
 		echo "<a href=".URL::to('dashboard').">Dashboard</a>";
 	} ?>
 
+	<a href="{{URL::to('content/pariwisata')}}">Pariwisata</a>
+	<a href="{{URL::to('content/pertanian')}}">Pertanian</a>
+	<a href="{{URL::to('content/produk')}}">Produk</a>
+	<a href="{{URL::to('content/budaya')}}">Budaya</a>
+	<a href="{{URL::to('content/unik')}}">Unik</a>
+
 	@foreach ($results["content"] as $content)
 	<table>
 		<tr>
@@ -59,7 +65,7 @@
 		<tr>
 			<td>Isi</td>
 			<td>:</td>
-			<td>{{$content->description}}</td>
+			<td>{{nl2br($content->description)}}</td>
 		</tr>
 		<tr>
 			<td>Tipe</td>

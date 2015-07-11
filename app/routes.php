@@ -18,7 +18,7 @@ Route::get('coba', function()
 
 
 Route::get('/', 'HomeController@showHome');
-Route::get('login', 'HomeController@showHome');
+// Route::get('login', 'HomeController@showHome');
 Route::post('user/login', 'UsersController@submitLogin');
 Route::get('user/logout', 'UsersController@sendLogout');
 
@@ -27,4 +27,10 @@ Route::group(['before' => 'auth'], function()
 	Route::get('dashboard', 'UsersController@showDashboard');
 });
 
-Route::post('content', 'ContentsController@store');
+Route::post('content/store', 'ContentsController@store');
+
+Route::get('content/pariwisata', 'ContentsController@showPariwisata');
+Route::get('content/pertanian', 'ContentsController@showPertanian');
+Route::get('content/produk', 'ContentsController@showProduk');
+Route::get('content/budaya', 'ContentsController@showBudaya');
+Route::get('content/unik', 'ContentsController@showUnik');
