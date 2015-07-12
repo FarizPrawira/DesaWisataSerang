@@ -1,14 +1,15 @@
 $(document).ready(function() {
   $("#menu").hide(); 
   $("#menu1").click(function(){
-      if($("#menu1").hasClass("active")==true){
-        $("#menu1").removeClass("active");
-      }else{
-        $("#menu1").addClass("active");
-            
-      }
-// $("#menu1").animate({top: '20px'});
-$("#menu").toggle(function(){
+    if($("#menu1").hasClass("active")==true){
+      $("#menu1").removeClass("active");
+    }else{
+      $("#menu1").addClass("active");
+          
+    }
+    // $("#menu1").animate({top: '20px'});
+    $("#menu").slideToggle(function(){
+      
     })
   });
 
