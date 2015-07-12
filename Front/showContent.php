@@ -4,13 +4,15 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- style -->
+  <link rel="stylesheet" href="vendor/lightbox2/dist/css/lightbox.css">
+  <link rel="stylesheet" href="components/font-awesome-4.3.0/css/font-awesome.min.css" type='text/css'>
   <link rel="stylesheet" href="css/bootstrap.min.css" type='text/css'>
   <link rel="stylesheet" href="css/owl.carousel.css" type='text/css'>
   <link rel="stylesheet" href="css/owl.theme.css" type='text/css'>
   <link rel="stylesheet" href="css/default.css" type='text/css'>
-  <link rel="stylesheet" href="components/font-awesome-4.3.0/css/font-awesome.min.css" type='text/css'>
 </head>
 <body>
+  <!-- Header -->
   <nav class="header navbar navbar-default navbar-fixed-top">
     <div class="container">
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -106,23 +108,68 @@
       </div>
     </div>
   </div>
-  <div id="sync2" class="owl-carousel">
-    <div class=".content-item"><img src="img/2.jpg" class="img-responsive"></div>
-    <div class=".content-item"><img src="img/2.jpg" class="img-responsive"></div>
-    <div class=".content-item"><img src="img/2.jpg" class="img-responsive"></div>
-    <div class=".content-item"><img src="img/2.jpg" class="img-responsive"></div>
-    <div class=".content-item"><img src="img/2.jpg" class="img-responsive"></div>
+  <div class="image-list">
+    <div id="sync2" class="owl-carousel">
+      <a class="content-item list" data-lightbox="image-list" href="img/2.jpg">
+        <img src="img/2.jpg" class="img-responsive">
+      </a>
+      <a class="content-item list" data-lightbox="image-list" href="img/2.jpg">
+        <img src="img/2.jpg" class="img-responsive">
+      </a>
+      <a class="content-item list" data-lightbox="image-list" href="img/2.jpg">
+        <img src="img/2.jpg" class="img-responsive">
+      </a>
+      <a class="content-item list" data-lightbox="image-list" href="img/2.jpg">
+        <img src="img/2.jpg" class="img-responsive">
+      </a>
+      <a class="content-item list" data-lightbox="image-list" href="img/2.jpg">
+        <img src="img/2.jpg" class="img-responsive">
+      </a>
+    </div>
+  </div>
+  <!-- I got these buttons from simplesharebuttons.com -->
+  <div id="share-buttons">
+    <!-- Facebook -->
+    <a href="http://www.facebook.com/sharer.php?u=URL" target="_blank">
+      <img src="#" alt="Facebook" />
+    </a>
+    <!-- Twitter -->
+    <a href="https://twitter.com/share?url=URL&amp;name=Desa Serang&amp;hashtags=desaserang" target="_blank">
+      <img src="#" alt="Twitter" />
+    </a>
+    <!-- Google+ -->
+    <a href="https://plus.google.com/share?url=URL" target="_blank">
+      <img src="#" alt="Google" />
+    </a>
+    <!-- Email -->
+    <a href="mailto:?Subject=Desa Serang [Title]&amp;Body=Message URL">
+      <img src="#" alt="Email" />
+    </a>
   </div>
 
   <div class="col-md-8">
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec massa nec lectus sollicitudin aliquet. Curabitur dignissim, magna quis tincidunt dictum, erat tortor venenatis orci, vel ornare diam elit eget lorem. Suspendisse in ante et dolor ornare ultricies eget eu tortor. Duis sapien tellus, malesuada in consectetur ac, vestibulum eget urna. Suspendisse pretium, lorem in gravida placerat, felis ante congue urna, ultricies mattis ante nunc et mauris. Sed interdum nisi sed laoreet finibus. Vestibulum consequat ante eget convallis fermentum. Vivamus augue mauris, sollicitudin eu ligula cursus, vestibulum tempor orci.
-
     Fusce sit amet velit volutpat, maximus ipsum in, vestibulum eros. In id laoreet nisi, eu pretium ante. Morbi enim mi, facilisis sit amet eleifend vitae, sagittis a ante. Donec eu tristique nisl, vel consectetur nisl. Vestibulum convallis elementum nisi ac mollis. Mauris at ante sit amet mi egestas tempus maximus vel dolor. Pellentesque nec venenatis lectus. Mauris id sollicitudin ante. Etiam dapibus ipsum blandit urna elementum placerat. Curabitur a commodo ipsum, vitae ullamcorper mauris. Donec vestibulum felis pharetra metus iaculis, nec dapibus libero vestibulum. Duis eu leo pulvinar, condimentum mauris vitae, porttitor ligula.
-
     Suspendisse at maximus eros, vitae finibus nisl. Phasellus ultricies nisl ut eros tempus commodo. Praesent ac fringilla sem, in molestie turpis. Integer gravida posuere sem, suscipit rutrum sem vestibulum non. Donec nec turpis eget purus pulvinar rutrum. In interdum dictum sem, ut consequat risus sodales vitae. Nulla id mi risus. Donec ut turpis felis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus imperdiet sollicitudin cursus. Integer rutrum molestie sodales. Sed commodo lacinia nibh a iaculis. Duis bibendum suscipit aliquam. Mauris interdum sem vel volutpat consequat. Cras rutrum dolor sit amet magna sollicitudin pretium.
+  </div>
+  <div class="col-md-4">
+    <legend>Related Post</legend>
+    <div class="related-post">
+      <img src="img/2.jpg" class="img-responsive related-image">
+      <div class="text">1</div>
+      <span class="text-content"><h4>Lorem ipsu2m dolor sit amet, consectetur adipiscing elit.</h4></span>
+      <span class="text-content"><h2>1</h2></span> 
+    </div>
+    <div class="related-post">
+      <img src="img/2.jpg" class="img-responsive related-image">
+      <div class="text">1</div>
+      <span class="text-content"><h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4></span>
+      <span class="text-content"><h2>1</h2></span> 
+    </div>
   </div>
   <div class="clearfix"></div>
 
+  <!-- Footer -->
   <div class="footer">
     <div class="row">
       <div class="col-md-3 about-serang">
@@ -145,7 +192,6 @@
             <a href="">Peta</a>
           </li>
         </ul>
-
       </div>
 
       <div class="col-md-3 situslain-serang">
@@ -215,11 +261,11 @@
   </div>
 
   <!-- script -->
+  <script src="vendor/lightbox2/dist/js/lightbox-plus-jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/jquery.min.js"></script>
   <script src="js/owl.carousel.js"></script>
   <script src="js/default.js"></script>
-
   <script type="text/javascript">
   $(document).ready(function() {
     var sync1 = $("#sync1");
@@ -228,17 +274,17 @@
       singleItem : true,
       slideSpeed : 1000,
       navigation: true,
-      pagination:false,
+      pagination: false,
       afterAction : syncPosition,
       responsiveRefreshRate : 200,
     });
     sync2.owlCarousel({
       items : 15,
       itemsDesktop      : [1199,10],
-      itemsDesktopSmall     : [979,10],
+      itemsDesktopSmall : [979,10],
       itemsTablet       : [768,8],
       itemsMobile       : [479,4],
-      pagination:false,
+      pagination : false,
       responsiveRefreshRate : 100,
       afterInit : function(el){
         el.find(".owl-item").eq(0).addClass("synced");
