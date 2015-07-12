@@ -1,16 +1,66 @@
 $(document).ready(function() {
-  $("#menu").hide(); 
-  $("#menu1").click(function(){
-    if($("#menu1").hasClass("active")==true){
-      $("#menu1").removeClass("active");
+    $("#listserang").hide(); 
+    $("#menuserang").click(function(){
+    if($("#menuserang").hasClass("active")==true){
+        $("#menuserang").removeClass("active");
     }else{
-      $("#menu1").addClass("active");
-          
+        $("#menuserang").addClass("active");
+        $("#menuwisata").removeClass("active");
+        $("#menukegiatan").removeClass("active");
+        $("#menuartikel").removeClass("active");          
     }
-    // $("#menu1").animate({top: '20px'});
-    $("#menu").slideToggle(function(){
-      
-    })
+    $("#listserang").slideToggle("fast");
+    $("#listkegiatan").hide();
+    $("#listwisata").hide();
+    $("#listartikel").hide();
+    });
+
+    $("#listwisata").hide(); 
+    $("#menuwisata").click(function(){
+    if($("#menuwisata").hasClass("active")==true){
+        $("#menuwisata").removeClass("active");
+    }else{
+        $("#menuwisata").addClass("active");
+        $("#menuserang").removeClass("active");
+        $("#menukegiatan").removeClass("active");
+        $("#menuartikel").removeClass("active");
+    }
+    $("#listwisata").slideToggle("fast");
+    $("#listkegiatan").hide();
+    $("#listserang").hide();
+    $("#listartikel").hide();
+    });
+
+    $("#listkegiatan").hide(); 
+    $("#menukegiatan").click(function(){
+    if($("#menukegiatan").hasClass("active")==true){
+        $("#menukegiatan").removeClass("active");
+    }else{
+        $("#menukegiatan").addClass("active");
+        $("#menuwisata").removeClass("active");
+        $("#menuserang").removeClass("active");
+        $("#menuartikel").removeClass("active");
+    }
+    $("#listkegiatan").slideToggle("fast");
+    $("#listwisata").hide();
+    $("#listserang").hide();
+    $("#listartikel").hide();
+  });
+
+    $("#listartikel").hide(); 
+    $("#menuartikel").click(function(){
+    if($("#menuartikel").hasClass("active")==true){
+        $("#menuartikel").removeClass("active");
+    }else{
+        $("#menuartikel").addClass("active");
+        $("#menuserang").removeClass("active");
+        $("#menuwisata").removeClass("active");
+        $("#menukegiatan").removeClass("active");  
+    }
+    $("#listartikel").slideToggle("fast");
+    $("#listkegiatan").hide();
+    $("#listserang").hide();
+    $("#listwisata").hide();
   });
 
   $("#owl-example").owlCarousel();
