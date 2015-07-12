@@ -34,3 +34,5 @@ Route::get('content/pertanian', 'ContentsController@showPertanian');
 Route::get('content/produk', 'ContentsController@showProduk');
 Route::get('content/budaya', 'ContentsController@showBudaya');
 Route::get('content/unik', 'ContentsController@showUnik');
+
+Route::get('content/{id}', 'ContentsController@show');

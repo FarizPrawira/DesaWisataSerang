@@ -4,7 +4,7 @@ Pariwisata
 @foreach ($results["content"] as $content)
 	<table>
 		<tr>
-			<?php 
+			<?php
 			$tanggal = strtotime($content->created_at);
 			$tanggal = date('d F Y G:i', $tanggal);
 			echo "<br>".$tanggal;
@@ -13,7 +13,8 @@ Pariwisata
 		<tr>
 			<td>Title</td>
 			<td>:</td>
-			<td>{{$content->title}}</td>
+			<td><a href="{{URL::to('content/'.$content->id)}}">{{$content->title}}</a></td> 
+
 		</tr>
 		<tr>
 			<td>Isi</td>

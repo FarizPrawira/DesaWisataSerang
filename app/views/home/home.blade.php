@@ -60,7 +60,7 @@
 		<tr>
 			<td>Title</td>
 			<td>:</td>
-			<td>{{$content->title}}</td>
+			<td><a href="{{URL::to('content/'.$content->id)}}">{{$content->title}}</a></td>
 		</tr>
 		<tr>
 			<td>Isi</td>
