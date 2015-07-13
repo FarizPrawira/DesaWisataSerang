@@ -36,25 +36,24 @@ class ContentsController extends \BaseController {
 		'description' => Input::get('description'),	
 		'type' => Input::get('type')
 		];
-		// $validator = Validator::make($data = Input::all(), Content::$rules);
-
-		// if ($validator->fails())
-		// {
-		// 	return Redirect::back()->withErrors($validator)->withInput();
-		// }
+		$validator = Validator::make($data, Content::$rules);
+		if ($validator->fails())
+		{
+			return Redirect::back()->withErrors($validator)->withInput();
+		}
 
 		$content = Content::create($data);
 		$content_id = $content->id;
 
-		// $files = Input::get('images');
 		$files = Input::File('images');
+		// $files = Input::get('images');
 		// echo Input::file('images');
 		// var_dump(($files));
 		// die;
 		foreach($files as $file) {
 			if(!is_null($file)){	
 				$rules = array(
-					'file' => 'mimes:png,gif,jpeg|max:20000'
+					'file' => 'mimes:png,gif,jpeg|max:10000'
 					);
 				$validator = Validator::make(array('file'=> $file), $rules);
 				if($validator->passes()){
@@ -72,7 +71,7 @@ class ContentsController extends \BaseController {
 
 					Photo::create($data);
 				} else {
-					return Redirect::back()->with('error', 'I only accept images.');
+					return Redirect::back()->with('error', 'Only accept images');
 				}
 			}
 		}

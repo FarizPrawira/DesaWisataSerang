@@ -17,14 +17,168 @@
     <div class="container">
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
-          <li id="menu1" class="">Serang</li>
-          <li>Wisata</li>
-          <li>Agro</li>
+          <li id="menuserang" class="">Desa Serang</li>
+          <li id="menuwisata" class="">Agrowisata</li>
+          <li id="menukegiatan" class="">Kegiatan</li>
+          <li id="menuartikel" class="">Artikel</li>
         </ul>
       </div>
     </div>
   </nav>
-  <div id="menu">
+  <div class="menulist" id="listserang">
+    <div class="menu-item">
+      <img src="img/2.jpg">
+      <span>
+        <h4>Lorem ipsum dolor isit</h4>
+        <p>Description about dolor isit ipsum lorem 1993 year beast of the past...</p>
+      </span> 
+    </div>
+    <div class="menu-item">
+      <img src="img/2.jpg">
+      <span>
+        <h4>Lorem ipsum dolor isit</h4>
+        <p>Description about dolor isit ipsum lorem 1993 year beast of the past...</p>
+      </span> 
+    </div>
+    <div class="menu-item">
+      <img src="img/2.jpg">
+      <span>
+        <h4>Lorem ipsum dolor isit</h4>
+        <p>Description about dolor isit ipsum lorem 1993 year beast of the past...</p>
+      </span> 
+    </div>
+    <div class="menu-item">
+      <img src="img/2.jpg">
+      <span>
+        <h4>Lorem ipsum dolor isit</h4>
+        <p>Description about dolor isit ipsum lorem 1993 year beast of the past...</p>
+      </span> 
+    </div>
+    <div class="menu-item">
+      <img src="img/2.jpg">
+      <span>
+        <h4>Lorem ipsum dolor isit</h4>
+        <p>Description about dolor isit ipsum lorem 1993 year beast of the past...</p>
+      </span> 
+    </div>
+    <div class="menu-item">
+      <img src="img/2.jpg">
+      <span>
+        <h4>Lorem ipsum dolor isit</h4>
+        <p>Description about dolor isit ipsum lorem 1993 year beast of the past...</p>
+      </span> 
+    </div>
+    <div class="menu-item">
+      <img src="img/2.jpg">
+      <span>
+        <h4>Lorem ipsum dolor isit</h4>
+        <p>Description about dolor isit ipsum lorem 1993 year beast of the past...</p>
+      </span> 
+    </div>
+  </div>
+  <div class="menulist" id="listwisata">
+    <div class="menu-item">
+      <img src="img/2.jpg">
+      <span>
+        <h4>Lorem ipsum dolor isit</h4>
+        <p>Description about dolor isit ipsum lorem 1993 year beast of the past...</p>
+      </span> 
+    </div>
+    <div class="menu-item">
+      <img src="img/2.jpg">
+      <span>
+        <h4>Lorem ipsum dolor isit</h4>
+        <p>Description about dolor isit ipsum lorem 1993 year beast of the past...</p>
+      </span> 
+    </div>
+    <div class="menu-item">
+      <img src="img/2.jpg">
+      <span>
+        <h4>Lorem ipsum dolor isit</h4>
+        <p>Description about dolor isit ipsum lorem 1993 year beast of the past...</p>
+      </span> 
+    </div>
+    <div class="menu-item">
+      <img src="img/2.jpg">
+      <span>
+        <h4>Lorem ipsum dolor isit</h4>
+        <p>Description about dolor isit ipsum lorem 1993 year beast of the past...</p>
+      </span> 
+    </div>
+    <div class="menu-item">
+      <img src="img/2.jpg">
+      <span>
+        <h4>Lorem ipsum dolor isit</h4>
+        <p>Description about dolor isit ipsum lorem 1993 year beast of the past...</p>
+      </span> 
+    </div>
+    <div class="menu-item">
+      <img src="img/2.jpg">
+      <span>
+        <h4>Lorem ipsum dolor isit</h4>
+        <p>Description about dolor isit ipsum lorem 1993 year beast of the past...</p>
+      </span> 
+    </div>
+    <div class="menu-item">
+      <img src="img/2.jpg">
+      <span>
+        <h4>Lorem ipsum dolor isit</h4>
+        <p>Description about dolor isit ipsum lorem 1993 year beast of the past...</p>
+      </span> 
+    </div>
+  </div>
+  <div class="menulist" id="listkegiatan">
+    <div class="menu-item">
+      <img src="img/2.jpg">
+      <span>
+        <h4>Lorem ipsum dolor isit</h4>
+        <p>Description about dolor isit ipsum lorem 1993 year beast of the past...</p>
+      </span> 
+    </div>
+    <div class="menu-item">
+      <img src="img/2.jpg">
+      <span>
+        <h4>Lorem ipsum dolor isit</h4>
+        <p>Description about dolor isit ipsum lorem 1993 year beast of the past...</p>
+      </span> 
+    </div>
+    <div class="menu-item">
+      <img src="img/2.jpg">
+      <span>
+        <h4>Lorem ipsum dolor isit</h4>
+        <p>Description about dolor isit ipsum lorem 1993 year beast of the past...</p>
+      </span> 
+    </div>
+    <div class="menu-item">
+      <img src="img/2.jpg">
+      <span>
+        <h4>Lorem ipsum dolor isit</h4>
+        <p>Description about dolor isit ipsum lorem 1993 year beast of the past...</p>
+      </span> 
+    </div>
+    <div class="menu-item">
+      <img src="img/2.jpg">
+      <span>
+        <h4>Lorem ipsum dolor isit</h4>
+        <p>Description about dolor isit ipsum lorem 1993 year beast of the past...</p>
+      </span> 
+    </div>
+    <div class="menu-item">
+      <img src="img/2.jpg">
+      <span>
+        <h4>Lorem ipsum dolor isit</h4>
+        <p>Description about dolor isit ipsum lorem 1993 year beast of the past...</p>
+      </span> 
+    </div>
+    <div class="menu-item">
+      <img src="img/2.jpg">
+      <span>
+        <h4>Lorem ipsum dolor isit</h4>
+        <p>Description about dolor isit ipsum lorem 1993 year beast of the past...</p>
+      </span> 
+    </div>
+  </div>
+  <div class="menulist" id="listartikel">
     <div class="menu-item">
       <img src="img/2.jpg">
       <span>
@@ -147,7 +301,7 @@
     </a>
   </div>
 
-  <div class="col-md-8">
+  <div class="col-md-8 content-description">
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec massa nec lectus sollicitudin aliquet. Curabitur dignissim, magna quis tincidunt dictum, erat tortor venenatis orci, vel ornare diam elit eget lorem. Suspendisse in ante et dolor ornare ultricies eget eu tortor. Duis sapien tellus, malesuada in consectetur ac, vestibulum eget urna. Suspendisse pretium, lorem in gravida placerat, felis ante congue urna, ultricies mattis ante nunc et mauris. Sed interdum nisi sed laoreet finibus. Vestibulum consequat ante eget convallis fermentum. Vivamus augue mauris, sollicitudin eu ligula cursus, vestibulum tempor orci.
     Fusce sit amet velit volutpat, maximus ipsum in, vestibulum eros. In id laoreet nisi, eu pretium ante. Morbi enim mi, facilisis sit amet eleifend vitae, sagittis a ante. Donec eu tristique nisl, vel consectetur nisl. Vestibulum convallis elementum nisi ac mollis. Mauris at ante sit amet mi egestas tempus maximus vel dolor. Pellentesque nec venenatis lectus. Mauris id sollicitudin ante. Etiam dapibus ipsum blandit urna elementum placerat. Curabitur a commodo ipsum, vitae ullamcorper mauris. Donec vestibulum felis pharetra metus iaculis, nec dapibus libero vestibulum. Duis eu leo pulvinar, condimentum mauris vitae, porttitor ligula.
     Suspendisse at maximus eros, vitae finibus nisl. Phasellus ultricies nisl ut eros tempus commodo. Praesent ac fringilla sem, in molestie turpis. Integer gravida posuere sem, suscipit rutrum sem vestibulum non. Donec nec turpis eget purus pulvinar rutrum. In interdum dictum sem, ut consequat risus sodales vitae. Nulla id mi risus. Donec ut turpis felis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus imperdiet sollicitudin cursus. Integer rutrum molestie sodales. Sed commodo lacinia nibh a iaculis. Duis bibendum suscipit aliquam. Mauris interdum sem vel volutpat consequat. Cras rutrum dolor sit amet magna sollicitudin pretium.
@@ -156,15 +310,17 @@
     <legend>Related Post</legend>
     <div class="related-post">
       <img src="img/2.jpg" class="img-responsive related-image">
-      <div class="text">1</div>
-      <span class="text-content"><h4>Lorem ipsu2m dolor sit amet, consectetur adipiscing elit.</h4></span>
-      <span class="text-content"><h2>1</h2></span> 
+      <span class="text-content">
+        <h2>Title</h2>
+        <h4>Lorem ipsu2m dolor sit amet, consectetur adipiscing elit.</h4>
+      </span> 
     </div>
     <div class="related-post">
       <img src="img/2.jpg" class="img-responsive related-image">
-      <div class="text">1</div>
-      <span class="text-content"><h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4></span>
-      <span class="text-content"><h2>1</h2></span> 
+      <span class="text-content">
+        <h2>Title</h2>
+        <h4>Lorem ipsu2m dolor sit amet, consectetur adipiscing elit.</h4>
+      </span> 
     </div>
   </div>
   <div class="clearfix"></div>

@@ -4,7 +4,7 @@ class Photo extends \Eloquent {
 
 	// Add your validation rules here
 	public static $rules = [
-		// 'title' => 'required'
+		'path' => 'max:10000|image',
 	];
 
 	// Don't forget to fill this array

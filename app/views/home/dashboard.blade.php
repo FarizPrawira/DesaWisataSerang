@@ -1,8 +1,8 @@
 <html>
 <head>
 	<title>Dashboard admin</title>
-	<script src="https://rawgit.com/enyo/dropzone/master/dist/dropzone.js"></script>
-	<link rel="stylesheet" href="https://rawgit.com/enyo/dropzone/master/dist/dropzone.css">
+	<link href="https://rawgit.com/enyo/dropzone/master/dist/dropzone.css" rel="stylesheet">
+	<link href="vendor/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
 	<a href="{{URL::to('/')}}">Home</a>
@@ -36,5 +36,16 @@
 		<br>	
 		<button type="submit">Submit</button>
 	</form>
+	<div class="notification" id="notification">
+		<?php if(isset($errors)) {foreach ($errors->all() as $key): ?>
+		<div class="col-xs-offset-3 col-xs-6 alert alert-danger alert-dismissible" role="alert">
+			<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
+			{{$key}}
+		</div>
+		<?php endforeach; }?>
+	</div>
+	<script src="vendor/jquery/dist/jquery.min.js"></script>
+	<script src="vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src="https://rawgit.com/enyo/dropzone/master/dist/dropzone.js"></script>
 </body>
 </html>

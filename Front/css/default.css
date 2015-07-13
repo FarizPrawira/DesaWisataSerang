@@ -227,7 +227,7 @@ body{
 }
 
 .content-header {
-	padding-top: 110px;
+	padding-top: 60px;
 	margin-bottom: 50px;
 	width: auto;
 	height: 460px;
@@ -272,68 +272,52 @@ body{
 
 .related-post{
 	min-height: 350px;
+	margin-bottom: 10px;
+	position: relative;
+	background-color: transparent;
+	color: white;
 }
 
-.related-post .text{
-	color: white;
-	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-	margin: 40% 0 0 15px;
-	display: block;
-	font-size: 1.9em;
-	visibility: visible;
-	/*font-weight: bold;*/
+.related-post span{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+.related-post span>h2{
+	position: relative;
+	background-color: rgba(0,0,0,0.7);
+	width: 100%;
+	height: 100px;
+	padding: 5px 10px 5px 10px;
+	margin-top: 250px;
+}
+
+.related-post span>h4{
+	display: none;
+	position: relative;
+	padding: 5px 10px 5px 10px;
+}
+
+.related-post img{
+	width: 100%;
+	height: 100%;
 	position: absolute;
 }
 
-.related-image{
-	position: absolute;
-	max-width: 450px;
-	max-height: 337.5px;
-}
-
-.related-post span.text-content {
-	background: rgba(0,0,0,0.5);
-	color: white;
+.related-post:hover{
 	cursor: pointer;
-	display: table;
-	height: 337.5px;
-	width: 450px;
-	position: absolute;
-	opacity: 0;
-	padding: 0 15px 0 15px;
-	-webkit-transition: opacity 500ms;
-	-moz-transition: opacity 500ms;
-	-ms-transition: opacity 500ms;
-	-o-transition: opacity 500ms;
-	transition: opacity 500ms;
 }
 
-.related-post h4{
-	margin-top: 40%;
+.related-post:hover span>h2{
+	margin-top: 10px;
+	background-color: transparent;
 }
 
-.related-post:hover h2{
-	animation-name: slide-up-h2; animation-duration: 2s
+.related-post:hover span>h4{
+	display: inline-block;
 }
 
-.related-post:hover h4{
-	animation-name: slide-up-h4; animation-duration: 2s
-}
-
-.related-post:hover .text{
-	visibility: hidden;
-}
-
-.related-post:hover span.text-content{
-	opacity: 1;
-}
-
-@keyframes slide-up-h4
-{
-	from { margin-top: 65%; } to { margin-top: 40%; }
-}
-
-@keyframes slide-up-h2
-{
-	from { margin-top: 40%; } to { margin-top: 20px; }
+.related-post:hover span{
+	background-color: rgba(0,0,0,0.7);
 }
