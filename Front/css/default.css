@@ -12,7 +12,7 @@ body{
 
 .header .active{
 	margin-top: 10px;
-	background-color: #C01018; /*oldred*/
+	background-color: rgba(255,11,30,1); /*lightred*/
 	box-shadow: 0 3px 5px rgba(0,0,0,0.2);
 	translation: margin-top 1.5s;
 }
@@ -20,13 +20,13 @@ body{
 .header{
 	height: 60px;
 	padding-top: 10px;
-	background-color: #EC1A23; /*red*/
+	background-color: rgba(207,0,15,1); /*red*/
 	color: white;
 	border-radius: 0px;
 	border: 0px;
 	position: fixed;
 	margin-bottom: 0;
-	box-shadow: 0 3px 5px rgba(0,0,0,0.2);
+	box-shadow: 0 2px 10px rgba(0,0,0,0.2);
 }
 
 .menulist{
@@ -125,7 +125,7 @@ body{
 .header li:hover{
 	cursor: pointer;
 	color: white;
-	border-bottom: 5px solid #87ED49;
+	border-bottom: 5px solid white;
 }
 
 .header li > div{
@@ -159,12 +159,8 @@ body{
 .content-item{
 	background-color: white;
 	width: 100%;
-	height: 750px;
+	height: 745px;
 	text-align: center;
-}
-
-.container .serang{
-	margin-top: 40px;
 }
 
 .wrap-serang{
@@ -172,15 +168,15 @@ body{
 	background-color: #0d47a1;
 }
 
-.garis-judul{
+/*.garis-judul{
 	background-color: #ffffff;
 	height: 3px;
 	margin-top: 20px;
 }
-
+*/
 .garis{
-	background-color: #ffffff;
-	height: 3px;
+	background-color: rgba(170, 0, 15, 1);
+	height: 1px;
 }
 
 .wrap-serang h2{
@@ -204,17 +200,16 @@ body{
 	height: 150px;
 }
 
-
 /*footer*/
-.row.footer{
-	margin-left: 0px;
-	margin-right: 0px;
+.footer{
+	background-color: rgba(207,0,15,1);
+	height: 400px;
+	color: white;
+	padding: 20px 100px 20px 100px;
 }
 
-.footer{
-	background-color: #b71c1c;
-	height: 100%;
-	color: #ffffff;
+.footer h1, h2, h3, h4{
+	margin-bottom: 20px;
 }
 
 .footer i.fa{
@@ -223,11 +218,11 @@ body{
 }
 
 .footer a{
-	color: #e53935;
+	color: rgba(255,255,255,0.5);
 }
 
 .footer a:hover{
-	color: #ffffff;
+	color: white;
 	text-decoration: none;
 }
 
