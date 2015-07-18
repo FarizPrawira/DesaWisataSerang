@@ -1,83 +1,106 @@
-/* click events */
-function down() {
-  $('#splash').animate({
-    height: 0
-  }, 500);
-}
-function up() {
-  $('#splash').animate({
-    height: '100%'
-  }, 500);
-}
-// $("#button-down").on("click", function () {
-  
-// });
-// $("#button-up").on("click", function () {
-  
-// });
+$(document).ready(function() {
+    $("#listserang").hide(); 
+    $("#menuserang").click(function(){
+    if($("#menuserang").hasClass("active")==true){
+        $("#menuserang").removeClass("active");
+    }else{
+        $("#menuserang").addClass("active");
+        $("#menuwisata").removeClass("active");
+        $("#menukegiatan").removeClass("active");
+        $("#menuartikel").removeClass("active");          
+    }
+    $("#listserang").slideToggle("fast");
+    $("#listkegiatan").hide();
+    $("#listwisata").hide();
+    $("#listartikel").hide();
+    });
 
-$container = $('#content');
+    $("#listwisata").hide(); 
+    $("#menuwisata").click(function(){
+    if($("#menuwisata").hasClass("active")==true){
+        $("#menuwisata").removeClass("active");
+    }else{
+        $("#menuwisata").addClass("active");
+        $("#menuserang").removeClass("active");
+        $("#menukegiatan").removeClass("active");
+        $("#menuartikel").removeClass("active");
+    }
+    $("#listwisata").slideToggle("fast");
+    $("#listkegiatan").hide();
+    $("#listserang").hide();
+    $("#listartikel").hide();
+    });
 
-$container.perfectScrollbar();
-
-$container.scroll(function(e) {
-  if($container.scrollTop()/100 < 1) {
-    $('.navbar').css('opacity', $container.scrollTop()/100);
-  } else {
-    $('.navbar').css('opacity', 1);
-  }
-
-  if($container.scrollTop() == 0) {
-    $('.navbar').removeClass('navbar-front');
-  } else {
-    $('.navbar').addClass('navbar-front');
-  }
-});
-
-$(function () {
-  $('[data-toggle="tooltip"]').tooltip()
-});
-
-(function makeDiv(){
-  var divsize = 1;
-  $newdiv = $('<div/>').css({
-    'width':divsize+'px',
-    'height':divsize+'px'
+    $("#listkegiatan").hide(); 
+    $("#menukegiatan").click(function(){
+    if($("#menukegiatan").hasClass("active")==true){
+        $("#menukegiatan").removeClass("active");
+    }else{
+        $("#menukegiatan").addClass("active");
+        $("#menuwisata").removeClass("active");
+        $("#menuserang").removeClass("active");
+        $("#menuartikel").removeClass("active");
+    }
+    $("#listkegiatan").slideToggle("fast");
+    $("#listwisata").hide();
+    $("#listserang").hide();
+    $("#listartikel").hide();
   });
 
-  var posx = (Math.random() * ($('#post').width() - divsize)).toFixed();
-  var posy = (Math.random() * ($('#post').height() - divsize)).toFixed();
+    $("#listartikel").hide(); 
+    $("#menuartikel").click(function(){
+    if($("#menuartikel").hasClass("active")==true){
+        $("#menuartikel").removeClass("active");
+    }else{
+        $("#menuartikel").addClass("active");
+        $("#menuserang").removeClass("active");
+        $("#menuwisata").removeClass("active");
+        $("#menukegiatan").removeClass("active");  
+    }
+    $("#listartikel").slideToggle("fast");
+    $("#listkegiatan").hide();
+    $("#listserang").hide();
+    $("#listwisata").hide();
+  });
+
+  $("#owl-example").owlCarousel();
+  $("#owl-example").owlCarousel({
+    // Most important owl features
+    items : 1,
+    itemsCustom : false,
+    itemsDesktop : [1199,4],
+    itemsDesktopSmall : [980,3],
+    itemsTablet: [768,2],
+    itemsTabletSmall: false,
+    itemsMobile : [479,1],
+    singleItem : false,
+    itemsScaleUp : false,
+
+    //Basic Speeds
+    slideSpeed : 200,
+    paginationSpeed : 800,
+    rewindSpeed : 1000,
+
+    //Autoplay
+    autoPlay : true,
+    stopOnHover : true,
+
+    // Navigation
+    navigation : false,
+    navigationText : ["prev","next"],
+    rewindNav : true,
+    scrollPerPage : false,
+
+    //Pagination
+    pagination : true,
+    paginationNumbers: false,
+
+    // Responsive
+    responsive: true,
+    responsiveRefreshRate : 200,
+    responsiveBaseWidth: window,
+  });
 
 
-  $newdiv
-    .attr("id", "halo")
-    .attr("title", "Nulla aute laborum consectetur sunt aliquip. Tempor aute ut dolore irure sit. Ex id veniam consectetur ullamco nisi officia minim id. Irure magna exercitation in nulla sunt velit incididunt quis. Veniam dolor in excepteur do excepteur est aliqua sint mollit irure incididunt excepteur.");
 
-  $newdiv.css({
-    'position':'absolute',
-    'left':posx+'px',
-    'top':posy+'px',
-    'display':'none'
-  })
-    .appendTo('#post');
-
-  $newdiv
-    .fadeIn(100);
-
-  $('#halo')
-    .tooltipster({
-      animation: 'grow',
-      autoClose: false,
-      maxWidth: 300,
-      positionTracker: 'true'
-    })
-    .tooltipster('show');
-
-  $newdiv
-    .delay(10000)
-    .fadeOut(100, function() {
-        $('#halo').tooltipster('destroy');
-        $(this).remove();
-        makeDiv();
-    });
-})();
+});
