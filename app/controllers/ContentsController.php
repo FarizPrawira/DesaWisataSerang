@@ -88,8 +88,14 @@ class ContentsController extends \BaseController {
 	public function show($id)
 	{
 		$content = Content::findOrFail($id);
-
-		return View::make('contents.show', compact('content'));
+		$results["related-post"] = DB::table('contents')
+									->where('type',$content['type'])
+									->whereNotIn('id', [$id])
+									->orderBy('created_at', 'DESC')
+									->limit(3)
+									->get();
+		$results["related-photo"] = DB::table('photos')->get();
+		return View::make('contents.show', compact('content'))->with('results', $results);
 	}
 
 	/**
@@ -101,7 +107,6 @@ class ContentsController extends \BaseController {
 	public function edit($id)
 	{
 		$content = Content::find($id);
-
 		return View::make('contents.edit', compact('content'));
 	}
 
@@ -143,9 +148,9 @@ class ContentsController extends \BaseController {
 	public function showPariwisata()
 	{
 		$results["content"] = DB::table('contents')
-							->where('type', 'pariwisata')
-							->orderBy('created_at', 'DESC')
-							->paginate(4);
+		->where('type', 'pariwisata')
+		->orderBy('created_at', 'DESC')
+		->paginate(4);
 		$results["photo"] = DB::table('photos')->get();
 		return View::make('contents.pariwisata')->with('results', $results);
 	}
@@ -153,9 +158,9 @@ class ContentsController extends \BaseController {
 	public function showPertanian()
 	{
 		$results["content"] = DB::table('contents')
-							->where('type', 'pertanian')
-							->orderBy('created_at', 'DESC')
-							->paginate(4);
+		->where('type', 'pertanian')
+		->orderBy('created_at', 'DESC')
+		->paginate(4);
 		$results["photo"] = DB::table('photos')->get();
 		return View::make('contents.pertanian')->with('results', $results);
 	}
@@ -163,9 +168,9 @@ class ContentsController extends \BaseController {
 	public function showProduk()
 	{
 		$results["content"] = DB::table('contents')
-								->where('type', 'produk')
-								->orderBy('created_at', 'DESC')
-								->paginate(4);
+		->where('type', 'produk')
+		->orderBy('created_at', 'DESC')
+		->paginate(4);
 		$results["photo"] = DB::table('photos')->get();
 		return View::make('contents.produk')->with('results', $results);
 	}
@@ -173,9 +178,9 @@ class ContentsController extends \BaseController {
 	public function showBudaya()
 	{
 		$results["content"] = DB::table('contents')
-								->where('type', 'budaya')
-								->orderBy('created_at', 'DESC')
-								->paginate(4);
+		->where('type', 'budaya')
+		->orderBy('created_at', 'DESC')
+		->paginate(4);
 		$results["photo"] = DB::table('photos')->get();
 		return View::make('contents.budaya')->with('results', $results);
 	}
@@ -183,9 +188,9 @@ class ContentsController extends \BaseController {
 	public function showUnik()
 	{
 		$results["content"] = DB::table('contents')
-								->where('type', 'unik')
-								->orderBy('created_at', 'DESC')
-								->paginate(4);
+		->where('type', 'unik')
+		->orderBy('created_at', 'DESC')
+		->paginate(4);
 		$results["photo"] = DB::table('photos')->get();
 		return View::make('contents.unik')->with('results', $results);
 	}

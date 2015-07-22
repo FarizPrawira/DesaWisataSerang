@@ -65,7 +65,7 @@ body{
 	width: 100%;
 	height: 100%;
 /*	box-sizing: border-box;
-	border: 10px solid transparent;*/
+border: 10px solid transparent;*/
 } 
 
 .menu-item span>h4{
@@ -287,6 +287,10 @@ body{
 	display: inline-block;
 }
 
+.related-post a{
+	color:white;
+}
+
 .related-post span{
 	position: absolute;
 	width: 100%;
@@ -329,4 +333,13 @@ body{
 
 .related-post:hover span{
 	background-color: rgba(0,0,0,0.7);
+}
+
+.instapic-box{
+	background-color: white;
+	border-radius: 10px;
+	margin-top: 10px;
+	overflow: hidden;
+	height: 1%;
+	padding: 5px 0 5px 0;
 }

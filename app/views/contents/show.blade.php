@@ -108,27 +108,22 @@
 	<div class="clearfix"></div>
 	<div class="col-md-12">
 		<legend><h3>Artikel Terkait</h3></legend>
-		<div class="related-post">
-			<img src="img/2.jpg" class="img-responsive related-image">
-			<span class="text-content">
-				<h3>Title</h3>
-				<h4>Lorem ipsu2m dolor sit amet, consectetur adipiscing elit.</h4>
-			</span> 
-		</div>
-		<div class="related-post">
-			<img src="img/2.jpg" class="img-responsive related-image">
-			<span class="text-content">
-				<h3>Title</h3>
-				<h4>Lorem ipsu2m dolor sit amet, consectetur adipiscing elit.</h4>
-			</span> 
-		</div>
-		<div class="related-post">
-			<img src="img/2.jpg" class="img-responsive related-image">
-			<span class="text-content">
-				<h3>Title</h3>
-				<h4>Lorem ipsu2m dolor sit amet, consectetur adipiscing elit.</h4>
-			</span> 
-		</div>
+		<?php foreach ($results['related-post'] as $post): 
+			// var_dump($result->title); ?>
+			<div class="related-post">
+				<?php foreach ($results['related-photo'] as $photo):
+					if ($photo->content_id == $post->id){ ?>
+						<img src="{{URL::to($photo->path)}}" class="img-responsive related-image">
+					<?php break; }
+				endforeach ?>
+				<a href="{{URL::to('content/'.$post->id)}}">
+					<span class="text-content">
+						<h3>{{$post->title}}</h3>
+						<h4>{{$post->description}}</h4>
+					</span>
+				</a>
+			</div>
+		<?php endforeach ?>
 	</div>
 	<div class="clearfix"></div>
 
@@ -154,7 +149,7 @@
 				</ul>
 			</div>
 
-			<div class="col-md-4 situslain-serang">
+<!-- 			<div class="col-md-3 situslain-serang">
 				<h3>Situs Lain</h3>
 				<div class="garis"></div>
 				<ul class="list-unstyled">
@@ -164,7 +159,7 @@
 						</a>
 					</li>
 				</ul>
-			</div>
+			</div> -->
 
 			<div class="col-md-4 sosmed-serang">
 				<h3>Temukan Kami di</h3>
@@ -213,9 +208,36 @@
 					</li>
 				</ul>
 			</div>
-		</div>
-	</div>
 
+			<div class="col-md-4 instagram">
+				<h3>Instapic</h3>
+				<div class="garis"></div>
+				<?php
+				function fetchData($url){
+					$ch = curl_init();
+					curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+					curl_setopt($ch, CURLOPT_URL, $url);
+					curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+					curl_setopt($ch, CURLOPT_TIMEOUT, 10);
+					$result = curl_exec($ch);
+					curl_close($ch);
+					return $result;
+				}
+				$result = fetchData("https://api.instagram.com/v1/users/1779862945/media/recent/?access_token=1779862945.ab103e5.efc62c04fcda46d6a4fe23395ff09dce&count=6");
+				$result = json_decode($result,true);
+				echo "<div class='instapic-box'>";
+				foreach ($result["data"] as $post) {
+					echo "<div class='col-md-4 col-xs-4 '>";
+					echo "<a href=".$post['link']."><img src=".$post['images']['thumbnail']['url']." alt='' class='img-responsive  instapic'></a>";
+					echo "</div>";
+				}
+				echo "</div>";
+				?>
+			</div>
+
+		</div>
+	</div>	
+	
 	<!-- script -->
 	<script src="{{URL::to('vendor/lightbox/dist/js/lightbox-plus-jquery.min.js')}}"></script>
 	<script src="{{URL::to('vendor/bootstrap/dist/js/bootstrap.min.js')}}"></script>
