@@ -3,7 +3,7 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 
-class CreateContentsTable extends Migration {
+class CreateTicsTable extends Migration {
 
 	/**
 	 * Run the migrations.
@@ -12,12 +12,9 @@ class CreateContentsTable extends Migration {
 	 */
 	public function up()
 	{
-		Schema::create('contents', function(Blueprint $table)
+		Schema::create('tics', function(Blueprint $table)
 		{
 			$table->increments('id');
-			$table->string('title');
-			$table->string('description');
-			$table->enum('type',['artikel','kegiatan']);
 			$table->timestamps();
 		});
 	}
@@ -30,7 +27,7 @@ class CreateContentsTable extends Migration {
 	 */
 	public function down()
 	{
-		Schema::drop('contents');
+		Schema::drop('tics');
 	}
 
 }

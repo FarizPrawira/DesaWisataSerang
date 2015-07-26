@@ -145,54 +145,22 @@ class ContentsController extends \BaseController {
 		return Redirect::route('contents.index');
 	}
 
-	public function showPariwisata()
+	public function showArtikel()
 	{
 		$results["content"] = DB::table('contents')
-		->where('type', 'pariwisata')
+		->where('type', 'artikel')
 		->orderBy('created_at', 'DESC')
 		->paginate(4);
 		$results["photo"] = DB::table('photos')->get();
-		return View::make('contents.pariwisata')->with('results', $results);
+		return View::make('contents.artikel')->with('results', $results);
 	}
 
-	public function showPertanian()
+	public function showKegiatan()
 	{
 		$results["content"] = DB::table('contents')
-		->where('type', 'pertanian')
+		->where('type', 'kegiatan')
 		->orderBy('created_at', 'DESC')
 		->paginate(4);
 		$results["photo"] = DB::table('photos')->get();
-		return View::make('contents.pertanian')->with('results', $results);
+		return View::make('contents.kegiatan')->with('results', $results);
 	}
-
-	public function showProduk()
-	{
-		$results["content"] = DB::table('contents')
-		->where('type', 'produk')
-		->orderBy('created_at', 'DESC')
-		->paginate(4);
-		$results["photo"] = DB::table('photos')->get();
-		return View::make('contents.produk')->with('results', $results);
-	}
-
-	public function showBudaya()
-	{
-		$results["content"] = DB::table('contents')
-		->where('type', 'budaya')
-		->orderBy('created_at', 'DESC')
-		->paginate(4);
-		$results["photo"] = DB::table('photos')->get();
-		return View::make('contents.budaya')->with('results', $results);
-	}
-
-	public function showUnik()
-	{
-		$results["content"] = DB::table('contents')
-		->where('type', 'unik')
-		->orderBy('created_at', 'DESC')
-		->paginate(4);
-		$results["photo"] = DB::table('photos')->get();
-		return View::make('contents.unik')->with('results', $results);
-	}
-
-}

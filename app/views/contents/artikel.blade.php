@@ -1,4 +1,4 @@
-Pariwisata 
+Artikel 
 <a href="{{URL::to('/')}}">Home</a>
 
 @foreach ($results["content"] as $content)
