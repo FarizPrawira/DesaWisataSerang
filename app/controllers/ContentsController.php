@@ -164,3 +164,4 @@ class ContentsController extends \BaseController {
 		$results["photo"] = DB::table('photos')->get();
 		return View::make('contents.kegiatan')->with('results', $results);
 	}
+}

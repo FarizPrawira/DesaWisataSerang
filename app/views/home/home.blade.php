@@ -52,11 +52,8 @@
 		<?php endif; ?>
 	</div>
 
-	<a href="{{URL::to('content/pariwisata')}}">Pariwisata</a>
-	<a href="{{URL::to('content/pertanian')}}">Pertanian</a>
-	<a href="{{URL::to('content/produk')}}">Produk</a>
-	<a href="{{URL::to('content/budaya')}}">Budaya</a>
-	<a href="{{URL::to('content/unik')}}">Unik</a>
+	<a href="{{URL::to('content/kegiatan')}}">Kegiatan</a>
+	<a href="{{URL::to('content/artikel')}}">Artikel</a>
 
 	@foreach ($results["content"] as $content)
 	<table>

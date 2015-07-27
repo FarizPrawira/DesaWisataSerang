@@ -49,3 +49,6 @@ Route::get('wisata/outbound', 'WisatasController@showOutbound');
 Route::get('wisata/kuda', 'WisatasController@showKuda');
 Route::get('wisata/pinus', 'WisatasController@showPinus');
 //=================================================================//
+
+Route::post('pertanian/store', 'PertaniansController@store');
+Route::post('peternakan/store', 'PeternakansController@store');
