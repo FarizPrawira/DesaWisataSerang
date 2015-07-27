@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    $("#listserang").hide(); 
+    $("#listserang").hide();
     $("#menuserang").click(function(){
     if($("#menuserang").hasClass("active")==true){
         $("#menuserang").removeClass("active");
@@ -7,7 +7,7 @@ $(document).ready(function() {
         $("#menuserang").addClass("active");
         $("#menuwisata").removeClass("active");
         $("#menukegiatan").removeClass("active");
-        $("#menuartikel").removeClass("active");          
+        $("#menuartikel").removeClass("active");
     }
     $("#listserang").slideToggle("fast");
     $("#listkegiatan").hide();
@@ -15,7 +15,7 @@ $(document).ready(function() {
     $("#listartikel").hide();
     });
 
-    $("#listwisata").hide(); 
+    $("#listwisata").hide();
     $("#menuwisata").click(function(){
     if($("#menuwisata").hasClass("active")==true){
         $("#menuwisata").removeClass("active");
@@ -25,43 +25,13 @@ $(document).ready(function() {
         $("#menukegiatan").removeClass("active");
         $("#menuartikel").removeClass("active");
     }
+
+    $("#img1").hover()
     $("#listwisata").slideToggle("fast");
     $("#listkegiatan").hide();
     $("#listserang").hide();
     $("#listartikel").hide();
     });
-
-    $("#listkegiatan").hide(); 
-    $("#menukegiatan").click(function(){
-    if($("#menukegiatan").hasClass("active")==true){
-        $("#menukegiatan").removeClass("active");
-    }else{
-        $("#menukegiatan").addClass("active");
-        $("#menuwisata").removeClass("active");
-        $("#menuserang").removeClass("active");
-        $("#menuartikel").removeClass("active");
-    }
-    $("#listkegiatan").slideToggle("fast");
-    $("#listwisata").hide();
-    $("#listserang").hide();
-    $("#listartikel").hide();
-  });
-
-    $("#listartikel").hide(); 
-    $("#menuartikel").click(function(){
-    if($("#menuartikel").hasClass("active")==true){
-        $("#menuartikel").removeClass("active");
-    }else{
-        $("#menuartikel").addClass("active");
-        $("#menuserang").removeClass("active");
-        $("#menuwisata").removeClass("active");
-        $("#menukegiatan").removeClass("active");  
-    }
-    $("#listartikel").slideToggle("fast");
-    $("#listkegiatan").hide();
-    $("#listserang").hide();
-    $("#listwisata").hide();
-  });
 
   $("#owl-example").owlCarousel();
   $("#owl-example").owlCarousel({
@@ -100,7 +70,5 @@ $(document).ready(function() {
     responsiveRefreshRate : 200,
     responsiveBaseWidth: window,
   });
-
-
 
 });
