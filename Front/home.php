@@ -20,7 +20,7 @@
 </head>
 <body>
 
-	<!-- HEADER -->
+<!-- HEADER -->
 <!-- <nav class="header navbar navbar-default navbar-fixed-top">
   	<div class="container">
 
@@ -45,7 +45,6 @@
       </ul>
     </div>
 </nav>
-<<<<<<< HEAD
  -->
 
 <nav class="header navbar navbar-default navbar-fixed-top">
@@ -58,122 +57,111 @@
 	        <li id="menuartikel" class="">Artikel</li>
 	      </ul>
 	    </div>
-=======
--->
-<nav class="header navbar navbar-default navbar-fixed-top">
-	<div class="container">
-		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-			<ul class="nav navbar-nav">
-				<li id="menuserang" class="">Desa Serang</li>
-				<li id="menuwisata" class="">Agrowisata</li>
-				<li id="menukegiatan" class="">Kegiatan</li>
-				<li id="menuartikel" class="">Artikel</li>
-			</ul>
-		</div>
->>>>>>> 0460a0a465fba18455f1b76527ff5d9a0f395eed
 	</div>
 </nav>
 <div class="menulist" id="listserang">
 	<div class="col-md-8">
-		<div class="menu-item">
+		<a class="menu-item" href="">
 			<img src="img/2.jpg">
 			<span>
 				<h4>Pertanian</h4>
-				<p>Strawberry, tomat...</p>
+				<p>Strawberry, tomat, kubis...</p>
 			</span>
-		</div>
-		<div class="menu-item">
+		</a>
+		<a class="menu-item" href="">
 			<img src="img/2.jpg">
 			<span>
 				<h4>Peternakan</h4>
-				<p>Sapi, kambing...</p>
+				<p>Sapi, kambing, kuda...</p>
 			</span>
-		</div>
-		<div class="menu-item">
+		</a>
+		<a class="menu-item" href="">
 			<img src="img/2.jpg">
 			<span>
 				<h4>Pemerintahan</h4>
 				<p>Struktur, monografi...</p>
 			</span>
-		</div>
-		<div class="menu-item">
+		</a>
+		<a class="menu-item" href="">
 			<img src="img/2.jpg">
 			<span>
 				<h4>KKN-UGM-IU</h4>
 				<p>Kuliah Kerja Nyata Universitas Gadjah Mada & Ibaraky University</p>
 			</span>
-		</div>
-		<div class="menu-item">
+		</a>
+		<a class="menu-item" href="">
 			<img src="img/2.jpg">
 			<span>
 				<h4>Produk</h4>
+				<p>Getuk, sirup & keripik strawberry</p>
 			</span>
-		</div>
+		</a>
 	</div>
 	<div class="col-md-4">
-		<div class="menu-item galery">
+		<a class="menu-item galery">
 			<img src="img/2.jpg" id="img1">
 			<img src="img/3.jpg" id="img2">
 			<img src="img/4.jpg" id="img3">
 			<span>
 				<h4>Galery</h4>
 			</span>
-		</div>
-		<div class="menu-item">
+		</a>
+		<a class="menu-item" href="">
 			<img src="img/2.jpg">
 			<span>
 				<h4>Peta</h4>
+				<p>Peta Pariwisata & Peta Desa</p>
 			</span>
-		</div>
+		</a>
 	</div>
 </div>
 <div class="menulist" id="listwisata">
 	<div class="col-md-8">
-		<div class="menu-item">
+		<a class="menu-item" href="">
 			<img src="img/2.jpg">
 			<span>
 				<h4>Kebun Strowberi</h4>
 			</span>
-		</div>
-		<div class="menu-item">
+		</a>
+		<a class="menu-item" href="">
 			<img src="img/2.jpg">
 			<span>
 				<h4>Rest Area</h4>
 			</span>
-		</div>
-		<div class="menu-item">
+		</a>
+		<a class="menu-item" href="">
 			<img src="img/2.jpg">
 			<span>
 				<h4>Outbond</h4>
 			</span>
-		</div>
-		<div class="menu-item">
+		</a>
+		<a class="menu-item" href="">
 			<img src="img/2.jpg">
 			<span>
 				<h4>Hutan Pinus</h4>
 			</span>
-		</div>
-		<div class="menu-item">
+		</a>
+		<a class="menu-item" href="">
 			<img src="img/2.jpg">
 			<span>
 				<h4>Kuda Tunggang</h4>
 			</span>
-		</div>
+		</a>
 	</div>
 	<div class="col-md-4">
-		<div class="menu-item">
+		<a class="menu-item" href="">
 			<img src="img/2.jpg">
 			<span>
 				<h4>TIC</h4>
 				<p>Tourist Information Center</p>
 			</span>
-		</div>
-		<div class="menu-item">
+		</a>
+		<a class="menu-item" href="">
 			<img src="img/2.jpg">
 			<span>
 				<h4>Home Stay</h4>
 			</span>
-		</div>
+		</a>
 	</div>
 </div>
 <div class="menulist" id="listkegiatan"></div>
@@ -183,7 +171,6 @@
 <!-- Carousel -->
 <div class="content">
 	<div id="owl-example" class="owl-carousel">
-<<<<<<< HEAD
 	  <div class="content-item">
 	  	<img src="img/1.jpg">
 	  	<h1>Petik strowberi sendiri</h1>
@@ -209,48 +196,12 @@
 <!-- Timeline -->
 	<div class="container timeline">
 		<div class="row">
-			<div class="col-md-3">
-				<h2>Desa Serang</h2>
-				<div class="timeline-item">
-					<h4>Title goes here!</h4>
-					<img src="img/3.jpg">
-					<p>Hellow world im very sleepy i dont know why Hellow world im very sleepy i dont know whyHellow world im very sleepy i dont know why Hellow world im very sleepy i dont know why Hellow world im very sleepy i dont know why VHellow world im very sleepy i dont know why Hellow world im very sleepy i dont know whyHellow world im very sleepy i dont know why Hellow world im very sleepy i dont know why Hellow world im very sleepy i dont know why</p>
-				</div>
-				<div class="timeline-item">
-					<h4>Title goes here!</h4>
-					<img src="img/3.jpg">
-					<p>Hellow world im very sleepy i dont know why</p>
-				</div>
-				<div class="timeline-item">
-					<h4>Title goes here!</h4>
-					<img src="img/3.jpg">
-					<p>Hellow world im very sleepy i dont know why</p>
-				</div>
-			</div>
-			<div class="col-md-3">
-				<h2>Agrowisata</h2>
-				<div class="timeline-item">
-					<h4>Title goes here!</h4>
-					<img src="img/3.jpg">
-					<p>Hellow world im very sleepy i dont know why</p>
-				</div>
-				<div class="timeline-item">
-					<h4>Title goes here!</h4>
-					<img src="img/3.jpg">
-					<p>Hellow world im very sleepy i dont know why</p>
-				</div>
-				<div class="timeline-item">
-					<h4>Title goes here!</h4>
-					<img src="img/3.jpg">
-					<p>Hellow world im very sleepy i dont know why</p>
-				</div>
-			</div>
-			<div class="col-md-3">
+			<div class="col-md-6">
 				<h2>Kegiatan</h2>
 				<div class="timeline-item">
 					<h4>Title goes here!</h4>
 					<img src="img/3.jpg">
-					<p>Hellow world im very sleepy i dont know why</p>
+					<p>Hellow world im very sleepy i dont know why Hellow world im very sleepy i dont know why Hellow world im very sleepy i dont know why Hellow world im very sleepy i dont know why</p>
 				</div>
 				<div class="timeline-item">
 					<h4>Title goes here!</h4>
@@ -263,7 +214,7 @@
 					<p>Hellow world im very sleepy i dont know why</p>
 				</div>
 			</div>
-			<div class="col-md-3">
+			<div class="col-md-6">
 				<h2>Artikel</h2>
 				<div class="timeline-item">
 					<h4>Title goes here!</h4>
@@ -287,13 +238,6 @@
 				<p class="text-center">Loadmore <span class="glyphicon glyphicon-refresh"></span></p>
 			</div>
 		</div>
-=======
-		<div class="content-item"> <img src="img/1.jpg"> </div>
-		<div class="content-item"> <img src="img/2.jpg"> </div>
-		<div class="content-item"> <img src="img/3.jpg"> </div>
-		<div class="content-item"> <img src="img/4.jpg"> </div>
-		<div class="content-item"> <img src="img/5.jpg"> </div>
->>>>>>> 0460a0a465fba18455f1b76527ff5d9a0f395eed
 	</div>
 </div>
 
@@ -314,21 +258,6 @@
 		</div>
 
 		<div class="col-md-3">
-<<<<<<< HEAD
-=======
-			<h4>Situs Lain</h4>
-			<div class="garis"></div>
-			<ul class="list-unstyled">
-				<li>
-					<a href="">
-						Desa Wisata
-					</a>
-				</li>
-			</ul>
-		</div>
-
-		<div class="col-md-3">
->>>>>>> 0460a0a465fba18455f1b76527ff5d9a0f395eed
 			<h4>Temukan Kami di</h4>
 			<div class="garis"></div>
 			<ul class="list-unstyled list-inline">
@@ -393,18 +322,10 @@
 
 <script type="">
 $(document).ready(function() {
-<<<<<<< HEAD
   $("#owl-example").owlCarousel();
 });
 
   $("#owl-example").owlCarousel({
-=======
-	$("#owl-example").owlCarousel();
-});
-
-$("#owl-example").owlCarousel({
->>>>>>> 0460a0a465fba18455f1b76527ff5d9a0f395eed
-
   // Most important owl features
   items : 1,
   itemsCustom : false,

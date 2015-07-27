@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="components/font-awesome-4.3.0/css/font-awesome.min.css" type='text/css'>
   <link rel="stylesheet" href="css/bootstrap.min.css" type='text/css'>
   <link rel="stylesheet" href="css/default.css" type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,500,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
 </head>
 <body>
   <!-- Header -->
@@ -29,49 +30,49 @@
       <span>
         <h4>Lorem ipsum dolor isit</h4>
         <p>Description about dolor isit ipsum lorem 1993 year beast of the past...</p>
-      </span> 
+      </span>
     </div>
     <div class="menu-item">
       <img src="img/2.jpg">
       <span>
         <h4>Lorem ipsum dolor isit</h4>
         <p>Description about dolor isit ipsum lorem 1993 year beast of the past...</p>
-      </span> 
+      </span>
     </div>
     <div class="menu-item">
       <img src="img/2.jpg">
       <span>
         <h4>Lorem ipsum dolor isit</h4>
         <p>Description about dolor isit ipsum lorem 1993 year beast of the past...</p>
-      </span> 
+      </span>
     </div>
     <div class="menu-item">
       <img src="img/2.jpg">
       <span>
         <h4>Lorem ipsum dolor isit</h4>
         <p>Description about dolor isit ipsum lorem 1993 year beast of the past...</p>
-      </span> 
+      </span>
     </div>
     <div class="menu-item">
       <img src="img/2.jpg">
       <span>
         <h4>Lorem ipsum dolor isit</h4>
         <p>Description about dolor isit ipsum lorem 1993 year beast of the past...</p>
-      </span> 
+      </span>
     </div>
     <div class="menu-item">
       <img src="img/2.jpg">
       <span>
         <h4>Lorem ipsum dolor isit</h4>
         <p>Description about dolor isit ipsum lorem 1993 year beast of the past...</p>
-      </span> 
+      </span>
     </div>
     <div class="menu-item">
       <img src="img/2.jpg">
       <span>
         <h4>Lorem ipsum dolor isit</h4>
         <p>Description about dolor isit ipsum lorem 1993 year beast of the past...</p>
-      </span> 
+      </span>
     </div>
   </div>
   <div class="menulist" id="listwisata">
@@ -80,49 +81,49 @@
       <span>
         <h4>Lorem ipsum dolor isit</h4>
         <p>Description about dolor isit ipsum lorem 1993 year beast of the past...</p>
-      </span> 
+      </span>
     </div>
     <div class="menu-item">
       <img src="img/2.jpg">
       <span>
         <h4>Lorem ipsum dolor isit</h4>
         <p>Description about dolor isit ipsum lorem 1993 year beast of the past...</p>
-      </span> 
+      </span>
     </div>
     <div class="menu-item">
       <img src="img/2.jpg">
       <span>
         <h4>Lorem ipsum dolor isit</h4>
         <p>Description about dolor isit ipsum lorem 1993 year beast of the past...</p>
-      </span> 
+      </span>
     </div>
     <div class="menu-item">
       <img src="img/2.jpg">
       <span>
         <h4>Lorem ipsum dolor isit</h4>
         <p>Description about dolor isit ipsum lorem 1993 year beast of the past...</p>
-      </span> 
+      </span>
     </div>
     <div class="menu-item">
       <img src="img/2.jpg">
       <span>
         <h4>Lorem ipsum dolor isit</h4>
         <p>Description about dolor isit ipsum lorem 1993 year beast of the past...</p>
-      </span> 
+      </span>
     </div>
     <div class="menu-item">
       <img src="img/2.jpg">
       <span>
         <h4>Lorem ipsum dolor isit</h4>
         <p>Description about dolor isit ipsum lorem 1993 year beast of the past...</p>
-      </span> 
+      </span>
     </div>
     <div class="menu-item">
       <img src="img/2.jpg">
       <span>
         <h4>Lorem ipsum dolor isit</h4>
         <p>Description about dolor isit ipsum lorem 1993 year beast of the past...</p>
-      </span> 
+      </span>
     </div>
   </div>
   <div class="menulist" id="listkegiatan">
@@ -131,49 +132,49 @@
       <span>
         <h4>Lorem ipsum dolor isit</h4>
         <p>Description about dolor isit ipsum lorem 1993 year beast of the past...</p>
-      </span> 
+      </span>
     </div>
     <div class="menu-item">
       <img src="img/2.jpg">
       <span>
         <h4>Lorem ipsum dolor isit</h4>
         <p>Description about dolor isit ipsum lorem 1993 year beast of the past...</p>
-      </span> 
+      </span>
     </div>
     <div class="menu-item">
       <img src="img/2.jpg">
       <span>
         <h4>Lorem ipsum dolor isit</h4>
         <p>Description about dolor isit ipsum lorem 1993 year beast of the past...</p>
-      </span> 
+      </span>
     </div>
     <div class="menu-item">
       <img src="img/2.jpg">
       <span>
         <h4>Lorem ipsum dolor isit</h4>
         <p>Description about dolor isit ipsum lorem 1993 year beast of the past...</p>
-      </span> 
+      </span>
     </div>
     <div class="menu-item">
       <img src="img/2.jpg">
       <span>
         <h4>Lorem ipsum dolor isit</h4>
         <p>Description about dolor isit ipsum lorem 1993 year beast of the past...</p>
-      </span> 
+      </span>
     </div>
     <div class="menu-item">
       <img src="img/2.jpg">
       <span>
         <h4>Lorem ipsum dolor isit</h4>
         <p>Description about dolor isit ipsum lorem 1993 year beast of the past...</p>
-      </span> 
+      </span>
     </div>
     <div class="menu-item">
       <img src="img/2.jpg">
       <span>
         <h4>Lorem ipsum dolor isit</h4>
         <p>Description about dolor isit ipsum lorem 1993 year beast of the past...</p>
-      </span> 
+      </span>
     </div>
   </div>
   <div class="menulist" id="listartikel">
@@ -182,59 +183,88 @@
       <span>
         <h4>Lorem ipsum dolor isit</h4>
         <p>Description about dolor isit ipsum lorem 1993 year beast of the past...</p>
-      </span> 
+      </span>
     </div>
     <div class="menu-item">
       <img src="img/2.jpg">
       <span>
         <h4>Lorem ipsum dolor isit</h4>
         <p>Description about dolor isit ipsum lorem 1993 year beast of the past...</p>
-      </span> 
+      </span>
     </div>
     <div class="menu-item">
       <img src="img/2.jpg">
       <span>
         <h4>Lorem ipsum dolor isit</h4>
         <p>Description about dolor isit ipsum lorem 1993 year beast of the past...</p>
-      </span> 
+      </span>
     </div>
     <div class="menu-item">
       <img src="img/2.jpg">
       <span>
         <h4>Lorem ipsum dolor isit</h4>
         <p>Description about dolor isit ipsum lorem 1993 year beast of the past...</p>
-      </span> 
+      </span>
     </div>
     <div class="menu-item">
       <img src="img/2.jpg">
       <span>
         <h4>Lorem ipsum dolor isit</h4>
         <p>Description about dolor isit ipsum lorem 1993 year beast of the past...</p>
-      </span> 
+      </span>
     </div>
     <div class="menu-item">
       <img src="img/2.jpg">
       <span>
         <h4>Lorem ipsum dolor isit</h4>
         <p>Description about dolor isit ipsum lorem 1993 year beast of the past...</p>
-      </span> 
+      </span>
     </div>
     <div class="menu-item">
       <img src="img/2.jpg">
       <span>
         <h4>Lorem ipsum dolor isit</h4>
         <p>Description about dolor isit ipsum lorem 1993 year beast of the past...</p>
-      </span> 
+      </span>
     </div>
   </div>
 
   <div class="content-header">
     <img src="img/2.jpg">
-    <div class="content-title">
-      <h3>Title</h3> 
-    </div>
+    <span><h2 class="text-center">Kelakuan si kucing dari gua hantu</h2></span>
   </div>
-  <div class="image-list">
+
+  <div class="container-fluid image-list">
+    <a class="list" data-lightbox="image-list" href="img/2.jpg">
+      <img src="img/2.jpg" class="img-responsive">
+    </a>
+    <a class="list" data-lightbox="image-list" href="img/2.jpg">
+      <img src="img/2.jpg" class="img-responsive">
+    </a>
+    <a class="list" data-lightbox="image-list" href="img/2.jpg">
+      <img src="img/2.jpg" class="img-responsive">
+    </a>
+    <a class="list" data-lightbox="image-list" href="img/2.jpg">
+      <img src="img/2.jpg" class="img-responsive">
+    </a>
+    <a class="list" data-lightbox="image-list" href="img/2.jpg">
+      <img src="img/2.jpg" class="img-responsive">
+    </a>
+    <a class="list" data-lightbox="image-list" href="img/2.jpg">
+      <img src="img/2.jpg" class="img-responsive">
+    </a>
+    <a class="list" data-lightbox="image-list" href="img/2.jpg">
+      <img src="img/2.jpg" class="img-responsive">
+    </a>
+    <a class="list" data-lightbox="image-list" href="img/2.jpg">
+      <img src="img/2.jpg" class="img-responsive">
+    </a>
+    <a class="list" data-lightbox="image-list" href="img/2.jpg">
+      <img src="img/2.jpg" class="img-responsive">
+    </a>
+    <a class="list" data-lightbox="image-list" href="img/2.jpg">
+      <img src="img/2.jpg" class="img-responsive">
+    </a>
     <a class="list" data-lightbox="image-list" href="img/2.jpg">
       <img src="img/2.jpg" class="img-responsive">
     </a>
@@ -252,25 +282,22 @@
     </a>
   </div>
   <!-- I got these buttons from simplesharebuttons.com -->
-  <div class="col-md-3" id="share-buttons">
-    <!-- Facebook -->
-    <legend><h3>Berbagi</h3></legend>
-    <a href="http://www.facebook.com/sharer.php?u=URL" target="_blank">
-      <i class="fa fa-facebook fa-3x"></i>Facebook
-    </a>
-    <!-- Twitter -->
-    <a href="https://twitter.com/share?url=URL&amp;name=Desa Serang&amp;hashtags=desaserang" target="_blank">
-      <i class="fa fa-twitter fa-3x"></i>Twitter
-    </a>
-    <!-- Google+ -->
-    <a href="https://plus.google.com/share?url=URL" target="_blank">
-      <i class="fa fa-google-plus fa-3x"></i>Google+
-    </a>
-    <!-- Email -->
-    <a href="mailto:?Subject=Desa Serang [Title]&amp;Body=Message URL">
-      <i class="#"></i>E-mail
-    </a>
-  </div>
+
+  <div class="container-fluid">
+    <div class="col-md-3" id="share-buttons">
+      <!-- Facebook -->
+      <a href="http://www.facebook.com/sharer.php?u=URL" target="_blank">
+        <i class="fa fa-facebook fa-3x"></i>
+      </a>
+      <!-- Twitter -->
+      <a href="https://twitter.com/share?url=URL&amp;name=Desa Serang&amp;hashtags=desaserang" target="_blank">
+        <i class="fa fa-twitter fa-3x"></i>
+      </a>
+      <!-- Google+ -->
+      <a href="https://plus.google.com/share?url=URL" target="_blank">
+        <i class="fa fa-google-plus fa-3x"></i>
+      </a>
+    </div>
 
   <div class="col-md-6 content-description">
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec massa nec lectus sollicitudin aliquet. Curabitur dignissim, magna quis tincidunt dictum, erat tortor venenatis orci, vel ornare diam elit eget lorem. Suspendisse in ante et dolor ornare ultricies eget eu tortor. Duis sapien tellus, malesuada in consectetur ac, vestibulum eget urna. Suspendisse pretium, lorem in gravida placerat, felis ante congue urna, ultricies mattis ante nunc et mauris. Sed interdum nisi sed laoreet finibus. Vestibulum consequat ante eget convallis fermentum. Vivamus augue mauris, sollicitudin eu ligula cursus, vestibulum tempor orci.
@@ -278,6 +305,7 @@
     Suspendisse at maximus eros, vitae finibus nisl. Phasellus ultricies nisl ut eros tempus commodo. Praesent ac fringilla sem, in molestie turpis. Integer gravida posuere sem, suscipit rutrum sem vestibulum non. Donec nec turpis eget purus pulvinar rutrum. In interdum dictum sem, ut consequat risus sodales vitae. Nulla id mi risus. Donec ut turpis felis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus imperdiet sollicitudin cursus. Integer rutrum molestie sodales. Sed commodo lacinia nibh a iaculis. Duis bibendum suscipit aliquam. Mauris interdum sem vel volutpat consequat. Cras rutrum dolor sit amet magna sollicitudin pretium.
   </div>
   <div class="clearfix"></div>
+</div>
   <div class="col-md-12">
     <legend><h3>Artikel Terkait</h3></legend>
     <div class="related-post">
@@ -285,27 +313,27 @@
       <span class="text-content">
         <h3>Title</h3>
         <h4>Lorem ipsu2m dolor sit amet, consectetur adipiscing elit.</h4>
-      </span> 
+      </span>
     </div>
     <div class="related-post">
       <img src="img/2.jpg" class="img-responsive related-image">
       <span class="text-content">
         <h3>Title</h3>
         <h4>Lorem ipsu2m dolor sit amet, consectetur adipiscing elit.</h4>
-      </span> 
+      </span>
     </div>
     <div class="related-post">
       <img src="img/2.jpg" class="img-responsive related-image">
       <span class="text-content">
         <h3>Title</h3>
         <h4>Lorem ipsu2m dolor sit amet, consectetur adipiscing elit.</h4>
-      </span> 
+      </span>
     </div>
   </div>
   <div class="clearfix"></div>
 
   <!-- Footer -->
-  <div class="footer">
+  <div class="container-fluid footer">
     <div class="row">
       <div class="col-md-4 about-serang">
         <h3> Tentang Situs ini</h3>
