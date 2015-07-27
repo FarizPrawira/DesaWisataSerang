@@ -11,7 +11,7 @@ class PertaniansController extends \BaseController {
 	{
 		$pertanians = Pertanian::all();
 
-		return View::make('pertanians.index', compact('pertanians'));
+		return View::make('serang.pertanian', compact('pertanians'));
 	}
 
 	/**

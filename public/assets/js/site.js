@@ -10,9 +10,9 @@ $(document).ready(function() {
         $("#menuartikel").removeClass("active");          
     }
     $("#listserang").slideToggle("fast");
-    $("#listkegiatan").hide();
     $("#listwisata").hide();
-    $("#listartikel").hide();
+    // $("#listkegiatan").hide();
+    // $("#listartikel").hide();
     });
 
     $("#listwisata").hide(); 
@@ -26,42 +26,42 @@ $(document).ready(function() {
         $("#menuartikel").removeClass("active");
     }
     $("#listwisata").slideToggle("fast");
-    $("#listkegiatan").hide();
     $("#listserang").hide();
-    $("#listartikel").hide();
+    // $("#listkegiatan").hide();
+    // $("#listartikel").hide();
     });
 
-    $("#listkegiatan").hide(); 
-    $("#menukegiatan").click(function(){
-    if($("#menukegiatan").hasClass("active")==true){
-        $("#menukegiatan").removeClass("active");
-    }else{
-        $("#menukegiatan").addClass("active");
-        $("#menuwisata").removeClass("active");
-        $("#menuserang").removeClass("active");
-        $("#menuartikel").removeClass("active");
-    }
-    $("#listkegiatan").slideToggle("fast");
-    $("#listwisata").hide();
-    $("#listserang").hide();
-    $("#listartikel").hide();
-  });
+  //   $("#listkegiatan").hide(); 
+  //   $("#menukegiatan").click(function(){
+  //   if($("#menukegiatan").hasClass("active")==true){
+  //       $("#menukegiatan").removeClass("active");
+  //   }else{
+  //       $("#menukegiatan").addClass("active");
+  //       $("#menuwisata").removeClass("active");
+  //       $("#menuserang").removeClass("active");
+  //       $("#menuartikel").removeClass("active");
+  //   }
+  //   $("#listkegiatan").slideToggle("fast");
+  //   $("#listwisata").hide();
+  //   $("#listserang").hide();
+  //   $("#listartikel").hide();
+  // });
 
-    $("#listartikel").hide(); 
-    $("#menuartikel").click(function(){
-    if($("#menuartikel").hasClass("active")==true){
-        $("#menuartikel").removeClass("active");
-    }else{
-        $("#menuartikel").addClass("active");
-        $("#menuserang").removeClass("active");
-        $("#menuwisata").removeClass("active");
-        $("#menukegiatan").removeClass("active");  
-    }
-    $("#listartikel").slideToggle("fast");
-    $("#listkegiatan").hide();
-    $("#listserang").hide();
-    $("#listwisata").hide();
-  });
+  //   $("#listartikel").hide(); 
+  //   $("#menuartikel").click(function(){
+  //   if($("#menuartikel").hasClass("active")==true){
+  //       $("#menuartikel").removeClass("active");
+  //   }else{
+  //       $("#menuartikel").addClass("active");
+  //       $("#menuserang").removeClass("active");
+  //       $("#menuwisata").removeClass("active");
+  //       $("#menukegiatan").removeClass("active");  
+  //   }
+  //   $("#listartikel").slideToggle("fast");
+  //   $("#listserang").hide();
+  //   $("#listkegiatan").hide();
+  //   $("#listwisata").hide();
+  // });
 
   $("#owl-example").owlCarousel();
   $("#owl-example").owlCarousel({

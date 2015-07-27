@@ -11,7 +11,7 @@ class PeternakansController extends \BaseController {
 	{
 		$peternakans = Peternakan::all();
 
-		return View::make('peternakans.index', compact('peternakans'));
+		return View::make('serang.peternakan', compact('peternakans'));
 	}
 
 	/**

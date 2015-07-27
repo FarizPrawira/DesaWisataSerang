@@ -39,6 +39,8 @@ Route::get('serang/produk', 'SerangsController@showProduk');
 Route::get('serang/sosok', 'SerangsController@showSosok');
 Route::get('serang/kkn', 'SerangsController@showKkn');
 Route::get('serang/map', 'SerangsController@showMap');
+Route::get('serang/peternakan', 'PeternakansController@index');
+Route::get('serang/pertanian', 'PertaniansController@index');
 //=================================================================//
 
 //===========================Wisata================================//
