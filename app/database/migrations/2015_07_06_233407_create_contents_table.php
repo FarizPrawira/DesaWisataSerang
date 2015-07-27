@@ -17,7 +17,7 @@ class CreateContentsTable extends Migration {
 			$table->increments('id');
 			$table->string('title');
 			$table->string('description');
-			$table->enum('type',['pariwisata','pertanian','produk','budaya','unik']);
+			$table->enum('type',['artikel','kegiatan']);
 			$table->timestamps();
 		});
 	}

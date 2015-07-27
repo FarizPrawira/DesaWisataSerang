@@ -36,25 +36,24 @@ class ContentsController extends \BaseController {
 		'description' => Input::get('description'),	
 		'type' => Input::get('type')
 		];
-		// $validator = Validator::make($data = Input::all(), Content::$rules);
-
-		// if ($validator->fails())
-		// {
-		// 	return Redirect::back()->withErrors($validator)->withInput();
-		// }
+		$validator = Validator::make($data, Content::$rules);
+		if ($validator->fails())
+		{
+			return Redirect::back()->withErrors($validator)->withInput();
+		}
 
 		$content = Content::create($data);
 		$content_id = $content->id;
 
-		// $files = Input::get('images');
 		$files = Input::File('images');
+		// $files = Input::get('images');
 		// echo Input::file('images');
 		// var_dump(($files));
 		// die;
 		foreach($files as $file) {
 			if(!is_null($file)){	
 				$rules = array(
-					'file' => 'mimes:png,gif,jpeg|max:20000'
+					'file' => 'mimes:png,gif,jpeg|max:10000'
 					);
 				$validator = Validator::make(array('file'=> $file), $rules);
 				if($validator->passes()){
@@ -72,7 +71,7 @@ class ContentsController extends \BaseController {
 
 					Photo::create($data);
 				} else {
-					return Redirect::back()->with('error', 'I only accept images.');
+					return Redirect::back()->with('error', 'Only accept images');
 				}
 			}
 		}
@@ -89,8 +88,14 @@ class ContentsController extends \BaseController {
 	public function show($id)
 	{
 		$content = Content::findOrFail($id);
-
-		return View::make('contents.show', compact('content'));
+		$results["related-post"] = DB::table('contents')
+									->where('type',$content['type'])
+									->whereNotIn('id', [$id])
+									->orderBy('created_at', 'DESC')
+									->limit(3)
+									->get();
+		$results["related-photo"] = DB::table('photos')->get();
+		return View::make('contents.show', compact('content'))->with('results', $results);
 	}
 
 	/**
@@ -102,7 +107,6 @@ class ContentsController extends \BaseController {
 	public function edit($id)
 	{
 		$content = Content::find($id);
-
 		return View::make('contents.edit', compact('content'));
 	}
 
@@ -141,54 +145,22 @@ class ContentsController extends \BaseController {
 		return Redirect::route('contents.index');
 	}
 
-	public function showPariwisata()
+	public function showArtikel()
 	{
 		$results["content"] = DB::table('contents')
-							->where('type', 'pariwisata')
-							->orderBy('created_at', 'DESC')
-							->paginate(4);
+		->where('type', 'artikel')
+		->orderBy('created_at', 'DESC')
+		->paginate(4);
 		$results["photo"] = DB::table('photos')->get();
-		return View::make('contents.pariwisata')->with('results', $results);
+		return View::make('contents.artikel')->with('results', $results);
 	}
 
-	public function showPertanian()
+	public function showKegiatan()
 	{
 		$results["content"] = DB::table('contents')
-							->where('type', 'pertanian')
-							->orderBy('created_at', 'DESC')
-							->paginate(4);
+		->where('type', 'kegiatan')
+		->orderBy('created_at', 'DESC')
+		->paginate(4);
 		$results["photo"] = DB::table('photos')->get();
-		return View::make('contents.pertanian')->with('results', $results);
+		return View::make('contents.kegiatan')->with('results', $results);
 	}
-
-	public function showProduk()
-	{
-		$results["content"] = DB::table('contents')
-								->where('type', 'produk')
-								->orderBy('created_at', 'DESC')
-								->paginate(4);
-		$results["photo"] = DB::table('photos')->get();
-		return View::make('contents.produk')->with('results', $results);
-	}
-
-	public function showBudaya()
-	{
-		$results["content"] = DB::table('contents')
-								->where('type', 'budaya')
-								->orderBy('created_at', 'DESC')
-								->paginate(4);
-		$results["photo"] = DB::table('photos')->get();
-		return View::make('contents.budaya')->with('results', $results);
-	}
-
-	public function showUnik()
-	{
-		$results["content"] = DB::table('contents')
-								->where('type', 'unik')
-								->orderBy('created_at', 'DESC')
-								->paginate(4);
-		$results["photo"] = DB::table('photos')->get();
-		return View::make('contents.unik')->with('results', $results);
-	}
-
-}

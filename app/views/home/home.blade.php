@@ -42,6 +42,16 @@
 		echo "<a href=".URL::to('dashboard').">Dashboard</a>";
 	} ?>
 
+	<div id="notification" class="notification">
+		<?php if (Session::has('error')): ?>
+		<div class="col-xs-offset-3 col-xs-6 alert alert-danger alert-dismissible" role="alert">
+			<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
+			{{Session::get('error')}}
+		</div>
+		<div class="clearfix"></div>
+		<?php endif; ?>
+	</div>
+
 	<a href="{{URL::to('content/pariwisata')}}">Pariwisata</a>
 	<a href="{{URL::to('content/pertanian')}}">Pertanian</a>
 	<a href="{{URL::to('content/produk')}}">Produk</a>
@@ -79,6 +89,8 @@
 		@endforeach	
 	</table>
 	@endforeach
-	
+
+	<script src="vendor/jquery/dist/jquery.min.js"></script>
+	<script src="vendor/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
 </html>
