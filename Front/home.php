@@ -21,44 +21,27 @@
 <body>
 
 <!-- HEADER -->
-<!-- <nav class="header navbar navbar-default navbar-fixed-top">
-  	<div class="container">
-
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+<nav class="header navbar navbar-default navbar-fixed-top navbar-inverse">
+  	<div class="container-fluid">
+			<div class="navbar-header">
+	    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#serangNavbar">
+	      <span class="icon-bar"></span>
+	      <span class="icon-bar"></span>
+	      <span class="icon-bar"></span>
+	    </button>
+	    <a class="navbar-brand" href="#">Desa Serang</a>
+	  </div>
+    <div class="collapse navbar-collapse" id="serangNavbar">
       <ul class="nav navbar-nav">
-        <li id="menu1">
-				<a href="#">Serang</a>
-	        <div>
-	        	<div>
-	        		Menu 1
-        		</div>
-        		<div>
-	        		Menu 1
-        		</div>
-        		<div>
-	        		Menu 1
-        		</div>
-	    	</div>
-    	</li>
-        <li><a href="#">Wisata</a></li>
-        <li><a href="#">Agro</a></li>
+        <li id="menuserang" class="">Desa Serang <span class="caret"></span></li>
+        <li id="menuwisata" class="">Agrowisata <span class="caret"></span></li>
+        <li id="menukegiatan" class="">Kegiatan</li>
+        <li id="menuartikel" class="">Artikel</li>
       </ul>
     </div>
-</nav>
- -->
-
-<nav class="header navbar navbar-default navbar-fixed-top">
-  	<div class="container">
-	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-	      <ul class="nav navbar-nav">
-	        <li id="menuserang" class="">Desa Serang <span class="glyphicon glyphicon-triangle-bottom"></span></li>
-	        <li id="menuwisata" class="">Agrowisata <span class="glyphicon glyphicon-triangle-bottom"></span></li>
-	        <li id="menukegiatan" class="">Kegiatan</li>
-	        <li id="menuartikel" class="">Artikel</li>
-	      </ul>
-	    </div>
 	</div>
 </nav>
+<!-- MENUDROPDOWN -->
 <div class="menulist" id="listserang">
 	<div class="col-md-8">
 		<a class="menu-item" href="">

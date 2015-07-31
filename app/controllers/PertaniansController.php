@@ -11,7 +11,7 @@ class PertaniansController extends \BaseController {
 	{
 		$pertanians = Pertanian::all();
 
-		return View::make('pertanians.index', compact('pertanians'));
+		return View::make('serang.pertanian', compact('pertanians'));
 	}
 
 	/**
@@ -31,16 +31,18 @@ class PertaniansController extends \BaseController {
 	 */
 	public function store()
 	{
-		$validator = Validator::make($data = Input::all(), Pertanian::$rules);
+		$data = Input::all();
+		$validator = Validator::make($data, Pertanian::$rules);
 
 		if ($validator->fails())
 		{
 			return Redirect::back()->withErrors($validator)->withInput();
 		}
 
+		// var_dump($data);die;
 		Pertanian::create($data);
 
-		return Redirect::route('pertanians.index');
+		return Redirect::to('dashboard');
 	}
 
 	/**

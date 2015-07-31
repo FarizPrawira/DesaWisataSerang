@@ -11,7 +11,7 @@ class PeternakansController extends \BaseController {
 	{
 		$peternakans = Peternakan::all();
 
-		return View::make('peternakans.index', compact('peternakans'));
+		return View::make('serang.peternakan', compact('peternakans'));
 	}
 
 	/**
@@ -31,16 +31,18 @@ class PeternakansController extends \BaseController {
 	 */
 	public function store()
 	{
-		$validator = Validator::make($data = Input::all(), Peternakan::$rules);
+		$data = Input::all();
+		$validator = Validator::make($data, Peternakan::$rules);
 
 		if ($validator->fails())
 		{
 			return Redirect::back()->withErrors($validator)->withInput();
 		}
 
+		// var_dump($data);die;
 		Peternakan::create($data);
 
-		return Redirect::route('peternakans.index');
+		return Redirect::to('dashboard');
 	}
 
 	/**
