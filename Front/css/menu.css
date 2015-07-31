@@ -1,0 +1,95 @@
+.fix-content{
+  margin-top: 50px;
+}
+.thumbnail {
+    position: relative;
+    padding: 0px;
+    margin-bottom: 20px;
+}
+.thumbnail img{
+    width: 100%;
+    position: relative;
+}
+.thumbnail .caption{
+  padding: 10px;
+  color: black;
+  background-color: rgba(255, 255, 255, 1);
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  min-height: 150px;
+  max-height: 300px;
+  position: relative;
+  overflow: hidden;
+}
+/*.thumbnail .caption:hover{
+  margin-top: 0;
+  transition: all 0.1s ease-in;
+}*/
+.caption:after {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left:15px   solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 15px solid rgb(244, 93, 77);
+  content: " ";
+  top:-5%;
+  left: 45%
+}
+.hasil-serang{
+  margin-bottom: 100px;
+  /*background-color: rgb(244, 93, 77);*/
+}
+.gambar-hasil img{
+  padding-left: 0px;
+  padding-right: 0px;
+  height: 250px;
+  width: 100%;
+}
+.col-md-8 .gambar-hasil{
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.col-md-4 .deskripsi-hasil{
+  padding-left: 0px;
+  padding-right: 0px;
+  background-color: rgb(244, 93, 77);
+  height: 250px;
+   /*width: 100%;
+
+
+*/
+
+color: #ffffff;
+
+font-family: 'Roboto', sans-serif;
+}
+.warp-ikon{
+  width: 52px;
+  height: 52px;
+  border:3px solid #ffffff;
+  position: relative;
+  margin-left: 5px;
+  margin-right: 5px;
+  border-radius: 50%;
+  color: #ffffff;
+  margin-left: 15%;
+}
+.warp-ikon i{
+  position: absolute;
+  top: 20%;
+  left: 15%;
+  width: 30px;
+  width: 30px;
+}
+.hasil-serang{
+  font-family: 'Roboto', sans-serif;
+}
+
+.hasil-judul{
+  margin-bottom: 30px;
+  margin-top: 50px;
+}
+th{
+  background-color: rgba(5,100,60,1);
+  color: #ffffff;
+}

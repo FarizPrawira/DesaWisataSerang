@@ -10,145 +10,131 @@
 	<link rel="stylesheet" href="css/owl.theme.css" type='text/css'>
 	<link rel="stylesheet" href="css/default.css" type='text/css'>
 	<link rel="stylesheet" href="components/font-awesome-4.3.0/css/font-awesome.min.css" type='text/css'>
-<!-- 	<link href='http://fonts.googleapis.com/css?family=Average|Gloria+Hallelujah|Montserrat|Architects+Daughter' rel='stylesheet' type='text/css'> -->
-
 	<!-- script -->
-	<script src="js/bootstrap.min.js"></script>
 	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
 	<script src="js/owl.carousel.js"></script>
 	<script src="js/default.js"></script>
 </head>
 <body>
 
 <!-- HEADER -->
-<nav class="header navbar navbar-default navbar-fixed-top navbar-inverse">
-  	<div class="container-fluid">
-			<div class="navbar-header">
-	    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#serangNavbar">
-	      <span class="icon-bar"></span>
-	      <span class="icon-bar"></span>
-	      <span class="icon-bar"></span>
-	    </button>
-	    <a class="navbar-brand" href="#">Desa Serang</a>
-	  </div>
-    <div class="collapse navbar-collapse" id="serangNavbar">
-      <ul class="nav navbar-nav">
-        <li id="menuserang" class="">Desa Serang <span class="caret"></span></li>
-        <li id="menuwisata" class="">Agrowisata <span class="caret"></span></li>
-        <li id="menukegiatan" class="">Kegiatan</li>
-        <li id="menuartikel" class="">Artikel</li>
-      </ul>
-    </div>
+<div class="header">
+	<div class="container-fluid navbar">
+    <ul>
+      <li id="menuserang">Desa Serang <span class="caret"></span></li>
+      <li id="menuwisata">Agrowisata <span class="caret"></span></li>
+      <li id="menukegiatan">Kegiatan</li>
+      <li id="menuartikel">Artikel</li>
+    </ul>
 	</div>
-</nav>
-<!-- MENUDROPDOWN -->
-<div class="menulist" id="listserang">
-	<div class="col-md-8">
-		<a class="menu-item" href="">
-			<img src="img/2.jpg">
-			<span>
-				<h4>Pertanian</h4>
-				<p>Strawberry, tomat, kubis...</p>
-			</span>
-		</a>
-		<a class="menu-item" href="">
-			<img src="img/2.jpg">
-			<span>
-				<h4>Peternakan</h4>
-				<p>Sapi, kambing, kuda...</p>
-			</span>
-		</a>
-		<a class="menu-item" href="">
-			<img src="img/2.jpg">
-			<span>
-				<h4>Pemerintahan</h4>
-				<p>Struktur, monografi...</p>
-			</span>
-		</a>
-		<a class="menu-item" href="">
-			<img src="img/2.jpg">
-			<span>
-				<h4>KKN-UGM-IU</h4>
-				<p>Kuliah Kerja Nyata Universitas Gadjah Mada & Ibaraky University</p>
-			</span>
-		</a>
-		<a class="menu-item" href="">
-			<img src="img/2.jpg">
-			<span>
-				<h4>Produk</h4>
-				<p>Getuk, sirup & keripik strawberry</p>
-			</span>
-		</a>
+	<!-- MENUDROPDOWN -->
+	<div class="menu-list" id="listserang">
+		<div class="col-md-8">
+			<a class="menu-item" href="">
+				<img src="img/2.jpg">
+				<span>
+					<h4>Pertanian</h4>
+					<p>Strawberry, tomat, kubis...</p>
+				</span>
+			</a>
+			<a class="menu-item" href="">
+				<img src="img/2.jpg">
+				<span>
+					<h4>Peternakan</h4>
+					<p>Sapi, kambing, kuda...</p>
+				</span>
+			</a>
+			<a class="menu-item" href="">
+				<img src="img/2.jpg">
+				<span>
+					<h4>Pemerintahan</h4>
+					<p>Struktur, monografi...</p>
+				</span>
+			</a>
+			<a class="menu-item" href="">
+				<img src="img/2.jpg">
+				<span>
+					<h4>KKN-UGM-IU</h4>
+					<p>Kuliah Kerja Nyata Universitas Gadjah Mada & Ibaraky University</p>
+				</span>
+			</a>
+			<a class="menu-item" href="">
+				<img src="img/2.jpg">
+				<span>
+					<h4>Produk</h4>
+					<p>Getuk, sirup & keripik strawberry</p>
+				</span>
+			</a>
+		</div>
+		<div class="col-md-4">
+			<a class="menu-item galery">
+				<img src="img/2.jpg" id="img1">
+				<span>
+					<h4>Galery</h4>
+				</span>
+			</a>
+			<a class="menu-item" href="">
+				<img src="img/2.jpg">
+				<span>
+					<h4>Peta</h4>
+					<p>Peta Pariwisata & Peta Desa</p>
+				</span>
+			</a>
+		</div>
 	</div>
-	<div class="col-md-4">
-		<a class="menu-item galery">
-			<img src="img/2.jpg" id="img1">
-			<img src="img/3.jpg" id="img2">
-			<img src="img/4.jpg" id="img3">
-			<span>
-				<h4>Galery</h4>
-			</span>
-		</a>
-		<a class="menu-item" href="">
-			<img src="img/2.jpg">
-			<span>
-				<h4>Peta</h4>
-				<p>Peta Pariwisata & Peta Desa</p>
-			</span>
-		</a>
+	<div class="menu-list" id="listwisata">
+		<div class="col-md-8">
+			<a class="menu-item" href="">
+				<img src="img/2.jpg">
+				<span>
+					<h4>Kebun Strowberi</h4>
+				</span>
+			</a>
+			<a class="menu-item" href="">
+				<img src="img/2.jpg">
+				<span>
+					<h4>Rest Area</h4>
+				</span>
+			</a>
+			<a class="menu-item" href="">
+				<img src="img/2.jpg">
+				<span>
+					<h4>Outbond</h4>
+				</span>
+			</a>
+			<a class="menu-item" href="">
+				<img src="img/2.jpg">
+				<span>
+					<h4>Hutan Pinus</h4>
+				</span>
+			</a>
+			<a class="menu-item" href="">
+				<img src="img/2.jpg">
+				<span>
+					<h4>Kuda Tunggang</h4>
+				</span>
+			</a>
+		</div>
+		<div class="col-md-4">
+			<a class="menu-item" href="">
+				<img src="img/2.jpg">
+				<span>
+					<h4>TIC</h4>
+					<p>Tourist Information Center</p>
+				</span>
+			</a>
+			<a class="menu-item" href="">
+				<img src="img/2.jpg">
+				<span>
+					<h4>Home Stay</h4>
+				</span>
+			</a>
+		</div>
 	</div>
+	<div class="menu-list" id="listkegiatan"></div>
+	<div class="menu-list" id="listartikel"></div>
 </div>
-<div class="menulist" id="listwisata">
-	<div class="col-md-8">
-		<a class="menu-item" href="">
-			<img src="img/2.jpg">
-			<span>
-				<h4>Kebun Strowberi</h4>
-			</span>
-		</a>
-		<a class="menu-item" href="">
-			<img src="img/2.jpg">
-			<span>
-				<h4>Rest Area</h4>
-			</span>
-		</a>
-		<a class="menu-item" href="">
-			<img src="img/2.jpg">
-			<span>
-				<h4>Outbond</h4>
-			</span>
-		</a>
-		<a class="menu-item" href="">
-			<img src="img/2.jpg">
-			<span>
-				<h4>Hutan Pinus</h4>
-			</span>
-		</a>
-		<a class="menu-item" href="">
-			<img src="img/2.jpg">
-			<span>
-				<h4>Kuda Tunggang</h4>
-			</span>
-		</a>
-	</div>
-	<div class="col-md-4">
-		<a class="menu-item" href="">
-			<img src="img/2.jpg">
-			<span>
-				<h4>TIC</h4>
-				<p>Tourist Information Center</p>
-			</span>
-		</a>
-		<a class="menu-item" href="">
-			<img src="img/2.jpg">
-			<span>
-				<h4>Home Stay</h4>
-			</span>
-		</a>
-	</div>
-</div>
-<div class="menulist" id="listkegiatan"></div>
-<div class="menulist" id="listartikel"></div>
 
 <!-- CONTENT -->
 <!-- Carousel -->
@@ -194,6 +180,11 @@
 				<div class="timeline-item">
 					<h4>Title goes here!</h4>
 					<img src="img/3.jpg">
+					<p>Hellow world im very sleepy i dont know why Hellow world im very sleepy i dont know why Hellow world im very sleepy i dont know why Hellow world im very sleepy i dont know why</p>
+				</div>
+				<div class="timeline-item">
+					<h4>Title goes here!</h4>
+					<img src="img/3.jpg">
 					<p>Hellow world im very sleepy i dont know why</p>
 				</div>
 			</div>
@@ -228,7 +219,7 @@
 <div class="footer">
 	<div class="row">
 		<div class="col-md-3">
-			<h4>Tentang Situs ini</h4>
+			<h4>Tentang Situs ini</h4><hr/>
 			<div class="garis"></div>
 			<ul class="list-unstyled">
 				<li><a href="">Peta situs</a></li>
@@ -237,11 +228,10 @@
 				<li class="divider"></li>
 				<li><a href="">Hubungi kami</a></li>
 			</ul>
-
 		</div>
 
-		<div class="col-md-3">
-			<h4>Temukan Kami di</h4>
+		<div class="col-md-3" id>
+			<h4>Temukan Kami di</h4><hr/>
 			<div class="garis"></div>
 			<ul class="list-unstyled list-inline">
 				<li>
@@ -260,7 +250,6 @@
 						</span>
 					</a>
 				</li>
-
 				<li>
 					<a href="https://twitter.com/">
 						<span>
@@ -277,7 +266,6 @@
 						</span>
 					</a>
 				</li>
-
 				<li>
 					<a href="">
 						<span>
@@ -288,9 +276,8 @@
 				</li>
 			</ul>
 		</div>
-
 		<div class="col-md-3">
-			<h4>Galery</h4>
+			<h4>Galery</h4><hr/>
  			<div class="garis"></div>
 			<ul class="list-unstyled">
 				<li>
@@ -302,7 +289,6 @@
 	</div>
 	<div class="text-center">© KKN UGM 2015</div>
 </div>
-
 <script type="">
 $(document).ready(function() {
   $("#owl-example").owlCarousel();

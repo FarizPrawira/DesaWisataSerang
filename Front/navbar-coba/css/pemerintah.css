@@ -1,0 +1,66 @@
+
+.pemerintah-desa{
+	background-color: rgb(244, 93, 77);
+
+	margin-bottom: 100px;
+}
+.media-object.pemerintah-besar-gambar{
+
+	width: 150px;
+	height: 150px;
+		border: 5px solid rgb(244, 93, 77);
+
+}
+
+
+
+.media-body.pemerintah-besar-body{
+	width: 300px;
+	height: 200px;
+}
+
+.media-left a{
+
+	color: #000000;
+
+	text-decoration: none;
+}
+
+.media-heading {
+	margin-top: 50px;
+
+	background-color:rgb(244, 93, 77);
+	max-width: 200px;
+	 position: relative;
+
+	 padding-top: 5px;
+	 padding-bottom: 5px;
+	
+}
+
+
+.media-heading:after{
+
+	position: absolute;
+
+ 	width: 0; 
+	height: 0; 
+	border-top: 5px solid transparent;
+	border-bottom: 5px solid transparent; 
+	
+	border-right:5px solid rgb(244, 93, 77);
+	
+	
+  content: "";
+
+  top:35%;
+  right:100%;
+
+
+
+	
+}
+
+
+
+
