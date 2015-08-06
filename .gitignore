@@ -1,5 +1,8 @@
 /bootstrap/compiled.php
 /vendor
+/Front/dicobaya
+/public/assets/img
+/public/uploads
 composer.phar
 composer.lock
 .env.*.php
