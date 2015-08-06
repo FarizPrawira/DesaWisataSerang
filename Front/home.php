@@ -68,10 +68,11 @@
 			</a>
 		</div>
 		<div class="col-md-4">
-			<a class="menu-item galery">
+			<a class="menu-item" href="">
 				<img src="img/2.jpg" id="img1">
 				<span>
 					<h4>Galery</h4>
+					<p>Kumpulan gambar desa Serang</p>
 				</span>
 			</a>
 			<a class="menu-item" href="">
@@ -120,8 +121,8 @@
 			<a class="menu-item" href="">
 				<img src="img/2.jpg">
 				<span>
-					<h4>TIC</h4>
-					<p>Tourist Information Center</p>
+					<h4>Paket Wisata</h4>
+					<p>Flying Fox, ATV, Giant Swing</p>
 				</span>
 			</a>
 			<a class="menu-item" href="">

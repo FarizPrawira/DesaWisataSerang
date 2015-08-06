@@ -33,11 +33,6 @@ class Pertanian extends \Eloquent {
 	];
 
 	// Don't forget to fill this array
-	protected $_luasfillable = ['tahun','jagung_luas','jagung_hasil','ubi_kayu_luas','ubi_kayu_hasil'
-								,'ubi_jalar_luas','ubi_jalar_hasil','cabai_luas','cabai_hasil'
-								,'tomat_luas','tomat_hasil','sawi_luas','sawi_hasil','kentang_luas'
-								,'kentang_hasil','kubis_luas','kubis_hasil','buncis_luas'
-								,'buncis_hasil','terong_luas','terong_hasil','wortel_luas'
-								,'wortel_hasil','padi_luas','padi_hasil'];
+	protected $fillable = ['tahun','jagung_luas','jagung_hasil','ubi_kayu_luas','ubi_kayu_hasil','ubi_jalar_luas','ubi_jalar_hasil','cabai_luas','cabai_hasil','tomat_luas','tomat_hasil','sawi_luas','sawi_hasil','kentang_luas','kentang_hasil','kubis_luas','kubis_hasil','buncis_luas','buncis_hasil','terong_luas','terong_hasil','wortel_luas','wortel_hasil','padi_luas','padi_hasil'];
 
 }

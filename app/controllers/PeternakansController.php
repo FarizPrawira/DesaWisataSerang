@@ -32,8 +32,8 @@ class PeternakansController extends \BaseController {
 	public function store()
 	{
 		$data = Input::all();
-		$validator = Validator::make($data, Peternakan::$rules);
 
+		$validator = Validator::make($data, Peternakan::$rules);
 		if ($validator->fails())
 		{
 			return Redirect::back()->withErrors($validator)->withInput();
@@ -41,7 +41,6 @@ class PeternakansController extends \BaseController {
 
 		// var_dump($data);die;
 		Peternakan::create($data);
-
 		return Redirect::to('dashboard');
 	}
 
@@ -54,8 +53,8 @@ class PeternakansController extends \BaseController {
 	public function show($id)
 	{
 		$peternakan = Peternakan::findOrFail($id);
-
-		return View::make('peternakans.show', compact('peternakan'));
+		$results["tahun"] = DB::table('peternakans')->select('tahun')->orderBy('tahun', 'ASC')->get();
+		return View::make('serang.peternakan', compact('peternakan'))->with('results', $results);;
 	}
 
 	/**

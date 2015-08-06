@@ -36,6 +36,7 @@ class ContentsController extends \BaseController {
 		'description' => Input::get('description'),	
 		'type' => Input::get('type')
 		];
+
 		$validator = Validator::make($data, Content::$rules);
 		if ($validator->fails())
 		{
@@ -44,16 +45,12 @@ class ContentsController extends \BaseController {
 
 		$content = Content::create($data);
 		$content_id = $content->id;
-
+		
 		$files = Input::File('images');
-		// $files = Input::get('images');
-		// echo Input::file('images');
-		// var_dump(($files));
-		// die;
 		foreach($files as $file) {
 			if(!is_null($file)){	
 				$rules = array(
-					'file' => 'mimes:png,gif,jpeg|max:10000'
+					'file' => 'mimes:png,gif,jpeg'
 					);
 				$validator = Validator::make(array('file'=> $file), $rules);
 				if($validator->passes()){
@@ -63,15 +60,13 @@ class ContentsController extends \BaseController {
 					$mime_type = $file->getMimeType();
 					$extension = $file->getClientOriginalExtension();
 					$upload_success = $file->move($destinationPath, $filename);
-
+					
 					$data = [
 					'content_id' => $content_id,
 					'path' => 'uploads/'.$filename
 					];
 
 					Photo::create($data);
-				} else {
-					return Redirect::back()->with('error', 'Only accept images');
 				}
 			}
 		}
@@ -89,11 +84,11 @@ class ContentsController extends \BaseController {
 	{
 		$content = Content::findOrFail($id);
 		$results["related-post"] = DB::table('contents')
-									->where('type',$content['type'])
-									->whereNotIn('id', [$id])
-									->orderBy('created_at', 'DESC')
-									->limit(3)
-									->get();
+		->where('type',$content['type'])
+		->whereNotIn('id', [$id])
+		->orderBy('created_at', 'DESC')
+		->limit(3)
+		->get();
 		$results["related-photo"] = DB::table('photos')->get();
 		return View::make('contents.show', compact('content'))->with('results', $results);
 	}
@@ -107,7 +102,8 @@ class ContentsController extends \BaseController {
 	public function edit($id)
 	{
 		$content = Content::find($id);
-		return View::make('contents.edit', compact('content'));
+		$results["photo"] = DB::table('photos')->where('content_id',$id)->get();
+		return View::make('contents.edit', compact('content'))->with('results', $results);
 	}
 
 	/**
@@ -119,17 +115,40 @@ class ContentsController extends \BaseController {
 	public function update($id)
 	{
 		$content = Content::findOrFail($id);
-
-		$validator = Validator::make($data = Input::all(), Content::$rules);
-
+		$data = Input::all();
+		$validator = Validator::make($data, Content::$rules);
 		if ($validator->fails())
 		{
 			return Redirect::back()->withErrors($validator)->withInput();
 		}
-
 		$content->update($data);
 
-		return Redirect::route('contents.index');
+		$files = Input::File('images');
+		foreach($files as $file) {
+			if(!is_null($file)){	
+				$rules = array(
+					'file' => 'mimes:png,gif,jpeg'
+					);
+				$validator = Validator::make(array('file'=> $file), $rules);
+				if($validator->passes()){
+					$destinationPath = 'uploads/';
+					$filename = $file->getClientOriginalName();
+					$filename = str_replace(' ', '', $filename);
+					$mime_type = $file->getMimeType();
+					$extension = $file->getClientOriginalExtension();
+					$upload_success = $file->move($destinationPath, $filename);
+					
+					$data = [
+					'content_id' => $id,
+					'path' => 'uploads/'.$filename
+					];
+
+					Photo::create($data);
+				}
+			}
+		}
+
+		return Redirect::back();
 	}
 
 	/**
@@ -141,8 +160,19 @@ class ContentsController extends \BaseController {
 	public function destroy($id)
 	{
 		Content::destroy($id);
+		$photos = DB::table('photos')->get();
+		foreach ($photos as $photo) {
+			if ($photo->content_id == $id) {
+				Photo::destroy($photo->id);
+			}
+		}
+		return Redirect::to('dashboard');
+	}
 
-		return Redirect::route('contents.index');
+	public function destroyPhoto($id)
+	{
+		Photo::destroy($id);
+		return Redirect::back();
 	}
 
 	public function showArtikel()

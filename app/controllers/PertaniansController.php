@@ -10,7 +10,6 @@ class PertaniansController extends \BaseController {
 	public function index()
 	{
 		$pertanians = Pertanian::all();
-
 		return View::make('serang.pertanian', compact('pertanians'));
 	}
 
@@ -33,7 +32,6 @@ class PertaniansController extends \BaseController {
 	{
 		$data = Input::all();
 		$validator = Validator::make($data, Pertanian::$rules);
-
 		if ($validator->fails())
 		{
 			return Redirect::back()->withErrors($validator)->withInput();
@@ -41,7 +39,6 @@ class PertaniansController extends \BaseController {
 
 		// var_dump($data);die;
 		Pertanian::create($data);
-
 		return Redirect::to('dashboard');
 	}
 
@@ -54,8 +51,8 @@ class PertaniansController extends \BaseController {
 	public function show($id)
 	{
 		$pertanian = Pertanian::findOrFail($id);
-
-		return View::make('pertanians.show', compact('pertanian'));
+		$results["tahun"] = DB::table('pertanians')->select('tahun')->orderBy('tahun', 'ASC')->get();
+		return View::make('serang.pertanian', compact('pertanian'))->with('results', $results);;
 	}
 
 	/**

@@ -1,15 +1,19 @@
+
 .fix-content{
   margin-top: 50px;
 }
+
 .thumbnail {
-    position: relative;
-    padding: 0px;
-    margin-bottom: 20px;
+  position: relative;
+  padding: 0px;
+  margin-bottom: 20px;
 }
+
 .thumbnail img{
-    width: 100%;
-    position: relative;
+  width: 100%;
+  position: relative;
 }
+
 .thumbnail .caption{
   padding: 10px;
   color: black;
@@ -20,10 +24,7 @@
   position: relative;
   overflow: hidden;
 }
-/*.thumbnail .caption:hover{
-  margin-top: 0;
-  transition: all 0.1s ease-in;
-}*/
+
 .caption:after {
   position: absolute;
   width: 0;
@@ -35,34 +36,34 @@
   top:-5%;
   left: 45%
 }
+
 .hasil-serang{
   margin-bottom: 100px;
   /*background-color: rgb(244, 93, 77);*/
 }
+
 .gambar-hasil img{
   padding-left: 0px;
   padding-right: 0px;
   height: 250px;
   width: 100%;
 }
+
 .col-md-8 .gambar-hasil{
   padding-left: 0px;
   padding-right: 0px;
 }
+
 .col-md-4 .deskripsi-hasil{
   padding-left: 0px;
   padding-right: 0px;
   background-color: rgb(244, 93, 77);
   height: 250px;
-   /*width: 100%;
-
-
-*/
-
-color: #ffffff;
-
-font-family: 'Roboto', sans-serif;
+  /*width: 100%;*/
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
 }
+
 .warp-ikon{
   width: 52px;
   height: 52px;
@@ -74,6 +75,7 @@ font-family: 'Roboto', sans-serif;
   color: #ffffff;
   margin-left: 15%;
 }
+
 .warp-ikon i{
   position: absolute;
   top: 20%;
@@ -81,6 +83,7 @@ font-family: 'Roboto', sans-serif;
   width: 30px;
   width: 30px;
 }
+
 .hasil-serang{
   font-family: 'Roboto', sans-serif;
 }
@@ -89,6 +92,7 @@ font-family: 'Roboto', sans-serif;
   margin-bottom: 30px;
   margin-top: 50px;
 }
+
 th{
   background-color: rgba(5,100,60,1);
   color: #ffffff;

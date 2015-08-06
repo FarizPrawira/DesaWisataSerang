@@ -10,8 +10,7 @@ class TicsController extends \BaseController {
 	public function index()
 	{
 		$tics = Tic::all();
-
-		return View::make('tics.index', compact('tics'));
+		return View::make('wisata.tic', compact('tics'));
 	}
 
 	/**

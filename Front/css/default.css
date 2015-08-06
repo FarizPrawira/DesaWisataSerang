@@ -104,48 +104,73 @@ p, span, a{
 	position: fixed;
 	margin-top: 60px;
 	z-index: 102;
-	padding: 20px;;
+	padding: 20px;
 	border-bottom: 3px solid rgba(236, 26, 35, 0.5);
 }
 .menu-item{
 	position: relative;
-	width: 200px;
-	height: 150px;
+	width: 160px;
+	height: 120px;
 	color: white;
 	margin: 5px;
 	display: inline-block;
 }
 .menu-item img{
 	border-radius: 3px;
+	width: inherit;
+	height: inherit;
 }
 /*text element*/
 .menu-item span{
 	position: absolute;
-	width: inherit;
-	height: inherit;
+	width: 160px;
+	height: 120px;
+	padding: 10px;
 	overflow: hidden;
 	text-align: center;
+	background: radial-gradient(rgba(240,0,0,1),rgba(240,0,0,0.7));
+	background: -webkit-radial-gradient(rgba(240,0,0,1),rgba(240,0,0,0.7));
+	border-radius: 3px;
+}
+.menu-item span::before{
+	content: '';
+	position: absolute;
+	width: 160px;
+	height: 160px;
+	background: rgba(240,0,0,1);
+	top: -100%;
+	left: -100%;
+	bottom: -100%;
+	right: -100%;
+	width: 160px;
+	margin: auto;
+	height: 160px;
+	transform: scale(1);
+	border-radius: 50%;
+	opacity: 1;
+	visibility: hidden;
 }
 .menu-item span>h4{
-	position: absolute;
-	background-color: rgba(240,0,0,0.7);
-	width: inherit;
-	padding: 10px;
-	border-bottom-left-radius: 3px;
-	border-bottom-right-radius: 3px;
-	margin-top: 110px;
-	margin-bottom: 0;
-	white-space: nowrap;
+	position: relative;
+	width: 100%;
+	/*white-space: nowrap;
 	text-overflow: ellipsis;
-	overflow: hidden;
+	overflow: hidden;*/
+	top: 50%;
+	transform: translateY(-50%);
+	margin: 0;
+	background-color: transparent;
 }
 .menu-item span>p{
-	display: none;
-	width: inherit;
-	position: absolute;
-	padding: 0 10px 5px 10px;
+	position: relative;
+	padding: 5px 10px 5px 10px;
 	text-overflow: ellipsis;
 	overflow: hidden;
+	white-space: nowrap;
+	font-size: 0.9em;
+	top: 50%;
+	transform: translateY(-50%);
+	opacity: 1;
 }
 .menu-item img{
 	width: 100%;
@@ -162,24 +187,21 @@ p, span, a{
 	color: white;
 }
 .menu-item:hover span{
-	background: radial-gradient(rgba(240,0,0,0.8),rgba(240,0,0,0.4));
-	background: -webkit-radial-gradient(rgba(240,0,0,0.8),rgba(240,0,0,0.4));
-	border-radius: 3px;
-	vertical-align: middle;
-	display: table;
-	overflow: hidden;
+	background: radial-gradient(rgba(255,255,255,0.4),rgba(255,255,255,0.2));
+	background: -webkit-radial-gradient(rgba(255,255,255,0.4),rgba(255,255,255,0.2));
+	color: black;
+	border: 5px solid rgba(0, 0, 0, 0.3);
 }
-.menu-item:hover span>h4{
-	margin-top: -20px;
-	top: 50%;
-	background-color: transparent;
-	white-space: normal;
+.menu-item:hover span::before{
+	transform: scale(0);
+	opacity: 0;
+	visibility: visible;
+	transition: transform 0.3s ease-in-out,	opacity 0.3s ease-in-out;
+
+}
+.menu-item:hover img{
 }
 .menu-item:hover span>p{
-	display: block;
-	margin-top: 20px;
-	top: 50%;
-	line-height: 1em;
 }
 /*content*/
 .content{
@@ -239,7 +261,6 @@ p, span, a{
 	bottom: 0;
 	left: 0;
 }
-
 .timeline .timeline-item>h4{
 	padding: 0 10px 0 10px;
 	margin-bottom: 0;
@@ -250,12 +271,10 @@ p, span, a{
 	overflow: hidden;
 	text-align: center;
 }
-
 .timeline .timeline-item>img{
 	max-width: 100%;
 	padding: 0 10px 10px 10px;
 }
-
 .timeline .timeline-item>p{
 	color: black;
 	max-height: 6em;
@@ -417,17 +436,14 @@ hr{
 	margin: 10px;
 	display: inline-block;
 }
-
 .related-post a{
 	color:white;
 }
-
 .related-post span{
 	position: absolute;
 	width: 100%;
 	height: 100%;
 }
-
 .related-post span>h3{
 	position: relative;
 	background-color: rgba(0,0,0,0.7);
@@ -436,36 +452,29 @@ hr{
 	padding: 5px 10px 5px 10px;
 	margin-top: 175px;
 }
-
 .related-post span>h4{
 	display: none;
 	position: relative;
 	padding: 5px 10px 5px 10px;
 }
-
 .related-post img{
 	width: 100%;
 	height: 100%;
 	position: absolute;
 }
-
 .related-post:hover{
 	cursor: pointer;
 }
-
 .related-post:hover span>h3{
 	margin-top: 10px;
 	background-color: transparent;
 }
-
 .related-post:hover span>h4{
 	display: inline-block;
 }
-
 .related-post:hover span{
 	background-color: rgba(0,0,0,0.7);
 }
-
 .instapic-box{
 	background-color: white;
 	border-radius: 10px;
@@ -473,4 +482,7 @@ hr{
 	overflow: hidden;
 	height: 1%;
 	padding: 5px 0 5px 0;
+}
+table img{
+	width: 100px;
 }

@@ -17,7 +17,16 @@ class HomeController extends BaseController {
 
 	public function showHome()
 	{
-		$results["content"] = DB::table('contents')->orderBy('created_at', 'DESC')->get();
+		$results["artikel"] = DB::table('contents')
+								->where('type','artikel')
+								->orderBy('created_at','DESC')
+								->limit(4)
+								->get();
+		$results["kegiatan"] = DB::table('contents')
+								->where('type','kegiatan')
+								->orderBy('created_at','DESC')
+								->limit(4)
+								->get();
 		$results["photo"] = DB::table('photos')->get();
 		return View::make('home.home')->with('results', $results);
 		// if(!Auth::check())
@@ -27,5 +36,18 @@ class HomeController extends BaseController {
 		// 		return Redirect::to('dashboard');
 		// 	}
 		// }
+	}
+	public function loadmore()
+	{
+		$results["artikel"] = DB::table('contents')
+								->where('type','artikel')
+								->orderBy('created_at','DESC')
+								->get();
+		$results["kegiatan"] = DB::table('contents')
+								->where('type','kegiatan')
+								->orderBy('created_at','DESC')
+								->get();
+		$results["photo"] = DB::table('photos')->get();
+		return Response::json($results);
 	}
 }
