@@ -1,10 +1,25 @@
 .fix-content{
   margin-top: 50px;
+  font-size: 1.25em;
 }
-.thumbnail {
-    position: relative;
-    padding: 0px;
-    margin-bottom: 20px;
+.fix-content img{
+  width: 100%;
+  display: inline-block;
+  border-radius: 3px;
+  transform: perspective();
+}
+.fix-content td>img{
+  width: 100px;
+  float: right;
+}
+.fix-content .row{
+  padding-top: 15px;
+  margin-bottom: 15px;
+}
+.thumbnail{
+  position: relative;
+  padding: 0px;
+  margin-bottom: 20px;
 }
 .thumbnail img{
     width: 100%;
@@ -54,14 +69,8 @@
   padding-right: 0px;
   background-color: rgb(244, 93, 77);
   height: 250px;
-   /*width: 100%;
-
-
-*/
-
-color: #ffffff;
-
-font-family: 'Roboto', sans-serif;
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
 }
 .warp-ikon{
   width: 52px;
@@ -84,7 +93,6 @@ font-family: 'Roboto', sans-serif;
 .hasil-serang{
   font-family: 'Roboto', sans-serif;
 }
-
 .hasil-judul{
   margin-bottom: 30px;
   margin-top: 50px;

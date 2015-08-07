@@ -1,0 +1,63 @@
+h1.page-header{
+    margin-top: -5px;
+}
+.sidebar-serang{
+	background-color: rgba(240,240,240,1);
+	height: auto;
+	color: black;
+	padding: 10px;
+}
+.sidebar-serang li{
+	padding: 10px;
+	position: relative;
+}
+.sidebar-serang li:hover{
+	background-color: rgba(200, 200, 200, 1);
+	cursor: pointer;
+}
+.judul-sidebar-serang{
+	font-family: 'Roboto', sans-serif;
+	/*border-bottom: 2px solid #ffffff;*/
+}
+.sidebar-serang li.active:after{
+	position: absolute;
+ 	width: 0;
+	height: 0;
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+	border-left: 10px solid rgba(5,100,60,1);
+	content: "";
+	top:0%;
+	left: 108%;
+	margin-top: 10px;
+}
+.sidebar-serang a{
+	color: black;
+}
+.sidebar-serang a:hover{
+	text-decoration: none;
+	color: rgba(5,100,60,1);
+}
+th{
+	background-color: rgba(5,100,60,1);
+	color: #ffffff;
+	width: 200px;
+}
+th h4{
+	margin: 0;
+	padding: 0;
+}
+.main-container {
+  	margin-top: 60px;
+}
+.form-group textarea{
+	height: 50px;
+}
+#Cdaftar .panel-body li{
+	display: block;
+	padding: 10px;
+}
+#Cdaftar .panel-body .btn{
+	padding: 0;
+	margin: 0;
+}

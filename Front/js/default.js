@@ -1,5 +1,101 @@
 $(document).ready(function() {
     $("#listserang").hide();
+    $("#Cpertanian").hide();
+    $("#Cpeternakan").hide();
+    $("#Cpaketwisata").hide();
+    $("#Ckegiatan").hide();
+    $("#Cartikel").hide();
+
+    $("#Bpertanian").click(function(){
+        $("#Cartikel").hide();
+        $("#Cpeternakan").hide();
+        $("#Cpaketwisata").hide();
+        $("#Cpertanian").show();
+        $("#Bpertanian").addClass("active");
+        $("#Bartikel").removeClass("active");
+        $("#Bpaketwisata").removeClass("active");
+        $("#Bpeternakan").removeClass("active");
+        $("#Ckegiatan").hide();
+        $("#Bkegiatan").removeClass("active");
+        $("#Cdaftar").hide();
+        $("#Bdaftar").removeClass("active");
+    });
+
+    $("#Bpeternakan").click(function(){
+        $("#Cartikel").hide();
+        $("#Cpertanian").hide();
+        $("#Cpaketwisata").hide();
+        $("#Cpeternakan").show();
+        $("#Bpeternakan").addClass("active");
+        $("#Bartikel").removeClass("active");
+        $("#Bpaketwisata").removeClass("active");
+        $("#Bpertanian").removeClass("active");
+        $("#Ckegiatan").hide();
+        $("#Bkegiatan").removeClass("active");
+        $("#Cdaftar").hide();
+        $("#Bdaftar").removeClass("active");
+    });
+
+    $("#Bpaketwisata").click(function(){
+        $("#Cartikel").hide();
+        $("#Cpertanian").hide();
+        $("#Cpaketwisata").show();
+        $("#Cpeternakan").hide();
+        $("#Bpaketwisata").addClass("active");
+        $("#Bartikel").removeClass("active");
+        $("#Bpertanian").removeClass("active");
+        $("#Bpeternakan").removeClass("active");
+        $("#Ckegiatan").hide();
+        $("#Bkegiatan").removeClass("active");
+        $("#Cdaftar").hide();
+        $("#Bdaftar").removeClass("active");
+    });
+
+    $("#Bartikel").click(function(){
+        $("#Cartikel").show();
+        $("#Cpertanian").hide();
+        $("#Cpaketwisata").hide();
+        $("#Cpeternakan").hide();
+        $("#Ckegiatan").hide();
+        $("#Bkegiatan").removeClass("active");
+        $("#Bartikel").addClass("active");
+        $("#Bpertanian").removeClass("active");
+        $("#Bpaketwisata").removeClass("active");
+        $("#Bpeternakan").removeClass("active");
+        $("#Cdaftar").hide();
+        $("#Bdaftar").removeClass("active");    
+    });
+
+    $("#Bkegiatan").click(function(){
+        $("#Cartikel").hide();
+        $("#Cpertanian").hide();
+        $("#Cpaketwisata").hide();
+        $("#Cpeternakan").hide();
+        $("#Ckegiatan").show();
+        $("#Bkegiatan").addClass("active");
+        $("#Bpertanian").removeClass("active");
+        $("#Bpaketwisata").removeClass("active");
+        $("#Bpeternakan").removeClass("active");
+        $("#Bartikel").removeClass("active");
+        $("#Cdaftar").hide();
+        $("#Bdaftar").removeClass("active");
+    });
+
+    $("#Bdaftar").click(function(){
+        $("#Cartikel").hide();
+        $("#Cpertanian").hide();
+        $("#Cpaketwisata").hide();
+        $("#Cpeternakan").hide();
+        $("#Ckegiatan").hide();
+        $("#Bkegiatan").addClass("active");
+        $("#Bpertanian").removeClass("active");
+        $("#Bpaketwisata").removeClass("active");
+        $("#Bpeternakan").removeClass("active");
+        $("#Bartikel").removeClass("active");
+        $("#Cdaftar").show();
+        $("#Bdaftar").removeClass("active");
+    });
+
     $("#menuserang").click(function(){
     if($("#menuserang").hasClass("active")==true){
         $("#menuserang").removeClass("active");
