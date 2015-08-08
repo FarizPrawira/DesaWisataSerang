@@ -87,7 +87,7 @@ class ContentsController extends \BaseController {
 		->where('type',$content['type'])
 		->whereNotIn('id', [$id])
 		->orderBy('created_at', 'DESC')
-		->limit(3)
+		->limit(4)
 		->get();
 		$results["related-photo"] = DB::table('photos')->get();
 		return View::make('contents.show', compact('content'))->with('results', $results);
@@ -127,7 +127,7 @@ class ContentsController extends \BaseController {
 		foreach($files as $file) {
 			if(!is_null($file)){	
 				$rules = array(
-					'file' => 'mimes:png,gif,jpeg'
+					'file' => 'mimes:png,gif,jpeg,jpg'
 					);
 				$validator = Validator::make(array('file'=> $file), $rules);
 				if($validator->passes()){
@@ -180,7 +180,7 @@ class ContentsController extends \BaseController {
 		$results["content"] = DB::table('contents')
 		->where('type', 'artikel')
 		->orderBy('created_at', 'DESC')
-		->paginate(4);
+		->get();
 		$results["photo"] = DB::table('photos')->get();
 		return View::make('contents.artikel')->with('results', $results);
 	}

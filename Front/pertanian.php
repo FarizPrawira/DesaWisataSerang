@@ -15,7 +15,10 @@
 <!-- HEADER -->
 <div class="header">
 	<div class="container-fluid navbar">
-    <ul>
+		<ul id="logo">
+			<li><img src="img/Logo4.png"/></li>
+		</ul>
+    <ul class="menu-link">
       <li id="menuserang">Desa Serang <span class="caret"></span></li>
       <li id="menuwisata">Agrowisata <span class="caret"></span></li>
       <li id="menukegiatan">Kegiatan</li>
@@ -29,40 +32,35 @@
 				<img src="img/2.jpg">
 				<span>
 					<h4>Pertanian</h4>
-					<p>Strawberry, tomat, kubis...</p>
 				</span>
 			</a>
 			<a class="menu-item" href="">
 				<img src="img/2.jpg">
 				<span>
 					<h4>Peternakan</h4>
-					<p>Sapi, kambing, kuda...</p>
 				</span>
 			</a>
 			<a class="menu-item" href="">
 				<img src="img/2.jpg">
 				<span>
 					<h4>Pemerintahan</h4>
-					<p>Struktur, monografi...</p>
 				</span>
 			</a>
 			<a class="menu-item" href="">
 				<img src="img/2.jpg">
 				<span>
 					<h4>KKN-UGM-IU</h4>
-					<p>Kuliah Kerja Nyata Universitas Gadjah Mada & Ibaraky University</p>
 				</span>
 			</a>
 			<a class="menu-item" href="">
 				<img src="img/2.jpg">
 				<span>
 					<h4>Produk</h4>
-					<p>Getuk, sirup & keripik strawberry</p>
 				</span>
 			</a>
 		</div>
 		<div class="col-md-4">
-			<a class="menu-item galery">
+			<a class="menu-item" href="">
 				<img src="img/2.jpg" id="img1">
 				<span>
 					<h4>Galery</h4>
@@ -72,7 +70,6 @@
 				<img src="img/2.jpg">
 				<span>
 					<h4>Peta</h4>
-					<p>Peta Pariwisata & Peta Desa</p>
 				</span>
 			</a>
 		</div>
@@ -114,8 +111,7 @@
 			<a class="menu-item" href="">
 				<img src="img/2.jpg">
 				<span>
-					<h4>TIC</h4>
-					<p>Tourist Information Center</p>
+					<h4>Paket Wisata</h4>
 				</span>
 			</a>
 			<a class="menu-item" href="">
@@ -129,7 +125,6 @@
 	<div class="menu-list" id="listkegiatan"></div>
 	<div class="menu-list" id="listartikel"></div>
 </div>
-
 <!-- CONTENT -->
 <div class="container fix-content">
  <div class="row">
@@ -173,7 +168,8 @@
        </div>
      </div>
    </div>
- </div><!-- End row -->
+ </div>
+ <!-- End row -->
  <div class="hasil-serang">
    <ol class="breadcrumb">
     <li><a href="#">2013</a></li>

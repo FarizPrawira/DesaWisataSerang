@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <head>
-  <title>Content</title>
+  <title>Artikel</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- style -->
@@ -14,7 +14,10 @@
 <!-- HEADER -->
 <div class="header">
 	<div class="container-fluid navbar">
-    <ul>
+		<ul id="logo">
+			<li><img src="img/Logo4.png"/></li>
+		</ul>
+    <ul class="menu-link">
       <li id="menuserang">Desa Serang <span class="caret"></span></li>
       <li id="menuwisata">Agrowisata <span class="caret"></span></li>
       <li id="menukegiatan">Kegiatan</li>
@@ -28,40 +31,35 @@
 				<img src="img/2.jpg">
 				<span>
 					<h4>Pertanian</h4>
-					<p>Strawberry, tomat, kubis...</p>
 				</span>
 			</a>
 			<a class="menu-item" href="">
 				<img src="img/2.jpg">
 				<span>
 					<h4>Peternakan</h4>
-					<p>Sapi, kambing, kuda...</p>
 				</span>
 			</a>
 			<a class="menu-item" href="">
 				<img src="img/2.jpg">
 				<span>
 					<h4>Pemerintahan</h4>
-					<p>Struktur, monografi...</p>
 				</span>
 			</a>
 			<a class="menu-item" href="">
 				<img src="img/2.jpg">
 				<span>
 					<h4>KKN-UGM-IU</h4>
-					<p>Kuliah Kerja Nyata Universitas Gadjah Mada & Ibaraky University</p>
 				</span>
 			</a>
 			<a class="menu-item" href="">
 				<img src="img/2.jpg">
 				<span>
 					<h4>Produk</h4>
-					<p>Getuk, sirup & keripik strawberry</p>
 				</span>
 			</a>
 		</div>
 		<div class="col-md-4">
-			<a class="menu-item galery">
+			<a class="menu-item" href="">
 				<img src="img/2.jpg" id="img1">
 				<span>
 					<h4>Galery</h4>
@@ -71,7 +69,6 @@
 				<img src="img/2.jpg">
 				<span>
 					<h4>Peta</h4>
-					<p>Peta Pariwisata & Peta Desa</p>
 				</span>
 			</a>
 		</div>
@@ -113,8 +110,7 @@
 			<a class="menu-item" href="">
 				<img src="img/2.jpg">
 				<span>
-					<h4>TIC</h4>
-					<p>Tourist Information Center</p>
+					<h4>Paket Wisata</h4>
 				</span>
 			</a>
 			<a class="menu-item" href="">
@@ -129,74 +125,74 @@
 	<div class="menu-list" id="listartikel"></div>
 </div>
 
-  <div class="content-header">
-    <img src="img/2.jpg">
-    <span><h2 class="text-center">Kelakuan si kucing dari gua hantu</h2></span>
-  </div>
+<div class="content-header">
+  <img src="img/2.jpg">
+  <span><h2 class="text-center">Kelakuan si kucing dari gua hantu</h2></span>
+</div>
 
-  <div class="container-fluid image-list">
-    <a class="list" data-lightbox="image-list" href="img/2.jpg">
-      <img src="img/2.jpg" class="img-responsive">
+<div class="container-fluid image-list">
+  <a class="list" data-lightbox="image-list" href="img/2.jpg">
+    <img src="img/2.jpg" class="img-responsive">
+  </a>
+  <a class="list" data-lightbox="image-list" href="img/2.jpg">
+    <img src="img/2.jpg" class="img-responsive">
+  </a>
+  <a class="list" data-lightbox="image-list" href="img/2.jpg">
+    <img src="img/2.jpg" class="img-responsive">
+  </a>
+  <a class="list" data-lightbox="image-list" href="img/2.jpg">
+    <img src="img/2.jpg" class="img-responsive">
+  </a>
+  <a class="list" data-lightbox="image-list" href="img/2.jpg">
+    <img src="img/2.jpg" class="img-responsive">
+  </a>
+  <a class="list" data-lightbox="image-list" href="img/2.jpg">
+    <img src="img/2.jpg" class="img-responsive">
+  </a>
+  <a class="list" data-lightbox="image-list" href="img/2.jpg">
+    <img src="img/2.jpg" class="img-responsive">
+  </a>
+  <a class="list" data-lightbox="image-list" href="img/2.jpg">
+    <img src="img/2.jpg" class="img-responsive">
+  </a>
+  <a class="list" data-lightbox="image-list" href="img/2.jpg">
+    <img src="img/2.jpg" class="img-responsive">
+  </a>
+  <a class="list" data-lightbox="image-list" href="img/2.jpg">
+    <img src="img/2.jpg" class="img-responsive">
+  </a>
+  <a class="list" data-lightbox="image-list" href="img/2.jpg">
+    <img src="img/2.jpg" class="img-responsive">
+  </a>
+  <a class="list" data-lightbox="image-list" href="img/2.jpg">
+    <img src="img/2.jpg" class="img-responsive">
+  </a>
+  <a class="list" data-lightbox="image-list" href="img/2.jpg">
+    <img src="img/2.jpg" class="img-responsive">
+  </a>
+  <a class="list" data-lightbox="image-list" href="img/2.jpg">
+    <img src="img/2.jpg" class="img-responsive">
+  </a>
+  <a class="list" data-lightbox="image-list" href="img/2.jpg">
+    <img src="img/2.jpg" class="img-responsive">
+  </a>
+</div>
+
+<div class="container-fluid">
+  <div class="col-md-3" id="share-buttons">
+    <!-- Facebook -->
+    <a href="http://www.facebook.com/sharer.php?u=URL" target="_blank">
+      <i class="fa fa-facebook fa-2x"></i>
     </a>
-    <a class="list" data-lightbox="image-list" href="img/2.jpg">
-      <img src="img/2.jpg" class="img-responsive">
+    <!-- Twitter -->
+    <a href="https://twitter.com/share?url=URL&amp;name=Desa Serang&amp;hashtags=desaserang" target="_blank">
+      <i class="fa fa-twitter fa-2x"></i>
     </a>
-    <a class="list" data-lightbox="image-list" href="img/2.jpg">
-      <img src="img/2.jpg" class="img-responsive">
-    </a>
-    <a class="list" data-lightbox="image-list" href="img/2.jpg">
-      <img src="img/2.jpg" class="img-responsive">
-    </a>
-    <a class="list" data-lightbox="image-list" href="img/2.jpg">
-      <img src="img/2.jpg" class="img-responsive">
-    </a>
-    <a class="list" data-lightbox="image-list" href="img/2.jpg">
-      <img src="img/2.jpg" class="img-responsive">
-    </a>
-    <a class="list" data-lightbox="image-list" href="img/2.jpg">
-      <img src="img/2.jpg" class="img-responsive">
-    </a>
-    <a class="list" data-lightbox="image-list" href="img/2.jpg">
-      <img src="img/2.jpg" class="img-responsive">
-    </a>
-    <a class="list" data-lightbox="image-list" href="img/2.jpg">
-      <img src="img/2.jpg" class="img-responsive">
-    </a>
-    <a class="list" data-lightbox="image-list" href="img/2.jpg">
-      <img src="img/2.jpg" class="img-responsive">
-    </a>
-    <a class="list" data-lightbox="image-list" href="img/2.jpg">
-      <img src="img/2.jpg" class="img-responsive">
-    </a>
-    <a class="list" data-lightbox="image-list" href="img/2.jpg">
-      <img src="img/2.jpg" class="img-responsive">
-    </a>
-    <a class="list" data-lightbox="image-list" href="img/2.jpg">
-      <img src="img/2.jpg" class="img-responsive">
-    </a>
-    <a class="list" data-lightbox="image-list" href="img/2.jpg">
-      <img src="img/2.jpg" class="img-responsive">
-    </a>
-    <a class="list" data-lightbox="image-list" href="img/2.jpg">
-      <img src="img/2.jpg" class="img-responsive">
+    <!-- Google+ -->
+    <a href="https://plus.google.com/share?url=URL" target="_blank">
+      <i class="fa fa-google-plus fa-2x"></i>
     </a>
   </div>
-
-  <div class="container-fluid">
-    <div class="col-md-3" id="share-buttons">
-      <!-- Facebook -->
-      <a href="http://www.facebook.com/sharer.php?u=URL" target="_blank">
-        <i class="fa fa-facebook fa-2x"></i>
-      </a>
-      <!-- Twitter -->
-      <a href="https://twitter.com/share?url=URL&amp;name=Desa Serang&amp;hashtags=desaserang" target="_blank">
-        <i class="fa fa-twitter fa-2x"></i>
-      </a>
-      <!-- Google+ -->
-      <a href="https://plus.google.com/share?url=URL" target="_blank">
-        <i class="fa fa-google-plus fa-2x"></i>
-      </a>
-    </div>
 
   <div class="col-md-6 content-description">
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec massa nec lectus sollicitudin aliquet. Curabitur dignissim, magna quis tincidunt dictum, erat tortor venenatis orci, vel ornare diam elit eget lorem. Suspendisse in ante et dolor ornare ultricies eget eu tortor. Duis sapien tellus, malesuada in consectetur ac, vestibulum eget urna. Suspendisse pretium, lorem in gravida placerat, felis ante congue urna, ultricies mattis ante nunc et mauris. Sed interdum nisi sed laoreet finibus. Vestibulum consequat ante eget convallis fermentum. Vivamus augue mauris, sollicitudin eu ligula cursus, vestibulum tempor orci.
@@ -205,27 +201,39 @@
   </div>
   <div class="clearfix"></div>
 </div>
-<hr></hr>
+
 <div class="container timeline">
-  <div class="col-md-12">
+  <div class="row">
     <h2>Artikel Terkait</h2>
-    <div class="timeline-item">
-      <h4>Title goes here!</h4>
-      <img src="img/3.jpg">
-      <p>Hellow world im very sleepy i dont know why Hellow world im very sleepy i dont know why Hellow world im very sleepy i dont know why Hellow world im very sleepy i dont know why</p>
+    <div class="col-md-3">
+      <div class="timeline-item">
+        <h4>Title goes here!</h4>
+        <img src="img/3.jpg">
+        <p>Hellow world im very sleepy i dont know why Hellow world im very sleepy i dont know why Hellow world im very sleepy i dont know why Hellow world im very sleepy i dont know why</p>
+      </div>
     </div>
-    <div class="timeline-item">
-      <h4>Title goes here!</h4>
-      <img src="img/3.jpg">
-      <p>Hellow world im very sleepy i dont know why</p>
+    <div class="col-md-3">
+      <div class="timeline-item">
+        <h4>Title goes here!</h4>
+        <img src="img/3.jpg">
+        <p>Hellow world im very sleepy i dont know why Hellow world im very sleepy i dont know why Hellow world im very sleepy i dont know why Hellow world im very sleepy i dont know why</p>
+      </div>
     </div>
-    <div class="timeline-item">
-      <h4>Title goes here!</h4>
-      <img src="img/3.jpg">
-      <p>Hellow world im very sleepy i dont know why</p>
+    <div class="col-md-3">
+      <div class="timeline-item">
+        <h4>Title goes here!</h4>
+        <img src="img/3.jpg">
+        <p>Hellow world im very sleepy i dont know why Hellow world im very sleepy i dont know why Hellow world im very sleepy i dont know why Hellow world im very sleepy i dont know why</p>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="timeline-item">
+        <h4>Title goes here!</h4>
+        <img src="img/3.jpg">
+        <p>Hellow world im very sleepy i dont know why Hellow world im very sleepy i dont know why Hellow world im very sleepy i dont know why Hellow world im very sleepy i dont know why</p>
+      </div>
     </div>
   </div>
-  <div class="clearfix"></div>
 </div>
 
 <!-- FOOTER -->

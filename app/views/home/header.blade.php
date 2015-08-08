@@ -1,11 +1,19 @@
 <!-- HEADER -->
 <div class="header">
 	<div class="container-fluid navbar">
-		<ul>
+		<ul id="logo">
+			<li><a href="{{URL::to('')}}"><img src="{{URL::to('assets/img/logo.png')}}"/></a></li>
+		</ul>
+		<ul class="menu-link">
 			<li id="menuserang">Desa Serang <span class="caret"></span></li>
 			<li id="menuwisata">Agrowisata <span class="caret"></span></li>
-			<li id="menukegiatan"><a href="{{URL::to('content/kegiatan')}}">Kegiatan</a></li>
-			<li id="menuartikel"><a href="{{URL::to('content/artikel')}}">Artikel</a></li>
+			<a href="{{URL::to('content/kegiatan')}}"><li id="menukegiatan">Kegiatan</li></a>
+			<a href="{{URL::to('content/artikel')}}"><li id="menuartikel">Artikel</li></a>
+		</ul>
+		<ul class="menu-link logout">
+			<?php if(Auth::check()){ ?>
+			<a href="{{URL::to('user/logout')}}"><li id="logout">Log Out</li></a>
+			<?php } ?>
 		</ul>
 	</div>
 	<!-- Dropdown -->
@@ -32,7 +40,7 @@
 					<p>Struktur, monografi...</p>
 				</span>
 			</a>
-			<a href="{{URL::to('serang/kkn')}}" class="menu-item">
+			<a href="{{URL::to('serang/kknugm2015')}}" class="menu-item">
 				<img src="{{URL::to('assets/img/2.jpg')}}">
 				<span>
 					<h4>KKN-UGM-IU</h4>
@@ -113,4 +121,4 @@
 		</div>
 	</div>
 </div>
-	<!-- HEADER END -->
+<!-- HEADER END -->

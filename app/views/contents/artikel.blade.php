@@ -1,37 +1,53 @@
-Artikel 
-<a href="{{URL::to('/')}}">Home</a>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Serang | Artikel</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- STYLE -->
+	<!-- <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,500,700,700italic,900,900italic' rel='stylesheet' type='text/css'> -->
+	<link rel="stylesheet" href="{{URL::to('vendor/font-awesome/css/font-awesome.min.css')}}"/>
+	<link rel="stylesheet" href="{{URL::to('vendor/bootstrap/dist/css/bootstrap.min.css')}}"/>
+	<link rel="stylesheet" href="{{URL::to('assets/css/site.css')}}"/>
+</head>
+<body>
+	@include('home.header')
+	<!-- CONTENT -->
+	<div class="container timeline">
+		<div class="row">
+			<h2>Artikel Desa Serang</h2>
+			<?php 
+			foreach ($results['content'] as $post): ?>
+			<div class="col-md-3">
+				<a href="{{URL::to('content/'.$post->id)}}" class="timeline-item">
+					<!-- <div class="timeline-item"> -->
+					<h4>{{$post->title}}</h4>
+					<?php foreach ($results['photo'] as $photo):
+					if ($photo->content_id == $post->id){ ?>
+					<img src="{{URL::to($photo->path)}}" class="related-image">
+					<?php break; }
+					endforeach ?>
+					<p>{{truncDescription($post->description)}}</p>
+					<!-- </div> -->
+				</a>
+			</div>
+			<?php 
+			endforeach ?>
+		</div>
+	</div>
+	
+	<!-- CONTENT END-->
 
-@foreach ($results["content"] as $content)
-	<table>
-		<tr>
-			<?php
-			$tanggal = strtotime($content->created_at);
-			$tanggal = date('d F Y G:i', $tanggal);
-			echo "<br>".$tanggal;
-			?>	
-		</tr>
-		<tr>
-			<td>Title</td>
-			<td>:</td>
-			<td><a href="{{URL::to('content/'.$content->id)}}">{{$content->title}}</a></td> 
+	@include('home.footer')
 
-		</tr>
-		<tr>
-			<td>Isi</td>
-			<td>:</td>
-			<td>{{nl2br($content->description)}}</td>
-		</tr>
-		<tr>
-			<td>Tipe</td>
-			<td>:</td>
-			<td>{{$content->type}}</td>
-		</tr>
-		@foreach ($results["photo"] as $photo)
-		<?php if($photo->content_id == $content->id){
-			echo "<img class='media-object' src=".URL::to($photo->path)." alt='img'>";
-		} ?>
-		@endforeach	
-	</table>
-	@endforeach
-
-<?php echo $results["content"]->links(); ?>
+	<?php 
+	function truncDescription($description) {
+		if (strlen($description) > 120) {
+			$description = substr($description, 0, 100);
+			$description.="...";
+		}
+		return $description;
+	}
+	?>
+</body>
+</html>

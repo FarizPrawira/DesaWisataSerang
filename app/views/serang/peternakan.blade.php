@@ -99,7 +99,7 @@
 				<div class="thumbnail">
 					<img src="img/sea.jpg">
 					<div class="caption">
-						<h4>Daging</h4>
+						<h4>Kuda</h4>
 						<p>Stroberi merupakan salah satu komoditas unggulan yang ada di desa serang dan kabupaten Pubalingga pada umumnya, stroberi dapat tumbuh baik di dataran tinggi yang mempunyai ketinggian anatara 1.000 s/d 1.300 mdpl. tingginya harga buah stroberi membuat para petani banyak yang beralih menanam tanaman ini</p>
 						<!-- <p><a href="#" class="btn btn-info btn-xs" role="button">Button</a> <a href="#" class="btn btn-default btn-xs" role="button">Button</a></p> -->
 					</div>
@@ -119,7 +119,7 @@
 				<div class="thumbnail">
 					<img src="img/sea.jpg">
 					<div class="caption">
-						<h4>Kambing</h4>
+						<h4>Daging</h4>
 						<p>Stroberi merupakan salah satu komoditas unggulan yang ada di desa serang dan kabupaten Pubalingga pada umumnya, stroberi dapat tumbuh baik di dataran tinggi yang mempunyai ketinggian anatara 1.000 s/d 1.300 mdpl. tingginya harga buah stroberi membuat para petani banyak yang beralih menanam tanaman ini</p>
 						<!-- <p><a href="#" class="btn btn-info btn-xs" role="button">Button</a> <a href="#" class="btn btn-default btn-xs" role="button">Button</a></p> -->
 					</div>
@@ -130,10 +130,5 @@
 	<!-- CONTENT END -->
 
 	@include('home.footer')
-
-	<!-- SCRIPT -->
-	<script src="{{URL::to('vendor/bootstrap/dist/js/bootstrap.min.js')}}"></script>
-	<script src="{{URL::to('vendor/jquery/dist/jquery.min.js')}}"></script>
-	<script src="{{URL::to('assets/js/site.js')}}"></script>
 </body>
 </html>

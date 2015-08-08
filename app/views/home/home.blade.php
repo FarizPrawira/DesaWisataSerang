@@ -83,7 +83,7 @@
 					<div class="loadmore-artikel"></div>
 				</div>
 			</div>
-			<div class="row">
+			<div class="row loadmore">
 				<button id="loadmore">
 					<p class="text-center">Loadmore <span class="glyphicon glyphicon-refresh"></span></p>
 				</button>
@@ -96,19 +96,14 @@
 
 	<?php 
 	function truncDescription($description) {
-		if (strlen($description) > 110) {
-			$description = substr($description, 0, 80);
+		if (strlen($description) > 250) {
+			$description = substr($description, 0, 230);
 			$description.="...";
 		}
 		return $description;
 	}
 	?>
 
-	<!-- SCRIPT -->
-	<script src="{{URL::to('vendor/bootstrap/dist/js/bootstrap.min.js')}}"></script>
-	<script src="{{URL::to('vendor/jquery/dist/jquery.min.js')}}"></script>
-	<script src="{{URL::to('assets/js/owl.carousel.js')}}"></script>
-	<script src="{{URL::to('assets/js/site.js')}}"></script>
 	<script>
 	$(document).ready(function(){
 		$("#owl-example").owlCarousel();
@@ -148,6 +143,7 @@
 	<script>
 	var kegiatan = 4;
 	var artikel = 4;
+	var description = "";
 	var photoKeg = "";
 	var photoAr = "";
 	var i = 0;
@@ -158,35 +154,49 @@
 			dataType: 'json'
 		})
 		.done(function(response){
+			if (response.kegiatan[kegiatan] === undefined && response.artikel[artikel] === undefined) {
+				$('.loadmore').html('');
+				$('.loadmore').append("Data Habis")
+			};
 			while (response.kegiatan[kegiatan].id != response.photo[i].content_id) {
 				i++;
 			}
 			photoKeg = response.photo[i].path;
-      $('.loadmore-kegiatan').append('\
-      	<a href="content/'+response.kegiatan[kegiatan].id+'" class="timeline-item load-kegiatan">\
-      	<h4>'+response.kegiatan[kegiatan].title+'</h4>\
-      	<img src='+photoKeg+'>\
-      	<p>'+response.kegiatan[kegiatan++].description+'</p>\
-      	</a>\
-      	');
-      i = 0;
+			description = response.kegiatan[kegiatan].description;
+			if (description.length > 250) {
+				description = description.substr(0, 230);
+				description = description.concat("...");
+			};
+			$('.loadmore-kegiatan').append('\
+				<a href="content/'+response.kegiatan[kegiatan].id+'" class="timeline-item load-kegiatan">\
+				<h4>'+response.kegiatan[kegiatan++].title+'</h4>\
+				<img src='+photoKeg+'>\
+				<p>'+description+'</p>\
+				</a>\
+				');
+			i = 0;
 			while (response.artikel[artikel].id != response.photo[i].content_id) {
 				i++;
 			}
 			photoAr = response.photo[i].path;
-      $('.loadmore-artikel').append('\
-      	<a href="content/'+response.artikel[artikel].id+'" class="timeline-item load-artikel">\
-      	<h4>'+response.artikel[artikel].title+'</h4>\
-      	<img src='+photoAr+'>\
-      	<p>'+response.artikel[artikel++].description+'</p>\
-      	</a>\
-      	');
-      })
+			description = response.artikel[artikel].description;
+			if (description.length > 250) {
+				description = description.substr(0, 230);
+				description = description.concat("...");
+			};
+			$('.loadmore-artikel').append('\
+				<a href="content/'+response.artikel[artikel].id+'" class="timeline-item load-artikel">\
+				<h4>'+response.artikel[artikel++].title+'</h4>\
+				<img src='+photoAr+'>\
+				<p>'+description+'</p>\
+				</a>\
+				');
+		})
 		.fail(function(){
 			alert("error");
 		});
 	});
-    // <?php if(Session::has('script')) echo Session::get('script');?>
-    </script>
-  </body>
-  </html>
+	// <?php if(Session::has('script')) echo Session::get('script');?>
+	</script>
+</body>
+</html>

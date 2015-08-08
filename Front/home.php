@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <head>
-	<title>Home Page</title>
+	<title>Desa Serang</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -21,7 +21,10 @@
 <!-- HEADER -->
 <div class="header">
 	<div class="container-fluid navbar">
-    <ul>
+		<ul id="logo">
+			<li><img src="img/Logo4.png"/></li>
+		</ul>
+    <ul class="menu-link">
       <li id="menuserang">Desa Serang <span class="caret"></span></li>
       <li id="menuwisata">Agrowisata <span class="caret"></span></li>
       <li id="menukegiatan">Kegiatan</li>
@@ -35,35 +38,30 @@
 				<img src="img/2.jpg">
 				<span>
 					<h4>Pertanian</h4>
-					<p>Strawberry, tomat, kubis...</p>
 				</span>
 			</a>
 			<a class="menu-item" href="">
 				<img src="img/2.jpg">
 				<span>
 					<h4>Peternakan</h4>
-					<p>Sapi, kambing, kuda...</p>
 				</span>
 			</a>
 			<a class="menu-item" href="">
 				<img src="img/2.jpg">
 				<span>
 					<h4>Pemerintahan</h4>
-					<p>Struktur, monografi...</p>
 				</span>
 			</a>
 			<a class="menu-item" href="">
 				<img src="img/2.jpg">
 				<span>
 					<h4>KKN-UGM-IU</h4>
-					<p>Kuliah Kerja Nyata Universitas Gadjah Mada & Ibaraky University</p>
 				</span>
 			</a>
 			<a class="menu-item" href="">
 				<img src="img/2.jpg">
 				<span>
 					<h4>Produk</h4>
-					<p>Getuk, sirup & keripik strawberry</p>
 				</span>
 			</a>
 		</div>
@@ -72,14 +70,12 @@
 				<img src="img/2.jpg" id="img1">
 				<span>
 					<h4>Galery</h4>
-					<p>Kumpulan gambar desa Serang</p>
 				</span>
 			</a>
 			<a class="menu-item" href="">
 				<img src="img/2.jpg">
 				<span>
 					<h4>Peta</h4>
-					<p>Peta Pariwisata & Peta Desa</p>
 				</span>
 			</a>
 		</div>
@@ -122,7 +118,6 @@
 				<img src="img/2.jpg">
 				<span>
 					<h4>Paket Wisata</h4>
-					<p>Flying Fox, ATV, Giant Swing</p>
 				</span>
 			</a>
 			<a class="menu-item" href="">
@@ -166,7 +161,7 @@
 <!-- Timeline -->
 	<div class="container timeline">
 		<div class="row">
-			<div class="col-md-6">
+			<div class="col-md-5 col-xs-6 col-md-offset-1">
 				<h2>Kegiatan</h2>
 				<div class="timeline-item">
 					<h4>Title goes here!</h4>
@@ -189,7 +184,7 @@
 					<p>Hellow world im very sleepy i dont know why</p>
 				</div>
 			</div>
-			<div class="col-md-6">
+			<div class="col-md-5 col-xs-6">
 				<h2>Artikel</h2>
 				<div class="timeline-item">
 					<h4>Title goes here!</h4>
@@ -207,6 +202,7 @@
 					<p>Hellow world im very sleepy i dont know why</p>
 				</div>
 			</div>
+			<div class="clearfix"></div>
 		</div>
 		<div class="row">
 			<div id="loadmore">

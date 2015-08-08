@@ -59,33 +59,38 @@
 	<hr></hr>
 	<!-- Artikel Terkait -->
 	<div class="container timeline">
-		<div class="col-md-12">
-			<h2>Artikel Terkait</h2>
+		<div class="row">
+			<h2>{{ucfirst($content->type)}} Terkait</h2>
 			<?php foreach ($results['related-post'] as $post): ?>
-			<a href="{{URL::to('content/'.$post->id)}}" class="related-post">
-				<!-- <div class="timeline-item"> -->
-				<h4>{{$post->title}}</h4>
-				<?php foreach ($results['related-photo'] as $photo):
-				if ($photo->content_id == $post->id){ ?>
-				<img src="{{URL::to($photo->path)}}" class="img-responsive related-image">
-				<?php break; }
-				endforeach ?>
-				<p>{{$post->description}}</p>
-				<!-- </div> -->
-			</a>
+			<div class="col-md-3">
+				<a href="{{URL::to('content/'.$post->id)}}" class="timeline-item">
+					<!-- <div class="timeline-item"> -->
+					<h4>{{$post->title}}</h4>
+					<?php foreach ($results['related-photo'] as $photo):
+					if ($photo->content_id == $post->id){ ?>
+					<img src="{{URL::to($photo->path)}}" class="related-image">
+					<?php break; }
+					endforeach ?>
+					<p>{{truncDescription($post->description)}}</p>
+					<!-- </div> -->
+				</a>
+			</div>
 			<?php 
 			endforeach ?>
 		</div>
-		<div class="clearfix"></div>
 	</div>
 	<!-- CONTENT END-->
 	
 	@include('home.footer')
 
-	<!-- SCRIPT -->
-	<script src="{{URL::to('vendor/lightbox/dist/js/lightbox-plus-jquery.min.js')}}"></script>
-	<script src="{{URL::to('vendor/bootstrap/dist/js/bootstrap.min.js')}}"></script>
-	<script src="{{URL::to('vendor/jquery/dist/jquery.min.js')}}"></script>
-	<script src="{{URL::to('assets/js/site.js')}}"></script>
+	<?php 
+	function truncDescription($description) {
+		if (strlen($description) > 120) {
+			$description = substr($description, 0, 100);
+			$description.="...";
+		}
+		return $description;
+	}
+	?>
 </body>
 </html>

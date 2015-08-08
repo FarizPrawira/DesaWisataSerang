@@ -4,7 +4,10 @@ class UsersController extends BaseController {
 
 	public function showDashboard()
 	{
-		return View::make('home.dashboard');
+		$results["content"] = DB::table('contents')
+								->orderBy('created_at', 'DESC')
+								->get();
+		return View::make('home.dashboard')->with('results', $results);
 	}
 
 	public function submitLogin()

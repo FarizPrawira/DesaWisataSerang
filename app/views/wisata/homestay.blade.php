@@ -44,9 +44,5 @@
 	<!-- CONTENT END -->
 
 	@include('home.footer')
-	<!-- SCRIPT -->
-	<script src="{{URL::to('vendor/bootstrap/dist/js/bootstrap.min.js')}}"></script>
-	<script src="{{URL::to('vendor/jquery/dist/jquery.min.js')}}"></script>
-	<script src="{{URL::to('assets/js/site.js')}}"></script>
 </body>
 </html>
