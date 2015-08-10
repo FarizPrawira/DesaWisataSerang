@@ -5,6 +5,24 @@ $(document).ready(function() {
     $("#Cpaketwisata").hide();
     $("#Ckegiatan").hide();
     $("#Cartikel").hide();
+    $(".full-img").hide();
+
+    // galery
+    $(".galery .thumbnail").click(function(){
+        var url = $(this).children().attr("src");
+        $(".full-img").fadeIn(250);
+        $(".full-img img").attr("src", url);
+        $(".full-img img").attr("alt", url);
+    });
+
+    $(".full-img .close").click(function(){
+        $(".full-img").fadeOut(250);
+    });
+
+    $(".full-img").click(function(){
+        $(".full-img").fadeOut(250);
+    });
+    // end of galery
 
     $("#Bpertanian").click(function(){
         $("#Cartikel").hide();
@@ -97,74 +115,93 @@ $(document).ready(function() {
     });
 
     $("#menuserang").click(function(){
-    if($("#menuserang").hasClass("active")==true){
-        $("#menuserang").removeClass("active");
-    }else{
-        $("#menuserang").addClass("active");
-        $("#menuwisata").removeClass("active");
-        $("#menukegiatan").removeClass("active");
-        $("#menuartikel").removeClass("active");
-    }
-    $("#listserang").slideToggle("fast");
-    $("#listkegiatan").hide();
-    $("#listwisata").hide();
-    $("#listartikel").hide();
+        if($("#menuserang").hasClass("active")==true){
+            $("#menuserang").removeClass("active");
+        }else{
+            $("#menuserang").addClass("active");
+            $("#menuwisata").removeClass("active");
+            $("#menukegiatan").removeClass("active");
+            $("#menuartikel").removeClass("active");
+        }
+        $("#listserang").slideToggle("fast");
+        $("#listkegiatan").hide();
+        $("#listwisata").hide();
+        $("#listartikel").hide();
     });
 
     $("#listwisata").hide();
     $("#menuwisata").click(function(){
-    if($("#menuwisata").hasClass("active")==true){
-        $("#menuwisata").removeClass("active");
-    }else{
-        $("#menuwisata").addClass("active");
-        $("#menuserang").removeClass("active");
-        $("#menukegiatan").removeClass("active");
-        $("#menuartikel").removeClass("active");
-    }
+        if($("#menuwisata").hasClass("active")==true){
+            $("#menuwisata").removeClass("active");
+        }else{
+            $("#menuwisata").addClass("active");
+            $("#menuserang").removeClass("active");
+            $("#menukegiatan").removeClass("active");
+            $("#menuartikel").removeClass("active");
+        }
 
-    $("#img1").hover()
-    $("#listwisata").slideToggle("fast");
-    $("#listkegiatan").hide();
-    $("#listserang").hide();
-    $("#listartikel").hide();
+        $("#img1").hover()
+        $("#listwisata").slideToggle("fast");
+        $("#listkegiatan").hide();
+        $("#listserang").hide();
+        $("#listartikel").hide();
     });
 
-  $("#owl-example").owlCarousel();
-  $("#owl-example").owlCarousel({
-    // Most important owl features
-    items : 1,
-    itemsCustom : false,
-    itemsDesktop : [1199,4],
-    itemsDesktopSmall : [980,3],
-    itemsTablet: [768,2],
-    itemsTabletSmall: false,
-    itemsMobile : [479,1],
-    singleItem : false,
-    itemsScaleUp : false,
+    $('#myCarousel').carousel({
+                // interval: 50000
+            });
+        //Handles the carousel thumbnails
+        $('[id^=carousel-selector-]').click(function() {
+            var id_selector = $(this).attr("id");
+            try {
+                var id = /-(\d+)$/.exec(id_selector)[1];
+                console.log(id_selector, id);
+                jQuery('#myCarousel').carousel(parseInt(id));
+            } catch (e) {
+                console.log('Regex failed!', e);
+            }
+        });
+        // When the carousel slides, auto update the text
+        $('#myCarousel').on('slid.bs.carousel', function (e) {
+           var id = $('.item.active').data('slide-number');
+           $('#carousel-text').html($('#slide-content-'+id).html());
+    });
 
-    //Basic Speeds
-    slideSpeed : 200,
-    paginationSpeed : 800,
-    rewindSpeed : 1000,
+    $("#owl-example").owlCarousel();
+    $("#owl-example").owlCarousel({
+        // Most important owl features
+        items : 1,
+        itemsCustom : false,
+        itemsDesktop : [1199,4],
+        itemsDesktopSmall : [980,3],
+        itemsTablet: [768,2],
+        itemsTabletSmall: false,
+        itemsMobile : [479,1],
+        singleItem : false,
+        itemsScaleUp : false,
 
-    //Autoplay
-    autoPlay : true,
-    stopOnHover : true,
+        //Basic Speeds
+        slideSpeed : 200,
+        paginationSpeed : 800,
+        rewindSpeed : 1000,
 
-    // Navigation
-    navigation : false,
-    navigationText : ["prev","next"],
-    rewindNav : true,
-    scrollPerPage : false,
+        //Autoplay
+        autoPlay : true,
+        stopOnHover : true,
 
-    //Pagination
-    pagination : true,
-    paginationNumbers: false,
+        // Navigation
+        navigation : false,
+        navigationText : ["prev","next"],
+        rewindNav : true,
+        scrollPerPage : false,
 
-    // Responsive
-    responsive: true,
-    responsiveRefreshRate : 200,
-    responsiveBaseWidth: window,
-  });
+        //Pagination
+        pagination : true,
+        paginationNumbers: false,
 
-});
+        // Responsive
+        responsive: true,
+        responsiveRefreshRate : 200,
+        responsiveBaseWidth: window,
+    });
+})

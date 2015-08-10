@@ -9,7 +9,6 @@ box-shadow: 0 3px 5px rgba(0,0,0,0.2);
 */
 body{
 	overflow-x: hidden;
-	background-color: rgba(255,255,250,1);
 	/*font-size: 2em;*/
 }
 h1, h2{
@@ -38,6 +37,10 @@ p, span, a{
   src: url('../fonts/OpenSans-Regular.ttf');
 /*  src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff2') format('woff2'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
 */}
+@keyframes zoom{
+    from {transform: scale(0);}
+    to {transform: scale(1)}
+}
 .header{
 	position: relative;
 	width: 100%;
@@ -86,10 +89,6 @@ p, span, a{
 .navbar #logo img{
 	height: 45px;
 }
-@keyframes zoom{
-    from {transform: scale(0);}
-    to {transform: scale(1)}
-}
 .navbar .menu-link li:hover{
 	cursor: pointer;
 	color: white;
@@ -110,12 +109,12 @@ p, span, a{
 	display: none;
 	width: 100%;
 	height: auto;
-	background-color: rgba(255,255,255,0.9);
+	background-color: rgba(255,255,255,1);
 	position: fixed;
 	margin-top: 60px;
 	z-index: 102;
 	padding: 20px;
-	border-bottom: 3px solid rgba(236, 26, 35, 0.5);
+	border-bottom: 3px solid rgba(207,0,15,1);
 }
 .menu-item{
 	position: relative;
@@ -194,9 +193,9 @@ p, span, a{
 	color: white;
 }
 .menu-item:hover span{
-	background: radial-gradient(rgba(255,255,255,0.9),rgba(255,255,255,0));
-	background: -webkit-radial-gradient(rgba(255,255,255,0.9),rgba(255,255,255,0));
-	color: black;
+	background: radial-gradient(rgba(255,255,255,0.7),rgba(255,255,255,0));
+	background: -webkit-radial-gradient(rgba(255,255,255,0.7),rgba(255,255,255,0));
+	color: rgba(0,0,0,0.9);
 	/*border: 5px solid rgba(240, 0, 0, 0.7);*/
 }
 .menu-item:hover span::before{
@@ -386,19 +385,19 @@ hr{
 	border-radius: 3px;
 }
 ::-webkit-scrollbar{
-	height: 5px;
-	width: 10px;
+	height: 7px;
+	width: 7px;
 }
 ::-webkit-scrollbar-track{
-	background-color: rgba(0, 0, 0, 0);
+	background-color: transparent;
 	border-color: inherit;
 	box-shadow: 0 0 3px black;
 }
 ::-webkit-scrollbar-thumb{
-	background-color: rgba(150, 150, 150, 1);
+	background-color: rgba(150, 150, 150, 0.5);
 }
 ::-webkit-scrollbar-thumb:hover{
-	background-color: rgba(90, 90, 90, 1);
+	background-color: rgba(90, 90, 90, 0.9);
 }
 #share-buttons{
 	text-align: right;
@@ -494,4 +493,76 @@ hr{
 }
 table img{
 	width: 100px;
+}
+/*pemerintahan*/
+.media-object.pemerintah-besar-gambar{
+	width: 150px;
+	height: 150px;
+	border: 5px solid rgba(0, 0, 0, 0.5);
+}
+.media-body.pemerintah-besar-body{
+	width: 300px;
+	height: 200px;
+}
+.media-left a{
+	color: #000000;
+	text-decoration: none;
+}
+.media-heading {
+	margin-top: 50px;
+	max-width: 200px;
+	position: relative;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+.media-heading:after{
+	position: absolute;
+ 	width: 0;
+	height: 0;
+	border-top: 5px solid transparent;
+	border-bottom: 5px solid transparent;
+	border-right:5px solid rgba(0, 0, 0, 0.5);
+	content: "";
+	top:35%;
+	right:100%;
+}
+.main-container{
+  	margin-top: 60px;
+}
+/*galery*/
+.galery ul +ul{
+	margin-top: 10px;
+}
+.galery .thumbnail{
+	width: 200px;
+	max-height: auto;
+}
+.full-img{
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 102;
+	max-height: auto;
+	max-width: 100%;
+	background-color: white;
+	text-align: center;
+	box-shadow: 0 0 100px rgba(0,0,0,1);
+	padding: 10px;
+}
+.full-img img{
+	height: auto;
+	width: 100%;
+}
+.full-img .close{
+	position: absolute;
+	right: 0;
+	top: 0;
+	background-color: white;
+	border-radius: 50%;
+	width: 20px;
+	height: 20px;
+}
+.full-img .close:hover{
+	cursor: pointer;
 }
