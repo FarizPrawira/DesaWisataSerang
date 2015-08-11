@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <head>
-	<title>Desa Serang</title>
+	<title>Dashboard Admin</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 

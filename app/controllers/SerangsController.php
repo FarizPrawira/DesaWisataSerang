@@ -88,9 +88,24 @@ class SerangsController extends \BaseController {
 		return View::make('serang.map');
 	}
 
-	public function showKkn()
+	public function showKknUgm2014()
 	{
-		return View::make('serang.kkn');
+		return View::make('serang.kknugm2014');
+	}
+
+	public function showKknUgm2015()
+	{
+		return View::make('serang.kknugm2015');
+	}
+
+	public function showKknIu2014()
+	{
+		return View::make('serang.kkniu2014');
+	}
+
+	public function showKknIu2015()
+	{
+		return View::make('serang.kkniu2015');
 	}
 
 	public function showPemerintahan()

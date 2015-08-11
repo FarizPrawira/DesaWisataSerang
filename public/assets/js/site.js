@@ -1,5 +1,101 @@
 $(document).ready(function() {
-    $("#listserang").hide(); 
+    $("#listserang").hide();
+    $("#Cpertanian").hide();
+    $("#Cpeternakan").hide();
+    $("#Cpaketwisata").hide();
+    $("#Ckegiatan").hide();
+    $("#Cartikel").hide();
+
+    $("#Bpertanian").click(function(){
+        $("#Cartikel").hide();
+        $("#Cpeternakan").hide();
+        $("#Cpaketwisata").hide();
+        $("#Cpertanian").show();
+        $("#Bpertanian").addClass("active");
+        $("#Bartikel").removeClass("active");
+        $("#Bpaketwisata").removeClass("active");
+        $("#Bpeternakan").removeClass("active");
+        $("#Ckegiatan").hide();
+        $("#Bkegiatan").removeClass("active");
+        $("#Cdaftar").hide();
+        $("#Bdaftar").removeClass("active");
+    });
+
+    $("#Bpeternakan").click(function(){
+        $("#Cartikel").hide();
+        $("#Cpertanian").hide();
+        $("#Cpaketwisata").hide();
+        $("#Cpeternakan").show();
+        $("#Bpeternakan").addClass("active");
+        $("#Bartikel").removeClass("active");
+        $("#Bpaketwisata").removeClass("active");
+        $("#Bpertanian").removeClass("active");
+        $("#Ckegiatan").hide();
+        $("#Bkegiatan").removeClass("active");
+        $("#Cdaftar").hide();
+        $("#Bdaftar").removeClass("active");
+    });
+
+    $("#Bpaketwisata").click(function(){
+        $("#Cartikel").hide();
+        $("#Cpertanian").hide();
+        $("#Cpaketwisata").show();
+        $("#Cpeternakan").hide();
+        $("#Bpaketwisata").addClass("active");
+        $("#Bartikel").removeClass("active");
+        $("#Bpertanian").removeClass("active");
+        $("#Bpeternakan").removeClass("active");
+        $("#Ckegiatan").hide();
+        $("#Bkegiatan").removeClass("active");
+        $("#Cdaftar").hide();
+        $("#Bdaftar").removeClass("active");
+    });
+
+    $("#Bartikel").click(function(){
+        $("#Cartikel").show();
+        $("#Cpertanian").hide();
+        $("#Cpaketwisata").hide();
+        $("#Cpeternakan").hide();
+        $("#Ckegiatan").hide();
+        $("#Bkegiatan").removeClass("active");
+        $("#Bartikel").addClass("active");
+        $("#Bpertanian").removeClass("active");
+        $("#Bpaketwisata").removeClass("active");
+        $("#Bpeternakan").removeClass("active");
+        $("#Cdaftar").hide();
+        $("#Bdaftar").removeClass("active");    
+    });
+
+    $("#Bkegiatan").click(function(){
+        $("#Cartikel").hide();
+        $("#Cpertanian").hide();
+        $("#Cpaketwisata").hide();
+        $("#Cpeternakan").hide();
+        $("#Ckegiatan").show();
+        $("#Bkegiatan").addClass("active");
+        $("#Bpertanian").removeClass("active");
+        $("#Bpaketwisata").removeClass("active");
+        $("#Bpeternakan").removeClass("active");
+        $("#Bartikel").removeClass("active");
+        $("#Cdaftar").hide();
+        $("#Bdaftar").removeClass("active");
+    });
+
+    $("#Bdaftar").click(function(){
+        $("#Cartikel").hide();
+        $("#Cpertanian").hide();
+        $("#Cpaketwisata").hide();
+        $("#Cpeternakan").hide();
+        $("#Ckegiatan").hide();
+        $("#Bdaftar").addClass("active");
+        $("#Bpertanian").removeClass("active");
+        $("#Bpaketwisata").removeClass("active");
+        $("#Bpeternakan").removeClass("active");
+        $("#Bartikel").removeClass("active");
+        $("#Cdaftar").show();
+        $("#Bkegiatan").removeClass("active");
+    });
+
     $("#menuserang").click(function(){
     if($("#menuserang").hasClass("active")==true){
         $("#menuserang").removeClass("active");
@@ -7,15 +103,15 @@ $(document).ready(function() {
         $("#menuserang").addClass("active");
         $("#menuwisata").removeClass("active");
         $("#menukegiatan").removeClass("active");
-        $("#menuartikel").removeClass("active");          
+        $("#menuartikel").removeClass("active");
     }
     $("#listserang").slideToggle("fast");
+    $("#listkegiatan").hide();
     $("#listwisata").hide();
-    // $("#listkegiatan").hide();
-    // $("#listartikel").hide();
+    $("#listartikel").hide();
     });
 
-    $("#listwisata").hide(); 
+    $("#listwisata").hide();
     $("#menuwisata").click(function(){
     if($("#menuwisata").hasClass("active")==true){
         $("#menuwisata").removeClass("active");
@@ -25,43 +121,13 @@ $(document).ready(function() {
         $("#menukegiatan").removeClass("active");
         $("#menuartikel").removeClass("active");
     }
+
+    $("#img1").hover()
     $("#listwisata").slideToggle("fast");
+    $("#listkegiatan").hide();
     $("#listserang").hide();
-    // $("#listkegiatan").hide();
-    // $("#listartikel").hide();
+    $("#listartikel").hide();
     });
-
-  //   $("#listkegiatan").hide(); 
-  //   $("#menukegiatan").click(function(){
-  //   if($("#menukegiatan").hasClass("active")==true){
-  //       $("#menukegiatan").removeClass("active");
-  //   }else{
-  //       $("#menukegiatan").addClass("active");
-  //       $("#menuwisata").removeClass("active");
-  //       $("#menuserang").removeClass("active");
-  //       $("#menuartikel").removeClass("active");
-  //   }
-  //   $("#listkegiatan").slideToggle("fast");
-  //   $("#listwisata").hide();
-  //   $("#listserang").hide();
-  //   $("#listartikel").hide();
-  // });
-
-  //   $("#listartikel").hide(); 
-  //   $("#menuartikel").click(function(){
-  //   if($("#menuartikel").hasClass("active")==true){
-  //       $("#menuartikel").removeClass("active");
-  //   }else{
-  //       $("#menuartikel").addClass("active");
-  //       $("#menuserang").removeClass("active");
-  //       $("#menuwisata").removeClass("active");
-  //       $("#menukegiatan").removeClass("active");  
-  //   }
-  //   $("#listartikel").slideToggle("fast");
-  //   $("#listserang").hide();
-  //   $("#listkegiatan").hide();
-  //   $("#listwisata").hide();
-  // });
 
   $("#owl-example").owlCarousel();
   $("#owl-example").owlCarousel({
@@ -100,7 +166,5 @@ $(document).ready(function() {
     responsiveRefreshRate : 200,
     responsiveBaseWidth: window,
   });
-
-
 
 });
