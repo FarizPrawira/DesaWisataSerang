@@ -96,7 +96,7 @@
 		<div class="row">
 			<div class="col-xs-18 col-sm-6 col-md-3">
 				<div class="thumbnail">
-					<img src="img/sea.jpg">
+					<img src="{{URL::to('assets/img/pertanian/jagung.jpg')}}">
 					<div class="caption">
 						<h4>Jagung</h4>
 						<p>Stroberi merupakan salah satu komoditas unggulan yang ada di desa serang dan kabupaten Pubalingga pada umumnya, stroberi dapat tumbuh baik di dataran tinggi yang mempunyai ketinggian anatara 1.000 s/d 1.300 mdpl. tingginya harga buah stroberi membuat para petani banyak yang beralih menanam tanaman ini</p>
@@ -106,7 +106,7 @@
 			</div>
 			<div class="col-xs-18 col-sm-6 col-md-3">
 				<div class="thumbnail">
-					<img src="img/sea.jpg">
+					<img src="{{URL::to('assets/img/pertanian/ubikayu.jpg')}}">
 					<div class="caption">
 						<h4>Ubi Kayu</h4>
 						<p>Stroberi merupakan salah satu komoditas unggulan yang ada di desa serang dan kabupaten Pubalingga pada umumnya, stroberi dapat tumbuh baik di dataran tinggi yang mempunyai ketinggian anatara 1.000 s/d 1.300 mdpl. tingginya harga buah stroberi membuat para petani banyak yang beralih menanam tanaman ini</p>
@@ -116,7 +116,7 @@
 			</div>
 			<div class="col-xs-18 col-sm-6 col-md-3">
 				<div class="thumbnail">
-					<img src="img/sea.jpg">
+					<img src="{{URL::to('assets/img/pertanian/ubijalar.jpg')}}">
 					<div class="caption">
 						<h4>Ubi Jalar</h4>
 						<p>Stroberi merupakan salah satu komoditas unggulan yang ada di desa serang dan kabupaten Pubalingga pada umumnya, stroberi dapat tumbuh baik di dataran tinggi yang mempunyai ketinggian anatara 1.000 s/d 1.300 mdpl. tingginya harga buah stroberi membuat para petani banyak yang beralih menanam tanaman ini</p>
@@ -126,7 +126,7 @@
 			</div>
 			<div class="col-xs-18 col-sm-6 col-md-3">
 				<div class="thumbnail">
-					<img src="img/sea.jpg">
+					<img src="{{URL::to('assets/img/pertanian/cabai.jpg')}}">
 					<div class="caption">
 						<h4>Cabai</h4>
 						<p>Stroberi merupakan salah satu komoditas unggulan yang ada di desa serang dan kabupaten Pubalingga pada umumnya, stroberi dapat tumbuh baik di dataran tinggi yang mempunyai ketinggian anatara 1.000 s/d 1.300 mdpl. tingginya harga buah stroberi membuat para petani banyak yang beralih menanam tanaman ini</p>
@@ -136,7 +136,7 @@
 			</div>
 			<div class="col-xs-18 col-sm-6 col-md-3">
 				<div class="thumbnail">
-					<img src="img/sea.jpg">
+					<img src="{{URL::to('assets/img/pertanian/tomat.jpg')}}">
 					<div class="caption">
 						<h4>Tomat</h4>
 						<p>Stroberi merupakan salah satu komoditas unggulan yang ada di desa serang dan kabupaten Pubalingga pada umumnya, stroberi dapat tumbuh baik di dataran tinggi yang mempunyai ketinggian anatara 1.000 s/d 1.300 mdpl. tingginya harga buah stroberi membuat para petani banyak yang beralih menanam tanaman ini</p>
@@ -146,7 +146,7 @@
 			</div>
 			<div class="col-xs-18 col-sm-6 col-md-3">
 				<div class="thumbnail">
-					<img src="img/sea.jpg">
+					<img src="{{URL::to('assets/img/pertanian/sawi.jpg')}}">
 					<div class="caption">
 						<h4>Sawi</h4>
 						<p>Stroberi merupakan salah satu komoditas unggulan yang ada di desa serang dan kabupaten Pubalingga pada umumnya, stroberi dapat tumbuh baik di dataran tinggi yang mempunyai ketinggian anatara 1.000 s/d 1.300 mdpl. tingginya harga buah stroberi membuat para petani banyak yang beralih menanam tanaman ini</p>
@@ -156,7 +156,7 @@
 			</div>
 			<div class="col-xs-18 col-sm-6 col-md-3">
 				<div class="thumbnail">
-					<img src="img/sea.jpg">
+					<img src="{{URL::to('assets/img/pertanian/kentang.jpg')}}">
 					<div class="caption">
 						<h4>Kentang</h4>
 						<p>Stroberi merupakan salah satu komoditas unggulan yang ada di desa serang dan kabupaten Pubalingga pada umumnya, stroberi dapat tumbuh baik di dataran tinggi yang mempunyai ketinggian anatara 1.000 s/d 1.300 mdpl. tingginya harga buah stroberi membuat para petani banyak yang beralih menanam tanaman ini</p>
@@ -176,7 +176,7 @@
 			</div>
 			<div class="col-xs-18 col-sm-6 col-md-3">
 				<div class="thumbnail">
-					<img src="img/sea.jpg">
+					<img src="{{URL::to('assets/img/pertanian/buncis.jpg')}}">
 					<div class="caption">
 						<h4>Buncis</h4>
 						<p>Stroberi merupakan salah satu komoditas unggulan yang ada di desa serang dan kabupaten Pubalingga pada umumnya, stroberi dapat tumbuh baik di dataran tinggi yang mempunyai ketinggian anatara 1.000 s/d 1.300 mdpl. tingginya harga buah stroberi membuat para petani banyak yang beralih menanam tanaman ini</p>
@@ -186,7 +186,7 @@
 			</div>
 			<div class="col-xs-18 col-sm-6 col-md-3">
 				<div class="thumbnail">
-					<img src="img/sea.jpg">
+					<img src="{{URL::to('assets/img/pertanian/terong.jpg')}}">
 					<div class="caption">
 						<h4>Terong</h4>
 						<p>Stroberi merupakan salah satu komoditas unggulan yang ada di desa serang dan kabupaten Pubalingga pada umumnya, stroberi dapat tumbuh baik di dataran tinggi yang mempunyai ketinggian anatara 1.000 s/d 1.300 mdpl. tingginya harga buah stroberi membuat para petani banyak yang beralih menanam tanaman ini</p>
@@ -196,7 +196,7 @@
 			</div>
 			<div class="col-xs-18 col-sm-6 col-md-3">
 				<div class="thumbnail">
-					<img src="img/sea.jpg">
+					<img src="{{URL::to('assets/img/pertanian/wortel.jpg')}}">
 					<div class="caption">
 						<h4>Wortel</h4>
 						<p>Stroberi merupakan salah satu komoditas unggulan yang ada di desa serang dan kabupaten Pubalingga pada umumnya, stroberi dapat tumbuh baik di dataran tinggi yang mempunyai ketinggian anatara 1.000 s/d 1.300 mdpl. tingginya harga buah stroberi membuat para petani banyak yang beralih menanam tanaman ini</p>
@@ -206,7 +206,7 @@
 			</div>
 			<div class="col-xs-18 col-sm-6 col-md-3">
 				<div class="thumbnail">
-					<img src="img/sea.jpg">
+					<img src="{{URL::to('assets/img/pertanian/padigogo.jpg')}}">
 					<div class="caption">
 						<h4>Padi Gogo</h4>
 						<p>Stroberi merupakan salah satu komoditas unggulan yang ada di desa serang dan kabupaten Pubalingga pada umumnya, stroberi dapat tumbuh baik di dataran tinggi yang mempunyai ketinggian anatara 1.000 s/d 1.300 mdpl. tingginya harga buah stroberi membuat para petani banyak yang beralih menanam tanaman ini</p>

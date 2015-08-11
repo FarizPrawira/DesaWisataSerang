@@ -9,7 +9,6 @@
 				<li><a href="">Peta Situs</a></li>
 				<li><a href="">Peta Desa Serang</a></li>
 				<li><a href="">Peta Wisata</a></li>
-				<li class="divider"></li>
 				<li><a href="">Hubungi kami</a></li>
 			</ul>
 		</div>
@@ -35,7 +34,7 @@
 					</a>
 				</li>
 				<li>
-					<a href="https://instagram.com/">
+					<a href="https://instagram.com/exploreserangpbg/">
 						<span>
 							<i class="fa fa-instagram fa-2x"></i>
 							Instagram
@@ -95,6 +94,7 @@
 <script src="{{URL::to('vendor/jquery/dist/jquery.min.js')}}"></script>
 <script src="{{URL::to('vendor/bootstrap/dist/js/bootstrap.min.js')}}"></script>
 <script src="{{URL::to('vendor/lightbox/dist/js/lightbox-plus-jquery.min.js')}}"></script>
+<script src="{{URL::to('vendor/jquery-ui/jquery-ui.min.js')}}"></script>
 <script src="{{URL::to('assets/js/owl.carousel.js')}}"></script>
 <script src="{{URL::to('assets/js/dropzone.js')}}"></script>
 <script src="{{URL::to('assets/js/site.js')}}"></script>

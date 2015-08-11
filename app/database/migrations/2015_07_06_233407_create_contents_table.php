@@ -17,6 +17,8 @@ class CreateContentsTable extends Migration {
 			$table->increments('id');
 			$table->string('title');
 			$table->string('description');
+			$table->string('dateStart')->nullable();
+			$table->string('dateEnd')->nullable();
 			$table->enum('type',['artikel','kegiatan']);
 			$table->timestamps();
 		});

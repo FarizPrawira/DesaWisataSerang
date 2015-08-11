@@ -33,6 +33,7 @@
 			</div>
 			<?php 
 			endforeach ?>
+			<div class="clearfix"></div>
 		</div>
 	</div>
 	

@@ -33,7 +33,9 @@ class ContentsController extends \BaseController {
 	{
 		$data = [
 		'title' => Input::get('title'),
-		'description' => Input::get('description'),	
+		'description' => Input::get('description'),
+		'dateStart' => Input::get('dateStart'),
+		'dateEnd' => Input::get('dateEnd'),	
 		'type' => Input::get('type')
 		];
 
