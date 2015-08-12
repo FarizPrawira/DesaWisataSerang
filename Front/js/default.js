@@ -13,6 +13,8 @@ $(document).ready(function() {
         $(".full-img").fadeIn(250);
         $(".full-img img").attr("src", url);
         $(".full-img img").attr("alt", url);
+        $(".full-img img").attr("src", url);
+        $(".full-img img").attr("alt", url);
     });
 
     $(".full-img .close").click(function(){

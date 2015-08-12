@@ -566,6 +566,11 @@ table img{
 .full-img .close:hover{
 	cursor: pointer;
 }
+.galery .video{
+	width: 300px;
+	margin-top: 10px;
+	background-color: rgba(200, 200, 200, 1);
+}
 /*table*/
 th{
 	background-color: rgba(5,100,60,1);

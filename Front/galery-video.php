@@ -137,135 +137,63 @@
 				</ul>
 			</div>
 			<div class="col-sm-12 galery">
-				<!-- Bottom switcher of slider -->
 				<ul class="list-inline">
 					<li>
-						<a class="thumbnail">
-                        	<div class="" data-slide-number="16">
-							    <div class="embed-responsive embed-responsive-16by9" >
-							        <iframe class="item"src="https://www.youtube.com/embed/UCNBzOIIZks" allowfullscreen main ></iframe>
-							    </div>
-							</div>
-						</a>
+	                	<div class="video" data-slide-number="16">
+						    <div class="embed-responsive embed-responsive-16by9" >
+						        <iframe src="https://www.youtube.com/embed/UCNBzOIIZks" allowfullscreen main ></iframe>
+						    </div>
+						</div>
 					</li>
 					<li>
-						<a class="thumbnail">
-                        	<div class="item" data-slide-number="16">
-							    <div class="embed-responsive embed-responsive-16by9" >
-							        <iframe class="item"src="https://www.youtube.com/embed/UCNBzOIIZks" allowfullscreen main ></iframe>
-							    </div>
-							</div>
-						</a>
+                    	<div class="video" data-slide-number="16">
+						    <div class="embed-responsive embed-responsive-16by9" >
+						        <iframe src="https://www.youtube.com/embed/UCNBzOIIZks" allowfullscreen main ></iframe>
+						    </div>
+						</div>
 					</li>
 					<li>
-						<a class="thumbnail"><img src="img/sea.jpg"></a>
-					</li>
+                    	<div class="video" data-slide-number="16">
+						    <div class="embed-responsive embed-responsive-16by9" >
+						        <iframe src="https://www.youtube.com/embed/UCNBzOIIZks" allowfullscreen main ></iframe>
+						    </div>
+						</div>
+					</li>	
 					<li>
-						<a class="thumbnail"><img src="img/sea.jpg"></a>
-					</li>
-
+                    	<div class="video" data-slide-number="16">
+						    <div class="embed-responsive embed-responsive-16by9" >
+						        <iframe src="https://www.youtube.com/embed/UCNBzOIIZks" allowfullscreen main ></iframe>
+						    </div>
+						</div>
+					</li>	
 					<li>
-						<a class="thumbnail"><img src="img/sea.jpg"></a>
-					</li>
-
+                    	<div class="video" data-slide-number="16">
+						    <div class="embed-responsive embed-responsive-16by9" >
+						        <iframe src="https://www.youtube.com/embed/UCNBzOIIZks" allowfullscreen main ></iframe>
+						    </div>
+						</div>
+					</li>	
 					<li>
-						<a class="thumbnail"><img src="img/sea.jpg"></a>
-					</li>
-
+                    	<div class="video" data-slide-number="16">
+						    <div class="embed-responsive embed-responsive-16by9" >
+						        <iframe src="https://www.youtube.com/embed/UCNBzOIIZks" allowfullscreen main ></iframe>
+						    </div>
+						</div>
+					</li>	
 					<li>
-						<a class="thumbnail"><img src="img/aborigin.jpg" ></a>
-					</li>
-
+                    	<div class="video" data-slide-number="16">
+						    <div class="embed-responsive embed-responsive-16by9" >
+						        <iframe src="https://www.youtube.com/embed/UCNBzOIIZks" allowfullscreen main ></iframe>
+						    </div>
+						</div>
+					</li>	
 					<li>
-						<a class="thumbnail"><img src="img/australia.jpg"></a>
-					</li>
-					<li>
-						<a class="thumbnail"><img src="img/sea.jpg"></a>
-					</li>
-					<li>
-						<a class="thumbnail"><img src="img/sea.jpg"></a>
-					</li>
-
-					<li>
-						<a class="thumbnail"><img src="img/sea.jpg"></a>
-					</li>
-
-					<li>
-						<a class="thumbnail"><img src="img/sea.jpg"></a>
-					</li>
-
-					<li>
-						<a class="thumbnail"><img src="img/aborigin.jpg" ></a>
-					</li>
-
-					<li>
-						<a class="thumbnail"><img src="img/australia.jpg"></a>
-					</li>
-					<li>
-						<a class="thumbnail"><img src="img/sea.jpg"></a>
-					</li>
-					<li>
-						<a class="thumbnail"><img src="img/sea.jpg"></a>
-					</li>
-
-					<li>
-						<a class="thumbnail"><img src="img/sea.jpg"></a>
-					</li>
-
-					<li>
-						<a class="thumbnail"><img src="img/sea.jpg"></a>
-					</li>
-
-					<li>
-						<a class="thumbnail"><img src="img/aborigin.jpg" ></a>
-					</li>
-
-					<li>
-						<a class="thumbnail"><img src="img/australia.jpg"></a>
-					</li>
-					<li>
-						<a class="thumbnail"><img src="img/sea.jpg"></a>
-					</li>
-					<li>
-						<a class="thumbnail"><img src="img/sea.jpg"></a>
-					</li>
-
-					<li>
-						<a class="thumbnail"><img src="img/sea.jpg"></a>
-					</li>
-
-					<li>
-						<a class="thumbnail"><img src="img/sea.jpg"></a>
-					</li>
-
-					<li>
-						<a class="thumbnail"><img src="img/aborigin.jpg" ></a>
-					</li>
-
-					<li>
-						<a class="thumbnail"><img src="img/australia.jpg"></a>
-					</li>
-					<li>
-						<a class="thumbnail"><img src="img/sea.jpg"></a>
-					</li>
-					<li>
-						<a class="thumbnail"><img src="img/sea.jpg"></a>
-					</li>
-
-					<li>
-						<a class="thumbnail"><img src="img/sea.jpg"></a>
-					</li>
-					<li>
-						<a class="thumbnail"><img src="img/sea.jpg"></a>
-					</li>
-
-					<li>
-						<a class="thumbnail"><img src="img/aborigin.jpg" ></a>
-					</li>
-
-					<li>
-						<a class="thumbnail"><img src="img/1.jpg"></a>
-					</li>
+                    	<div class="video" data-slide-number="16">
+						    <div class="embed-responsive embed-responsive-16by9" >
+						        <iframe src="https://www.youtube.com/embed/UCNBzOIIZks" allowfullscreen main ></iframe>
+						    </div>
+						</div>
+					</li>						
 				</ul>
 				<div class="full-img">
 					<span class="close">x</span>
