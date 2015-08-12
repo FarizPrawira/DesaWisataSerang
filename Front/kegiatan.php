@@ -132,58 +132,56 @@
 	<div class="row">
 		<div class="col-md-2 sidebar-serang">
 			<ul class="list-unstyled">
-				<li id="Bdaftar" class="active">Lomba <span>(0)</span></li>
-				<li id="Bkegiatan">Penyuluhan <span>(0)</span></li>
-				<li id="Bpertanian">Sosialisasi <span>(0)</span></li>
-				<li id="Bpaketwisata">Pengajian <span>(0)</span></li>
-				<li id="Bpaketwisata">Rapat <span>(0)</span></li>
-				<li id="Bpaketwisata">Kerja bakti <span>(0)</span></li>
+				<a href=""><li id="K1" class="active">Lomba <span>(0)</span></li></a>
+				<a href=""><li id="K2">Penyuluhan <span>(0)</span></li></a>
+				<a href=""><li id="K3">Sosialisasi <span>(0)</span></li></a>
+				<a href=""><li id="K4">Pengajian <span>(0)</span></li></a>
+				<a href=""><li id="K5">Rapat <span>(0)</span></li></a>
+				<a href=""><li id="K6">Kerja bakti <span>(0)</span></li></a>
 			</ul>
 		</div>
+
 		<div class="col-md-10">
 			<div class="panel panel-default">
 				<div class="panel-heading">
-					Kegiatan lomba
+					Kegiatan <b>lomba</b>
 				</div>
 				<div class="panel-body">
-					<ul class="list-unstyled">
-						<li>
-							<ul class="list-inline">
-								<li>No.</li>
-								<li>Judul</li>
-								<li>Deskripsi</li>
-								<li>Tag</li>
-								<li>Mulai</li>
-								<li></li>
-								<li>Akhir</li>
-								<li>Lokasi</li>
-							</ul>
-						</li>
-						<li>
-							<ul class="list-inline">
-								<li>1</li>
-								<li>Judul</li>
-								<li>Deskripsi...</li>
-								<li>Tag</li>
-								<li><span>Senin</span> 01/03/1993</li>
-								<li>sampai</li>
-								<li><span>Senin</span> 03/11/1993</li>
-								<li>Lokasi</li>
-							</ul>
-						</li>
-						<li>
-							<ul class="list-inline">
-								<li>2</li>
-								<li>Judul</li>
-								<li>Deskripsi...</li>
-								<li>Tag</li>
-								<li><span>Senin</span> 01/03/1993</li>
-								<li>sampai</li>
-								<li><span>Senin</span> 03/11/1993</li>
-								<li>Lokasi</li>
-							</ul>
-						</li>
-					</ul>
+					<table class="table table-striped">
+						<tr>
+							<th class="text-center">Judul</th>
+							<th class="text-center" id="desc">Deskripsi</th>
+							<th class="text-center">Tag</th>
+							<th class="text-center">CP</th>
+							<th class="text-center">Lokasi</th>
+							<th class="text-center">Tanggal</th>
+						</tr>
+						<tr>
+							<td class="text-center">Judul</td>
+							<td class="text-center">Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi</td>
+							<td class="text-center">Tag</td>
+							<td class="text-center">CP</td>
+							<td class="text-center">Lokasi</td>
+							<td class="text-center">Tanggal</td>
+						</tr>
+						<tr>
+							<td class="text-center">Judul</td>
+							<td class="text-center">Deskripsi</td>
+							<td class="text-center">Tag</td>
+							<td class="text-center">CP</td>
+							<td class="text-center">Lokasi</td>
+							<td class="text-center">Tanggal</td>
+						</tr>
+						<tr>
+							<td class="text-center">Judul</td>
+							<td class="text-center">Deskripsi</td>
+							<td class="text-center">Tag</td>
+							<td class="text-center">CP</td>
+							<td class="text-center">Lokasi</td>
+							<td class="text-center">Tanggal</td>
+						</tr>
+					
+					</table>
 				</div>
 			</div>
 		</div>

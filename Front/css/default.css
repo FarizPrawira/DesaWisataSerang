@@ -566,3 +566,21 @@ table img{
 .full-img .close:hover{
 	cursor: pointer;
 }
+/*table*/
+th{
+	background-color: rgba(5,100,60,1);
+	color: #ffffff;
+	width: 200px;
+	border-radius: 10px;
+}
+th h4{
+	margin: 0;
+	padding: 0;
+}
+table #desc{
+	width: 500px;
+}
+/*hover*/
+li:hover{
+	transition: all 0.2s;
+}

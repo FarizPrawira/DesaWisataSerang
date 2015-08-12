@@ -2,18 +2,20 @@ h1.page-header{
     margin-top: -5px;
 }
 .sidebar-serang{
-	background-color: rgba(240,240,240,1);
 	height: auto;
 	color: black;
 	padding: 10px;
+	border: 1px solid rgba(5,100,60,1);
 }
 .sidebar-serang li{
 	padding: 10px;
 	position: relative;
 }
 .sidebar-serang li:hover{
-	background-color: rgba(200, 200, 200, 1);
+	background-color: rgba(5, 100, 60, 1);
 	cursor: pointer;
+	border-radius: 5px;
+	color: white;
 }
 .judul-sidebar-serang{
 	font-family: 'Roboto', sans-serif;
@@ -21,13 +23,15 @@ h1.page-header{
 }
 .sidebar-serang li.active:after{
 	position: absolute;
- 	width: 0;
-	height: 0;
-	border-top: 10px solid transparent;
+ 	width: 10px;
+	height: 10px;
+	background-color: rgba(5,100,60,1);
+	border-radius: 50%;
+	/*border-top: 10px solid transparent;
 	border-bottom: 10px solid transparent;
-	border-left: 10px solid rgba(5,100,60,1);
+	border-left: 10px solid rgba(5,100,60,1);*/
 	content: "";
-	top:0%;
+	top: 0%;
 	left: 108%;
 	margin-top: 10px;
 }
@@ -37,15 +41,6 @@ h1.page-header{
 .sidebar-serang a:hover{
 	text-decoration: none;
 	color: rgba(5,100,60,1);
-}
-th{
-	background-color: rgba(5,100,60,1);
-	color: #ffffff;
-	width: 200px;
-}
-th h4{
-	margin: 0;
-	padding: 0;
 }
 .form-group textarea{
 	height: 50px;
