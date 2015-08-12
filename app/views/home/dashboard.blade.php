@@ -8,7 +8,10 @@
 	<!-- <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,500,700,700italic,900,900italic' rel='stylesheet' type='text/css'> -->
 	<link rel="stylesheet" href="{{URL::to('vendor/bootstrap/dist/css/bootstrap.min.css')}}"/>
 	<link rel="stylesheet" href="{{URL::to('vendor/font-awesome/css/font-awesome.min.css')}}"/>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/4.0.1/dropzone.css"/>
+	<link rel="stylesheet" href="{{URL::to('vendor/jquery-ui/jquery-ui.min.css')}}"/>
+	<link rel="stylesheet" href="{{URL::to('vendor/jquery-ui/jquery-ui.structure.min.css')}}"/>
+	<link rel="stylesheet" href="{{URL::to('vendor/jquery-ui/jquery-ui.theme.min.css')}}"/>
+	<link rel="stylesheet" href="{{URL::to('assets/css/dropzone.min.css')}}"/>
 	<link rel="stylesheet" href="{{URL::to('assets/css/site.css')}}"/>
 </head>
 <body>
@@ -364,32 +367,42 @@
 					Kegiatan
 				</div>
 				<div class="panel-body">
-					<form class="form-horizontal">
+					<form class="form-horizontal" action="{{URL::to('content/store')}}" method="post" enctype="multipart/form-data" file="true">
+						<input type="hidden" name="type" value="kegiatan">
 						<div class="form-group">
-							<label class="col-sm-2 control-label">Judul</label>
+							<label for="inputEmail3" class="col-sm-2 control-label">Judul</label>
 							<div class="col-sm-10">
-								<input type="text" class="form-control" id="inputJudul" placeholder="Tulis judul">
+								<input type="text" name="title" class="form-control" id="inputJudul" placeholder="Tulis judul">
 							</div>
 						</div>
 						<div class="form-group">
-							<label class="col-sm-2 control-label">Deskripsi</label>
+							<label for="inputPassword3" class="col-sm-2 control-label">Deskripsi</label>
 							<div class="col-sm-10">
-								<textarea placeholder="Tulis isi" class="form-control" id="tempat-deskripsi"rows="10"></textarea>
+								<textarea placeholder="Tulis isi" name="description" class="form-control" id="tempat-deskripsi"rows="10"></textarea>
 							</div>
 						</div>
 						<div class="form-group">
 							<label class="col-sm-2 control-label">Tanggal mulai</label>
 							<div class="col-sm-3">
-								<input type="date"></input>
+								<input type="text" class="form-control" id="KegDateStart" name="dateStart" placeholder="Pilih tanggal">
 							</div>
-							<label class="col-sm-2 control-label">Tanggal akhir</label>
+							<label class="col-sm-2 control-label">Tanggal selesai</label>
 							<div class="col-sm-3">
-								<input type="date"></input>
+								<input type="text" class="form-control" id="KegDateEnd" name="dateEnd" placeholder="Pilih tanggal">
 							</div>
 						</div>
 						<div class="form-group">
+							<label for="inputPhoto" class="col-sm-2 control-label">Foto</label>
+							<div class="col-sm-10">
+								{{ Form::file('images[]', ['multiple' => true, 'class' => 'dropzone', 'id' => 'my-awesome-dropzone']) }}
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="col-sm-offset-2 col-sm-10"></div>
+						</div>
+						<div class="form-group">
 							<div class="col-sm-offset-2 col-sm-10">
-								<button type="submit" class="btn btn-primary">Upload</button>
+								<button type="submit" class="btn btn-primary">Simpan</button>
 								<button type="button" class="btn btn-default">Batal</button>
 							</div>
 						</div>
@@ -405,7 +418,7 @@
 					<ul class="list-unstyled">
 						<?php foreach ($results["content"] as $content) { ?>						
 						<!-- Confirm deletion modal -->
-						<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+						<div class="modal fade" id="myModal{{$content->id}}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 							<div class="modal-dialog" role="document">
 								<div class="modal-content">
 									<div class="modal-body">
@@ -424,10 +437,10 @@
 						<li>
 							<div class="row">
 								<span class="col-sm-5">{{$content->title}}</span>
-								<span class="col-sm-2">{{$content->type}}</span>
+								<span class="col-sm-2">{{ucfirst($content->type)}}</span>
 								<span class="col-sm-3">{{$content->created_at}}</span>
 								<a href="{{URL::to('content/edit/'.$content->id)}}" class="btn btn-link col-sm-1">Edit</a>
-								<button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal">Hapus</button>
+								<button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal{{$content->id}}">Hapus</button>
 							</div>
 						</li>
 						<?php } ?>
@@ -442,5 +455,11 @@
 	<!-- ALREADY LOGIN END -->
 
 	@include('home.footer')
+  <script>
+    $(function() {
+      $("#KegDateStart").datepicker();
+      $("#KegDateEnd").datepicker();
+    });
+  </script>
 </body>
 </html>

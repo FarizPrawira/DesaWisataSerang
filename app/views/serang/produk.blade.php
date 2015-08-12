@@ -19,53 +19,40 @@
 		<span><h2 class="text-center">Produk Desa</h2></span>
 	</div>
 	<div class="container fix-content">
-		<h2>Getuk Stroberi</h2>
+		<div class="col-md-offset-1 col-md-10">	
+			Buah Strawberry merupakan salah satu buah yang digemari oleh banyak orang. Rasanya enak, baunya harum, dan bentuknya sangat menarik dipandang, Buah stawberry tidak hanya bisa dimakan begitu saja, melainkan dapat dibuat menjadi produk olahan yang lezat dan bernilai ekonomis, misalnya seperti yang dilakukan oleh warga di kaki gunung Slamet tepatnya di Desa Serang, dimana komoditas utamanya adalah buah strawberry. Mereka menyulap buah strawberry menjadi produk olahan yang lezat dan enak. Yaitu getuk strawberry, keripik daun strawberry dan sirup strawberry. 
+		</div>
+		<div class="clearfix"></div>
+		<h2 class="col-md-offset-1">Gethuk Strawberry</h2>
 		<div class="row">
-			<div class="col-md-4">
+			<div class="col-md-offset-1 col-md-4">
 				<img src="{{URL::to('assets/img/produk/getukstroberi.jpg')}}" class="img-responsive">
 			</div>
-			<div class="col-md-8">
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec massa nec lectus sollicitudin aliquet. Curabitur dignissim, magna quis tincidunt dictum, erat tortor venenatis orci, vel ornare diam elit eget lorem. Suspendisse in ante et dolor ornare ultricies eget eu tortor. Duis sapien tellus, malesuada in consectetur ac, vestibulum eget urna. Suspendisse pretium, lorem in gravida placerat, felis ante congue urna, ultricies mattis ante nunc et mauris. Sed interdum nisi sed laoreet finibus. Vestibulum consequat ante eget convallis fermentum. Vivamus augue mauris, sollicitudin eu ligula cursus, vestibulum tempor orci.
-				Fusce sit amet velit volutpat, maximus ipsum in, vestibulum eros. In id laoreet nisi, eu pretium ante. Morbi enim mi, facilisis sit amet eleifend vitae, sagittis a ante. Donec eu tristique nisl, vel consectetur nisl. Vestibulum convallis elementum nisi ac mollis. Mauris at ante sit amet mi egestas tempus maximus vel dolor. Pellentesque nec venenatis lectus. Mauris id sollicitudin ante. Etiam dapibus ipsum blandit urna elementum placerat. Curabitur a commodo ipsum, vitae ullamcorper mauris. Donec vestibulum felis pharetra metus iaculis, nec dapibus libero vestibulum. Duis eu leo pulvinar, condimentum mauris vitae, porttitor ligula.
-				Suspendisse at maximus eros, vitae finibus nisl. Phasellus ultricies nisl ut eros tempus commodo. Praesent ac fringilla sem, in molestie turpis. Integer gravida posuere sem, suscipit rutrum sem vestibulum non. Donec nec turpis eget purus pulvinar rutrum. In interdum dictum sem, ut consequat risus sodales vitae. Nulla id mi risus. Donec ut turpis felis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus imperdiet sollicitudin cursus. Integer rutrum molestie sodales. Sed commodo lacinia nibh a iaculis. Duis bibendum suscipit aliquam. Mauris interdum sem vel volutpat consequat. Cras rutrum dolor sit amet magna sollicitudin pretium.
+			<div class="col-md-6">
+				Gethuk adalah makanan tradisional yang terbuat dari olahan singkong, namun oleh warga Serang gethuk dibuat inovasi menjadi gethuk strawberry. Bahan baku utama gethuk strawberry tetap menggunakan singkong yang dikukus dan ditumbuk halus seperti membuat getuk biasa, lalu dicampur dengan strawberry yang sudah dihaluskan sehingga membentuk adonan. Adonan tadi ditumbuk lagi hingga tercampur merata. Selanjutnya adonan di bentuk bulat-bulat kecil lalu di goreng dengan minyak panas. Rasa gurih dari singkong dan segar dari strawberry sangat nikmat di lidah ketika dimakan saat panas sambil menikmati indahnya pemandangan Serang. Keluarga ibu Jarman, salah satu penjual getuk strawberry di Desa Serang, memulai usaha getuknya sudah cukup lama dan banyak mendapat pesanan dari luar kota.
 			</div>
 		</div>
 		<br>
-		<h2 class="text-right">Sirup Stroberi</h2>
+		<h2 class="col-md-offset-7">Keripik Daun Strawberry</h2>
 		<div class="row">
-			<div class="col-md-8">
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec massa nec lectus sollicitudin aliquet. Curabitur dignissim, magna quis tincidunt dictum, erat tortor venenatis orci, vel ornare diam elit eget lorem. Suspendisse in ante et dolor ornare ultricies eget eu tortor. Duis sapien tellus, malesuada in consectetur ac, vestibulum eget urna. Suspendisse pretium, lorem in gravida placerat, felis ante congue urna, ultricies mattis ante nunc et mauris. Sed interdum nisi sed laoreet finibus. Vestibulum consequat ante eget convallis fermentum. Vivamus augue mauris, sollicitudin eu ligula cursus, vestibulum tempor orci.
-				Fusce sit amet velit volutpat, maximus ipsum in, vestibulum eros. In id laoreet nisi, eu pretium ante. Morbi enim mi, facilisis sit amet eleifend vitae, sagittis a ante. Donec eu tristique nisl, vel consectetur nisl. Vestibulum convallis elementum nisi ac mollis. Mauris at ante sit amet mi egestas tempus maximus vel dolor. Pellentesque nec venenatis lectus. Mauris id sollicitudin ante. Etiam dapibus ipsum blandit urna elementum placerat. Curabitur a commodo ipsum, vitae ullamcorper mauris. Donec vestibulum felis pharetra metus iaculis, nec dapibus libero vestibulum. Duis eu leo pulvinar, condimentum mauris vitae, porttitor ligula.
-				Suspendisse at maximus eros, vitae finibus nisl. Phasellus ultricies nisl ut eros tempus commodo. Praesent ac fringilla sem, in molestie turpis. Integer gravida posuere sem, suscipit rutrum sem vestibulum non. Donec nec turpis eget purus pulvinar rutrum. In interdum dictum sem, ut consequat risus sodales vitae. Nulla id mi risus. Donec ut turpis felis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus imperdiet sollicitudin cursus. Integer rutrum molestie sodales. Sed commodo lacinia nibh a iaculis. Duis bibendum suscipit aliquam. Mauris interdum sem vel volutpat consequat. Cras rutrum dolor sit amet magna sollicitudin pretium.
+			<div class="col-md-offset-1 col-md-6">
+				Siapa sangka daun strawberry bisa di olah menjadi makanan lezat? Selama ini yang kita tahu dari tanaman strawberry hanya buahnya lah yang bisa di konsumsi, namun berbeda dengan petani strawberry di Desa Serang, mereka membuat keripik dari daun strawberry. Untuk yang pertama kali mendengar memang cukup aneh, tapi siapa sangka bahwa rasanya jauh dari kata aneh. Rasanya yang gurih pas sebagai pendamping makan maupun dimakan langsung begitu saja. Sangat cocok untuk oleh-oleh keluarga di rumah.
 			</div>
-			<div class="col-md-4">
-				<img src="{{URL::to('assets/img/produk/sirupstroberi.jpg')}}" class="img-responsive">
-			</div>
-		</div>
-		<br>
-		<h2>Kripik Daun Stroberi</h2>
-		<div class="row">
 			<div class="col-md-4">
 				<img src="{{URL::to('assets/img/produk/kripikdaunstroberi.jpg')}}" class="img-responsive">
 			</div>
-			<div class="col-md-8">
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec massa nec lectus sollicitudin aliquet. Curabitur dignissim, magna quis tincidunt dictum, erat tortor venenatis orci, vel ornare diam elit eget lorem. Suspendisse in ante et dolor ornare ultricies eget eu tortor. Duis sapien tellus, malesuada in consectetur ac, vestibulum eget urna. Suspendisse pretium, lorem in gravida placerat, felis ante congue urna, ultricies mattis ante nunc et mauris. Sed interdum nisi sed laoreet finibus. Vestibulum consequat ante eget convallis fermentum. Vivamus augue mauris, sollicitudin eu ligula cursus, vestibulum tempor orci.
-				Fusce sit amet velit volutpat, maximus ipsum in, vestibulum eros. In id laoreet nisi, eu pretium ante. Morbi enim mi, facilisis sit amet eleifend vitae, sagittis a ante. Donec eu tristique nisl, vel consectetur nisl. Vestibulum convallis elementum nisi ac mollis. Mauris at ante sit amet mi egestas tempus maximus vel dolor. Pellentesque nec venenatis lectus. Mauris id sollicitudin ante. Etiam dapibus ipsum blandit urna elementum placerat. Curabitur a commodo ipsum, vitae ullamcorper mauris. Donec vestibulum felis pharetra metus iaculis, nec dapibus libero vestibulum. Duis eu leo pulvinar, condimentum mauris vitae, porttitor ligula.
-				Suspendisse at maximus eros, vitae finibus nisl. Phasellus ultricies nisl ut eros tempus commodo. Praesent ac fringilla sem, in molestie turpis. Integer gravida posuere sem, suscipit rutrum sem vestibulum non. Donec nec turpis eget purus pulvinar rutrum. In interdum dictum sem, ut consequat risus sodales vitae. Nulla id mi risus. Donec ut turpis felis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus imperdiet sollicitudin cursus. Integer rutrum molestie sodales. Sed commodo lacinia nibh a iaculis. Duis bibendum suscipit aliquam. Mauris interdum sem vel volutpat consequat. Cras rutrum dolor sit amet magna sollicitudin pretium.
+		</div>
+		<br>
+		<h2 class="col-md-offset-1">Sirup Strawberry</h2>
+		<div class="row">
+			<div class="col-md-offset-1 col-md-4">
+				<img src="{{URL::to('assets/img/produk/sirupstroberi.jpg')}}" class="img-responsive">
+			</div>
+			<div class="col-md-6">
+				Selain kedua makanan tadi, strawberry di Serang juga di buat menjadi minuman, yaitu sirup strawberry. Sirup strawberry ini merupakan produk olahan strawberry khas Desa Serang yang sudah dipasarkan hingga luar kota. Menggunakan bahan-bahan alami yaitu hanya dari sari buah strawberry dan gula pasir, tanpa menggunakan bahan pengawet kimia apapun. Sirup ini tidak bisa tahan terlalu lama, hanya sekitar 3-4 bulan karena hanya menggunakan gula sebagai pengawet alami. Wisatawan bisa membeli sirup strawberry kepada pak Joko, yaitu salah satu petani strawberry yang sekarang masih menekuni usaha sirup strawberry di Desa Serang.
 			</div>
 		</div>
 		<br>
-		<h2 class="text-right">Kerajinan Tangan</h2>
-		<div class="row">
-			<div class="col-md-8">
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec massa nec lectus sollicitudin aliquet. Curabitur dignissim, magna quis tincidunt dictum, erat tortor venenatis orci, vel ornare diam elit eget lorem. Suspendisse in ante et dolor ornare ultricies eget eu tortor. Duis sapien tellus, malesuada in consectetur ac, vestibulum eget urna. Suspendisse pretium, lorem in gravida placerat, felis ante congue urna, ultricies mattis ante nunc et mauris. Sed interdum nisi sed laoreet finibus. Vestibulum consequat ante eget convallis fermentum. Vivamus augue mauris, sollicitudin eu ligula cursus, vestibulum tempor orci.
-				Fusce sit amet velit volutpat, maximus ipsum in, vestibulum eros. In id laoreet nisi, eu pretium ante. Morbi enim mi, facilisis sit amet eleifend vitae, sagittis a ante. Donec eu tristique nisl, vel consectetur nisl. Vestibulum convallis elementum nisi ac mollis. Mauris at ante sit amet mi egestas tempus maximus vel dolor. Pellentesque nec venenatis lectus. Mauris id sollicitudin ante. Etiam dapibus ipsum blandit urna elementum placerat. Curabitur a commodo ipsum, vitae ullamcorper mauris. Donec vestibulum felis pharetra metus iaculis, nec dapibus libero vestibulum. Duis eu leo pulvinar, condimentum mauris vitae, porttitor ligula.
-				Suspendisse at maximus eros, vitae finibus nisl. Phasellus ultricies nisl ut eros tempus commodo. Praesent ac fringilla sem, in molestie turpis. Integer gravida posuere sem, suscipit rutrum sem vestibulum non. Donec nec turpis eget purus pulvinar rutrum. In interdum dictum sem, ut consequat risus sodales vitae. Nulla id mi risus. Donec ut turpis felis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus imperdiet sollicitudin cursus. Integer rutrum molestie sodales. Sed commodo lacinia nibh a iaculis. Duis bibendum suscipit aliquam. Mauris interdum sem vel volutpat consequat. Cras rutrum dolor sit amet magna sollicitudin pretium.
-			</div>
-			<div class="col-md-4">
-				<img src="{{URL::to('assets/img/produk/kerajinantangan.jpg')}}" class="img-responsive">
-			</div>
-		</div>
 	</div>	
 	<!-- CONTENT END -->
 	@include('home.footer')

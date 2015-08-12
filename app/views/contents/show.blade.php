@@ -54,6 +54,17 @@
 			?>
 			{{nl2br($content->description)}}
 		</div>
+		<?php if ($content->type == "kegiatan"): ?>			
+		<div class="col-md-3" id="dateKeg">
+			<div>
+				Tanggal Mulai {{$content->dateStart}}
+			</div>
+			<div>	
+				Tanggal Selesai {{$content->dateEnd}}
+			</div>
+		</div>
+		<?php 
+		endif ?>
 		<div class="clearfix"></div>
 	</div>
 	<hr></hr>

@@ -22,19 +22,19 @@ Route::post('user/login', 'UsersController@submitLogin');
 Route::get('user/logout', 'UsersController@sendLogout');
 Route::get('dashboard', 'UsersController@showDashboard');
 
-// Route::group(['before' => 'auth'], function()
-// {
-// });
+Route::group(['before' => 'auth'], function()
+{
+	Route::get('content/edit/{id}', 'ContentsController@edit');
+	Route::post('content/destroy/{id}', array('as' => 'deleteContent', 'uses' => 'ContentsController@destroy'));
+	Route::post('content/destroyPhoto/{id}', array('as' => 'deletePhoto', 'uses' => 'ContentsController@destroyPhoto'));
+});
 
 //===========================Content===============================//
 Route::post('content/store', 'ContentsController@store');
 Route::get('content/kegiatan', 'ContentsController@showKegiatan');
 Route::get('content/artikel', 'ContentsController@showArtikel');
-Route::get('content/edit/{id}', 'ContentsController@edit');
 Route::post('content/update/{id}', 'ContentsController@update');
 Route::get('content/{id}', 'ContentsController@show');
-Route::post('content/destroy/{id}', array('as' => 'deleteContent', 'uses' => 'ContentsController@destroy'));
-Route::post('content/destroyPhoto/{id}', array('as' => 'deletePhoto', 'uses' => 'ContentsController@destroyPhoto'));
 //=================================================================//
 
 //===========================Serang================================//
