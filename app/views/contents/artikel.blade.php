@@ -36,9 +36,7 @@
 			<div class="clearfix"></div>
 		</div>
 	</div>
-	
 	<!-- CONTENT END-->
-
 	@include('home.footer')
 
 	<?php 

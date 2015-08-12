@@ -115,7 +115,20 @@ class SerangsController extends \BaseController {
 
 	public function showGalery()
 	{
-		return View::make('serang.galery');
+		$results["image"] = DB::table('galeries')
+											->where('type','image')
+											->orderBy('created_at','DESC')
+											->get();
+		return View::make('serang.galery')->with('results', $results);;
+	}
+
+	public function showGaleryVideo()
+	{
+		$results["video"] = DB::table('galeries')
+											->where('type','video')
+											->orderBy('created_at','DESC')
+											->get();
+		return View::make('serang.galeryvideo')->with('results', $results);;
 	}
 
 	public function showSosok()

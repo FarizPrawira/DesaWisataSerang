@@ -40,12 +40,13 @@ Route::get('content/{id}', 'ContentsController@show');
 //===========================Serang================================//
 Route::get('serang/pemerintahan', 'SerangsController@showPemerintahan');
 Route::get('serang/galery', 'SerangsController@showGalery');
+Route::get('serang/galery-video', 'SerangsController@showGaleryVideo');
 Route::get('serang/produk', 'SerangsController@showProduk');
 Route::get('serang/sosok', 'SerangsController@showSosok');
-Route::get('serang/kknugm2014', 'SerangsController@showKknUgm2014');
-Route::get('serang/kknugm2015', 'SerangsController@showKknUgm2015');
-Route::get('serang/kkniu2014', 'SerangsController@showKknIu2014');
-Route::get('serang/kkniu2015', 'SerangsController@showKknIu2015');
+Route::get('serang/kkn-ugm2014', 'SerangsController@showKknUgm2014');
+Route::get('serang/kkn-ugm2015', 'SerangsController@showKknUgm2015');
+Route::get('serang/kkn-iu2014', 'SerangsController@showKknIu2014');
+Route::get('serang/kkn-iu2015', 'SerangsController@showKknIu2015');
 Route::get('serang/map', 'SerangsController@showMap');
 Route::get('serang/peternakan/{id}', 'PeternakansController@show');
 // Route::get('serang/peternakan', 'PeternakansController@index');
@@ -63,5 +64,6 @@ Route::get('wisata/kuda', 'WisatasController@showKuda');
 Route::get('wisata/tic', 'TicsController@index');
 //=================================================================//
 
+Route::post('galery/store', 'GaleriesController@store');
 Route::post('pertanian/store', 'PertaniansController@store');
 Route::post('peternakan/store', 'PeternakansController@store');

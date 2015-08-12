@@ -23,28 +23,24 @@
 				<img src="{{URL::to('assets/img/2.jpg')}}">
 				<span>
 					<h4>Pertanian</h4>
-					<p>Strawberry, tomat...</p>
 				</span>
 			</a>
 			<a href="{{URL::to('serang/peternakan/2010')}}" class="menu-item">
 				<img src="{{URL::to('assets/img/2.jpg')}}">
 				<span>
 					<h4>Peternakan</h4>
-					<p>Sapi, kambing...</p>
 				</span>
 			</a>
 			<a href="{{URL::to('serang/pemerintahan')}}" class="menu-item">
 				<img src="{{URL::to('assets/img/2.jpg')}}">
 				<span>
 					<h4>Pemerintahan</h4>
-					<p>Struktur, monografi...</p>
 				</span>
 			</a>
-			<a href="{{URL::to('serang/kknugm2015')}}" class="menu-item">
+			<a href="{{URL::to('serang/kkn-ugm2015')}}" class="menu-item">
 				<img src="{{URL::to('assets/img/2.jpg')}}">
 				<span>
 					<h4>KKN-UGM-IU</h4>
-					<p>Kuliah Kerja Nyata Universitas Gadjah Mada & Ibaraky University</p>
 				</span>
 			</a>
 			<a href="{{URL::to('serang/produk')}}" class="menu-item">
@@ -108,8 +104,7 @@
 			<a href="{{URL::to('wisata/tic')}}" class="menu-item">
 				<img src="{{URL::to('assets/img/2.jpg')}}">
 				<span>
-					<h4>TIC</h4>
-					<p>Tourist Information Center</p>
+					<h4>Tourist Information Center</h4>
 				</span>
 			</a>
 			<a href="{{URL::to('wisata/homestay')}}" class="menu-item">

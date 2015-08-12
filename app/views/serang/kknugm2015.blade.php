@@ -22,14 +22,14 @@
 				<!-- Nav tabs -->
 				<ul class="nav nav-tabs" role="tablist">
 					<li role="presentation" class="active"><a href="#">UGM</a></li>
-					<li role="presentation"><a href="{{URL::to('serang/kkniu2015')}}">IU</a></li>
+					<li role="presentation"><a href="{{URL::to('serang/kkn-iu2015')}}">IU</a></li>
 				</ul>
 				<!-- Nav tabs end -->
 				<!-- Tab content -->
 				<div class="tab-content">
 					<div role="tabpanel" class="tab-pane fade in active" id="UGM2015">
 						<ol class="breadcrumb">
-							<li><a href="{{URL::to('serang/kknugm2014')}}">2014</a></li>
+							<li><a href="{{URL::to('serang/kkn-ugm2014')}}">2014</a></li>
 							<li class="active">2015</li>
 						</ol>
 						<div class="row">

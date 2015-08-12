@@ -16,6 +16,7 @@ class CreatePertaniansTable extends Migration {
 		{
 			// $table->increments('id');
 			$table->integer('tahun');
+			$table->primary('tahun');
 			$table->float('jagung_luas');
 			$table->float('jagung_hasil');
 			$table->float('ubi_kayu_luas');

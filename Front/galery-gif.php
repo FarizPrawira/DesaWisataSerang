@@ -334,8 +334,6 @@
 
 	<!-- script -->
 	<script src="js/jquery.min.js"></script>
-	<script src="js/jquery-2.1.4.js"></script>
-	<script src="js/jquery-1.11.3.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/default.js"></script>
 </body>

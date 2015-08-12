@@ -16,7 +16,6 @@
 </head>
 <body>
 	@include('home.header')
-
 	<!-- ERROR LOGIN NOTIF -->
 	<div id="notification" class="notification">
 		<?php if (Session::has('error')): ?>
@@ -74,6 +73,7 @@
 		<div class="col-md-2 sidebar-serang">
 			<ul class="list-unstyled">
 				<li id="Bdaftar" class="active">Daftar konten <span>({{Content::count();}})</span></li>
+				<li id="Bgalery">Galery </li>
 				<li id="Bartikel">Artikel </li>
 				<li id="Bkegiatan">Kegiatan </li>
 				<li id="Bpertanian">Pertanian </li>
@@ -82,6 +82,88 @@
 			</ul>
 		</div>
 		<div class="col-md-10">
+			<div class="panel panel-default" id="Cdaftar">
+				<div class="panel-heading">
+					Daftar konten
+				</div>
+				<div class="panel-body">
+					<ul class="list-unstyled">
+						<?php foreach ($results["content"] as $content) { ?>						
+						<!-- Confirm deletion modal -->
+						<div class="modal fade" id="myModal{{$content->id}}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+							<div class="modal-dialog" role="document">
+								<div class="modal-content">
+									<div class="modal-body">
+										Anda yakin ingin menghapus "{{$content->title}}" ?
+									</div>
+									<div class="modal-footer">
+										{{ Form::open(array('route' => array('deleteContent', $content->id), 'role'=>'form')) }}
+										<button type="button" class="btn btn-default" data-dismiss="modal">Tidak</button>
+										<button class="btn btn-primary" type="submit" class="delete" name="delete">Hapus</button>
+										{{ Form::close() }}
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- Confirm deletion modal end -->
+						<li>
+							<div class="row">
+								<span class="col-sm-5">{{$content->title}}</span>
+								<span class="col-sm-2">{{ucfirst($content->type)}}</span>
+								<span class="col-sm-3">{{$content->created_at}}</span>
+								<a href="{{URL::to('content/edit/'.$content->id)}}" class="btn btn-link col-sm-1">Edit</a>
+								<button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal{{$content->id}}">Hapus</button>
+							</div>
+						</li>
+						<?php } ?>
+					</ul>
+				</div>
+			</div>
+
+			<div class="panel panel-default" id="Cgalery">
+				<div class="panel-heading">
+					Galeri
+				</div>
+				<div class="panel-body">
+					<form class="form-horizontal" action="{{URL::to('galery/store')}}" method="post" enctype="multipart/form-data" file="true">
+						<input type="hidden" name="type" value="image">
+						<div class="form-group">
+							<label for="inputPhoto" class="col-sm-2 control-label">Foto</label>
+							<div class="col-sm-10">
+								{{ Form::file('images[]', ['multiple' => true, 'class' => 'dropzone', 'id' => 'my-awesome-dropzone']) }}
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="col-sm-offset-2 col-sm-10"></div>
+						</div>
+						<div class="form-group">
+							<div class="col-sm-offset-2 col-sm-10">
+								<button type="submit" class="btn btn-primary">Simpan</button>
+								<button type="button" class="btn btn-default">Batal</button>
+							</div>
+						</div>
+					</form>
+					<form class="form-horizontal" action="{{URL::to('galery/store')}}" method="post">
+						<input type="hidden" name="type" value="video">
+						<div class="form-group">
+							<label for="inputPhoto" class="col-sm-2 control-label">Video</label>
+							<div class="col-sm-8">
+								<input type="text" name="path" class="form-control" id="inputJudul" placeholder="URL embed video">
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="col-sm-offset-2 col-sm-10"></div>
+						</div>
+						<div class="form-group">
+							<div class="col-sm-offset-2 col-sm-10">
+								<button type="submit" class="btn btn-primary">Simpan</button>
+								<button type="button" class="btn btn-default">Batal</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+
 			<div class="panel panel-default" id="Cartikel">
 				<div class="panel-heading">
 					Artikel
@@ -98,7 +180,77 @@
 						<div class="form-group">
 							<label for="inputPassword3" class="col-sm-2 control-label">Deskripsi</label>
 							<div class="col-sm-10">
-								<textarea placeholder="Tulis isi" name="description" class="form-control" id="tempat-deskripsi"rows="10"></textarea>
+								<textarea placeholder="Deskripsi artikel" name="description" class="form-control" id="tempat-deskripsi"rows="10"></textarea>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="inputPhoto" class="col-sm-2 control-label">Foto</label>
+							<div class="col-sm-10">
+								{{ Form::file('images[]', ['multiple' => true, 'class' => 'dropzone', 'id' => 'my-awesome-dropzone']) }}
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="col-sm-offset-2 col-sm-10"></div>
+						</div>
+						<div class="form-group">
+							<div class="col-sm-offset-2 col-sm-10">
+								<button type="submit" class="btn btn-primary">Simpan</button>
+								<button type="button" class="btn btn-default">Batal</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+
+			<div class="panel panel-default" id="Ckegiatan">
+				<div class="panel-heading">
+					Kegiatan
+				</div>
+				<div class="panel-body">
+					<form class="form-horizontal" action="{{URL::to('content/store')}}" method="post" enctype="multipart/form-data" file="true">
+						<input type="hidden" name="type" value="kegiatan">
+						<div class="form-group">
+							<label for="inputEmail3" class="col-sm-2 control-label">Judul</label>
+							<div class="col-sm-10">
+								<input type="text" name="title" class="form-control" id="inputJudul" placeholder="Tulis judul">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="inputPassword3" class="col-sm-2 control-label">Deskripsi</label>
+							<div class="col-sm-10">
+								<textarea placeholder="Deskripsi kegitan" name="description" class="form-control" id="tempat-deskripsi"rows="10"></textarea>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="inputEmail3" class="col-sm-2 control-label">Contact Person</label>
+							<div class="col-sm-10">
+								<input type="text" name="cp" class="form-control" id="inputJudul" placeholder="Tulis CP">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="inputEmail3" class="col-sm-2 control-label">Lokasi</label>
+							<div class="col-sm-10">
+								<input type="text" name="lokasi" class="form-control" id="inputJudul" placeholder="Tulis lokasi kegiatan">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="inputEmail3" class="col-sm-2 control-label">Tag</label>
+							<div class="col-sm-10">
+								<select class="form-control" name="tag">
+									<option value="lomba">Lomba</option>
+									<option value="acara">Acara</option>
+									<option value="sosial">Sosialisasi</option>
+								</select>
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="col-sm-2 control-label">Tanggal mulai</label>
+							<div class="col-sm-4">
+								<input type="text" class="form-control" id="KegDateStart" name="dateStart" placeholder="Pilih tanggal">
+							</div>
+							<label class="col-sm-2 control-label">Tanggal selesai</label>
+							<div class="col-sm-4">
+								<input type="text" class="form-control" id="KegDateEnd" name="dateEnd" placeholder="Pilih tanggal">
 							</div>
 						</div>
 						<div class="form-group">
@@ -361,93 +513,6 @@
 					</form>
 				</div>
 			</div>
-
-			<div class="panel panel-default" id="Ckegiatan">
-				<div class="panel-heading">
-					Kegiatan
-				</div>
-				<div class="panel-body">
-					<form class="form-horizontal" action="{{URL::to('content/store')}}" method="post" enctype="multipart/form-data" file="true">
-						<input type="hidden" name="type" value="kegiatan">
-						<div class="form-group">
-							<label for="inputEmail3" class="col-sm-2 control-label">Judul</label>
-							<div class="col-sm-10">
-								<input type="text" name="title" class="form-control" id="inputJudul" placeholder="Tulis judul">
-							</div>
-						</div>
-						<div class="form-group">
-							<label for="inputPassword3" class="col-sm-2 control-label">Deskripsi</label>
-							<div class="col-sm-10">
-								<textarea placeholder="Tulis isi" name="description" class="form-control" id="tempat-deskripsi"rows="10"></textarea>
-							</div>
-						</div>
-						<div class="form-group">
-							<label class="col-sm-2 control-label">Tanggal mulai</label>
-							<div class="col-sm-3">
-								<input type="text" class="form-control" id="KegDateStart" name="dateStart" placeholder="Pilih tanggal">
-							</div>
-							<label class="col-sm-2 control-label">Tanggal selesai</label>
-							<div class="col-sm-3">
-								<input type="text" class="form-control" id="KegDateEnd" name="dateEnd" placeholder="Pilih tanggal">
-							</div>
-						</div>
-						<div class="form-group">
-							<label for="inputPhoto" class="col-sm-2 control-label">Foto</label>
-							<div class="col-sm-10">
-								{{ Form::file('images[]', ['multiple' => true, 'class' => 'dropzone', 'id' => 'my-awesome-dropzone']) }}
-							</div>
-						</div>
-						<div class="form-group">
-							<div class="col-sm-offset-2 col-sm-10"></div>
-						</div>
-						<div class="form-group">
-							<div class="col-sm-offset-2 col-sm-10">
-								<button type="submit" class="btn btn-primary">Simpan</button>
-								<button type="button" class="btn btn-default">Batal</button>
-							</div>
-						</div>
-					</form>
-				</div>
-			</div>
-
-			<div class="panel panel-default" id="Cdaftar">
-				<div class="panel-heading">
-					Daftar konten
-				</div>
-				<div class="panel-body">
-					<ul class="list-unstyled">
-						<?php foreach ($results["content"] as $content) { ?>						
-						<!-- Confirm deletion modal -->
-						<div class="modal fade" id="myModal{{$content->id}}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-							<div class="modal-dialog" role="document">
-								<div class="modal-content">
-									<div class="modal-body">
-										Anda yakin ingin menghapus "{{$content->title}}" ?
-									</div>
-									<div class="modal-footer">
-										{{ Form::open(array('route' => array('deleteContent', $content->id), 'role'=>'form')) }}
-										<button type="button" class="btn btn-default" data-dismiss="modal">Tidak</button>
-										<button class="btn btn-primary" type="submit" class="delete" name="delete">Hapus</button>
-										{{ Form::close() }}
-									</div>
-								</div>
-							</div>
-						</div>
-						<!-- Confirm deletion modal end -->
-						<li>
-							<div class="row">
-								<span class="col-sm-5">{{$content->title}}</span>
-								<span class="col-sm-2">{{ucfirst($content->type)}}</span>
-								<span class="col-sm-3">{{$content->created_at}}</span>
-								<a href="{{URL::to('content/edit/'.$content->id)}}" class="btn btn-link col-sm-1">Edit</a>
-								<button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal{{$content->id}}">Hapus</button>
-							</div>
-						</li>
-						<?php } ?>
-					</ul>
-				</div>
-			</div>
-
 		</div> 
 	</div>
 	<!-- CONTENT END -->
@@ -455,11 +520,17 @@
 	<!-- ALREADY LOGIN END -->
 
 	@include('home.footer')
-  <script>
-    $(function() {
-      $("#KegDateStart").datepicker();
-      $("#KegDateEnd").datepicker();
-    });
-  </script>
+	<script>
+	$(function() {
+		$("#KegDateStart").datepicker({
+			dateFormat: 'dd/M/yy',
+			monthNamesShort: [ "Jan", "Feb", "Mar", "Apr", "Mei", "Jun", "Jul", "Agus", "Sep", "Okt", "Nov", "Des" ] 
+		});
+		$("#KegDateEnd").datepicker({
+			dateFormat: 'dd/M/yy',
+			monthNamesShort: [ "Jan", "Feb", "Mar", "Apr", "Mei", "Jun", "Jul", "Agus", "Sep", "Okt", "Nov", "Des" ] 
+		});
+	});
+	</script>
 </body>
 </html>

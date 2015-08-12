@@ -2,6 +2,7 @@
 /vendor
 /Front/dicobaya
 /public/assets/img
+/public/galeries
 /public/uploads
 composer.phar
 composer.lock

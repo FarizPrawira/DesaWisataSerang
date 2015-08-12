@@ -34,8 +34,11 @@ class ContentsController extends \BaseController {
 		$data = [
 		'title' => Input::get('title'),
 		'description' => Input::get('description'),
-		'dateStart' => Input::get('dateStart'),
+		'cp' => Input::get('cp'),
+		'lokasi' => Input::get('lokasi'),	
+		'tag' => Input::get('tag'),
 		'dateEnd' => Input::get('dateEnd'),	
+		'dateStart' => Input::get('dateStart'),
 		'type' => Input::get('type')
 		];
 
@@ -192,7 +195,11 @@ class ContentsController extends \BaseController {
 		$results["content"] = DB::table('contents')
 		->where('type', 'kegiatan')
 		->orderBy('created_at', 'DESC')
-		->paginate(4);
+		->get();
+		$results["tag"] = DB::table('contents')
+		->select('tag')
+		->distinct('tag')
+		->get();
 		$results["photo"] = DB::table('photos')->get();
 		return View::make('contents.kegiatan')->with('results', $results);
 	}

@@ -158,39 +158,43 @@
 				$('.loadmore').html('');
 				$('.loadmore').append("Data Habis")
 			};
-			while (response.kegiatan[kegiatan].id != response.photo[i].content_id) {
-				i++;
-			}
-			photoKeg = response.photo[i].path;
-			description = response.kegiatan[kegiatan].description;
-			if (description.length > 250) {
-				description = description.substr(0, 230);
-				description = description.concat("...");
+			if (response.kegiatan[kegiatan] !== undefined) {
+				while (response.kegiatan[kegiatan].id != response.photo[i].content_id) {
+					i++;
+				}
+				photoKeg = response.photo[i].path;
+				description = response.kegiatan[kegiatan].description;
+				if (description.length > 250) {
+					description = description.substr(0, 230);
+					description = description.concat("...");
+				};
+				$('.loadmore-kegiatan').append('\
+					<a href="content/'+response.kegiatan[kegiatan].id+'" class="timeline-item load-kegiatan">\
+					<h4>'+response.kegiatan[kegiatan++].title+'</h4>\
+					<img src='+photoKeg+'>\
+					<p>'+description+'</p>\
+					</a>\
+					');
 			};
-			$('.loadmore-kegiatan').append('\
-				<a href="content/'+response.kegiatan[kegiatan].id+'" class="timeline-item load-kegiatan">\
-				<h4>'+response.kegiatan[kegiatan++].title+'</h4>\
-				<img src='+photoKeg+'>\
-				<p>'+description+'</p>\
-				</a>\
-				');
 			i = 0;
-			while (response.artikel[artikel].id != response.photo[i].content_id) {
-				i++;
-			}
-			photoAr = response.photo[i].path;
-			description = response.artikel[artikel].description;
-			if (description.length > 250) {
-				description = description.substr(0, 230);
-				description = description.concat("...");
+			if (response.artikel[artikel] !== undefined) {
+				while (response.artikel[artikel].id != response.photo[i].content_id) {
+					i++;
+				}
+				photoAr = response.photo[i].path;
+				description = response.artikel[artikel].description;
+				if (description.length > 250) {
+					description = description.substr(0, 230);
+					description = description.concat("...");
+				};
+				$('.loadmore-artikel').append('\
+					<a href="content/'+response.artikel[artikel].id+'" class="timeline-item load-artikel">\
+					<h4>'+response.artikel[artikel++].title+'</h4>\
+					<img src='+photoAr+'>\
+					<p>'+description+'</p>\
+					</a>\
+					');
 			};
-			$('.loadmore-artikel').append('\
-				<a href="content/'+response.artikel[artikel].id+'" class="timeline-item load-artikel">\
-				<h4>'+response.artikel[artikel++].title+'</h4>\
-				<img src='+photoAr+'>\
-				<p>'+description+'</p>\
-				</a>\
-				');
 		})
 		.fail(function(){
 			alert("error");

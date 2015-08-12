@@ -289,11 +289,6 @@ p, span, a{
 	overflow: hidden;
 	position: relative;
 }
-.timeline .timeline-item>p::after{
-	content: "...";
-	position: absolute;
-	float: right;
-}
 /*footer*/
 .footer{
 	position: relative;
@@ -576,7 +571,7 @@ th{
 	background-color: rgba(5,100,60,1);
 	color: #ffffff;
 	width: 200px;
-	border-radius: 10px;
+	/*border-radius: 10px;*/
 }
 th h4{
 	margin: 0;
@@ -588,4 +583,99 @@ table #desc{
 /*hover*/
 li:hover{
 	transition: all 0.2s;
+}
+
+/*MAP*/
+#map {
+	width: 1100px;
+	height: 550px;
+}
+.info {
+	padding: 6px 8px;
+	font: 14px/16px Arial, Helvetica, sans-serif;
+	background: white;
+	background: rgba(255,255,255,0.8);
+	box-shadow: 0 0 15px rgba(0,0,0,0.2);
+	border-radius: 15px;
+}
+.info h4 {
+	margin: 0 0 5px;
+	color: #777;
+}
+.legend {
+	text-align: left;
+	line-height: 18px;
+	color: #555;
+}
+.legend i {
+	width: 18px;
+	height: 18px;
+	float: left;
+	margin-right: 8px;
+	opacity: 0.7;
+}
+/*MAP END*/
+
+/*DASHBOARD*/
+h1.page-header{
+    margin-top: -5px;
+}
+.sidebar-serang{
+	background-color: rgba(240,240,240,1);
+	height: auto;
+	color: black;
+	padding: 10px;
+}
+.sidebar-serang li{
+	padding: 10px;
+	position: relative;
+}
+.sidebar-serang li:hover{
+	background-color: rgba(200, 200, 200, 1);
+	cursor: pointer;
+}
+.judul-sidebar-serang{
+	font-family: 'Roboto', sans-serif;
+	/*border-bottom: 2px solid #ffffff;*/
+}
+.sidebar-serang li.active:after{
+	position: absolute;
+ 	width: 0;
+	height: 0;
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+	border-left: 10px solid rgba(5,100,60,1);
+	content: "";
+	top:0%;
+	left: 108%;
+	margin-top: 10px;
+}
+.sidebar-serang a{
+	color: black;
+}
+.sidebar-serang a:hover{
+	text-decoration: none;
+	color: rgba(5,100,60,1);
+}
+.main-container {
+  	margin-top: 60px;
+}
+.form-group textarea{
+	height: 150px;
+}
+#Cdaftar .panel-body li{
+	display: block;
+	padding: 10px;
+}
+#Cdaftar .panel-body .btn{
+	padding: 0;
+	margin: 0;
+}
+/*DASHBOARD END*/
+
+.logout{
+	float: right;
+}
+.fix-content{
+	margin-top: 25px;
 }

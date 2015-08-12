@@ -16,7 +16,10 @@ class CreateContentsTable extends Migration {
 		{
 			$table->increments('id');
 			$table->string('title');
-			$table->string('description');
+			$table->text('description');
+			$table->string('cp')->nullable();
+			$table->string('lokasi')->nullable();
+			$table->enum('tag',['lomba','acara','sosial'])->nullable();
 			$table->string('dateStart')->nullable();
 			$table->string('dateEnd')->nullable();
 			$table->enum('type',['artikel','kegiatan']);

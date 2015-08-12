@@ -11,119 +11,119 @@
 </head>
 <body>
 
-<!-- HEADER -->
-<div class="header">
-<div class="container-fluid navbar">
-	<ul id="logo">
-		<li><img src="img/Logo4.png"/></li>
-	</ul>
-	<ul class="menu-link">
-		<li id="menuserang">Desa Serang <span class="caret"></span></li>
-		<li id="menuwisata">Agrowisata <span class="caret"></span></li>
-		<li id="menukegiatan">Kegiatan</li>
-		<li id="menuartikel">Artikel</li>
-	</ul>
-</div>
-<!-- MENUDROPDOWN -->
-<div class="menu-list" id="listserang">
-	<div class="col-md-8">
-		<a class="menu-item" href="">
-			<img src="img/2.jpg">
-			<span>
-				<h4>Pertanian</h4>
-			</span>
-		</a>
-		<a class="menu-item" href="">
-			<img src="img/2.jpg">
-			<span>
-				<h4>Peternakan</h4>
-			</span>
-		</a>
-		<a class="menu-item" href="">
-			<img src="img/2.jpg">
-			<span>
-				<h4>Pemerintahan</h4>
-			</span>
-		</a>
-		<a class="menu-item" href="">
-			<img src="img/2.jpg">
-			<span>
-				<h4>KKN-UGM-IU</h4>
-			</span>
-		</a>
-		<a class="menu-item" href="">
-			<img src="img/2.jpg">
-			<span>
-				<h4>Produk</h4>
-			</span>
-		</a>
+	<!-- HEADER -->
+	<div class="header">
+		<div class="container-fluid navbar">
+			<ul id="logo">
+				<li><img src="img/Logo4.png"/></li>
+			</ul>
+			<ul class="menu-link">
+				<li id="menuserang">Desa Serang <span class="caret"></span></li>
+				<li id="menuwisata">Agrowisata <span class="caret"></span></li>
+				<li id="menukegiatan">Kegiatan</li>
+				<li id="menuartikel">Artikel</li>
+			</ul>
+		</div>
+		<!-- MENUDROPDOWN -->
+		<div class="menu-list" id="listserang">
+			<div class="col-md-8">
+				<a class="menu-item" href="">
+					<img src="img/2.jpg">
+					<span>
+						<h4>Pertanian</h4>
+					</span>
+				</a>
+				<a class="menu-item" href="">
+					<img src="img/2.jpg">
+					<span>
+						<h4>Peternakan</h4>
+					</span>
+				</a>
+				<a class="menu-item" href="">
+					<img src="img/2.jpg">
+					<span>
+						<h4>Pemerintahan</h4>
+					</span>
+				</a>
+				<a class="menu-item" href="">
+					<img src="img/2.jpg">
+					<span>
+						<h4>KKN-UGM-IU</h4>
+					</span>
+				</a>
+				<a class="menu-item" href="">
+					<img src="img/2.jpg">
+					<span>
+						<h4>Produk</h4>
+					</span>
+				</a>
+			</div>
+			<div class="col-md-4">
+				<a class="menu-item" href="">
+					<img src="img/2.jpg" id="img1">
+					<span>
+						<h4>Galery</h4>
+					</span>
+				</a>
+				<a class="menu-item" href="">
+					<img src="img/2.jpg">
+					<span>
+						<h4>Peta</h4>
+					</span>
+				</a>
+			</div>
+		</div>
+		<div class="menu-list" id="listwisata">
+			<div class="col-md-8">
+				<a class="menu-item" href="">
+					<img src="img/2.jpg">
+					<span>
+						<h4>Kebun Strowberi</h4>
+					</span>
+				</a>
+				<a class="menu-item" href="">
+					<img src="img/2.jpg">
+					<span>
+						<h4>Rest Area</h4>
+					</span>
+				</a>
+				<a class="menu-item" href="">
+					<img src="img/2.jpg">
+					<span>
+						<h4>Outbond</h4>
+					</span>
+				</a>
+				<a class="menu-item" href="">
+					<img src="img/2.jpg">
+					<span>
+						<h4>Hutan Pinus</h4>
+					</span>
+				</a>
+				<a class="menu-item" href="">
+					<img src="img/2.jpg">
+					<span>
+						<h4>Kuda Tunggang</h4>
+					</span>
+				</a>
+			</div>
+			<div class="col-md-4">
+				<a class="menu-item" href="">
+					<img src="img/2.jpg">
+					<span>
+						<h4>Paket Wisata</h4>
+					</span>
+				</a>
+				<a class="menu-item" href="">
+					<img src="img/2.jpg">
+					<span>
+						<h4>Home Stay</h4>
+					</span>
+				</a>
+			</div>
+		</div>
+		<div class="menu-list" id="listkegiatan"></div>
+		<div class="menu-list" id="listartikel"></div>
 	</div>
-	<div class="col-md-4">
-		<a class="menu-item" href="">
-			<img src="img/2.jpg" id="img1">
-			<span>
-				<h4>Galery</h4>
-			</span>
-		</a>
-		<a class="menu-item" href="">
-			<img src="img/2.jpg">
-			<span>
-				<h4>Peta</h4>
-			</span>
-		</a>
-	</div>
-</div>
-<div class="menu-list" id="listwisata">
-	<div class="col-md-8">
-		<a class="menu-item" href="">
-			<img src="img/2.jpg">
-			<span>
-				<h4>Kebun Strowberi</h4>
-			</span>
-		</a>
-		<a class="menu-item" href="">
-			<img src="img/2.jpg">
-			<span>
-				<h4>Rest Area</h4>
-			</span>
-		</a>
-		<a class="menu-item" href="">
-			<img src="img/2.jpg">
-			<span>
-				<h4>Outbond</h4>
-			</span>
-		</a>
-		<a class="menu-item" href="">
-			<img src="img/2.jpg">
-			<span>
-				<h4>Hutan Pinus</h4>
-			</span>
-		</a>
-		<a class="menu-item" href="">
-			<img src="img/2.jpg">
-			<span>
-				<h4>Kuda Tunggang</h4>
-			</span>
-		</a>
-	</div>
-	<div class="col-md-4">
-		<a class="menu-item" href="">
-			<img src="img/2.jpg">
-			<span>
-				<h4>Paket Wisata</h4>
-			</span>
-		</a>
-		<a class="menu-item" href="">
-			<img src="img/2.jpg">
-			<span>
-				<h4>Home Stay</h4>
-			</span>
-		</a>
-	</div>
-</div>
-<div class="menu-list" id="listkegiatan"></div>
-<div class="menu-list" id="listartikel"></div>
-</div>
 
 	<!-- CONTENT -->
 	<div class="container-fluid main-container">
@@ -337,8 +337,6 @@
 
 	<!-- script -->
 	<script src="js/jquery.min.js"></script>
-	<script src="js/jquery-2.1.4.js"></script>
-	<script src="js/jquery-1.11.3.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/default.js"></script>
 </body>

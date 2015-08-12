@@ -9,7 +9,7 @@ class Content extends \Eloquent {
 	];
 
 	// Don't forget to fill this array
-	protected $fillable = ['title','description','dateStart','dateEnd','type'];
+	protected $fillable = ['title','description','cp','lokasi','tag','dateStart','dateEnd','type'];
 
 	public function photos()
     {

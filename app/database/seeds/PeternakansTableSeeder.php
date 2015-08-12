@@ -9,12 +9,15 @@ class PeternakansTableSeeder extends Seeder {
 	{
 		$faker = Faker::create();
 
-		foreach(range(1, 10) as $index)
-		{
-			Peternakan::create([
-
-			]);
-		}
+		Peternakan::create([
+			'tahun' => '2010',
+			'sapi' => '273',
+			'kambing' => '6258',
+			'ayam' => '12584',
+			'kuda' => '5',
+			'susu' => '25600',
+			'daging' => '0'
+		]);
 	}
 
 }

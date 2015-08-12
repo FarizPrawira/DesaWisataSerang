@@ -34,15 +34,15 @@
 	<div class="container-fluid">
 		<div class="col-md-3" id="share-buttons">
 			<!-- Facebook -->
-			<a href="http://www.facebook.com/sharer.php?u=URL" target="_blank">
+			<a href="http://www.facebook.com/sharer.php?u={{Request::url()}}" target="_blank">
 				<i class="fa fa-facebook fa-2x"></i>
 			</a>
 			<!-- Twitter -->
-			<a href="https://twitter.com/share?url=URL&amp;name=Desa Serang&amp;hashtags=desaserang" target="_blank">
+			<a href="https://twitter.com/share?url={{Request::url()}}&amp;name=Desa Serang&amp;hashtags=desaserang" target="_blank">
 				<i class="fa fa-twitter fa-2x"></i>
 			</a>
 			<!-- Google+ -->
-			<a href="https://plus.google.com/share?url=URL" target="_blank">
+			<a href="https://plus.google.com/share?url={{Request::url()}}" target="_blank">
 				<i class="fa fa-google-plus fa-2x"></i>
 			</a>
 		</div>

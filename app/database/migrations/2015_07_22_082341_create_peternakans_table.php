@@ -16,6 +16,7 @@ class CreatePeternakansTable extends Migration {
 		{
 			// $table->increments('id');
 			$table->integer('tahun');
+			$table->primary('tahun');
 			$table->integer('sapi');
 			$table->integer('kambing');
 			$table->integer('ayam');
