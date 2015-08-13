@@ -113,14 +113,13 @@ p, span, a{
 	position: fixed;
 	margin-top: 60px;
 	z-index: 102;
-	padding: 20px;
-	border-bottom: 3px solid rgba(207,0,15,1);
+	padding: 50px 20px 20px 50px;
+	border-bottom: 5px solid rgba(207,0,15,1);
 }
 .menu-item{
 	position: relative;
 	width: 160px;
 	height: 120px;
-	color: white;
 	margin: 5px;
 	display: inline-block;
 }
@@ -137,28 +136,15 @@ p, span, a{
 	padding: 10px;
 	overflow: hidden;
 	text-align: center;
-	background: linear-gradient(rgba(240,0,0,1),rgba(240,0,0,0.1));
-	background: -webkit-linear-gradient(rgba(240,0,0,1),rgba(240,0,0,0.1));
+	color: rgba(255,255,255,0.9);
+	background: rgba(240,0,0,0.7);
+	border: 1px solid rgba(240,0,0,1);
 	border-radius: 3px;
-}
-.menu-item span::before{
-	content: '';
-	position: absolute;
-	width: 160px;
-	height: 160px;
-	background: linear-gradient(rgba(240,0,0,0.9),rgba(240,0,0,0.1));
-	background: -webkit-linear-gradient(rgba(240,0,0,0.9),rgba(240,0,0,0.1));
-	top: -100%;
-	left: -100%;
-	bottom: -100%;
-	right: -100%;
-	width: 160px;
-	margin: auto;
-	opacity: 1;
 }
 .menu-item span>h4{
 	position: relative;
 	width: 100%;
+	padding: 5px;
 	/*white-space: nowrap;
 	text-overflow: ellipsis;
 	overflow: hidden;*/
@@ -169,14 +155,15 @@ p, span, a{
 }
 .menu-item span>p{
 	position: relative;
-	padding: 5px 10px 5px 10px;
+	padding: 5px;
 	text-overflow: ellipsis;
 	overflow: hidden;
 	white-space: nowrap;
-	font-size: 0.9em;
 	top: 50%;
 	transform: translateY(-50%);
-	opacity: 1;
+	font-size: 0.8em;
+	opacity: 0;
+	border-top: 1px solid rgba(255,255,255,0.5);
 }
 .menu-item img{
 	width: 100%;
@@ -193,18 +180,17 @@ p, span, a{
 	color: white;
 }
 .menu-item:hover span{
-	background: radial-gradient(rgba(255,255,255,0.7),rgba(255,255,255,0));
-	background: -webkit-radial-gradient(rgba(255,255,255,0.7),rgba(255,255,255,0));
-	color: rgba(0,0,0,0.9);
+	background: rgba(255, 40, 40, 1);
+	color: white;
+	transition: all 0.2s;
 	/*border: 5px solid rgba(240, 0, 0, 0.7);*/
 }
-.menu-item:hover span::before{
-	opacity: 0;
-	transition: opacity 0.3s ease-out;
-}
-.menu-item:hover img{
-}
 .menu-item:hover span>p{
+	top: 40%;
+	opacity: 1;
+}
+.menu-item:hover span>h4{
+	top: 40%;
 }
 /*content*/
 .content{
@@ -325,6 +311,9 @@ p, span, a{
 }
 #loadmore{
 	margin-top: 100px;
+	background-color: transparent;
+	border: none;
+	padding: 0px;
 }
 hr{
 	border-color: rgba(255, 40, 40, 0.7);
@@ -486,9 +475,6 @@ hr{
 	height: 1%;
 	padding: 5px 0 5px 0;
 }
-table img{
-	width: 100px;
-}
 /*pemerintahan*/
 .media-object.pemerintah-besar-gambar{
 	width: 150px;
@@ -566,25 +552,6 @@ table img{
 	margin-top: 10px;
 	background-color: rgba(200, 200, 200, 1);
 }
-/*table*/
-th{
-	background-color: rgba(5,100,60,1);
-	color: #ffffff;
-	width: 200px;
-	/*border-radius: 10px;*/
-}
-th h4{
-	margin: 0;
-	padding: 0;
-}
-table #desc{
-	width: 500px;
-}
-/*hover*/
-li:hover{
-	transition: all 0.2s;
-}
-
 /*MAP*/
 #map {
 	width: 1100px;
@@ -678,4 +645,25 @@ h1.page-header{
 }
 .fix-content{
 	margin-top: 25px;
+}
+/*TABLE*/
+table img{
+	width: 100px;
+}
+th{
+	background-color: rgba(5,100,60,1);
+	color: #ffffff;
+	width: 200px;
+	border-radius: 5px;
+}
+th h4{
+	margin: 0;
+	padding: 0;
+}
+table #desc{
+	width: 500px;
+}
+/*hover*/
+li:hover{
+	transition: all 0.2s;
 }

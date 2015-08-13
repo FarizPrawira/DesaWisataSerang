@@ -4,7 +4,7 @@
 
 		<div class="col-md-3">
 			<h4>Tentang Situs ini</h4>
-			<div class="garis"></div>
+			<hr/>
 			<ul class="list-unstyled">
 				<li><a href="">Peta Situs</a></li>
 				<li><a href="">Peta Desa Serang</a></li>
@@ -15,7 +15,7 @@
 
 		<div class="col-md-3">
 			<h4>Temukan Kami di</h4>
-			<div class="garis"></div>
+			<hr/>
 			<ul class="list-unstyled list-inline">
 				<li>
 					<a href="https://www.facebook.com/">
@@ -61,8 +61,8 @@
 		</div>
 
 		<div class="col-md-6">
-			<h4>Galery</h4>
-			<div class="garis"></div>
+			<h4><a href="https://instagram.com/exploreserangpbg/">#exploreserangpbg</a></h4>
+			<hr/>
 			<?php
 				// function fetchData($url){
 				// 	$ch = curl_init();

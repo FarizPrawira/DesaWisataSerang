@@ -83,7 +83,7 @@
 					<div class="loadmore-artikel"></div>
 				</div>
 			</div>
-			<div class="row loadmore">
+			<div class="row">
 				<button id="loadmore">
 					<p class="text-center">Loadmore <span class="glyphicon glyphicon-refresh"></span></p>
 				</button>
