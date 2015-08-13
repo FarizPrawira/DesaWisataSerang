@@ -198,6 +198,7 @@ class ContentsController extends \BaseController {
 		->get();
 		$results["tag"] = DB::table('contents')
 		->select('tag')
+		->where('type', 'kegiatan')
 		->distinct('tag')
 		->get();
 		$results["photo"] = DB::table('photos')->get();

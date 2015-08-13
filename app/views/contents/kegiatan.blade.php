@@ -15,6 +15,7 @@
 	<!-- CONTENT -->
 	<div class="container main-container">
 		<div class="row">
+			<h2>Kegiatan Desa Serang</h2>
 			<div class="col-md-2 sidebar-serang">
 				<ul class="list-unstyled">
 					<li id="Blomba" class="active">Lomba <span>({{Content::where('tag','lomba')->count();}})</span></li>
