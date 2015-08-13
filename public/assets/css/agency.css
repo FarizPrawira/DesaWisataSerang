@@ -360,7 +360,7 @@ section h3.section-subheading {
 }
 
 .timeline>li .timeline-image {
-    z-index: 100;
+    z-index: 3;
     position: absolute;
     left: 0;
     width: 80px;
@@ -696,7 +696,7 @@ ul.social-buttons li a:active {
 }
 
 .portfolio-modal .close-modal .lr {
-    z-index: 1051;
+    z-index: 4;
     width: 1px;
     height: 75px;
     margin-left: 35px;
@@ -707,7 +707,7 @@ ul.social-buttons li a:active {
 }
 
 .portfolio-modal .close-modal .lr .rl {
-    z-index: 1052;
+    z-index: 4;
     width: 1px;
     height: 75px;
     background-color: #222;

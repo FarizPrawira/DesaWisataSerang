@@ -6,13 +6,13 @@
 		</ul>
 		<ul class="menu-link">
 			<li id="menuserang">Desa Serang <span class="caret"></span></li>
-			<li id="menuwisata">Agrowisata <span class="caret"></span></li>
+			<li id="menuwisata">Wisata <span class="caret"></span></li>
 			<a href="{{URL::to('content/kegiatan')}}"><li id="menukegiatan">Kegiatan</li></a>
 			<a href="{{URL::to('content/artikel')}}"><li id="menuartikel">Artikel</li></a>
 		</ul>
 		<ul class="menu-link logout">
 			<?php if(Auth::check()){ ?>
-			<a href="{{URL::to('user/logout')}}"><li id="logout">Log Out</li></a>
+			<a href="{{URL::to('user/logout')}}"><li id="logout"><i class="glyphicon glyphicon-off"></i> Log Out</li></a>
 			<?php } ?>
 		</ul>
 	</div>
@@ -23,30 +23,35 @@
 				<img src="{{URL::to('assets/img/2.jpg')}}">
 				<span>
 					<h4>Pertanian</h4>
+					<p>Kubis, Kentang, Tomat, Wortel</p>
 				</span>
 			</a>
 			<a href="{{URL::to('serang/peternakan/2010')}}" class="menu-item">
 				<img src="{{URL::to('assets/img/2.jpg')}}">
 				<span>
 					<h4>Peternakan</h4>
+					<p>Sapi, Kambing, Ayam, Kuda</p>
 				</span>
 			</a>
 			<a href="{{URL::to('serang/pemerintahan')}}" class="menu-item">
 				<img src="{{URL::to('assets/img/2.jpg')}}">
 				<span>
 					<h4>Pemerintahan</h4>
+					<p>Kepala Desa/Dusun, Perangkat Desa</p>
 				</span>
 			</a>
 			<a href="{{URL::to('serang/kkn-ugm2015')}}" class="menu-item">
 				<img src="{{URL::to('assets/img/2.jpg')}}">
 				<span>
-					<h4>KKN-UGM-IU</h4>
+					<h4>KKN-PPM</h4>
+					<p>UGM & IU</p>
 				</span>
 			</a>
 			<a href="{{URL::to('serang/produk')}}" class="menu-item">
 				<img src="{{URL::to('assets/img/2.jpg')}}">
 				<span>
 					<h4>Produk</h4>
+					<p>Gethuk Strawberry, Keripiki Daun Strawberry, Sirup Strawberry</p>
 				</span>
 			</a>
 		</div>
@@ -57,12 +62,14 @@
 				<img src="{{URL::to('assets/img/4.jpg')}}" id="img3">
 				<span>
 					<h4>Galery</h4>
+					<p>Gambar & Video</p>
 				</span>
 			</a>
 			<a href="{{URL::to('serang/map')}}" class="menu-item">
 				<img src="{{URL::to('assets/img/2.jpg')}}">
 				<span>
 					<h4>Peta</h4>
+					<p>Peta Wisata Desa Serang</p>
 				</span>
 			</a>
 		</div>
@@ -72,31 +79,36 @@
 			<a href="{{URL::to('wisata/stroberi')}}" class="menu-item">
 				<img src="{{URL::to('assets/img/2.jpg')}}">
 				<span>
-					<h4>Kebun Strowberi</h4>
+					<h4>Kebun Strawberry</h4>
+					<p>Petik Sendiri!</p>
 				</span>
 			</a>
 			<a href="{{URL::to('wisata/restarea')}}" class="menu-item">
 				<img src="{{URL::to('assets/img/2.jpg')}}">
 				<span>
 					<h4>Rest Area</h4>
+					<p>Tempat santai beristirahat!</p>
 				</span>
 			</a>
 			<a href="{{URL::to('wisata/outbound')}}" class="menu-item">
 				<img src="{{URL::to('assets/img/2.jpg')}}">
 				<span>
 					<h4>Outbond</h4>
+					<p>ATV, Giant Swing, Flying Fox</p>
 				</span>
 			</a>
 			<a href="{{URL::to('wisata/pinus')}}" class="menu-item">
 				<img src="{{URL::to('assets/img/2.jpg')}}">
 				<span>
 					<h4>Hutan Pinus</h4>
+					<p>Tempat foto bersama!</p>
 				</span>
 			</a>
 			<a href="{{URL::to('wisata/kuda')}}" class="menu-item">
 				<img src="{{URL::to('assets/img/2.jpg')}}">
 				<span>
 					<h4>Kuda Tunggang</h4>
+					<p>Berkeliling dengan kuda!</p>
 				</span>
 			</a>
 		</div>
@@ -104,13 +116,15 @@
 			<a href="{{URL::to('wisata/tic')}}" class="menu-item">
 				<img src="{{URL::to('assets/img/2.jpg')}}">
 				<span>
-					<h4>Tourist Information Center</h4>
+					<h4>TIC</h4>
+					<p>Tourist Information Center</p>
 				</span>
 			</a>
 			<a href="{{URL::to('wisata/homestay')}}" class="menu-item">
 				<img src="{{URL::to('assets/img/2.jpg')}}">
 				<span>
 					<h4>Home Stay</h4>
+					<p>Rumah inap pengunjung</p> 
 				</span>
 			</a>
 		</div>

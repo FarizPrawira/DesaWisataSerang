@@ -15,7 +15,6 @@
 	<link rel="stylesheet" href="{{URL::to('assets/css/site.css')}}"/>
 </head>
 <body>
-	@include('home.header')
 	<!-- ERROR LOGIN NOTIF -->
 	<div id="notification" class="notification">
 		<?php if (Session::has('error')): ?>
@@ -59,7 +58,7 @@
 	<div class="modal-dialog modal-sm">
 		<div class="modal-content">
 			<div class="modal-header">
-				<h4 class="modal-title" id="myModalLabel">Login</h4>
+				<h4 class="modal-title" id="myModalLabel">Dashboard Desa Serang</h4>
 			</div>
 			<div class="modal-body">
 				<form action="{{URL::to('user/login')}}" method="post">
@@ -70,7 +69,8 @@
 						<input type="password" class="form-control" name="password" id="password" placeholder="Password">
 					</div>
 					<div class="text-right">
-						<button type="submit" class="btn btn-default">Login</button>
+						<button type="submit" class="btn btn-primary">Masuk</button>
+						<a href="{{URL::to('')}}" type="button" class="btn btn-link">Batal</a>
 					</div>
 				</form>
 			</div>
@@ -80,6 +80,7 @@
 	// LOGIN FORM END 
 	// ALREADY LOGIN
 	else { ?>
+	@include('home.header')
 	<!-- CONTENT -->
 	<div class="container main-container">
 		<div class="col-md-2 sidebar-serang">
@@ -525,11 +526,10 @@
 			</div>
 		</div> 
 	</div>
+	@include('home.footer')
 	<!-- CONTENT END -->
 	<?php } ?>
 	<!-- ALREADY LOGIN END -->
-
-	@include('home.footer')
 	<script>
 	$(function() {
 		$("#KegDateStart").datepicker({
