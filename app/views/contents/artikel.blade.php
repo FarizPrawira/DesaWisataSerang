@@ -13,7 +13,7 @@
 <body>
 	@include('home.header')
 	<!-- CONTENT -->
-	<div class="container timeline">
+	<div class="container main-container timeline">
 		<div class="row">
 			<h2>Artikel Desa Serang</h2>
 			<?php 
