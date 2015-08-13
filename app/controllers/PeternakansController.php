@@ -38,10 +38,9 @@ class PeternakansController extends \BaseController {
 		{
 			return Redirect::back()->withErrors($validator)->withInput();
 		}
-
-		// var_dump($data);die;
 		Peternakan::create($data);
-		return Redirect::to('dashboard');
+		
+		return Redirect::to('dashboard')->with('sukses', "Berhasil Menyimpan Data Peternakan");
 	}
 
 	/**

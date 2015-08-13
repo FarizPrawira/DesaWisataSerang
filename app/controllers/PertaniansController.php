@@ -36,10 +36,9 @@ class PertaniansController extends \BaseController {
 		{
 			return Redirect::back()->withErrors($validator)->withInput();
 		}
-
-		// var_dump($data);die;
 		Pertanian::create($data);
-		return Redirect::to('dashboard');
+
+		return Redirect::to('dashboard')->with('sukses', "Berhasil Mengupdate Data Pertanian");
 	}
 
 	/**

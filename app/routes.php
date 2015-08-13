@@ -62,6 +62,7 @@ Route::get('wisata/outbound', 'WisatasController@showOutbound');
 Route::get('wisata/pinus', 'WisatasController@showPinus');
 Route::get('wisata/kuda', 'WisatasController@showKuda');
 Route::get('wisata/tic', 'TicsController@index');
+Route::post('tic/update/{id}', 'TicsController@update');
 //=================================================================//
 
 Route::post('galery/store', 'GaleriesController@store');

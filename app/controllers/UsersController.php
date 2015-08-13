@@ -4,9 +4,8 @@ class UsersController extends BaseController {
 
 	public function showDashboard()
 	{
-		$results["content"] = DB::table('contents')
-								->orderBy('created_at', 'DESC')
-								->get();
+		$results["content"] = DB::table('contents')->orderBy('created_at', 'DESC')->get();
+		$results["tic"] = DB::table('tics')->get();
 		return View::make('home.dashboard')->with('results', $results);
 	}
 
