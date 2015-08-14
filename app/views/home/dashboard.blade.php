@@ -29,17 +29,29 @@
 	<!-- ERROR LOGIN NOTIF END-->
 
 	<!-- ERROR INPUT -->
+	<?php if(isset($errors)) {foreach ($errors->all() as $key): ?>
 	<div class="notification" id="notification">
-		<?php if(isset($errors)) {foreach ($errors->all() as $key): ?>
 		<div class="col-xs-offset-3 col-xs-6 alert alert-danger alert-dismissible" role="alert">
 			<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
 			{{$key}}
 		</div>
 		<div class="clearfix"></div>
-		<?php 
-		endforeach; }?>
 	</div>
+	<?php 
+	endforeach; }?>
 	<!-- ERROR INPUT END-->
+
+	<!-- SUCCESS INPUT -->
+	<?php if(Session::has('sukses')) { ?>
+	<div class="notification" id="notification">
+		<div class="col-xs-offset-3 col-xs-6 alert alert-success alert-dismissible" role="alert">
+			<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
+			{{Session::get('sukses')}}
+		</div>
+		<div class="clearfix"></div>
+	</div>
+	<?php } ?>
+	<!-- SUCCESS INPUT END-->
 
 	<!-- LOGIN FORM -->
 	<?php	if(!Auth::check()){ ?>
@@ -282,7 +294,7 @@
 				<div class="panel-body">
 					<form class="form-horizontal" action="{{URL::to('pertanian/store')}}" method="post">
 						<div class="form-group">
-							<div class="col-sm-10">
+							<div class="col-sm-12">
 								<table class="table table-bordered">
 									<tbody class="text-center">
 										<tr>
@@ -375,7 +387,7 @@
 				<div class="panel-body">
 					<form class="form-horizontal" action="{{URL::to('peternakan/store')}}" method="post">
 						<div class="form-group">							
-							<div class="col-sm-10">
+							<div class="col-sm-12">
 								<table class="table table-bordered">
 									<tbody class="text-center">
 										<tr>
@@ -433,83 +445,81 @@
 					Paket Wisata
 				</div>
 				<div class="panel-body">
-					<form class="form-horizontal">
+					<form class="form-horizontal" action="{{URL::to('tic/update/1')}}" method="post">
 						<div class="form-group">
-							<div class="col-sm-10">
+							<div class="col-sm-12">
 								<table class="table table-bordered">
 									<tbody class="text-center">
 										<tr>
-											<th class="text-center"><b>Permainan</th>
-											<th class="text-center"><b>Harga (Rupiah)</th>
-											<th class="text-center"><b>Keterangan</th>
+											<th class="text-center"><h4>Permainan</h4></th>
+											<th class="text-center"><h4>Harga (Rupiah)</h4></th>
+											<th class="text-center"><h4>Fasilitas</h4></th>
+											<th class="text-center"><h4>Keterangan</h4></th>
 										</tr>
+										<?php foreach ($results['tic'] as $tic): ?>
 										<tr>
-											<td><b>Outbound</b></td>
-											<td><input class="form-control" id="inputJumlahSayur1" placeholder="0"></td>
-											<td>Kelompok</td>
-										</tr>
-										<tr>
-											<td><b>ATV Bike</b></td>
-											<td><input class="form-control" id="inputJumlahSayur2" placeholder="0"></td>
-											<td>Perorangan</td>
-										</tr>
-										<tr>
-											<td><b>Giant Swing</b></td>
-											<td><input class="form-control" id="inputJumlahSayur3" placeholder="0"></td>
-											<td>Perorangan</td>
+											<td><b>Agro Kid's</b></td>
+											<td><input type="text" class="form-control" name="agroBiaya" placeholder="Rp/orang" value="{{$tic->agroBiaya}}"></td>
+											<td><textarea class="form-control" name="agroFasilitas" placeholder="Fasilitas wisata">{{$tic->agroFasilitas}}</textarea></td>
+											<td><input type="text" class="form-control" name="agroKet" placeholder="Keterangan wisata" value="{{$tic->agroKet}}"></td>
 										</tr>
 										<tr>
 											<td><b>Camping Ground</b></td>
-											<td><input class="form-control" id="inputJumlahSayur4" placeholder="0"></td>
-											<td>Kelompok</td>              
+											<td><input type="text" class="form-control" name="campBiaya" placeholder="Rp/orang" value="{{$tic->campBiaya}}"></td>
+											<td><textarea class="form-control" name="campFasilitas" placeholder="Fasilitas wisata">{{$tic->campFasilitas}}</textarea></td>
+											<td><input type="text" class="form-control" name="campKet" placeholder="Keterangan wisata" value="{{$tic->campKet}}"></td>
 										</tr>
 										<tr>
-											<td><b>Agro Kids</b></td>
-											<td><input class="form-control" id="inputJumlahSayur5" placeholder="0"></td>
-											<td>Kelompok</td>
-										</tr>
-										<tr>
-											<td><b>Homestay</b></td>
-											<td><input class="form-control" id="inputJumlahSayur6" placeholder="0"></td>
-											<td>Kelompok</td>
-										</tr>
-										<tr>
-											<td><b>Paint Ball</b></td>
-											<td><input class="form-control" id="inputJumlahSayur6" placeholder="0"></td>
-											<td>Kelompok</td>
-										</tr>
-										<tr>
-											<td><b>Rappelling</b></td>
-											<td><input class="form-control" id="inputJumlahSayur6" placeholder="0"></td>
-											<td>Kelompok</td>
+											<td><b>Homestay Pelajar</b></td>
+											<td><input type="text" class="form-control" name="homeBiaya" placeholder="Rp/orang" value="{{$tic->homeBiaya}}"></td>
+											<td><textarea class="form-control" name="homeFasilitas" placeholder="Fasilitas wisata">{{$tic->homeFasilitas}}</textarea></td>
+											<td><input type="text" class="form-control" name="homeKet" placeholder="Keterangan wisata" value="{{$tic->homeKet}}"></td>
 										</tr>
 										<tr>
 											<td><b>Tracking</b></td>
-											<td><input class="form-control" id="inputJumlahSayur6" placeholder="0"></td>
-											<td>Kelompok</td>
+											<td><input type="text" class="form-control" name="trackBiaya" placeholder="Rp/orang" value="{{$tic->trackBiaya}}"></td>
+											<td><textarea class="form-control" name="trackFasilitas" placeholder="Fasilitas wisata">{{$tic->trackFasilitas}}</textarea></td>
+											<td><input type="text" class="form-control" name="trackKet" placeholder="Keterangan wisata" value="{{$tic->trackKet}}"></td>
 										</tr>
 										<tr>
-											<td><b>Strwberry Farm</b></td>
-											<td><input class="form-control" id="inputJumlahSayur6" placeholder="0"></td>
-											<td>Perorangan</td>
+											<td><b>Outbound</b></td>
+											<td><input type="text" class="form-control" name="outBiaya" placeholder="Rp/orang" value="{{$tic->outBiaya}}"></td>
+											<td><textarea class="form-control" name="outFasilitas" placeholder="Fasilitas wisata">{{$tic->outFasilitas}}</textarea></td>
+											<td><input type="text" class="form-control" name="outKet" placeholder="Keterangan wisata" value="{{$tic->outKet}}"></td>
 										</tr>
 										<tr>
-											<td><b>Kuda Tunggang</b></td>
-											<td><input class="form-control" id="inputJumlahSayur6" placeholder="0"></td>
-											<td>Perorangan</td>
+											<td><b>Paint Ball</b></td>
+											<td><input type="text" class="form-control" name="paintBiaya" placeholder="Rp/orang" value="{{$tic->paintBiaya}}"></td>
+											<td><textarea class="form-control" name="paintFasilitas" placeholder="Fasilitas wisata">{{$tic->paintFasilitas}}</textarea></td>
+											<td><input type="text" class="form-control" name="paintKet" placeholder="Keterangan wisata" value="{{$tic->paintKet}}"></td>
 										</tr>
 										<tr>
-											<td><b>High Rope</b></td>
-											<td><input class="form-control" id="inputJumlahSayur6" placeholder="0"></td>
-											<td>Perorangan</td>
-										</tr>										
+											<td><b>Rapeling</b></td>
+											<td><input type="text" class="form-control" name="rapelBiaya" placeholder="Rp/orang" value="{{$tic->rapelBiaya}}"></td>
+											<td><textarea class="form-control" name="rapelFasilitas" placeholder="Fasilitas wisata">{{$tic->rapelFasilitas}}</textarea></td>
+											<td><input type="text" class="form-control" name="rapelKet" placeholder="Keterangan wisata" value="{{$tic->rapelKet}}"></td>
+										</tr>
+										<tr>
+											<td><b>Family Gathering</b></td>
+											<td><input type="text" class="form-control" name="familyBiaya" placeholder="Rp/orang" value="{{$tic->familyBiaya}}"></td>
+											<td><textarea class="form-control" name="familyFasilitas" placeholder="Fasilitas wisata">{{$tic->familyFasilitas}}</textarea></td>
+											<td><input type="text" class="form-control" name="familyKet" placeholder="Keterangan wisata" value="{{$tic->familyKet}}"></td>
+										</tr>
+										<tr>
+											<td><b>Pendakian Gn Slamet</b></td>
+											<td><input type="text" class="form-control" name="pendakianBiaya" placeholder="Rp/orang" value="{{$tic->pendakianBiaya}}"></td>
+											<td><textarea class="form-control" name="pendakianFasilitas" placeholder="Fasilitas wisata">{{$tic->pendakianFasilitas}}</textarea></td>
+											<td><input type="text" class="form-control" name="pendakianKet" placeholder="Keterangan wisata" value="{{$tic->pendakianKet}}"></td>
+										</tr>
+										<?php 
+										endforeach ?>
 									</tbody>
 								</table>
 							</div>
 						</div>
 						<div class="form-group">
 							<div class="col-sm-offset-0 col-sm-12">
-								<button type="submit" class="btn btn-primary">Upload</button>
+								<button type="submit" class="btn btn-primary">Simpan</button>
 								<button type="reset" class="btn btn-default">Bersihkan</button>
 							</div>
 						</div>

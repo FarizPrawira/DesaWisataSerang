@@ -77,17 +77,15 @@ class TicsController extends \BaseController {
 	public function update($id)
 	{
 		$tic = Tic::findOrFail($id);
-
-		$validator = Validator::make($data = Input::all(), Tic::$rules);
-
+		$data = Input::all();
+		// var_dump($data);die;
+		$validator = Validator::make($data, Tic::$rules);
 		if ($validator->fails())
 		{
 			return Redirect::back()->withErrors($validator)->withInput();
 		}
-
 		$tic->update($data);
-
-		return Redirect::route('tics.index');
+		return Redirect::to('dashboard')->with('sukses', "Berhasil Mengupdate Data Wisata");
 	}
 
 	/**

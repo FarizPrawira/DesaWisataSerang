@@ -76,7 +76,7 @@ class ContentsController extends \BaseController {
 			}
 		}
 
-		return Redirect::to('dashboard');
+		return Redirect::to('dashboard')->with('sukses', "Berhasil Menyimpan Konten");
 	}
 
 	/**
@@ -153,7 +153,7 @@ class ContentsController extends \BaseController {
 			}
 		}
 
-		return Redirect::back();
+		return Redirect::to('dashboard')->with('sukses', "Berhasil Mengedit Konten");
 	}
 
 	/**

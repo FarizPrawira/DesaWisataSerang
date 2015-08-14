@@ -70,7 +70,7 @@ class GaleriesController extends \BaseController {
 			}
 		}
 
-		return Redirect::to('dashboard');
+		return Redirect::to('dashboard')->with('sukses', "Berhasil Menambahkan Galeri");
 	}
 
 	/**

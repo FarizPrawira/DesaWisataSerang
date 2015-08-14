@@ -8,6 +8,16 @@ class Tic extends \Eloquent {
 	];
 
 	// Don't forget to fill this array
-	protected $fillable = [];
+	protected $fillable = [
+	'agroBiaya','agroFasilitas','agroKet',
+	'campBiaya','campFasilitas','campKet',
+	'homeBiaya','homeFasilitas','homeKet',
+	'trackBiaya','trackFasilitas','trackKet',
+	'outBiaya','outFasilitas','outKet',
+	'paintBiaya','paintFasilitas','paintKet',
+	'rapelBiaya','rapelFasilitas','rapelKet',
+	'familyBiaya','familyFasilitas','familyKet',
+	'pendakianBiaya','pendakianFasilitas','pendakianKet'
+	];
 
 }

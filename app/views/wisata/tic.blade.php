@@ -22,39 +22,76 @@
 					<tr>
 						<th></th>
 						<th class="text-center">Wisata</th>
-						<th class="text-center">Jumlah orang (minimal)</th>
 						<th class="text-center">Harga</th>
+						<th class="text-center">Fasilitas</th>
+						<th class="text-center">Keterangan</th>
 					</tr>
+					<?php foreach ($tics as $tic): ?>	
 					<tr>
 						<td><img src="{{URL::to('assets/img/stroberi1.jpg')}}"></td>
-						<td><b>Giant Swing</b></td>
-						<td>1</td>
-						<td>Rp.25.000,-</td>
-					</tr>
-					<tr>
-						<td><img src="{{URL::to('assets/img/stroberi1.jpg')}}"></td>
-						<td><b>ATV</b></td>
-						<td>1</td>
-						<td>Rp.25.000,-</td>
-					</tr>
-					<tr>
-						<td><img src="{{URL::to('assets/img/stroberi1.jpg')}}"></td>
-						<td><b>Flying Fox</b></td>
-						<td>1</td>
-						<td>Rp.25.000,-</td>
+						<td><b>Agro Kids</b></td>
+						<td>Rp.{{$tic->agroBiaya}}</td>
+						<td>{{nl2br($tic->agroFasilitas)}}</td>
+						<td>{{$tic->agroKet}}</td>
 					</tr>
 					<tr>
 						<td><img src="{{URL::to('assets/img/stroberi1.jpg')}}"></td>
 						<td><b>Camping Ground</b></td>
-						<td>1</td>
-						<td>Rp.25.000,-</td>
+						<td>Rp.{{$tic->campBiaya}}</td>
+						<td>{{nl2br($tic->campFasilitas)}}</td>
+						<td>{{$tic->campKet}}</td>
 					</tr>
 					<tr>
 						<td><img src="{{URL::to('assets/img/stroberi1.jpg')}}"></td>
-						<td><b>Kuda Tunggang</b></td>
-						<td>1</td>
-						<td>Rp.25.000,-</td>
+						<td><b>HomeStay Pelajar </b></td>
+						<td>Rp.{{$tic->homeBiaya}}</td>
+						<td>{{nl2br($tic->homeFasilitas)}}</td>
+						<td>{{$tic->homeKet}}</td>
 					</tr>
+					<tr>
+						<td><img src="{{URL::to('assets/img/stroberi1.jpg')}}"></td>
+						<td><b>Tracking</b></td>
+						<td>Rp.{{$tic->trackBiaya}}</td>
+						<td>{{nl2br($tic->trackFasilitas)}}</td>
+						<td>{{$tic->trackKet}}</td>
+					</tr>
+					<tr>
+						<td><img src="{{URL::to('assets/img/stroberi1.jpg')}}"></td>
+						<td><b>Outbound</b></td>
+						<td>Rp.{{$tic->outBiaya}}</td>
+						<td>{{nl2br($tic->outFasilitas)}}</td>
+						<td>{{$tic->outKet}}</td>
+					</tr>
+					<tr>
+						<td><img src="{{URL::to('assets/img/stroberi1.jpg')}}"></td>
+						<td><b>Paint Ball</b></td>
+						<td>Rp.{{$tic->paintBiaya}}</td>
+						<td>{{nl2br($tic->paintFasilitas)}}</td>
+						<td>{{$tic->paintKet}}</td>
+					</tr>
+					<tr>
+						<td><img src="{{URL::to('assets/img/stroberi1.jpg')}}"></td>
+						<td><b>Rapeling</b></td>
+						<td>Rp.{{$tic->rapelBiaya}}</td>
+						<td>{{nl2br($tic->rapelFasilitas)}}</td>
+						<td>{{$tic->rapelKet}}</td>
+					</tr>
+					<tr>
+						<td><img src="{{URL::to('assets/img/stroberi1.jpg')}}"></td>
+						<td><b>Family Gathering</b></td>
+						<td>Rp.{{$tic->familyBiaya}}</td>
+						<td>{{nl2br($tic->familyFasilitas)}}</td>
+						<td>{{$tic->familyKet}}</td>
+					</tr>
+					<tr>
+						<td><img src="{{URL::to('assets/img/stroberi1.jpg')}}"></td>
+						<td><b>Pendakian Gn Selamet</b></td>
+						<td>Rp.{{$tic->pendakianBiaya}}</td>
+						<td>{{nl2br($tic->pendakianFasilitas)}}</td>
+						<td>{{$tic->pendakianKet}}</td>
+					</tr>
+					<?php 
+					endforeach ?>
 				</tbody>
 			</table>
 		</div>
