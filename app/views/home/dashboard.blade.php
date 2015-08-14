@@ -73,7 +73,8 @@
 	<div class="container main-container">
 		<div class="col-md-2 sidebar-serang">
 			<ul class="list-unstyled">
-				<li id="Bdaftar" class="active">Daftar konten <span>({{Content::count();}})</span></li>
+				<li id="Bdaftar" class="active"><i class="glyphicon glyphicon-list"></i> Daftar konten <span>({{Content::count();}})</span></li>
+				<hr/>
 				<li id="Bgalery">Galery </li>
 				<li id="Bartikel">Artikel </li>
 				<li id="Bkegiatan">Kegiatan </li>
@@ -83,7 +84,7 @@
 			</ul>
 		</div>
 		<div class="col-md-10">
-			<div class="panel panel-default" id="Cdaftar">
+			<div class="panel panel-green" id="Cdaftar">
 				<div class="panel-heading">
 					Daftar konten
 				</div>
@@ -121,7 +122,7 @@
 				</div>
 			</div>
 
-			<div class="panel panel-default" id="Cgalery">
+			<div class="panel panel-green" id="Cgalery">
 				<div class="panel-heading">
 					Galeri
 				</div>
@@ -140,10 +141,11 @@
 						<div class="form-group">
 							<div class="col-sm-offset-2 col-sm-10">
 								<button type="submit" class="btn btn-primary">Simpan</button>
-								<button type="button" class="btn btn-default">Batal</button>
+								<button type="reset" class="btn btn-default">Bersihkan</button>
 							</div>
 						</div>
 					</form>
+					<hr/>
 					<form class="form-horizontal" action="{{URL::to('galery/store')}}" method="post">
 						<input type="hidden" name="type" value="video">
 						<div class="form-group">
@@ -158,14 +160,14 @@
 						<div class="form-group">
 							<div class="col-sm-offset-2 col-sm-10">
 								<button type="submit" class="btn btn-primary">Simpan</button>
-								<button type="button" class="btn btn-default">Batal</button>
+								<button type="reset" class="btn btn-default">Bersihkan</button>
 							</div>
 						</div>
 					</form>
 				</div>
 			</div>
 
-			<div class="panel panel-default" id="Cartikel">
+			<div class="panel panel-green" id="Cartikel">
 				<div class="panel-heading">
 					Artikel
 				</div>
@@ -196,14 +198,14 @@
 						<div class="form-group">
 							<div class="col-sm-offset-2 col-sm-10">
 								<button type="submit" class="btn btn-primary">Simpan</button>
-								<button type="button" class="btn btn-default">Batal</button>
+								<button type="reset" class="btn btn-default">Bersihkan</button>
 							</div>
 						</div>
 					</form>
 				</div>
 			</div>
 
-			<div class="panel panel-default" id="Ckegiatan">
+			<div class="panel panel-green" id="Ckegiatan">
 				<div class="panel-heading">
 					Kegiatan
 				</div>
@@ -266,14 +268,14 @@
 						<div class="form-group">
 							<div class="col-sm-offset-2 col-sm-10">
 								<button type="submit" class="btn btn-primary">Simpan</button>
-								<button type="button" class="btn btn-default">Batal</button>
+								<button type="reset" class="btn btn-default">Bersihkan</button>
 							</div>
 						</div>
 					</form>
 				</div>
 			</div>
 
-			<div class="panel panel-default" id="Cpertanian">
+			<div class="panel panel-green" id="Cpertanian">
 				<div class="panel-heading">
 					Pertanian
 				</div>
@@ -288,9 +290,9 @@
 											<td><input class="form-control" type="number" name="tahun"></td>
 										</tr>
 										<tr>
-											<th class="text-center"><h4>Komoditas</h4></th>
-											<th class="text-center"><h4>Lahan (Ha)</h4></th>
-											<th class="text-center"><h4>Hasil (Ton/Ha)</h4></th>
+											<th class="text-center"><b>Komoditas</th>
+											<th class="text-center"><b>Lahan (Ha)</th>
+											<th class="text-center"><b>Hasil (Ton/Ha)</th>
 										</tr>
 										<tr>
 											<td><b>Jagung</b></td>
@@ -359,14 +361,14 @@
 						<div class="form-group">
 							<div class="col-sm-offset-0 col-sm-12">
 								<button type="submit" class="btn btn-primary">Simpan</button>
-								<button type="button" class="btn btn-default">Batal</button>
+								<button type="reset" class="btn btn-default">Bersihkan</button>
 							</div>
 						</div>
 					</form>
 				</div>
 			</div>
 
-			<div class="panel panel-default" id="Cpeternakan">
+			<div class="panel panel-green" id="Cpeternakan">
 				<div class="panel-heading">
 					Peternakan
 				</div>
@@ -381,8 +383,8 @@
 											<td><input class="form-control" type="number" name="tahun"></td>
 										</tr>
 										<tr>
-											<th class="text-center"><h4>Ternak</h4></th>
-											<th class="text-center"><h4>Jumlah (Ekor)</h4></th>
+											<th class="text-center"><b>Ternak</th>
+											<th class="text-center"><b>Jumlah (Ekor)</th>
 										</tr>
 										<tr>
 											<td><b>Sapi</b></td>
@@ -401,8 +403,8 @@
 											<td><input class="form-control" type="number" name="kuda" id="inputJumlahKuda" placeholder="0"></td>              
 										</tr>
 										<tr>
-											<th class="text-center"><h4>Produk Ternak</h4></th>
-											<th class="text-center"><h4>Jumlah Produk Ternak</h4></th>
+											<th class="text-center"><b>Produk Ternak</th>
+											<th class="text-center"><b>Jumlah Produk Ternak</th>
 										</tr>
 										<tr>
 											<td><b>Susu</b></td>
@@ -419,14 +421,14 @@
 						<div class="form-group">
 							<div class="col-sm-offset-0 col-sm-12">
 								<button type="submit" class="btn btn-primary">Simpan</button>
-								<button type="button" class="btn btn-default">Batal</button>
+								<button type="reset" class="btn btn-default">Bersihkan</button>
 							</div>
 						</div>
 					</form>
 				</div>
 			</div>
 
-			<div class="panel panel-default" id="Cpaketwisata">
+			<div class="panel panel-green" id="Cpaketwisata">
 				<div class="panel-heading">
 					Paket Wisata
 				</div>
@@ -437,9 +439,9 @@
 								<table class="table table-bordered">
 									<tbody class="text-center">
 										<tr>
-											<th class="text-center"><h4>Permainan</h4></th>
-											<th class="text-center"><h4>Harga (Rupiah)</h4></th>
-											<th class="text-center"><h4>Keterangan</h4></th>
+											<th class="text-center"><b>Permainan</th>
+											<th class="text-center"><b>Harga (Rupiah)</th>
+											<th class="text-center"><b>Keterangan</th>
 										</tr>
 										<tr>
 											<td><b>Outbound</b></td>
@@ -508,7 +510,7 @@
 						<div class="form-group">
 							<div class="col-sm-offset-0 col-sm-12">
 								<button type="submit" class="btn btn-primary">Upload</button>
-								<button type="button" class="btn btn-default">Batal</button>
+								<button type="reset" class="btn btn-default">Bersihkan</button>
 							</div>
 						</div>
 					</form>

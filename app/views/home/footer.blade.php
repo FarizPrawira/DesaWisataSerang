@@ -98,4 +98,5 @@
 <script src="{{URL::to('assets/js/owl.carousel.js')}}"></script>
 <script src="{{URL::to('assets/js/dropzone.js')}}"></script>
 <script src="{{URL::to('assets/js/site.js')}}"></script>
+<script src="{{URL::to('assets/js/Chart.js')}}"></script>
 <!-- FOOTER END-->

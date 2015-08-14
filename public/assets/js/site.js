@@ -11,26 +11,11 @@ $(document).ready(function() {
     $("#Cacara").hide();
     $("#Csosial").hide();
 
-    // $(".full-img").hide();
-
-    // // galery
-    // $(".galery .thumbnail").click(function(){
-    //     var url = $(this).children().attr("src");
-    //     $(".full-img").fadeIn(250);
-    //     $(".full-img img").attr("src", url);
-    //     $(".full-img img").attr("alt", url);
-    //     $(".full-img img").attr("src", url);
-    //     $(".full-img img").attr("alt", url);
-    // });
-
-    // $(".full-img .close").click(function(){
-    //     $(".full-img").fadeOut(250);
-    // });
-
-    // $(".full-img").click(function(){
-    //     $(".full-img").fadeOut(250);
-    // });
-    // // end of galery
+    // Fix Content
+    $(".desc + p").hide();
+    $(".desc").click(function(){
+        $(this).find("+p").slideToggle("fast");
+    });
 
     // MENU KEGIATAN
     $("#Bacara").click(function(){
@@ -199,7 +184,6 @@ $(document).ready(function() {
             $("#menukegiatan").removeClass("active");
             $("#menuartikel").removeClass("active");
         }
-
         $("#img1").hover()
         $("#listwisata").slideToggle("fast");
         $("#listkegiatan").hide();

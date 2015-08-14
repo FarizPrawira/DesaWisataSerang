@@ -2,7 +2,7 @@
 red = rgba(207,0,15,1); default
 red = rgba(240,0,0,1); light
 green = rgba(5,100,60,1); dark
-green = #3AC509; light
+green = rgba(38, 166, 91,1); light
 purple = #272E40;
 brown = #BBB36B; light
 box-shadow: 0 3px 5px rgba(0,0,0,0.2);
@@ -114,7 +114,7 @@ p, span, a{
 	margin-top: 60px;
 	z-index: 102;
 	padding: 50px 20px 20px 50px;
-	border-bottom: 5px solid rgba(207,0,15,1);
+	border-bottom: 3px solid rgba(207,0,15,1);
 }
 .menu-item{
 	position: relative;
@@ -137,9 +137,9 @@ p, span, a{
 	overflow: hidden;
 	text-align: center;
 	color: rgba(255,255,255,0.9);
-	background: rgba(240,0,0,0.7);
-	border: 1px solid rgba(240,0,0,1);
-	border-radius: 3px;
+	background: rgba(240,0,0,0.5);
+/*	border: 1px solid rgba(240,0,0,0.5);
+*/	border-radius: 3px;
 }
 .menu-item span>h4{
 	position: relative;
@@ -182,7 +182,7 @@ p, span, a{
 .menu-item:hover span{
 	background: rgba(255, 40, 40, 1);
 	color: white;
-	transition: all 0.2s;
+	transition: all 0.1s;
 	/*border: 5px solid rgba(240, 0, 0, 0.7);*/
 }
 .menu-item:hover span>p{
@@ -588,22 +588,23 @@ h1.page-header{
     margin-top: -5px;
 }
 .sidebar-serang{
-	background-color: rgba(240,240,240,1);
 	height: auto;
 	color: black;
 	padding: 10px;
+	border-radius: 3px;
 }
 .sidebar-serang li{
 	padding: 10px;
 	position: relative;
 }
 .sidebar-serang li:hover{
-	background-color: rgba(200, 200, 200, 1);
 	cursor: pointer;
+	color: white;
+	border-radius: 3px;
+	background-color: rgba(5,100,60,1);
 }
-.judul-sidebar-serang{
-	font-family: 'Roboto', sans-serif;
-	/*border-bottom: 2px solid #ffffff;*/
+.sidebar-serang li.active{
+	color: rgba(38, 166, 91,1);
 }
 .sidebar-serang li.active:after{
 	position: absolute;
@@ -614,8 +615,11 @@ h1.page-header{
 	border-left: 10px solid rgba(5,100,60,1);
 	content: "";
 	top:0%;
-	left: 108%;
+	left: 105%;
 	margin-top: 10px;
+}
+.sidebar-serang hr{
+	border-color: rgba(200, 200, 200, 1);
 }
 .sidebar-serang a{
 	color: black;
@@ -638,32 +642,64 @@ h1.page-header{
 	padding: 0;
 	margin: 0;
 }
+.panel-green{
+	border-color: rgba(38, 166, 91,1);
+}
+.panel-green hr{
+	border-color: rgba(200, 200, 200, 1);
+}
+.panel-green .panel-heading{
+	background-color: rgba(38, 166, 91,1);
+	color: white;
+}
 /*DASHBOARD END*/
-
 .logout{
 	float: right;
 }
+/*PERTANIAN&PETERNAKAN*/
 .fix-content{
 	margin-top: 25px;
 }
+.fix-content h1,h2{
+	margin-bottom: 25px;
+}
+.fix-content canvas{
+	width: 100%;
+}
+.fix-content .thumbnail{
+	min-height: 29em;
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+.fix-content .thumbnail p{
+	font-size: 0.9em;
+	margin-top: 1em;
+}
+.fix-content .thumbnail h4{
+	color: rgba(5,100,60,1);
+}
+button.desc{
+	width: 100%;
+}
+/*END OF PERTANIAN&PETERNAKAN*/
+
 /*TABLE*/
+table th,td{
+	text-align: center;
+}
 table img{
 	width: 100px;
 }
-th{
-	background-color: rgba(5,100,60,1);
-	color: #ffffff;
-	width: 200px;
-	border-radius: 5px;
+table th{
+	background-color: #ecf0f1;
 }
 th h4{
 	margin: 0;
 	padding: 0;
 }
-table #desc{
-	width: 500px;
-}
-/*hover*/
-li:hover{
-	transition: all 0.2s;
+/*END OF TABLE*/
+
+/*GLYPHCON*/
+i{
+	font-size: 0.8em;
 }

@@ -12,94 +12,34 @@
 </head>
 <body>
 	@include('home.header')
-
 	<!-- CONTENT -->
 	<div class="container fix-content">
-		<div class="hasil-serang">
-			<ol class="breadcrumb">
-				<?php foreach ($results["tahun"] as $tahun) {
-					if ($tahun->tahun == $pertanian->tahun) { $active = "active";	}
-					else{ $active = "";	}
-					echo"<li class='".$active."'><a href=".URL::to('serang/pertanian/'.$tahun->tahun).">".$tahun->tahun."</a></li>";	
-				} ?>
-			</ol>
-			<table class="table table-bordered">
-				<tbody class="text-center">
-					<tr>
-						<th class="text-center">Komoditas</th>
-						<th class="text-center">Lahan (Ha)</th>
-						<th class="text-center">Hasil (Ton/Ha)</th>
-					</tr>
-					<tr>
-						<td><b>Jagung</b></td>
-						<td>{{round($pertanian->jagung_luas,2)}}</td>
-						<td>{{round($pertanian->jagung_hasil,2)}}</td>
-					</tr>
-					<tr>
-						<td><b>Ubi Kayu</b></td>
-						<td>{{round($pertanian->ubi_kayu_luas,2)}}</td>
-						<td>{{round($pertanian->ubi_kayu_hasil,2)}}</td>
-					</tr>
-					<tr>
-						<td><b>Ubi Jalar</b></td>
-						<td>{{round($pertanian->ubi_jalar_luas,2)}}</td>
-						<td>{{round($pertanian->ubi_jalar_hasil,2)}}</td>
-					</tr>
-					<tr>
-						<td><b>Cabai</b></td>
-						<td>{{round($pertanian->cabai_luas,2)}}</td>
-						<td>{{round($pertanian->cabai_hasil,2)}}</td>
-					</tr>
-					<tr>
-						<td><b>Tomat</b></td>
-						<td>{{round($pertanian->tomat_luas,2)}}</td>
-						<td>{{round($pertanian->tomat_hasil,2)}}</td>
-					</tr>
-					<tr>
-						<td><b>Sawi</b></td>
-						<td>{{round($pertanian->sawi_luas,2)}}</td>
-						<td>{{round($pertanian->sawi_hasil,2)}}</td>
-					</tr>
-					<tr>
-						<td><b>Kentang</b></td>
-						<td>{{round($pertanian->kentang_luas,2)}}</td>
-						<td>{{round($pertanian->kentang_hasil,2)}}</td>
-					</tr>
-					<tr>
-						<td><b>Kubis</b></td>
-						<td>{{round($pertanian->kubis_luas,2)}}</td>
-						<td>{{round($pertanian->kubis_hasil,2)}}</td>
-					</tr>
-					<tr>
-						<td><b>Buncis</b></td>
-						<td>{{round($pertanian->buncis_luas,2)}}</td>
-						<td>{{round($pertanian->buncis_hasil,2)}}</td>
-					</tr>
-					<tr>
-						<td><b>Terong</b></td>
-						<td>{{round($pertanian->terong_luas,2)}}</td>
-						<td>{{round($pertanian->terong_hasil,2)}}</td>
-					</tr>
-					<tr>
-						<td><b>Wortel</b></td>
-						<td>{{round($pertanian->wortel_luas,2)}}</td>
-						<td>{{round($pertanian->wortel_hasil,2)}}</td>
-					</tr>
-					<tr>
-						<td><b>Padi Gogo</b></td>
-						<td>{{round($pertanian->padi_luas,2)}}</td>
-						<td>{{round($pertanian->padi_hasil,2)}}</td>
-					</tr>
-				</tbody>
-			</table>
-		</div>
+		<h1 class="text-center">Hasil Pertanian Desa Serang</h1>
+		<p>
+			Desa Serang merupakan desa yang berada di dataran tinggi. Desa Serang sangat cocok untuk bercocok tanam. Desa Serang sebagai tempat yang cocok untuk bercocok tanam dimanfaatkan oleh warganya sebagai lahan pertanian. Pertanian yang berkembang di Desa Serang sangatlah beragam, antara lain Kobis, Chesim, Wortel, Sawi, Ubi Kayu, Ubi Jalar, Tomat, Strawberry dan lain-lain.
+			Mayoritas masyarakat Desa Serang mengelola pertanian masih menggunakan adat/kultur telah ada sejak dulu.
+		</p>
+		<br/> 
 		<div class="row">
 			<div class="col-xs-18 col-sm-6 col-md-3">
 				<div class="thumbnail">
 					<img src="{{URL::to('assets/img/pertanian/jagung.jpg')}}">
 					<div class="caption">
-						<h4>Jagung</h4>
-						<p>Stroberi merupakan salah satu komoditas unggulan yang ada di desa serang dan kabupaten Pubalingga pada umumnya, stroberi dapat tumbuh baik di dataran tinggi yang mempunyai ketinggian anatara 1.000 s/d 1.300 mdpl. tingginya harga buah stroberi membuat para petani banyak yang beralih menanam tanaman ini</p>
+						<h4 class="text-center">Jagung</h4>
+						<table class="table table-bordered">
+							<tbody>
+								<tr>
+									<th>Lahan (Ha)</th>
+									<th>Hasil (Ton/Ha)</th>
+								</tr>
+								<tr>
+									<td>{{round($pertanian->jagung_luas,2)}}</td>
+									<td>{{round($pertanian->jagung_hasil,2)}}</td>
+								</tr>
+							</tbody>	
+						</table>
+						<button class="btn btn-default desc">Penjelasan</button>
+						<p>Jagung atau Zea mays adalah tanaman yang banyak ditanam di Desa Serang. Tanah Yang Subur serta iklim yang mendukung untuk pertumbuhan jagung. Para Petani Banyak yang menanam jagung . Jenis Jagung yang ditanam lebih banyak jagung lokal dibandingkan jagung manis ataupun jenis jagung lainnya. Petani jagung didesa Serang lebih banyak menjual hasil Jagungnya untuk pakan ternak maupun dijual untuk keperluan lain.</p>
 						<!-- <p><a href="#" class="btn btn-info btn-xs" role="button">Button</a> <a href="#" class="btn btn-default btn-xs" role="button">Button</a></p> -->
 					</div>
 				</div>
@@ -108,8 +48,24 @@
 				<div class="thumbnail">
 					<img src="{{URL::to('assets/img/pertanian/ubikayu.jpg')}}">
 					<div class="caption">
-						<h4>Ubi Kayu</h4>
-						<p>Stroberi merupakan salah satu komoditas unggulan yang ada di desa serang dan kabupaten Pubalingga pada umumnya, stroberi dapat tumbuh baik di dataran tinggi yang mempunyai ketinggian anatara 1.000 s/d 1.300 mdpl. tingginya harga buah stroberi membuat para petani banyak yang beralih menanam tanaman ini</p>
+						<h4 class="text-center">Ubi Kayu</h4>
+						<table class="table table-bordered">
+							<tbody>
+								<tr>
+									<th>Lahan (Ha)</th>
+									<th>Hasil (Ton/Ha)</th>
+								</tr>
+								<tr>
+									<td>{{round($pertanian->ubi_kayu_luas,2)}}</td>
+									<td>{{round($pertanian->ubi_kayu_hasil,2)}}</td>
+								</tr>
+							</tbody>	
+						</table>
+						<button class="btn btn-default desc">Penjelasan</button>
+						<p>Ubi Kayu, Ketela Pohon ataupun Singkong adalah  perdu tahunan tropika dan subtropika dari suku Euphorbiaceae. Umbinya dikenal luas sebagai makanan pokok penghasil karbohidrat dan daunnya sebagai sayuran.
+	Ubi Kayu Banyak ditanam Didesa Serang, Pembudidayaannya yang mudah serta perawatannya yang tidak terlalu rumit. Membuat Tanaman ini banyak dijumpai dilahan pertanian milik petani Serang. 
+	Ubi Kayu ini selain dikonsumsi sendiri lebih banyak dijual ke pengepul ataupun ke Pabrik-Pabrik yang akan mengolahnya. Sistem Penjualan ubi Kayu di Desa Serang menggunakan model tebas.
+</p>
 						<!-- <p><a href="#" class="btn btn-info btn-xs" role="button">Button</a> <a href="#" class="btn btn-default btn-xs" role="button">Button</a></p> -->
 					</div>
 				</div>
@@ -118,7 +74,20 @@
 				<div class="thumbnail">
 					<img src="{{URL::to('assets/img/pertanian/ubijalar.jpg')}}">
 					<div class="caption">
-						<h4>Ubi Jalar</h4>
+						<h4 class="text-center">Ubi Jalar</h4>
+						<table class="table table-bordered">
+							<tbody>
+								<tr>
+									<th>Lahan (Ha)</th>
+									<th>Hasil (Ton/Ha)</th>
+								</tr>
+								<tr>
+									<td>{{round($pertanian->ubi_jalar_luas,2)}}</td>
+									<td>{{round($pertanian->ubi_jalar_hasil,2)}}</td>
+								</tr>
+							</tbody>	
+						</table>
+						<button class="btn btn-default desc">Penjelasan</button>
 						<p>Stroberi merupakan salah satu komoditas unggulan yang ada di desa serang dan kabupaten Pubalingga pada umumnya, stroberi dapat tumbuh baik di dataran tinggi yang mempunyai ketinggian anatara 1.000 s/d 1.300 mdpl. tingginya harga buah stroberi membuat para petani banyak yang beralih menanam tanaman ini</p>
 						<!-- <p><a href="#" class="btn btn-info btn-xs" role="button">Button</a> <a href="#" class="btn btn-default btn-xs" role="button">Button</a></p> -->
 					</div>
@@ -128,18 +97,51 @@
 				<div class="thumbnail">
 					<img src="{{URL::to('assets/img/pertanian/cabai.jpg')}}">
 					<div class="caption">
-						<h4>Cabai</h4>
-						<p>Stroberi merupakan salah satu komoditas unggulan yang ada di desa serang dan kabupaten Pubalingga pada umumnya, stroberi dapat tumbuh baik di dataran tinggi yang mempunyai ketinggian anatara 1.000 s/d 1.300 mdpl. tingginya harga buah stroberi membuat para petani banyak yang beralih menanam tanaman ini</p>
+						<h4 class="text-center">Cabai</h4>
+						<table class="table table-bordered">
+							<tbody>
+								<tr>
+									<th>Lahan (Ha)</th>
+									<th>Hasil (Ton/Ha)</th>
+								</tr>
+								<tr>
+									<td>{{round($pertanian->cabai_luas,2)}}</td>
+									<td>{{round($pertanian->cabai_hasil,2)}}</td>
+								</tr>
+							</tbody>	
+						</table>
+						<button class="btn btn-default desc">Penjelasan</button>
+						<p>Cabai  adalah  tumbuhan anggota genus Capsicum. Buahnya dapat dikategorikan sebagai sayuran ataupun bumbu, tergantung bagaimana digunakan. Sebagai bumbu, buah cabai yang pedas sangat populer di Asia Tenggara sebagai penguat rasa makanan.
+	Dengan Iklim yang serang yang baik serta tanahnya yang subur tanaman cabai tumbuh baik di Desa Serang. Selain itu harganya yang cukup tinggi membuat para petani banyak menanam cabai sebagai tumbuhan yang memiliki nilai ekonomi yang tinggi.
+</p>
 						<!-- <p><a href="#" class="btn btn-info btn-xs" role="button">Button</a> <a href="#" class="btn btn-default btn-xs" role="button">Button</a></p> -->
 					</div>
 				</div>
 			</div>
+		</div>
+		<div class="row">
 			<div class="col-xs-18 col-sm-6 col-md-3">
 				<div class="thumbnail">
 					<img src="{{URL::to('assets/img/pertanian/tomat.jpg')}}">
 					<div class="caption">
-						<h4>Tomat</h4>
-						<p>Stroberi merupakan salah satu komoditas unggulan yang ada di desa serang dan kabupaten Pubalingga pada umumnya, stroberi dapat tumbuh baik di dataran tinggi yang mempunyai ketinggian anatara 1.000 s/d 1.300 mdpl. tingginya harga buah stroberi membuat para petani banyak yang beralih menanam tanaman ini</p>
+						<h4 class="text-center">Tomat</h4>
+						<table class="table table-bordered">
+							<tbody>
+								<tr>
+									<th>Lahan (Ha)</th>
+									<th>Hasil (Ton/Ha)</th>
+								</tr>
+								<tr>
+									<td>{{round($pertanian->tomat_luas,2)}}</td>
+									<td>{{round($pertanian->tomat_hasil,2)}}</td>
+								</tr>
+							</tbody>	
+						</table>
+						<button class="btn btn-default desc">Penjelasan</button>
+						<p>Tomat (Solanum lycopersicum syn. Lycopersicum esculentum) adalah tumbuhan dari keluarga Solanaceae, tumbuhan asli Amerika Tengah dan Selatan, dari Meksiko sampai Peru. 
+	Tomat merupakan tumbuhan siklus hidup singkat, dapat tumbuh setinggi 1 sampai 3 meter. Tomat merupakan keluarga dekat dari kentang.	Seperti Halnya Kentang  tomat Juga membutuhkan Iklim yang sejuk untuk tumbuh. 
+	Karena iklim serta letak dari desa Serang sesuai dengan yang dibutuhkan oleh tomat untuk tumbuh Banyak Petani menanam tomat didesa Serang.  Selain itu factor lain yang mendukung tanaman tomat menjadi salah satu komoditas sayuran adalah karena tanah di desa Serang yang subur sehingga mendukung kegiatan pertanianan
+</p>
 						<!-- <p><a href="#" class="btn btn-info btn-xs" role="button">Button</a> <a href="#" class="btn btn-default btn-xs" role="button">Button</a></p> -->
 					</div>
 				</div>
@@ -148,7 +150,20 @@
 				<div class="thumbnail">
 					<img src="{{URL::to('assets/img/pertanian/sawi.jpg')}}">
 					<div class="caption">
-						<h4>Sawi</h4>
+						<h4 class="text-center">Sawi</h4>
+						<table class="table table-bordered">
+							<tbody>
+								<tr>
+									<th>Lahan (Ha)</th>
+									<th>Hasil (Ton/Ha)</th>
+								</tr>
+								<tr>
+									<td>{{round($pertanian->sawi_luas,2)}}</td>
+									<td>{{round($pertanian->sawi_hasil,2)}}</td>
+								</tr>
+							</tbody>	
+						</table>
+						<button class="btn btn-default desc">Penjelasan</button>
 						<p>Stroberi merupakan salah satu komoditas unggulan yang ada di desa serang dan kabupaten Pubalingga pada umumnya, stroberi dapat tumbuh baik di dataran tinggi yang mempunyai ketinggian anatara 1.000 s/d 1.300 mdpl. tingginya harga buah stroberi membuat para petani banyak yang beralih menanam tanaman ini</p>
 						<!-- <p><a href="#" class="btn btn-info btn-xs" role="button">Button</a> <a href="#" class="btn btn-default btn-xs" role="button">Button</a></p> -->
 					</div>
@@ -158,8 +173,23 @@
 				<div class="thumbnail">
 					<img src="{{URL::to('assets/img/pertanian/kentang.jpg')}}">
 					<div class="caption">
-						<h4>Kentang</h4>
-						<p>Stroberi merupakan salah satu komoditas unggulan yang ada di desa serang dan kabupaten Pubalingga pada umumnya, stroberi dapat tumbuh baik di dataran tinggi yang mempunyai ketinggian anatara 1.000 s/d 1.300 mdpl. tingginya harga buah stroberi membuat para petani banyak yang beralih menanam tanaman ini</p>
+						<h4 class="text-center">Kentang</h4>
+						<table class="table table-bordered">
+							<tbody>
+								<tr>
+									<th>Lahan (Ha)</th>
+									<th>Hasil (Ton/Ha)</th>
+								</tr>
+								<tr>
+									<td>{{round($pertanian->kentang_luas,2)}}</td>
+									<td>{{round($pertanian->kentang_hasil,2)}}</td>
+								</tr>
+							</tbody>	
+						</table>
+						<button class="btn btn-default desc">Penjelasan</button>
+						<p>Kentang atau Solanum tuberosum L adalah  tanaman dari suku Solanaceae yang memiliki umbi batang yang dapat dimakan dan disebut "kentang".
+	Kentang adalah salah satu sayuran yang  banyak di tanam oleh Petani di Desa Serang. Iklim Sejuk Desa Serang  serta letak desa Serang yan berada pada Dataran tinggi  merupakan salah satu factor tanaman sayur ini  ditanam oleh para petani di Desa Serang.
+</p>
 						<!-- <p><a href="#" class="btn btn-info btn-xs" role="button">Button</a> <a href="#" class="btn btn-default btn-xs" role="button">Button</a></p> -->
 					</div>
 				</div>
@@ -168,18 +198,50 @@
 				<div class="thumbnail">
 					<img src="{{URL::to('assets/img/pertanian/kubis.jpg')}}">
 					<div class="caption">
-						<h4>Kubis</h4>
-						<p>Stroberi merupakan salah satu komoditas unggulan yang ada di desa serang dan kabupaten Pubalingga pada umumnya, stroberi dapat tumbuh baik di dataran tinggi yang mempunyai ketinggian anatara 1.000 s/d 1.300 mdpl. tingginya harga buah stroberi membuat para petani banyak yang beralih menanam tanaman ini</p>
+						<h4 class="text-center">Kubis</h4>
+						<table class="table table-bordered">
+							<tbody>
+								<tr>
+									<th>Lahan (Ha)</th>
+									<th>Hasil (Ton/Ha)</th>
+								</tr>
+								<tr>
+									<td>{{round($pertanian->kubis_luas,2)}}</td>
+									<td>{{round($pertanian->kubis_hasil,2)}}</td>
+								</tr>
+							</tbody>	
+						</table>
+						<button class="btn btn-default desc">Penjelasan</button>
+						<p>Kobis/ Kubis atau yang nama ilmiahnya  Brassica oleracea L  Sayuran yang dimanfaatkan daunnya untuk dimakan. Merupakan sayuran yang sudah banyak dikenal oleh masyrakat indonesia
+	Didaerah serang yang memiliki iklim yang baik serta tanah yang subur sayuran Kobis ini tumbuh baik di Desa Serang. Dan juga para petani sayur desa Serang telah banyak yang menanamnya.
+</p>
 						<!-- <p><a href="#" class="btn btn-info btn-xs" role="button">Button</a> <a href="#" class="btn btn-default btn-xs" role="button">Button</a></p> -->
 					</div>
 				</div>
 			</div>
+		</div>
+		<div class="row">
 			<div class="col-xs-18 col-sm-6 col-md-3">
 				<div class="thumbnail">
 					<img src="{{URL::to('assets/img/pertanian/buncis.jpg')}}">
 					<div class="caption">
-						<h4>Buncis</h4>
-						<p>Stroberi merupakan salah satu komoditas unggulan yang ada di desa serang dan kabupaten Pubalingga pada umumnya, stroberi dapat tumbuh baik di dataran tinggi yang mempunyai ketinggian anatara 1.000 s/d 1.300 mdpl. tingginya harga buah stroberi membuat para petani banyak yang beralih menanam tanaman ini</p>
+						<h4 class="text-center">Buncis</h4>
+						<table class="table table-bordered">
+							<tbody>
+								<tr>
+									<th>Lahan (Ha)</th>
+									<th>Hasil (Ton/Ha)</th>
+								</tr>
+								<tr>
+									<td>{{round($pertanian->buncis_luas,2)}}</td>
+									<td>{{round($pertanian->buncis_hasil,2)}}</td>
+								</tr>
+							</tbody>	
+						</table>
+						<button class="btn btn-default desc">Penjelasan</button>
+						<p>Buncis adalah sejenis polong-polongan yang dapat dimakan dari berbagai kultivar Phaseolus vulgaris. Buah, biji, dan daunnya dimanfaatkan orang sebagai sayuran.
+	Tanaman buncis merupakan salah satu sayuran yang ditanam oleh para petani didesa Serang . Iklim yang sejuk serta tanah yang subur membuat tanaman ini cocol untuk ditanam didaerah Serang . Karena factor- factor tersebut beberapa petani menanam tanaman buncis ini.
+</p>
 						<!-- <p><a href="#" class="btn btn-info btn-xs" role="button">Button</a> <a href="#" class="btn btn-default btn-xs" role="button">Button</a></p> -->
 					</div>
 				</div>
@@ -188,8 +250,23 @@
 				<div class="thumbnail">
 					<img src="{{URL::to('assets/img/pertanian/terong.jpg')}}">
 					<div class="caption">
-						<h4>Terong</h4>
-						<p>Stroberi merupakan salah satu komoditas unggulan yang ada di desa serang dan kabupaten Pubalingga pada umumnya, stroberi dapat tumbuh baik di dataran tinggi yang mempunyai ketinggian anatara 1.000 s/d 1.300 mdpl. tingginya harga buah stroberi membuat para petani banyak yang beralih menanam tanaman ini</p>
+						<h4 class="text-center">Terong</h4>
+						<table class="table table-bordered">
+							<tbody>
+								<tr>
+									<th>Lahan (Ha)</th>
+									<th>Hasil (Ton/Ha)</th>
+								</tr>
+								<tr>
+									<td>{{round($pertanian->terong_luas,2)}}</td>
+									<td>{{round($pertanian->terong_hasil,2)}}</td>
+								</tr>
+							</tbody>	
+						</table>
+						<button class="btn btn-default desc">Penjelasan</button>
+						<p>Terong adalah jenis sayuran yang berkerabat dekat dengan dengan kentang dan Leunca. Terong tumbuh bagus di Desa Serang Purbalingga. 
+	Terong hasil tanam di Desa Serang memiliki Ukuran yang cukup besar dan memiliki warna ungu yang indah. Hal ini dikarenakan tanahnya yang subur serta iklim yang bagus dan juga tanaman terong mudah beradaptasi dengan pengaruh cuaca. Banyak petani didesa Serang menanam terong untuk dijual sebagai barang dagang.
+</p>
 						<!-- <p><a href="#" class="btn btn-info btn-xs" role="button">Button</a> <a href="#" class="btn btn-default btn-xs" role="button">Button</a></p> -->
 					</div>
 				</div>
@@ -198,8 +275,21 @@
 				<div class="thumbnail">
 					<img src="{{URL::to('assets/img/pertanian/wortel.jpg')}}">
 					<div class="caption">
-						<h4>Wortel</h4>
-						<p>Stroberi merupakan salah satu komoditas unggulan yang ada di desa serang dan kabupaten Pubalingga pada umumnya, stroberi dapat tumbuh baik di dataran tinggi yang mempunyai ketinggian anatara 1.000 s/d 1.300 mdpl. tingginya harga buah stroberi membuat para petani banyak yang beralih menanam tanaman ini</p>
+						<h4 class="text-center">Wortel</h4>
+						<table class="table table-bordered">
+							<tbody>
+								<tr>
+									<th>Lahan (Ha)</th>
+									<th>Hasil (Ton/Ha)</th>
+								</tr>
+								<tr>
+									<td>{{round($pertanian->wortel_luas,2)}}</td>
+									<td>{{round($pertanian->wortel_hasil,2)}}</td>
+								</tr>
+							</tbody>	
+						</table>
+						<button class="btn btn-default desc">Penjelasan</button>
+						<p>Wortel adalah salah satu jenis sayuran yang banyak ditanam oleh petani di Desa Serang.  Iklim yang bagus serta tanah yang subur membuat para petani banyak menanam wortel. Selain itu biaya untuk menanam wortel tidak terlalu mahal dibandingkan jenis sayur lainya. Maka dari itu banyak petani di Desa serang ini menanam wortel.</p>
 						<!-- <p><a href="#" class="btn btn-info btn-xs" role="button">Button</a> <a href="#" class="btn btn-default btn-xs" role="button">Button</a></p> -->
 					</div>
 				</div>
@@ -208,16 +298,122 @@
 				<div class="thumbnail">
 					<img src="{{URL::to('assets/img/pertanian/padigogo.jpg')}}">
 					<div class="caption">
-						<h4>Padi Gogo</h4>
+						<h4 class="text-center">Padi Gogo</h4>
+						<table class="table table-bordered">
+							<tbody>
+								<tr>
+									<th>Lahan (Ha)</th>
+									<th>Hasil (Ton/Ha)</th>
+								</tr>
+								<tr>
+									<td>{{round($pertanian->padi_luas,2)}}</td>
+									<td>{{round($pertanian->padi_hasil,2)}}</td>
+								</tr>
+							</tbody>	
+						</table>
+						<button class="btn btn-default desc">Penjelasan</button>
 						<p>Stroberi merupakan salah satu komoditas unggulan yang ada di desa serang dan kabupaten Pubalingga pada umumnya, stroberi dapat tumbuh baik di dataran tinggi yang mempunyai ketinggian anatara 1.000 s/d 1.300 mdpl. tingginya harga buah stroberi membuat para petani banyak yang beralih menanam tanaman ini</p>
 						<!-- <p><a href="#" class="btn btn-info btn-xs" role="button">Button</a> <a href="#" class="btn btn-default btn-xs" role="button">Button</a></p> -->
 					</div>
 				</div>
 			</div>
 		</div><!-- End row -->
+		<div class="row">
+			<ol class="breadcrumb">
+				<?php foreach ($results["tahun"] as $tahun) {
+					if ($tahun->tahun == $pertanian->tahun) { $active = "active";	}
+					else{ $active = "";	}
+					echo"<li class='".$active."'><a href=".URL::to('serang/pertanian/'.$tahun->tahun).">".$tahun->tahun."</a></li>";	
+				} ?>
+			</ol>
+		</div>		
+		<div class="col-md-6" id="canvas-holder">
+			<h3 class="text-center">Lahan  (Ha)</h3>
+			<canvas id="lahan" width="300" height="300"/>
+		</div>
+		<div class="col-md-6" id="canvas-holder">
+			<h3 class="text-center">Hasil  (Ton/Ha)</h3>
+			<canvas id="hasil" width="300" height="300"/>
+		</div>
 	</div>
 	<!-- CONTENT END -->
-
 	@include('home.footer')
+	<script>
+
+		var lahanData = [
+				{
+					value: 300,
+					color:"#F7464A",
+					highlight: "#FF5A5E",
+					label: "Red"
+				},
+				{
+					value: 50,
+					color: "#46BFBD",
+					highlight: "#5AD3D1",
+					label: "Green"
+				},
+				{
+					value: 100,
+					color: "#FDB45C",
+					highlight: "#FFC870",
+					label: "Yellow"
+				},
+				{
+					value: 40,
+					color: "#949FB1",
+					highlight: "#A8B3C5",
+					label: "Grey"
+				},
+				{
+					value: 120,
+					color: "#4D5360",
+					highlight: "#616774",
+					label: "Dark Grey"
+				}
+
+			];
+		var hasilData = [
+				{
+					value: 300,
+					color:"#F7464A",
+					highlight: "#FF5A5E",
+					label: "Red"
+				},
+				{
+					value: 50,
+					color: "#46BFBD",
+					highlight: "#5AD3D1",
+					label: "Green"
+				},
+				{
+					value: 100,
+					color: "#FDB45C",
+					highlight: "#FFC870",
+					label: "Yellow"
+				},
+				{
+					value: 40,
+					color: "#949FB1",
+					highlight: "#A8B3C5",
+					label: "Grey"
+				},
+				{
+					value: 120,
+					color: "#4D5360",
+					highlight: "#616774",
+					label: "Dark Grey"
+				}
+
+			];
+
+			window.onload = function(){
+				var ctx = document.getElementById("lahan").getContext("2d");
+				window.myPie = new Chart(ctx).Pie(lahanData);
+				var ctx = document.getElementById("hasil").getContext("2d");
+				window.myPie = new Chart(ctx).Pie(hasilData);
+			};
+
+	</script>	
 </body>
 </html>
