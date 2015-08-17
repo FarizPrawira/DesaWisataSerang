@@ -12,10 +12,15 @@
 </head>
 <body>
 	@include('home.header')
-	
 	<!-- CONTENT -->
 	<div class="container fix-content">
-		<div class="hasil-serang">
+		<h1 class="text-center">Hasil Peternakan Desa Serang</h1>
+		<p>
+			Desa Serang merupakan desa yang berada di dataran tinggi. Desa Serang sangat cocok untuk bercocok tanam. Desa Serang sebagai tempat yang cocok untuk bercocok tanam dimanfaatkan oleh warganya sebagai lahan pertanian. Pertanian yang berkembang di Desa Serang sangatlah beragam, antara lain Kobis, Chesim, Wortel, Sawi, Ubi Kayu, Ubi Jalar, Tomat, Strawberry dan lain-lain.
+			Mayoritas masyarakat Desa Serang mengelola pertanian masih menggunakan adat/kultur telah ada sejak dulu.
+		</p>
+		<br/>
+		<div class="row">
 			<ol class="breadcrumb">
 				<?php foreach ($results["tahun"] as $tahun) {
 					if ($tahun->tahun == $peternakan->tahun) { $active = "active";	}
@@ -23,54 +28,25 @@
 					echo"<li class='".$active."'><a href=".URL::to('serang/peternakan/'.$tahun->tahun).">".$tahun->tahun."</a></li>";	
 				} ?>
 			</ol>
-			<table class="table table-bordered">
-				<tbody class="text-center">
-					<tr>
-						<th class="text-center">Jenis Ternak</th>
-						<th class="text-center">Jumlah Ternak (Ekor)</th>
-					</tr>
-					<tr>
-						<td><b>Sapi</b></td>
-						<td>{{$peternakan->sapi}}</td>
-					</tr>
-					<tr>
-						<td><b>Kambing</b></td>
-						<td>{{$peternakan->kambing}}</td>
-					</tr>
-					<tr>
-						<td><b>Ayam</b></td>
-						<td>{{$peternakan->ayam}}</td>
-					</tr>
-					<tr>
-						<td><b>Kuda</b></td>
-						<td>{{$peternakan->kuda}}</td>
-					</tr>
-				</tbody>
-			</table>
-			<table class="table table-bordered">
-				<tbody class="text-center">
-					<tr>
-						<th class="text-center">Jenis Produk Ternak</th>
-						<th class="text-center">Jumlah Produk Ternak</th>
-					</tr>
-					<tr>
-						<td><b>Daging</b></td>
-						<td>{{$peternakan->daging}}</td>
-					</tr>
-					<tr>
-						<td><b>Susu</b></td>
-						<td>{{$peternakan->susu}} ltr/th</td>
-					</tr>
-				</tbody>
-			</table>
 		</div>
 		<div class="row">
 			<div class="col-xs-18 col-sm-6 col-md-3">
 				<div class="thumbnail">
 					<img src="{{URL::to('assets/img/peternakan/sapi.jpg')}}">
 					<div class="caption">
-						<h4>Sapi</h4>
-						<p>Stroberi merupakan salah satu komoditas unggulan yang ada di desa serang dan kabupaten Pubalingga pada umumnya, stroberi dapat tumbuh baik di dataran tinggi yang mempunyai ketinggian anatara 1.000 s/d 1.300 mdpl. tingginya harga buah stroberi membuat para petani banyak yang beralih menanam tanaman ini</p>
+						<h4 class="text-center">Sapi</h4>
+						<table class="table table-bordered">
+							<tbody>
+								<tr>
+									<th>Jumlah (ekor)</th>
+								</tr>
+								<tr>
+									<td>{{round($peternakan->sapi)}}</td>
+								</tr>
+							</tbody>	
+						</table>
+						<button class="btn btn-default desc">Penjelasan</button>
+						<p>Jagung atau Zea mays adalah tanaman yang banyak ditanam di Desa Serang. Tanah Yang Subur serta iklim yang mendukung untuk pertumbuhan jagung. Para Petani Banyak yang menanam jagung . Jenis Jagung yang ditanam lebih banyak jagung lokal dibandingkan jagung manis ataupun jenis jagung lainnya. Petani jagung didesa Serang lebih banyak menjual hasil Jagungnya untuk pakan ternak maupun dijual untuk keperluan lain.</p>
 						<!-- <p><a href="#" class="btn btn-info btn-xs" role="button">Button</a> <a href="#" class="btn btn-default btn-xs" role="button">Button</a></p> -->
 					</div>
 				</div>
@@ -79,8 +55,19 @@
 				<div class="thumbnail">
 					<img src="{{URL::to('assets/img/peternakan/kambing.jpg')}}">
 					<div class="caption">
-						<h4>Kambing</h4>
-						<p>Stroberi merupakan salah satu komoditas unggulan yang ada di desa serang dan kabupaten Pubalingga pada umumnya, stroberi dapat tumbuh baik di dataran tinggi yang mempunyai ketinggian anatara 1.000 s/d 1.300 mdpl. tingginya harga buah stroberi membuat para petani banyak yang beralih menanam tanaman ini</p>
+						<h4 class="text-center">Kambing</h4>
+						<table class="table table-bordered">
+							<tbody>
+								<tr>
+									<th>Jumlah (ekor)</th>
+								</tr>
+								<tr>
+									<td>{{round($peternakan->kambing)}}</td>
+								</tr>
+							</tbody>	
+						</table>
+						<button class="btn btn-default desc">Penjelasan</button>
+						<p>Jagung atau Zea mays adalah tanaman yang banyak ditanam di Desa Serang. Tanah Yang Subur serta iklim yang mendukung untuk pertumbuhan jagung. Para Petani Banyak yang menanam jagung . Jenis Jagung yang ditanam lebih banyak jagung lokal dibandingkan jagung manis ataupun jenis jagung lainnya. Petani jagung didesa Serang lebih banyak menjual hasil Jagungnya untuk pakan ternak maupun dijual untuk keperluan lain.</p>
 						<!-- <p><a href="#" class="btn btn-info btn-xs" role="button">Button</a> <a href="#" class="btn btn-default btn-xs" role="button">Button</a></p> -->
 					</div>
 				</div>
@@ -89,8 +76,19 @@
 				<div class="thumbnail">
 					<img src="{{URL::to('assets/img/peternakan/ayam.jpg')}}">
 					<div class="caption">
-						<h4>Ayam</h4>
-						<p>Stroberi merupakan salah satu komoditas unggulan yang ada di desa serang dan kabupaten Pubalingga pada umumnya, stroberi dapat tumbuh baik di dataran tinggi yang mempunyai ketinggian anatara 1.000 s/d 1.300 mdpl. tingginya harga buah stroberi membuat para petani banyak yang beralih menanam tanaman ini</p>
+						<h4 class="text-center">Ayam</h4>
+						<table class="table table-bordered">
+							<tbody>
+								<tr>
+									<th>Jumlah (ekor)</th>
+								</tr>
+								<tr>
+									<td>{{round($peternakan->ayam)}}</td>
+								</tr>
+							</tbody>	
+						</table>
+						<button class="btn btn-default desc">Penjelasan</button>
+						<p>Jagung atau Zea mays adalah tanaman yang banyak ditanam di Desa Serang. Tanah Yang Subur serta iklim yang mendukung untuk pertumbuhan jagung. Para Petani Banyak yang menanam jagung . Jenis Jagung yang ditanam lebih banyak jagung lokal dibandingkan jagung manis ataupun jenis jagung lainnya. Petani jagung didesa Serang lebih banyak menjual hasil Jagungnya untuk pakan ternak maupun dijual untuk keperluan lain.</p>
 						<!-- <p><a href="#" class="btn btn-info btn-xs" role="button">Button</a> <a href="#" class="btn btn-default btn-xs" role="button">Button</a></p> -->
 					</div>
 				</div>
@@ -99,8 +97,42 @@
 				<div class="thumbnail">
 					<img src="{{URL::to('assets/img/peternakan/kuda.jpg')}}">
 					<div class="caption">
-						<h4>Kuda</h4>
-						<p>Stroberi merupakan salah satu komoditas unggulan yang ada di desa serang dan kabupaten Pubalingga pada umumnya, stroberi dapat tumbuh baik di dataran tinggi yang mempunyai ketinggian anatara 1.000 s/d 1.300 mdpl. tingginya harga buah stroberi membuat para petani banyak yang beralih menanam tanaman ini</p>
+						<h4 class="text-center">Kuda</h4>
+						<table class="table table-bordered">
+							<tbody>
+								<tr>
+									<th>Jumlah (ekor)</th>
+								</tr>
+								<tr>
+									<td>{{round($peternakan->kuda)}}</td>
+								</tr>
+							</tbody>	
+						</table>
+						<button class="btn btn-default desc">Penjelasan</button>
+						<p>Jagung atau Zea mays adalah tanaman yang banyak ditanam di Desa Serang. Tanah Yang Subur serta iklim yang mendukung untuk pertumbuhan jagung. Para Petani Banyak yang menanam jagung . Jenis Jagung yang ditanam lebih banyak jagung lokal dibandingkan jagung manis ataupun jenis jagung lainnya. Petani jagung didesa Serang lebih banyak menjual hasil Jagungnya untuk pakan ternak maupun dijual untuk keperluan lain.</p>
+						<!-- <p><a href="#" class="btn btn-info btn-xs" role="button">Button</a> <a href="#" class="btn btn-default btn-xs" role="button">Button</a></p> -->
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-18 col-sm-6 col-md-3">
+				<div class="thumbnail">
+					<img src="{{URL::to('assets/img/peternakan/daging.jpg')}}">
+					<div class="caption">
+						<h4 class="text-center">Daging</h4>
+						<table class="table table-bordered">
+							<tbody>
+								<tr>
+									<th class="text-center">Jumlah Produk Ternak</th>
+								</tr>
+								<tr>
+									<td>{{$peternakan->daging}}</td>
+								</tr>
+							</tbody>	
+						</table>
+						<button class="btn btn-default desc">Penjelasan</button>
+						<p>Jagung atau Zea mays adalah tanaman yang banyak ditanam di Desa Serang. Tanah Yang Subur serta iklim yang mendukung untuk pertumbuhan jagung. Para Petani Banyak yang menanam jagung . Jenis Jagung yang ditanam lebih banyak jagung lokal dibandingkan jagung manis ataupun jenis jagung lainnya. Petani jagung didesa Serang lebih banyak menjual hasil Jagungnya untuk pakan ternak maupun dijual untuk keperluan lain.</p>
 						<!-- <p><a href="#" class="btn btn-info btn-xs" role="button">Button</a> <a href="#" class="btn btn-default btn-xs" role="button">Button</a></p> -->
 					</div>
 				</div>
@@ -109,26 +141,110 @@
 				<div class="thumbnail">
 					<img src="{{URL::to('assets/img/peternakan/susu.jpg')}}">
 					<div class="caption">
-						<h4>Susu</h4>
-						<p>Stroberi merupakan salah satu komoditas unggulan yang ada di desa serang dan kabupaten Pubalingga pada umumnya, stroberi dapat tumbuh baik di dataran tinggi yang mempunyai ketinggian anatara 1.000 s/d 1.300 mdpl. tingginya harga buah stroberi membuat para petani banyak yang beralih menanam tanaman ini</p>
+						<h4 class="text-center">Susu</h4>
+						<table class="table table-bordered">
+							<tbody>
+								<tr>
+									<th class="text-center">Jumlah Produk Ternak</th>
+								</tr>
+								<tr>
+									<td>{{$peternakan->susu}} ltr/th</td>
+								</tr>
+							</tbody>	
+						</table>
+						<button class="btn btn-default desc">Penjelasan</button>
+						<p>Jagung atau Zea mays adalah tanaman yang banyak ditanam di Desa Serang. Tanah Yang Subur serta iklim yang mendukung untuk pertumbuhan jagung. Para Petani Banyak yang menanam jagung . Jenis Jagung yang ditanam lebih banyak jagung lokal dibandingkan jagung manis ataupun jenis jagung lainnya. Petani jagung didesa Serang lebih banyak menjual hasil Jagungnya untuk pakan ternak maupun dijual untuk keperluan lain.</p>
 						<!-- <p><a href="#" class="btn btn-info btn-xs" role="button">Button</a> <a href="#" class="btn btn-default btn-xs" role="button">Button</a></p> -->
 					</div>
 				</div>
 			</div>
-			<div class="col-xs-18 col-sm-6 col-md-3">
-				<div class="thumbnail">
-					<img src="{{URL::to('assets/img/peternakan/daging.jpg')}}">
-					<div class="caption">
-						<h4>Daging</h4>
-						<p>Stroberi merupakan salah satu komoditas unggulan yang ada di desa serang dan kabupaten Pubalingga pada umumnya, stroberi dapat tumbuh baik di dataran tinggi yang mempunyai ketinggian anatara 1.000 s/d 1.300 mdpl. tingginya harga buah stroberi membuat para petani banyak yang beralih menanam tanaman ini</p>
-						<!-- <p><a href="#" class="btn btn-info btn-xs" role="button">Button</a> <a href="#" class="btn btn-default btn-xs" role="button">Button</a></p> -->
-					</div>
-				</div>
-			</div>
-		</div><!-- End row -->
+		</div>
+	<div class="row">
+	<!-- GRAFIK/CHART -->
+		<div class="col-md-5 col-md-offset-1" id="canvas-holder">
+			<h3 class="text-center">Jumlah Ternak (ekor)</h3>
+			<canvas id="lahan" width="300" height="300"/>
+		</div>
+		<div class="col-md-5" id="canvas-holder">
+			<h3 class="text-center">Produk Ternak</h3>
+			<canvas id="hasil" width="300" height="300"/>
+		</div>
 	</div>
-	<!-- CONTENT END -->
+</div>
+<!-- CONTENT END -->
+@include('home.footer')
+<script>
+	var lahanData = [
+			{
+				value: 300,
+				color:"#F7464A",
+				highlight: "#FF5A5E",
+				label: "Red"
+			},
+			{
+				value: 50,
+				color: "#46BFBD",
+				highlight: "#5AD3D1",
+				label: "Green"
+			},
+			{
+				value: 100,
+				color: "#FDB45C",
+				highlight: "#FFC870",
+				label: "Yellow"
+			},
+			{
+				value: 40,
+				color: "#949FB1",
+				highlight: "#A8B3C5",
+				label: "Grey"
+			},
+			{
+				value: 120,
+				color: "#4D5360",
+				highlight: "#616774",
+				label: "Dark Grey"
+			}
 
-	@include('home.footer')
+		];
+	var hasilData = [
+			{
+				value: 300,
+				color:"#F7464A",
+				highlight: "#FF5A5E",
+				label: "Red"
+			},
+			{
+				value: 50,
+				color: "#46BFBD",
+				highlight: "#5AD3D1",
+				label: "Green"
+			},
+			{
+				value: 100,
+				color: "#FDB45C",
+				highlight: "#FFC870",
+				label: "Yellow"
+			},
+			{
+				value: 40,
+				color: "#949FB1",
+				highlight: "#A8B3C5",
+				label: "Grey"
+			},
+			{
+				value: 120,
+				color: "#4D5360",
+				highlight: "#616774",
+				label: "Dark Grey"
+			}
+		];
+		window.onload = function(){
+			var ctx = document.getElementById("lahan").getContext("2d");
+			window.myPie = new Chart(ctx).Pie(lahanData);
+			var ctx = document.getElementById("hasil").getContext("2d");
+			window.myPie = new Chart(ctx).Pie(hasilData);
+		};
+</script>	
 </body>
 </html>

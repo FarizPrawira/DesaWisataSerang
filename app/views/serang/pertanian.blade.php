@@ -19,7 +19,16 @@
 			Desa Serang merupakan desa yang berada di dataran tinggi. Desa Serang sangat cocok untuk bercocok tanam. Desa Serang sebagai tempat yang cocok untuk bercocok tanam dimanfaatkan oleh warganya sebagai lahan pertanian. Pertanian yang berkembang di Desa Serang sangatlah beragam, antara lain Kobis, Chesim, Wortel, Sawi, Ubi Kayu, Ubi Jalar, Tomat, Strawberry dan lain-lain.
 			Mayoritas masyarakat Desa Serang mengelola pertanian masih menggunakan adat/kultur telah ada sejak dulu.
 		</p>
-		<br/> 
+		<br/>
+		<div class="row">
+			<ol class="breadcrumb">
+				<?php foreach ($results["tahun"] as $tahun) {
+					if ($tahun->tahun == $pertanian->tahun) { $active = "active";	}
+					else{ $active = "";	}
+					echo"<li class='".$active."'><a href=".URL::to('serang/pertanian/'.$tahun->tahun).">".$tahun->tahun."</a></li>";	
+				} ?>
+			</ol>
+		</div>
 		<div class="row">
 			<div class="col-xs-18 col-sm-6 col-md-3">
 				<div class="thumbnail">
@@ -317,21 +326,13 @@
 					</div>
 				</div>
 			</div>
-		</div><!-- End row -->
-		<div class="row">
-			<ol class="breadcrumb">
-				<?php foreach ($results["tahun"] as $tahun) {
-					if ($tahun->tahun == $pertanian->tahun) { $active = "active";	}
-					else{ $active = "";	}
-					echo"<li class='".$active."'><a href=".URL::to('serang/pertanian/'.$tahun->tahun).">".$tahun->tahun."</a></li>";	
-				} ?>
-			</ol>
-		</div>		
-		<div class="col-md-6" id="canvas-holder">
+		</div><!-- End row -->	
+		<!-- GRAFIK/CHART -->
+		<div class="col-md-5 col-md-offset-1" id="canvas-holder">
 			<h3 class="text-center">Lahan  (Ha)</h3>
 			<canvas id="lahan" width="300" height="300"/>
 		</div>
-		<div class="col-md-6" id="canvas-holder">
+		<div class="col-md-5" id="canvas-holder">
 			<h3 class="text-center">Hasil  (Ton/Ha)</h3>
 			<canvas id="hasil" width="300" height="300"/>
 		</div>
@@ -339,7 +340,6 @@
 	<!-- CONTENT END -->
 	@include('home.footer')
 	<script>
-
 		var lahanData = [
 				{
 					value: 300,

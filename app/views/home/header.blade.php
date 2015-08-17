@@ -20,14 +20,14 @@
 	<div class="menu-list" id="listserang">
 		<div class="col-md-8">
 			<a href="{{URL::to('serang/pertanian/2010')}}" class="menu-item">
-				<img src="{{URL::to('assets/img/2.jpg')}}">
+				<img src="{{URL::to('assets/img/pertanian.jpg')}}">
 				<span>
 					<h4>Pertanian</h4>
 					<p>Kubis, Kentang, Tomat, Wortel</p>
 				</span>
 			</a>
 			<a href="{{URL::to('serang/peternakan/2010')}}" class="menu-item">
-				<img src="{{URL::to('assets/img/2.jpg')}}">
+				<img src="{{URL::to('assets/img/peternakan.jpg')}}">
 				<span>
 					<h4>Peternakan</h4>
 					<p>Sapi, Kambing, Ayam, Kuda</p>
@@ -48,7 +48,7 @@
 				</span>
 			</a>
 			<a href="{{URL::to('serang/produk')}}" class="menu-item">
-				<img src="{{URL::to('assets/img/2.jpg')}}">
+				<img src="{{URL::to('assets/img/produk.jpg')}}">
 				<span>
 					<h4>Produk</h4>
 					<p>Gethuk Strawberry, Keripiki Daun Strawberry, Sirup Strawberry</p>
@@ -56,10 +56,8 @@
 			</a>
 		</div>
 		<div class="col-md-4">
-			<a href="{{URL::to('serang/galery')}}" class="menu-item galery">
-				<img src="{{URL::to('assets/img/2.jpg')}}" id="img1">
-				<img src="{{URL::to('assets/img/3.jpg')}}" id="img2">
-				<img src="{{URL::to('assets/img/4.jpg')}}" id="img3">
+			<a href="{{URL::to('serang/galery')}}" class="menu-item">
+				<img src="{{URL::to('assets/img/galery.jpg')}}">
 				<span>
 					<h4>Galery</h4>
 					<p>Gambar & Video</p>
@@ -77,35 +75,35 @@
 	<div class="menu-list" id="listwisata">
 		<div class="col-md-8">
 			<a href="{{URL::to('wisata/stroberi')}}" class="menu-item">
-				<img src="{{URL::to('assets/img/2.jpg')}}">
+				<img src="{{URL::to('assets/img/kebunstrawberry.jpg')}}">
 				<span>
 					<h4>Kebun Strawberry</h4>
 					<p>Petik Sendiri!</p>
 				</span>
 			</a>
 			<a href="{{URL::to('wisata/restarea')}}" class="menu-item">
-				<img src="{{URL::to('assets/img/2.jpg')}}">
+				<img src="{{URL::to('assets/img/restarea.jpg')}}">
 				<span>
 					<h4>Rest Area</h4>
 					<p>Tempat santai beristirahat!</p>
 				</span>
 			</a>
 			<a href="{{URL::to('wisata/outbound')}}" class="menu-item">
-				<img src="{{URL::to('assets/img/2.jpg')}}">
+				<img src="{{URL::to('assets/img/outbound.jpg')}}">
 				<span>
 					<h4>Outbond</h4>
 					<p>ATV, Giant Swing, Flying Fox</p>
 				</span>
 			</a>
 			<a href="{{URL::to('wisata/pinus')}}" class="menu-item">
-				<img src="{{URL::to('assets/img/2.jpg')}}">
+				<img src="{{URL::to('assets/img/pinus.jpg')}}">
 				<span>
 					<h4>Hutan Pinus</h4>
 					<p>Tempat foto bersama!</p>
 				</span>
 			</a>
 			<a href="{{URL::to('wisata/kuda')}}" class="menu-item">
-				<img src="{{URL::to('assets/img/2.jpg')}}">
+				<img src="{{URL::to('assets/img/kuda.jpg')}}">
 				<span>
 					<h4>Kuda Tunggang</h4>
 					<p>Berkeliling dengan kuda!</p>
@@ -121,7 +119,7 @@
 				</span>
 			</a>
 			<a href="{{URL::to('wisata/homestay')}}" class="menu-item">
-				<img src="{{URL::to('assets/img/2.jpg')}}">
+				<img src="{{URL::to('assets/img/homestay1.jpg')}}">
 				<span>
 					<h4>Home Stay</h4>
 					<p>Rumah inap pengunjung</p> 
