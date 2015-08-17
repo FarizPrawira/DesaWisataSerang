@@ -28,31 +28,6 @@
 	</div>
 	<!-- ERROR LOGIN NOTIF END-->
 
-	<!-- ERROR INPUT -->
-	<?php if(isset($errors)) {foreach ($errors->all() as $key): ?>
-	<div class="notification" id="notification">
-		<div class="col-xs-offset-3 col-xs-6 alert alert-danger alert-dismissible" role="alert">
-			<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
-			{{$key}}
-		</div>
-		<div class="clearfix"></div>
-	</div>
-	<?php 
-	endforeach; }?>
-	<!-- ERROR INPUT END-->
-
-	<!-- SUCCESS INPUT -->
-	<?php if(Session::has('sukses')) { ?>
-	<div class="notification" id="notification">
-		<div class="col-xs-offset-3 col-xs-6 alert alert-success alert-dismissible" role="alert">
-			<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
-			{{Session::get('sukses')}}
-		</div>
-		<div class="clearfix"></div>
-	</div>
-	<?php } ?>
-	<!-- SUCCESS INPUT END-->
-
 	<!-- LOGIN FORM -->
 	<?php	if(!Auth::check()){ ?>
 	<div class="modal-dialog modal-sm">
@@ -81,6 +56,32 @@
 	// ALREADY LOGIN
 	else { ?>
 	@include('home.header')
+
+	<!-- ERROR INPUT -->
+	<?php if(isset($errors)) {foreach ($errors->all() as $key): ?>
+	<div class="notification" id="notification">
+		<div class="col-xs-offset-3 col-xs-6 alert alert-danger alert-dismissible" role="alert">
+			<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
+			{{$key}}
+		</div>
+		<div class="clearfix"></div>
+	</div>
+	<?php 
+	endforeach; }?>
+	<!-- ERROR INPUT END-->
+
+	<!-- SUCCESS INPUT -->
+	<?php if(Session::has('sukses')) { ?>
+	<div class="notification" id="notification">
+		<div class="col-xs-offset-3 col-xs-6 alert alert-success alert-dismissible" role="alert">
+			<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
+			{{Session::get('sukses')}}
+		</div>
+		<div class="clearfix"></div>
+	</div>
+	<?php } ?>
+	<!-- SUCCESS INPUT END-->
+
 	<!-- CONTENT -->
 	<div class="container main-container">
 		<div class="col-md-2 sidebar-serang">

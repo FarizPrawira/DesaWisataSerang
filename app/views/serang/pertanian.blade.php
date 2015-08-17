@@ -42,8 +42,8 @@
 									<th>Hasil (Ton/Ha)</th>
 								</tr>
 								<tr>
-									<td>{{round($pertanian->jagung_luas,2)}}</td>
-									<td>{{round($pertanian->jagung_hasil,2)}}</td>
+									<td id="jagungLuas">{{round($pertanian->jagung_luas,2)}}</td>
+									<td id="jagungHasil">{{round($pertanian->jagung_hasil,2)}}</td>
 								</tr>
 							</tbody>	
 						</table>
@@ -65,16 +65,16 @@
 									<th>Hasil (Ton/Ha)</th>
 								</tr>
 								<tr>
-									<td>{{round($pertanian->ubi_kayu_luas,2)}}</td>
-									<td>{{round($pertanian->ubi_kayu_hasil,2)}}</td>
+									<td id="ubiKayuLuas">{{round($pertanian->ubi_kayu_luas,2)}}</td>
+									<td id="ubiKayuHasil">{{round($pertanian->ubi_kayu_hasil,2)}}</td>
 								</tr>
 							</tbody>	
 						</table>
 						<button class="btn btn-default desc">Penjelasan</button>
 						<p>Ubi Kayu, Ketela Pohon ataupun Singkong adalah  perdu tahunan tropika dan subtropika dari suku Euphorbiaceae. Umbinya dikenal luas sebagai makanan pokok penghasil karbohidrat dan daunnya sebagai sayuran.
-	Ubi Kayu Banyak ditanam Didesa Serang, Pembudidayaannya yang mudah serta perawatannya yang tidak terlalu rumit. Membuat Tanaman ini banyak dijumpai dilahan pertanian milik petani Serang. 
-	Ubi Kayu ini selain dikonsumsi sendiri lebih banyak dijual ke pengepul ataupun ke Pabrik-Pabrik yang akan mengolahnya. Sistem Penjualan ubi Kayu di Desa Serang menggunakan model tebas.
-</p>
+							Ubi Kayu Banyak ditanam Didesa Serang, Pembudidayaannya yang mudah serta perawatannya yang tidak terlalu rumit. Membuat Tanaman ini banyak dijumpai dilahan pertanian milik petani Serang. 
+							Ubi Kayu ini selain dikonsumsi sendiri lebih banyak dijual ke pengepul ataupun ke Pabrik-Pabrik yang akan mengolahnya. Sistem Penjualan ubi Kayu di Desa Serang menggunakan model tebas.
+						</p>
 						<!-- <p><a href="#" class="btn btn-info btn-xs" role="button">Button</a> <a href="#" class="btn btn-default btn-xs" role="button">Button</a></p> -->
 					</div>
 				</div>
@@ -91,13 +91,13 @@
 									<th>Hasil (Ton/Ha)</th>
 								</tr>
 								<tr>
-									<td>{{round($pertanian->ubi_jalar_luas,2)}}</td>
-									<td>{{round($pertanian->ubi_jalar_hasil,2)}}</td>
+									<td id="ubiJalarLuas">{{round($pertanian->ubi_jalar_luas,2)}}</td>
+									<td id="ubiJalarHasil">{{round($pertanian->ubi_jalar_hasil,2)}}</td>
 								</tr>
 							</tbody>	
 						</table>
 						<button class="btn btn-default desc">Penjelasan</button>
-						<p>Stroberi merupakan salah satu komoditas unggulan yang ada di desa serang dan kabupaten Pubalingga pada umumnya, stroberi dapat tumbuh baik di dataran tinggi yang mempunyai ketinggian anatara 1.000 s/d 1.300 mdpl. tingginya harga buah stroberi membuat para petani banyak yang beralih menanam tanaman ini</p>
+						<p>Ubi Jalar</p>
 						<!-- <p><a href="#" class="btn btn-info btn-xs" role="button">Button</a> <a href="#" class="btn btn-default btn-xs" role="button">Button</a></p> -->
 					</div>
 				</div>
@@ -114,15 +114,15 @@
 									<th>Hasil (Ton/Ha)</th>
 								</tr>
 								<tr>
-									<td>{{round($pertanian->cabai_luas,2)}}</td>
-									<td>{{round($pertanian->cabai_hasil,2)}}</td>
+									<td id="cabaiLuas">{{round($pertanian->cabai_luas,2)}}</td>
+									<td id="cabaiHasil">{{round($pertanian->cabai_hasil,2)}}</td>
 								</tr>
 							</tbody>	
 						</table>
 						<button class="btn btn-default desc">Penjelasan</button>
 						<p>Cabai  adalah  tumbuhan anggota genus Capsicum. Buahnya dapat dikategorikan sebagai sayuran ataupun bumbu, tergantung bagaimana digunakan. Sebagai bumbu, buah cabai yang pedas sangat populer di Asia Tenggara sebagai penguat rasa makanan.
-	Dengan Iklim yang serang yang baik serta tanahnya yang subur tanaman cabai tumbuh baik di Desa Serang. Selain itu harganya yang cukup tinggi membuat para petani banyak menanam cabai sebagai tumbuhan yang memiliki nilai ekonomi yang tinggi.
-</p>
+							Dengan Iklim yang serang yang baik serta tanahnya yang subur tanaman cabai tumbuh baik di Desa Serang. Selain itu harganya yang cukup tinggi membuat para petani banyak menanam cabai sebagai tumbuhan yang memiliki nilai ekonomi yang tinggi.
+						</p>
 						<!-- <p><a href="#" class="btn btn-info btn-xs" role="button">Button</a> <a href="#" class="btn btn-default btn-xs" role="button">Button</a></p> -->
 					</div>
 				</div>
@@ -141,16 +141,16 @@
 									<th>Hasil (Ton/Ha)</th>
 								</tr>
 								<tr>
-									<td>{{round($pertanian->tomat_luas,2)}}</td>
-									<td>{{round($pertanian->tomat_hasil,2)}}</td>
+									<td id="tomatLuas">{{round($pertanian->tomat_luas,2)}}</td>
+									<td id="tomatHasil">{{round($pertanian->tomat_hasil,2)}}</td>
 								</tr>
 							</tbody>	
 						</table>
 						<button class="btn btn-default desc">Penjelasan</button>
 						<p>Tomat (Solanum lycopersicum syn. Lycopersicum esculentum) adalah tumbuhan dari keluarga Solanaceae, tumbuhan asli Amerika Tengah dan Selatan, dari Meksiko sampai Peru. 
-	Tomat merupakan tumbuhan siklus hidup singkat, dapat tumbuh setinggi 1 sampai 3 meter. Tomat merupakan keluarga dekat dari kentang.	Seperti Halnya Kentang  tomat Juga membutuhkan Iklim yang sejuk untuk tumbuh. 
-	Karena iklim serta letak dari desa Serang sesuai dengan yang dibutuhkan oleh tomat untuk tumbuh Banyak Petani menanam tomat didesa Serang.  Selain itu factor lain yang mendukung tanaman tomat menjadi salah satu komoditas sayuran adalah karena tanah di desa Serang yang subur sehingga mendukung kegiatan pertanianan
-</p>
+							Tomat merupakan tumbuhan siklus hidup singkat, dapat tumbuh setinggi 1 sampai 3 meter. Tomat merupakan keluarga dekat dari kentang.	Seperti Halnya Kentang  tomat Juga membutuhkan Iklim yang sejuk untuk tumbuh. 
+							Karena iklim serta letak dari desa Serang sesuai dengan yang dibutuhkan oleh tomat untuk tumbuh Banyak Petani menanam tomat didesa Serang.  Selain itu factor lain yang mendukung tanaman tomat menjadi salah satu komoditas sayuran adalah karena tanah di desa Serang yang subur sehingga mendukung kegiatan pertanianan
+						</p>
 						<!-- <p><a href="#" class="btn btn-info btn-xs" role="button">Button</a> <a href="#" class="btn btn-default btn-xs" role="button">Button</a></p> -->
 					</div>
 				</div>
@@ -167,13 +167,13 @@
 									<th>Hasil (Ton/Ha)</th>
 								</tr>
 								<tr>
-									<td>{{round($pertanian->sawi_luas,2)}}</td>
-									<td>{{round($pertanian->sawi_hasil,2)}}</td>
+									<td id="sawiLuas">{{round($pertanian->sawi_luas,2)}}</td>
+									<td id="sawiHasil">{{round($pertanian->sawi_hasil,2)}}</td>
 								</tr>
 							</tbody>	
 						</table>
 						<button class="btn btn-default desc">Penjelasan</button>
-						<p>Stroberi merupakan salah satu komoditas unggulan yang ada di desa serang dan kabupaten Pubalingga pada umumnya, stroberi dapat tumbuh baik di dataran tinggi yang mempunyai ketinggian anatara 1.000 s/d 1.300 mdpl. tingginya harga buah stroberi membuat para petani banyak yang beralih menanam tanaman ini</p>
+						<p>Sawi</p>
 						<!-- <p><a href="#" class="btn btn-info btn-xs" role="button">Button</a> <a href="#" class="btn btn-default btn-xs" role="button">Button</a></p> -->
 					</div>
 				</div>
@@ -190,15 +190,15 @@
 									<th>Hasil (Ton/Ha)</th>
 								</tr>
 								<tr>
-									<td>{{round($pertanian->kentang_luas,2)}}</td>
-									<td>{{round($pertanian->kentang_hasil,2)}}</td>
+									<td id="kentangLuas">{{round($pertanian->kentang_luas,2)}}</td>
+									<td id="kentangHasil">{{round($pertanian->kentang_hasil,2)}}</td>
 								</tr>
 							</tbody>	
 						</table>
 						<button class="btn btn-default desc">Penjelasan</button>
 						<p>Kentang atau Solanum tuberosum L adalah  tanaman dari suku Solanaceae yang memiliki umbi batang yang dapat dimakan dan disebut "kentang".
-	Kentang adalah salah satu sayuran yang  banyak di tanam oleh Petani di Desa Serang. Iklim Sejuk Desa Serang  serta letak desa Serang yan berada pada Dataran tinggi  merupakan salah satu factor tanaman sayur ini  ditanam oleh para petani di Desa Serang.
-</p>
+							Kentang adalah salah satu sayuran yang  banyak di tanam oleh Petani di Desa Serang. Iklim Sejuk Desa Serang  serta letak desa Serang yan berada pada Dataran tinggi  merupakan salah satu factor tanaman sayur ini  ditanam oleh para petani di Desa Serang.
+						</p>
 						<!-- <p><a href="#" class="btn btn-info btn-xs" role="button">Button</a> <a href="#" class="btn btn-default btn-xs" role="button">Button</a></p> -->
 					</div>
 				</div>
@@ -215,15 +215,15 @@
 									<th>Hasil (Ton/Ha)</th>
 								</tr>
 								<tr>
-									<td>{{round($pertanian->kubis_luas,2)}}</td>
-									<td>{{round($pertanian->kubis_hasil,2)}}</td>
+									<td id="kubisLuas">{{round($pertanian->kubis_luas,2)}}</td>
+									<td id="kubisHasil">{{round($pertanian->kubis_hasil,2)}}</td>
 								</tr>
 							</tbody>	
 						</table>
 						<button class="btn btn-default desc">Penjelasan</button>
 						<p>Kobis/ Kubis atau yang nama ilmiahnya  Brassica oleracea L  Sayuran yang dimanfaatkan daunnya untuk dimakan. Merupakan sayuran yang sudah banyak dikenal oleh masyrakat indonesia
-	Didaerah serang yang memiliki iklim yang baik serta tanah yang subur sayuran Kobis ini tumbuh baik di Desa Serang. Dan juga para petani sayur desa Serang telah banyak yang menanamnya.
-</p>
+							Didaerah serang yang memiliki iklim yang baik serta tanah yang subur sayuran Kobis ini tumbuh baik di Desa Serang. Dan juga para petani sayur desa Serang telah banyak yang menanamnya.
+						</p>
 						<!-- <p><a href="#" class="btn btn-info btn-xs" role="button">Button</a> <a href="#" class="btn btn-default btn-xs" role="button">Button</a></p> -->
 					</div>
 				</div>
@@ -242,15 +242,15 @@
 									<th>Hasil (Ton/Ha)</th>
 								</tr>
 								<tr>
-									<td>{{round($pertanian->buncis_luas,2)}}</td>
-									<td>{{round($pertanian->buncis_hasil,2)}}</td>
+									<td id="buncisLuas">{{round($pertanian->buncis_luas,2)}}</td>
+									<td id="buncisHasil">{{round($pertanian->buncis_hasil,2)}}</td>
 								</tr>
 							</tbody>	
 						</table>
 						<button class="btn btn-default desc">Penjelasan</button>
 						<p>Buncis adalah sejenis polong-polongan yang dapat dimakan dari berbagai kultivar Phaseolus vulgaris. Buah, biji, dan daunnya dimanfaatkan orang sebagai sayuran.
-	Tanaman buncis merupakan salah satu sayuran yang ditanam oleh para petani didesa Serang . Iklim yang sejuk serta tanah yang subur membuat tanaman ini cocol untuk ditanam didaerah Serang . Karena factor- factor tersebut beberapa petani menanam tanaman buncis ini.
-</p>
+							Tanaman buncis merupakan salah satu sayuran yang ditanam oleh para petani didesa Serang . Iklim yang sejuk serta tanah yang subur membuat tanaman ini cocol untuk ditanam didaerah Serang . Karena factor- factor tersebut beberapa petani menanam tanaman buncis ini.
+						</p>
 						<!-- <p><a href="#" class="btn btn-info btn-xs" role="button">Button</a> <a href="#" class="btn btn-default btn-xs" role="button">Button</a></p> -->
 					</div>
 				</div>
@@ -267,15 +267,15 @@
 									<th>Hasil (Ton/Ha)</th>
 								</tr>
 								<tr>
-									<td>{{round($pertanian->terong_luas,2)}}</td>
-									<td>{{round($pertanian->terong_hasil,2)}}</td>
+									<td id="terongLuas">{{round($pertanian->terong_luas,2)}}</td>
+									<td id="terongHasil">{{round($pertanian->terong_hasil,2)}}</td>
 								</tr>
 							</tbody>	
 						</table>
 						<button class="btn btn-default desc">Penjelasan</button>
 						<p>Terong adalah jenis sayuran yang berkerabat dekat dengan dengan kentang dan Leunca. Terong tumbuh bagus di Desa Serang Purbalingga. 
-	Terong hasil tanam di Desa Serang memiliki Ukuran yang cukup besar dan memiliki warna ungu yang indah. Hal ini dikarenakan tanahnya yang subur serta iklim yang bagus dan juga tanaman terong mudah beradaptasi dengan pengaruh cuaca. Banyak petani didesa Serang menanam terong untuk dijual sebagai barang dagang.
-</p>
+							Terong hasil tanam di Desa Serang memiliki Ukuran yang cukup besar dan memiliki warna ungu yang indah. Hal ini dikarenakan tanahnya yang subur serta iklim yang bagus dan juga tanaman terong mudah beradaptasi dengan pengaruh cuaca. Banyak petani didesa Serang menanam terong untuk dijual sebagai barang dagang.
+						</p>
 						<!-- <p><a href="#" class="btn btn-info btn-xs" role="button">Button</a> <a href="#" class="btn btn-default btn-xs" role="button">Button</a></p> -->
 					</div>
 				</div>
@@ -292,8 +292,8 @@
 									<th>Hasil (Ton/Ha)</th>
 								</tr>
 								<tr>
-									<td>{{round($pertanian->wortel_luas,2)}}</td>
-									<td>{{round($pertanian->wortel_hasil,2)}}</td>
+									<td id="wortelLuas">{{round($pertanian->wortel_luas,2)}}</td>
+									<td id="wortelHasil">{{round($pertanian->wortel_hasil,2)}}</td>
 								</tr>
 							</tbody>	
 						</table>
@@ -315,13 +315,13 @@
 									<th>Hasil (Ton/Ha)</th>
 								</tr>
 								<tr>
-									<td>{{round($pertanian->padi_luas,2)}}</td>
-									<td>{{round($pertanian->padi_hasil,2)}}</td>
+									<td id="padiLuas">{{round($pertanian->padi_luas,2)}}</td>
+									<td id="padiHasil">{{round($pertanian->padi_hasil,2)}}</td>
 								</tr>
 							</tbody>	
 						</table>
 						<button class="btn btn-default desc">Penjelasan</button>
-						<p>Stroberi merupakan salah satu komoditas unggulan yang ada di desa serang dan kabupaten Pubalingga pada umumnya, stroberi dapat tumbuh baik di dataran tinggi yang mempunyai ketinggian anatara 1.000 s/d 1.300 mdpl. tingginya harga buah stroberi membuat para petani banyak yang beralih menanam tanaman ini</p>
+						<p>Padi Gogo</p>
 						<!-- <p><a href="#" class="btn btn-info btn-xs" role="button">Button</a> <a href="#" class="btn btn-default btn-xs" role="button">Button</a></p> -->
 					</div>
 				</div>
@@ -340,80 +340,186 @@
 	<!-- CONTENT END -->
 	@include('home.footer')
 	<script>
-		var lahanData = [
-				{
-					value: 300,
-					color:"#F7464A",
-					highlight: "#FF5A5E",
-					label: "Red"
-				},
-				{
-					value: 50,
-					color: "#46BFBD",
-					highlight: "#5AD3D1",
-					label: "Green"
-				},
-				{
-					value: 100,
-					color: "#FDB45C",
-					highlight: "#FFC870",
-					label: "Yellow"
-				},
-				{
-					value: 40,
-					color: "#949FB1",
-					highlight: "#A8B3C5",
-					label: "Grey"
-				},
-				{
-					value: 120,
-					color: "#4D5360",
-					highlight: "#616774",
-					label: "Dark Grey"
-				}
+	var jagungLuas = parseFloat( $('#jagungLuas').text() );
+	var ubiKayuLuas = parseFloat( $('#ubiKayuLuas').text() );
+	var ubiJalarLuas = parseFloat( $('#ubiJalarLuas').text() );
+	var cabaiLuas = parseFloat( $('#cabaiLuas').text() );
+	var tomatLuas = parseFloat( $('#tomatLuas').text() );
+	var sawiLuas = parseFloat( $('#sawiLuas').text() );
+	var kentangLuas = parseFloat( $('#kentangLuas').text() );
+	var kubisLuas = parseFloat( $('#kubisLuas').text() );
+	var buncisLuas = parseFloat( $('#buncisLuas').text() );
+	var terongLuas = parseFloat( $('#terongLuas').text() );
+	var wortelLuas = parseFloat( $('#wortelLuas').text() );
+	var padiLuas = parseFloat( $('#padiLuas').text() );
+	var lahanData = [
+	{
+		value: jagungLuas,
+		color:"#FFF380",
+		highlight: "#FFFF94",
+		label: "Jagung"
+	},
+	{
+		value: ubiKayuLuas,
+		color: "#FFE18D",
+		highlight: "#FFE18D",
+		label: "Ubi Kayu"
+	},
+	{
+		value: ubiJalarLuas,
+		color: "#C25311",
+		highlight: "#D66725",
+		label: "Ubi Jalar"
+	},
+	{
+		value: cabaiLuas,
+		color: "#C11B17",
+		highlight: "#DF3935",
+		label: "Cabai"
+	},
+	{
+		value: tomatLuas,
+		color: "#F20505",
+		highlight: "#FF3737",
+		label: "Tomat"
+	},
+	{
+		value: sawiLuas,
+		color: "#A8FF06",
+		highlight: "#C6FF24",
+		label: "Sawi"
+	},
+	{
+		value: kentangLuas,
+		color: "#733702",
+		highlight: "#874B16",
+		label: "Kentang"
+	},
+	{
+		value: kubisLuas,
+		color: "#6E9137",
+		highlight: "#8CAF55",
+		label: "Kubis"
+	},
+	{
+		value: buncisLuas,
+		color: "#266A2E",
+		highlight: "#3A7E42",
+		label: "Buncis"
+	},
+	{
+		value: terongLuas,
+		color: "#614051",
+		highlight: "#755465",
+		label: "Terong"
+	},
+	{
+		value: wortelLuas,
+		color: "#FF9933",
+		highlight: "#FFAD47",
+		label: "Wortel"
+	},
+	{
+		value: padiLuas,
+		color: "#EEFFDE",
+		highlight: "#FFFFF2",
+		label: "Padi Gogo"
+	}
+	];
 
-			];
-		var hasilData = [
-				{
-					value: 300,
-					color:"#F7464A",
-					highlight: "#FF5A5E",
-					label: "Red"
-				},
-				{
-					value: 50,
-					color: "#46BFBD",
-					highlight: "#5AD3D1",
-					label: "Green"
-				},
-				{
-					value: 100,
-					color: "#FDB45C",
-					highlight: "#FFC870",
-					label: "Yellow"
-				},
-				{
-					value: 40,
-					color: "#949FB1",
-					highlight: "#A8B3C5",
-					label: "Grey"
-				},
-				{
-					value: 120,
-					color: "#4D5360",
-					highlight: "#616774",
-					label: "Dark Grey"
-				}
+	var jagungHasil = parseFloat( $('#jagungHasil').text() );
+	var ubiKayuHasil = parseFloat( $('#ubiKayuHasil').text() );
+	var ubiJalarHasil = parseFloat( $('#ubiJalarHasil').text() );
+	var cabaiHasil = parseFloat( $('#cabaiHasil').text() );
+	var tomatHasil = parseFloat( $('#tomatHasil').text() );
+	var sawiHasil = parseFloat( $('#sawiHasil').text() );
+	var kentangHasil = parseFloat( $('#kentangHasil').text() );
+	var kubisHasil = parseFloat( $('#kubisHasil').text() );
+	var buncisHasil = parseFloat( $('#buncisHasil').text() );
+	var terongHasil = parseFloat( $('#terongHasil').text() );
+	var wortelHasil = parseFloat( $('#wortelHasil').text() );
+	var padiHasil = parseFloat( $('#padiHasil').text() );
+	var hasilData = [
+	{
+		value: jagungHasil,
+		color:"#FFF380",
+		highlight: "#FFFF94",
+		label: "Jagung"
+	},
+	{
+		value: ubiKayuHasil,
+		color: "#FFE18D",
+		highlight: "#FFE18D",
+		label: "Ubi Kayu"
+	},
+	{
+		value: ubiJalarHasil,
+		color: "#C25311",
+		highlight: "#D66725",
+		label: "Ubi Jalar"
+	},
+	{
+		value: cabaiHasil,
+		color: "#C11B17",
+		highlight: "#DF3935",
+		label: "Cabai"
+	},
+	{
+		value: tomatHasil,
+		color: "#F20505",
+		highlight: "#FF3737",
+		label: "Tomat"
+	},
+	{
+		value: sawiHasil,
+		color: "#A8FF06",
+		highlight: "#C6FF24",
+		label: "Sawi"
+	},
+	{
+		value: kentangHasil,
+		color: "#733702",
+		highlight: "#874B16",
+		label: "Kentang"
+	},
+	{
+		value: kubisHasil,
+		color: "#6E9137",
+		highlight: "#8CAF55",
+		label: "Kubis"
+	},
+	{
+		value: buncisHasil,
+		color: "#266A2E",
+		highlight: "#3A7E42",
+		label: "Buncis"
+	},
+	{
+		value: terongHasil,
+		color: "#614051",
+		highlight: "#755465",
+		label: "Terong"
+	},
+	{
+		value: wortelHasil,
+		color: "#FF9933",
+		highlight: "#FFAD47",
+		label: "Wortel"
+	},
+	{
+		value: padiHasil,
+		color: "#EEFFDE",
+		highlight: "#FFFFF2",
+		label: "Padi Gogo"
+	}
+	];
 
-			];
-
-			window.onload = function(){
-				var ctx = document.getElementById("lahan").getContext("2d");
-				window.myPie = new Chart(ctx).Pie(lahanData);
-				var ctx = document.getElementById("hasil").getContext("2d");
-				window.myPie = new Chart(ctx).Pie(hasilData);
-			};
-
+	window.onload = function(){
+		var ctx = document.getElementById("lahan").getContext("2d");
+		window.myPie = new Chart(ctx).Pie(lahanData);
+		var ctx = document.getElementById("hasil").getContext("2d");
+		window.myPie = new Chart(ctx).Pie(hasilData);
+	};
 	</script>	
 </body>
 </html>
