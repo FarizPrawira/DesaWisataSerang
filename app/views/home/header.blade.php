@@ -41,7 +41,7 @@
 				</span>
 			</a>
 			<a href="{{URL::to('serang/kkn-ugm2015')}}" class="menu-item">
-				<img src="{{URL::to('assets/img/2.jpg')}}">
+				<img src="{{URL::to('assets/img/kkn.jpg')}}">
 				<span>
 					<h4>KKN-PPM</h4>
 					<p>UGM & IU</p>
@@ -119,7 +119,7 @@
 				</span>
 			</a>
 			<a href="{{URL::to('wisata/homestay')}}" class="menu-item">
-				<img src="{{URL::to('assets/img/homestay1.jpg')}}">
+				<img src="{{URL::to('assets/img/homestay.jpg')}}">
 				<span>
 					<h4>Home Stay</h4>
 					<p>Rumah inap pengunjung</p> 

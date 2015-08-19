@@ -324,6 +324,9 @@ p, span, a{
 	font-size: 10px;
 }
 #loadmore{
+	margin-top: 10px;
+}
+.footer #loadmore{
 	margin-top: 100px;
 }
 hr{
@@ -549,16 +552,17 @@ table img{
 	height: auto;
 	width: 100%;
 }
-.full-img .close{
+.close{
 	position: absolute;
 	right: 0;
 	top: 0;
 	background-color: white;
+	text-align: center;	
 	border-radius: 50%;
 	width: 20px;
 	height: 20px;
 }
-.full-img .close:hover{
+.close:hover{
 	cursor: pointer;
 }
 .galery .video{
@@ -666,10 +670,6 @@ h1.page-header{
 #Cdaftar .panel-body li{
 	display: block;
 	padding: 10px;
-}
-#Cdaftar .panel-body .btn{
-	padding: 0;
-	margin: 0;
 }
 /*DASHBOARD END*/
 
