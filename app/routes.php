@@ -21,6 +21,7 @@ Route::get('loadmore', 'HomeController@loadmore');
 Route::post('user/login', 'UsersController@submitLogin');
 Route::get('user/logout', 'UsersController@sendLogout');
 Route::get('dashboard', 'UsersController@showDashboard');
+Route::get('login', 'UsersController@showDashboard');
 
 Route::group(['before' => 'auth'], function()
 {

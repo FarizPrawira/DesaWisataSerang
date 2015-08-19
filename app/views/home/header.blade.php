@@ -12,6 +12,7 @@
 		</ul>
 		<ul class="menu-link logout">
 			<?php if(Auth::check()){ ?>
+			<a href="{{URL::to('dashboard')}}"><li id="dashboard"><i class="glyphicon glyphicon-folder-open"></i> Dashboard</li></a>
 			<a href="{{URL::to('user/logout')}}"><li id="logout"><i class="glyphicon glyphicon-off"></i> Log Out</li></a>
 			<?php } ?>
 		</ul>
@@ -34,7 +35,7 @@
 				</span>
 			</a>
 			<a href="{{URL::to('serang/pemerintahan')}}" class="menu-item">
-				<img src="{{URL::to('assets/img/2.jpg')}}">
+				<img src="{{URL::to('assets/img/pemerintahan.jpg')}}">
 				<span>
 					<h4>Pemerintahan</h4>
 					<p>Kepala Desa/Dusun, Perangkat Desa</p>
@@ -64,7 +65,7 @@
 				</span>
 			</a>
 			<a href="{{URL::to('serang/map')}}" class="menu-item">
-				<img src="{{URL::to('assets/img/2.jpg')}}">
+				<img src="{{URL::to('assets/img/map.jpg')}}">
 				<span>
 					<h4>Peta</h4>
 					<p>Peta Wisata Desa Serang</p>
@@ -112,7 +113,7 @@
 		</div>
 		<div class="col-md-4">
 			<a href="{{URL::to('wisata/tic')}}" class="menu-item">
-				<img src="{{URL::to('assets/img/2.jpg')}}">
+				<img src="{{URL::to('assets/img/tic.jpg')}}">
 				<span>
 					<h4>TIC</h4>
 					<p>Tourist Information Center</p>

@@ -41,7 +41,7 @@
 									<th>Jumlah (ekor)</th>
 								</tr>
 								<tr>
-									<td>{{round($peternakan->sapi)}}</td>
+									<td id="sapi">{{round($peternakan->sapi)}}</td>
 								</tr>
 							</tbody>	
 						</table>
@@ -62,7 +62,7 @@
 									<th>Jumlah (ekor)</th>
 								</tr>
 								<tr>
-									<td>{{round($peternakan->kambing)}}</td>
+									<td id="kambing">{{round($peternakan->kambing)}}</td>
 								</tr>
 							</tbody>	
 						</table>
@@ -83,7 +83,7 @@
 									<th>Jumlah (ekor)</th>
 								</tr>
 								<tr>
-									<td>{{round($peternakan->ayam)}}</td>
+									<td id="ayam">{{round($peternakan->ayam)}}</td>
 								</tr>
 							</tbody>	
 						</table>
@@ -104,7 +104,7 @@
 									<th>Jumlah (ekor)</th>
 								</tr>
 								<tr>
-									<td>{{round($peternakan->kuda)}}</td>
+									<td id="kuda">{{round($peternakan->kuda)}}</td>
 								</tr>
 							</tbody>	
 						</table>
@@ -127,7 +127,7 @@
 									<th class="text-center">Jumlah Produk Ternak</th>
 								</tr>
 								<tr>
-									<td>{{$peternakan->daging}}</td>
+									<td id="daging">{{$peternakan->daging}}</td>
 								</tr>
 							</tbody>	
 						</table>
@@ -148,7 +148,7 @@
 									<th class="text-center">Jumlah Produk Ternak</th>
 								</tr>
 								<tr>
-									<td>{{$peternakan->susu}} ltr/th</td>
+									<td id="susu">{{$peternakan->susu}} ltr/th</td>
 								</tr>
 							</tbody>	
 						</table>
@@ -159,92 +159,74 @@
 				</div>
 			</div>
 		</div>
-	<div class="row">
-	<!-- GRAFIK/CHART -->
-		<div class="col-md-5 col-md-offset-1" id="canvas-holder">
-			<h3 class="text-center">Jumlah Ternak (ekor)</h3>
-			<canvas id="lahan" width="300" height="300"/>
-		</div>
-		<div class="col-md-5" id="canvas-holder">
-			<h3 class="text-center">Produk Ternak</h3>
-			<canvas id="hasil" width="300" height="300"/>
+		<div class="row">
+			<!-- GRAFIK/CHART -->
+			<div class="col-md-5 col-md-offset-1" id="canvas-holder">
+				<h3 class="text-center">Jumlah Ternak (ekor)</h3>
+				<canvas id="ternak" width="300" height="300"/>
+			</div>
+			<div class="col-md-5" id="canvas-holder">
+				<h3 class="text-center">Produk Ternak</h3>
+				<canvas id="hasil" width="300" height="300"/>
+			</div>
 		</div>
 	</div>
-</div>
-<!-- CONTENT END -->
-@include('home.footer')
-<script>
-	var lahanData = [
-			{
-				value: 300,
-				color:"#F7464A",
-				highlight: "#FF5A5E",
-				label: "Red"
-			},
-			{
-				value: 50,
-				color: "#46BFBD",
-				highlight: "#5AD3D1",
-				label: "Green"
-			},
-			{
-				value: 100,
-				color: "#FDB45C",
-				highlight: "#FFC870",
-				label: "Yellow"
-			},
-			{
-				value: 40,
-				color: "#949FB1",
-				highlight: "#A8B3C5",
-				label: "Grey"
-			},
-			{
-				value: 120,
-				color: "#4D5360",
-				highlight: "#616774",
-				label: "Dark Grey"
-			}
+	<!-- CONTENT END -->
+	@include('home.footer')
+	<script>
+	var sapi = parseInt( $('#sapi').text() );
+	var kambing = parseInt( $('#kambing').text() );
+	var ayam = parseInt( $('#ayam').text() );
+	var kuda = parseInt( $('#kuda').text() );
+	var ternakData = [
+	{
+		value: sapi,
+		color:"#F7464A",
+		highlight: "#FF5A5E",
+		label: "Sapi"
+	},
+	{
+		value: ayam,
+		color: "#46BFBD",
+		highlight: "#5AD3D1",
+		label: "Ayam"
+	},
+	{
+		value: kambing,
+		color: "#FDB45C",
+		highlight: "#FFC870",
+		label: "Kambing"
+	},
+	{
+		value: kuda,
+		color: "#949FB1",
+		highlight: "#A8B3C5",
+		label: "Kuda"
+	}
+	];
 
-		];
+	var susu = parseInt( $('#susu').text() );
+	var daging = parseInt( $('#daging').text() );
 	var hasilData = [
-			{
-				value: 300,
-				color:"#F7464A",
-				highlight: "#FF5A5E",
-				label: "Red"
-			},
-			{
-				value: 50,
-				color: "#46BFBD",
-				highlight: "#5AD3D1",
-				label: "Green"
-			},
-			{
-				value: 100,
-				color: "#FDB45C",
-				highlight: "#FFC870",
-				label: "Yellow"
-			},
-			{
-				value: 40,
-				color: "#949FB1",
-				highlight: "#A8B3C5",
-				label: "Grey"
-			},
-			{
-				value: 120,
-				color: "#4D5360",
-				highlight: "#616774",
-				label: "Dark Grey"
-			}
-		];
-		window.onload = function(){
-			var ctx = document.getElementById("lahan").getContext("2d");
-			window.myPie = new Chart(ctx).Pie(lahanData);
-			var ctx = document.getElementById("hasil").getContext("2d");
-			window.myPie = new Chart(ctx).Pie(hasilData);
-		};
-</script>	
+	{
+		value: susu,
+		color:"#F7464A",
+		highlight: "#FF5A5E",
+		label: "Susu"
+	},
+	{
+		value: daging,
+		color: "#46BFBD",
+		highlight: "#5AD3D1",
+		label: "Daging"
+	}
+	];
+	window.onload = function(){
+		var ctx = document.getElementById("ternak").getContext("2d");
+		window.myPie = new Chart(ctx).Pie(ternakData);
+		var ctx = document.getElementById("hasil").getContext("2d");
+		window.myPie = new Chart(ctx).Pie(hasilData);
+	};
+	</script>	
 </body>
 </html>
