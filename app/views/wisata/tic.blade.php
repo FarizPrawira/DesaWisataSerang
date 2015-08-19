@@ -28,63 +28,63 @@
 					</tr>
 					<?php foreach ($tics as $tic): ?>	
 					<tr>
-						<td><img src="{{URL::to('assets/img/stroberi1.jpg')}}"></td>
+						<td><img src="{{URL::to('assets/img/facebook/agrokids.jpg')}}"></td>
 						<td><b>Agro Kids</b></td>
 						<td>Rp.{{$tic->agroBiaya}}</td>
 						<td>{{nl2br($tic->agroFasilitas)}}</td>
 						<td>{{$tic->agroKet}}</td>
 					</tr>
 					<tr>
-						<td><img src="{{URL::to('assets/img/stroberi1.jpg')}}"></td>
+						<td><img src="{{URL::to('assets/img/facebook/campingground.jpg')}}"></td>
 						<td><b>Camping Ground</b></td>
 						<td>Rp.{{$tic->campBiaya}}</td>
 						<td>{{nl2br($tic->campFasilitas)}}</td>
 						<td>{{$tic->campKet}}</td>
 					</tr>
 					<tr>
-						<td><img src="{{URL::to('assets/img/stroberi1.jpg')}}"></td>
+						<td><img src="{{URL::to('assets/img/facebook/homestaypelajar.jpg')}}"></td>
 						<td><b>HomeStay Pelajar </b></td>
 						<td>Rp.{{$tic->homeBiaya}}</td>
 						<td>{{nl2br($tic->homeFasilitas)}}</td>
 						<td>{{$tic->homeKet}}</td>
 					</tr>
 					<tr>
-						<td><img src="{{URL::to('assets/img/stroberi1.jpg')}}"></td>
+						<td><img src="{{URL::to('assets/img/facebook/tracking.jpg')}}"></td>
 						<td><b>Tracking</b></td>
 						<td>Rp.{{$tic->trackBiaya}}</td>
 						<td>{{nl2br($tic->trackFasilitas)}}</td>
 						<td>{{$tic->trackKet}}</td>
 					</tr>
 					<tr>
-						<td><img src="{{URL::to('assets/img/stroberi1.jpg')}}"></td>
+						<td><img src="{{URL::to('assets/img/facebook/outbound.jpg')}}"></td>
 						<td><b>Outbound</b></td>
 						<td>Rp.{{$tic->outBiaya}}</td>
 						<td>{{nl2br($tic->outFasilitas)}}</td>
 						<td>{{$tic->outKet}}</td>
 					</tr>
 					<tr>
-						<td><img src="{{URL::to('assets/img/stroberi1.jpg')}}"></td>
+						<td><img src="{{URL::to('assets/img/facebook/paintball.jpg')}}"></td>
 						<td><b>Paint Ball</b></td>
 						<td>Rp.{{$tic->paintBiaya}}</td>
 						<td>{{nl2br($tic->paintFasilitas)}}</td>
 						<td>{{$tic->paintKet}}</td>
 					</tr>
 					<tr>
-						<td><img src="{{URL::to('assets/img/stroberi1.jpg')}}"></td>
+						<td><img src="{{URL::to('assets/img/facebook/rapeling.jpg')}}"></td>
 						<td><b>Rapeling</b></td>
 						<td>Rp.{{$tic->rapelBiaya}}</td>
 						<td>{{nl2br($tic->rapelFasilitas)}}</td>
 						<td>{{$tic->rapelKet}}</td>
 					</tr>
 					<tr>
-						<td><img src="{{URL::to('assets/img/stroberi1.jpg')}}"></td>
+						<td><img src="{{URL::to('assets/img/facebook/familygath.jpg')}}"></td>
 						<td><b>Family Gathering</b></td>
 						<td>Rp.{{$tic->familyBiaya}}</td>
 						<td>{{nl2br($tic->familyFasilitas)}}</td>
 						<td>{{$tic->familyKet}}</td>
 					</tr>
 					<tr>
-						<td><img src="{{URL::to('assets/img/stroberi1.jpg')}}"></td>
+						<td><img src="{{URL::to('assets/img/facebook/pendakian.jpg')}}"></td>
 						<td><b>Pendakian Gn Selamet</b></td>
 						<td>Rp.{{$tic->pendakianBiaya}}</td>
 						<td>{{nl2br($tic->pendakianFasilitas)}}</td>

@@ -20,21 +20,32 @@
 	</div>
 	<div class="container fix-content">
 		<div class="row">
-			<div class="col-md-4">
+			<div class="col-md-offset-1 col-md-4">
 				<img src="{{URL::to('assets/img/restarea2.jpg')}}" class="img-responsive">
 			</div>
-			<div class="col-md-8">
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec massa nec lectus sollicitudin aliquet. Curabitur dignissim, magna quis tincidunt dictum, erat tortor venenatis orci, vel ornare diam elit eget lorem. Suspendisse in ante et dolor ornare ultricies eget eu tortor. Duis sapien tellus, malesuada in consectetur ac, vestibulum eget urna. Suspendisse pretium, lorem in gravida placerat, felis ante congue urna, ultricies mattis ante nunc et mauris. Sed interdum nisi sed laoreet finibus. Vestibulum consequat ante eget convallis fermentum. Vivamus augue mauris, sollicitudin eu ligula cursus, vestibulum tempor orci.
-				Fusce sit amet velit volutpat, maximus ipsum in, vestibulum eros. In id laoreet nisi, eu pretium ante. Morbi enim mi, facilisis sit amet eleifend vitae, sagittis a ante. Donec eu tristique nisl, vel consectetur nisl. Vestibulum convallis elementum nisi ac mollis. Mauris at ante sit amet mi egestas tempus maximus vel dolor. Pellentesque nec venenatis lectus. Mauris id sollicitudin ante. Etiam dapibus ipsum blandit urna elementum placerat. Curabitur a commodo ipsum, vitae ullamcorper mauris. Donec vestibulum felis pharetra metus iaculis, nec dapibus libero vestibulum. Duis eu leo pulvinar, condimentum mauris vitae, porttitor ligula.
-				Suspendisse at maximus eros, vitae finibus nisl. Phasellus ultricies nisl ut eros tempus commodo. Praesent ac fringilla sem, in molestie turpis. Integer gravida posuere sem, suscipit rutrum sem vestibulum non. Donec nec turpis eget purus pulvinar rutrum. In interdum dictum sem, ut consequat risus sodales vitae. Nulla id mi risus. Donec ut turpis felis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus imperdiet sollicitudin cursus. Integer rutrum molestie sodales. Sed commodo lacinia nibh a iaculis. Duis bibendum suscipit aliquam. Mauris interdum sem vel volutpat consequat. Cras rutrum dolor sit amet magna sollicitudin pretium.
+			<div class="col-md-6">
+				Banyak tempat wisata yang menarik untuk di kunjungi terutama tempat wisata di daerah pegunungan. 
+				Salah satunya ada yang berada di wilayah Kabupaten Purbalingga, dimana ada tempat wisata agrowisata yang bernama Agrowisata Lembah Asri. 
+				Nama Argowisata Lembah Asri ini diberikan oleh Bupati Purbalingga pada bulan Januari 2014.  
+				Wisata yang di tawarkan oleh agrowisata Lembah Asri pun sangat beragam, seperti Kebun Stroberi, Paket Outbound, Kebun sayur kuda tunggang dan masih banyak lagi. 
+				Lembah Asri juga menawrkan pemandangan alam yang luar biasa selain itu daerah atau lokasi lembah asri memiliki udara yang segar yang  menyehatkan. 
+				Lokasi Agrowisata Lembah Asri terletak di Desa Serang Kecamatan Karangreja Kabupaten purbalingga, berjarak sekitar 23 km dari pusat Kota Purbalingga, 
+				Lokasi Agrowisata ini menjadi penghubung antara tempat wisata lainnya, seperti Goa Lawa, Wista Air Wabong, Sanggaruli Park, dan Purbasari Pancuran Mas.
 			</div>
 		</div>
 		<br>
 		<div class="row">
-			<div class="col-md-8">
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec massa nec lectus sollicitudin aliquet. Curabitur dignissim, magna quis tincidunt dictum, erat tortor venenatis orci, vel ornare diam elit eget lorem. Suspendisse in ante et dolor ornare ultricies eget eu tortor. Duis sapien tellus, malesuada in consectetur ac, vestibulum eget urna. Suspendisse pretium, lorem in gravida placerat, felis ante congue urna, ultricies mattis ante nunc et mauris. Sed interdum nisi sed laoreet finibus. Vestibulum consequat ante eget convallis fermentum. Vivamus augue mauris, sollicitudin eu ligula cursus, vestibulum tempor orci.
-				Fusce sit amet velit volutpat, maximus ipsum in, vestibulum eros. In id laoreet nisi, eu pretium ante. Morbi enim mi, facilisis sit amet eleifend vitae, sagittis a ante. Donec eu tristique nisl, vel consectetur nisl. Vestibulum convallis elementum nisi ac mollis. Mauris at ante sit amet mi egestas tempus maximus vel dolor. Pellentesque nec venenatis lectus. Mauris id sollicitudin ante. Etiam dapibus ipsum blandit urna elementum placerat. Curabitur a commodo ipsum, vitae ullamcorper mauris. Donec vestibulum felis pharetra metus iaculis, nec dapibus libero vestibulum. Duis eu leo pulvinar, condimentum mauris vitae, porttitor ligula.
-				Suspendisse at maximus eros, vitae finibus nisl. Phasellus ultricies nisl ut eros tempus commodo. Praesent ac fringilla sem, in molestie turpis. Integer gravida posuere sem, suscipit rutrum sem vestibulum non. Donec nec turpis eget purus pulvinar rutrum. In interdum dictum sem, ut consequat risus sodales vitae. Nulla id mi risus. Donec ut turpis felis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus imperdiet sollicitudin cursus. Integer rutrum molestie sodales. Sed commodo lacinia nibh a iaculis. Duis bibendum suscipit aliquam. Mauris interdum sem vel volutpat consequat. Cras rutrum dolor sit amet magna sollicitudin pretium.
+			<div class="col-md-offset-1 col-md-6">
+				Untuk mencapai tempat wisata Rest Area Lembah Asri dapat menggunakan kendaraan pribadi maupun angkutan umum. 
+				Dapat melalui jalur utama yang jalannya lebih mudah dilalui ataupun jalur lain yang sedikit lebih sulit 
+				namun terdapat pemandangan indah pohon-pohon yang menjulang tinggi serta pemandangan hijau hutan. 
+				Biaya dikeluarkan pengunjung tidaklah terlalu mahal jika ingin berwisata di Rest Area Lembah Asri. 
+				Untuk bermain permainan yang terdapat di Lembah Asri tidak terlalu menguras dompet anda sekalian. 
+				Jika ingin menikmati sensasi menjadi petani strawberry dan menikmati hasil buah strawberry yang anda petik cukup 
+				membayar Rp. 15000 saja namun jika dibawa pulang strawberry untuk oleh-oleh cukup membayar Rp 25.000. 
+				Jika anda ingin menguji keberanian bisa mencoba wahana flying fox ataupun. Dan masih banyak wahana yang terdapat di Rest area lembah Asri. 
+				Bagi anda yang bingung untuk berwisata bersama keluarga, maka tidak ada salahnya untuk datang dan menikmati indahnya suasana alam yang segar dan dapat memberikan ketenangan, 
+				jadi ayo kita sekali-kali untuk merefresh diri kita dengan uniknya  berwisata di agrowisata lembah asri Purbalingga.
 			</div>
 			<div class="col-md-4">
 				<img src="{{URL::to('assets/img/restarea3.jpg')}}" class="img-responsive">
