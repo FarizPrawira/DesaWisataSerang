@@ -683,6 +683,10 @@ button.desc{
 }
 /*END OF PERTANIAN&PETERNAKAN*/
 
+.loadmore{
+	text-align: center;
+}
+
 /*TABLE*/
 table th,td{
 	text-align: center;
@@ -703,3 +707,4 @@ th h4{
 i{
 	font-size: 0.8em;
 }
+

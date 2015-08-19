@@ -37,7 +37,7 @@
 								<div class="media">
 									<div class="media-left ">
 										<a href="#">
-											<img class="media-object pemerintah-besar-gambar img-circle" src="img/sea.jpg" alt="Tidak ada">
+											<img class="media-object pemerintah-besar-gambar img-circle" src="{{URL::to('assets/img/kknugm2015/ani.jpg')}}" alt="Tidak ada">
 											<h3 class="nama text-center">Ani Widiastuti, S.P., M.P., Ph.D.</h3>
 										</a>	
 									</div>
@@ -50,7 +50,7 @@
 								<div class="media">
 									<div class="media-left ">
 										<a href="#">
-											<img class="media-object pemerintah-besar-gambar img-circle" src="img/sea.jpg" alt="Tidak ada">
+											<img class="media-object pemerintah-besar-gambar img-circle" src="{{URL::to('assets/img/kknugm2015/eda.jpg')}}" alt="Tidak ada">
 											<h3 class="nama text-center">Pranedya Atria</h3>
 										</a>	
 									</div>
@@ -68,7 +68,7 @@
 								<div class="media">
 									<div class="media-left ">
 										<a href="#">
-											<img class="media-object pemerintah-besar-gambar img-circle" src="img/aborigin.jpg" alt="Tidak ada">
+											<img class="media-object pemerintah-besar-gambar img-circle" src="{{URL::to('assets/img/kknugm2015/diva.jpg')}}" alt="Tidak ada">
 											<h4 class="nama text-center">Diva Alfiansyah</h4>
 										</a>
 									</div>
@@ -82,7 +82,7 @@
 								<div class="media">
 									<div class="media-left ">
 										<a href="#">
-											<img class="media-object pemerintah-besar-gambar img-circle" src="img/sea.jpg" alt="Tidak ada">
+											<img class="media-object pemerintah-besar-gambar img-circle" src="{{URL::to('assets/img/kknugm2015/sarah.jpg')}}" alt="Tidak ada">
 											<h4 class="nama text-center">Sarah Wulan</h4>
 										</a>
 									</div>
@@ -96,7 +96,7 @@
 								<div class="media">
 									<div class="media-left ">
 										<a href="#">
-											<img class="media-object pemerintah-besar-gambar img-circle" src="img/sea.jpg" alt="Tidak ada">
+											<img class="media-object pemerintah-besar-gambar img-circle" src="{{URL::to('assets/img/kknugm2015/fakhri.jpg')}}" alt="Tidak ada">
 											<h4 class="nama text-center">Fakhri Hawari Arifin</h4>
 										</a>
 									</div>
@@ -111,7 +111,7 @@
 								<div class="media">
 									<div class="media-left ">
 										<a href="#">
-											<img class="media-object pemerintah-besar-gambar img-circle" src="img/sea.jpg" alt="Tidak ada">
+											<img class="media-object pemerintah-besar-gambar img-circle" src="{{URL::to('assets/img/kknugm2015/putri.jpg')}}" alt="Tidak ada">
 											<h4 class="nama text-center">Dyah Putri Puspitasari</h4>
 										</a>
 									</div>
@@ -125,7 +125,7 @@
 								<div class="media">
 									<div class="media-left ">
 										<a href="#">
-											<img class="media-object pemerintah-besar-gambar img-circle" src="img/sea.jpg" alt="Tidak ada">
+											<img class="media-object pemerintah-besar-gambar img-circle" src="{{URL::to('assets/img/kknugm2015/yuli.jpg')}}" alt="Tidak ada">
 											<h4 class="nama text-center">Yuli Perwita Sari</h4>
 										</a>
 									</div>
@@ -142,7 +142,7 @@
 								<div class="media">
 									<div class="media-left ">
 										<a href="#">
-											<img class="media-object pemerintah-besar-gambar img-circle" src="img/aborigin.jpg" alt="Tidak ada">
+											<img class="media-object pemerintah-besar-gambar img-circle" src="{{URL::to('assets/img/kknugm2015/fariz.jpg')}}" alt="Tidak ada">
 											<h4 class="nama text-center">Fariz Prawira</h4>
 										</a>
 									</div>
@@ -156,7 +156,7 @@
 								<div class="media">
 									<div class="media-left ">
 										<a href="#">
-											<img class="media-object pemerintah-besar-gambar img-circle" src="img/sea.jpg" alt="Tidak ada">
+											<img class="media-object pemerintah-besar-gambar img-circle" src="{{URL::to('assets/img/kknugm2015/melvi.jpg')}}" alt="Tidak ada">
 											<h4 class="nama text-center">Moria Melviani Harefa</h4>
 										</a>
 									</div>
@@ -170,7 +170,7 @@
 								<div class="media">
 									<div class="media-left ">
 										<a href="#">
-											<img class="media-object pemerintah-besar-gambar img-circle" src="img/sea.jpg" alt="Tidak ada">
+											<img class="media-object pemerintah-besar-gambar img-circle" src="{{URL::to('assets/img/kknugm2015/tiara.jpg')}}" alt="Tidak ada">
 											<h4 class="nama text-center">Tiara Mawarni</h4>
 										</a>
 									</div>
@@ -185,7 +185,7 @@
 								<div class="media">
 									<div class="media-left ">
 										<a href="#">
-											<img class="media-object pemerintah-besar-gambar img-circle" src="img/sea.jpg" alt="Tidak ada">
+											<img class="media-object pemerintah-besar-gambar img-circle" src="{{URL::to('assets/img/kknugm2015/amar.jpg')}}" alt="Tidak ada">
 											<h4 class="nama text-center">Muamar Mujab</h4>
 										</a>
 									</div>
@@ -199,7 +199,7 @@
 								<div class="media">
 									<div class="media-left ">
 										<a href="#">
-											<img class="media-object pemerintah-besar-gambar img-circle" src="img/sea.jpg" alt="Tidak ada">
+											<img class="media-object pemerintah-besar-gambar img-circle" src="{{URL::to('assets/img/kknugm2015/tea.jpg')}}" alt="Tidak ada">
 											<h4 class="nama text-center">Tiara Firda Sani</h4>
 										</a>
 									</div>
@@ -213,7 +213,7 @@
 								<div class="media">
 									<div class="media-left ">
 										<a href="#">
-											<img class="media-object pemerintah-besar-gambar img-circle" src="img/sea.jpg" alt="Tidak ada">
+											<img class="media-object pemerintah-besar-gambar img-circle" src="{{URL::to('assets/img/kknugm2015/vervita.jpg')}}" alt="Tidak ada">
 											<h4 class="nama text-center">Verfita Sela Ragadisa</h4>
 										</a>
 									</div>
@@ -230,7 +230,7 @@
 								<div class="media">
 									<div class="media-left ">
 										<a href="#">
-											<img class="media-object pemerintah-besar-gambar img-circle" src="img/aborigin.jpg" alt="Tidak ada">
+											<img class="media-object pemerintah-besar-gambar img-circle" src="{{URL::to('assets/img/kknugm2015/adit.jpg')}}" alt="Tidak ada">
 											<h4 class="nama text-center">Handaru Aditya Kusuma</h4>
 										</a>
 									</div>
@@ -244,7 +244,7 @@
 								<div class="media">
 									<div class="media-left ">
 										<a href="#">
-											<img class="media-object pemerintah-besar-gambar img-circle" src="img/sea.jpg" alt="Tidak ada">
+											<img class="media-object pemerintah-besar-gambar img-circle" src="{{URL::to('assets/img/kknugm2015/vivi.jpg')}}" alt="Tidak ada">
 											<h4 class="nama text-center">Viviane Annisa</h4>
 										</a>
 									</div>
@@ -258,7 +258,7 @@
 								<div class="media">
 									<div class="media-left ">
 										<a href="#">
-											<img class="media-object pemerintah-besar-gambar img-circle" src="img/sea.jpg" alt="Tidak ada">
+											<img class="media-object pemerintah-besar-gambar img-circle" src="{{URL::to('assets/img/kknugm2015/bella.jpg')}}" alt="Tidak ada">
 											<h4 class="nama text-center">Bella Hayu Nurhayati</h4>
 										</a>
 									</div>
@@ -273,7 +273,7 @@
 								<div class="media">
 									<div class="media-left ">
 										<a href="#">
-											<img class="media-object pemerintah-besar-gambar img-circle" src="img/sea.jpg" alt="Tidak ada">
+											<img class="media-object pemerintah-besar-gambar img-circle" src="{{URL::to('assets/img/kknugm2015/lukman.jpg')}}" alt="Tidak ada">
 											<h4 class="nama text-center">Lukman Adi Cahyo</h4>
 										</a>
 									</div>
@@ -287,7 +287,7 @@
 								<div class="media">
 									<div class="media-left ">
 										<a href="#">
-											<img class="media-object pemerintah-besar-gambar img-circle" src="img/sea.jpg" alt="Tidak ada">
+											<img class="media-object pemerintah-besar-gambar img-circle" src="{{URL::to('assets/img/kknugm2015/dias.jpg')}}" alt="Tidak ada">
 											<h4 class="nama text-center">Dias Haryu</h4>
 										</a>
 									</div>
@@ -301,7 +301,7 @@
 								<div class="media">
 									<div class="media-left ">
 										<a href="#">
-											<img class="media-object pemerintah-besar-gambar img-circle" src="img/sea.jpg" alt="Tidak ada">
+											<img class="media-object pemerintah-besar-gambar img-circle" src="{{URL::to('assets/img/kknugm2015/iid.jpg')}}" alt="Tidak ada">
 											<h4 class="nama text-center">Maulida Tri Agustina M</h4>
 										</a>
 									</div>
@@ -318,7 +318,7 @@
 								<div class="media">
 									<div class="media-left ">
 										<a href="#">
-											<img class="media-object pemerintah-besar-gambar img-circle" src="img/aborigin.jpg" alt="Tidak ada">
+											<img class="media-object pemerintah-besar-gambar img-circle" src="{{URL::to('assets/img/kknugm2015/asep.jpg')}}" alt="Tidak ada">
 											<h4 class="nama text-center">Asep Mulya Dian DP</h4>
 										</a>
 									</div>
@@ -332,7 +332,7 @@
 								<div class="media">
 									<div class="media-left ">
 										<a href="#">
-											<img class="media-object pemerintah-besar-gambar img-circle" src="img/sea.jpg" alt="Tidak ada">
+											<img class="media-object pemerintah-besar-gambar img-circle" src="{{URL::to('assets/img/kknugm2015/ida.jpg')}}" alt="Tidak ada">
 											<h4 class="nama text-center">Ida Nur Fatimah</h4>
 										</a>
 									</div>
@@ -346,7 +346,7 @@
 								<div class="media">
 									<div class="media-left ">
 										<a href="#">
-											<img class="media-object pemerintah-besar-gambar img-circle" src="img/sea.jpg" alt="Tidak ada">
+											<img class="media-object pemerintah-besar-gambar img-circle" src="{{URL::to('assets/img/kknugm2015/silo.jpg')}}" alt="Tidak ada">
 											<h4 class="nama text-center">Susilo Utomo</h4>
 										</a>
 									</div>
@@ -361,7 +361,7 @@
 								<div class="media">
 									<div class="media-left ">
 										<a href="#">
-											<img class="media-object pemerintah-besar-gambar img-circle" src="img/sea.jpg" alt="Tidak ada">
+											<img class="media-object pemerintah-besar-gambar img-circle" src="{{URL::to('assets/img/kknugm2015/wika.jpg')}}" alt="Tidak ada">
 											<h4 class="nama text-center">Wikara Dyah Widayaka</h4>
 										</a>
 									</div>
@@ -375,7 +375,7 @@
 								<div class="media">
 									<div class="media-left ">
 										<a href="#">
-											<img class="media-object pemerintah-besar-gambar img-circle" src="img/sea.jpg" alt="Tidak ada">
+											<img class="media-object pemerintah-besar-gambar img-circle" src="{{URL::to('assets/img/kknugm2015/fince.jpg')}}" alt="Tidak ada">
 											<h4 class="nama text-center">Fince Febriani Zalukhu</h4>
 										</a>
 									</div>
@@ -392,7 +392,7 @@
 								<div class="media">
 									<div class="media-left ">
 										<a href="#">
-											<img class="media-object pemerintah-besar-gambar img-circle" src="img/aborigin.jpg" alt="Tidak ada">
+											<img class="media-object pemerintah-besar-gambar img-circle" src="{{URL::to('assets/img/kknugm2015/ogi.jpg')}}" alt="Tidak ada">
 											<h4 class="nama text-center">Ogi Yoga Abi Kuncoro</h4>
 										</a>
 									</div>
@@ -406,13 +406,13 @@
 								<div class="media">
 									<div class="media-left ">
 										<a href="#">
-											<img class="media-object pemerintah-besar-gambar img-circle" src="img/sea.jpg" alt="Tidak ada">
-											<h4 class="nama text-center">Randy Achmad Saputra</h4>
+											<img class="media-object pemerintah-besar-gambar img-circle" src="{{URL::to('assets/img/kknugm2015/rina.jpg')}}" alt="Tidak ada">
+											<h4 class="nama text-center">Rina Hikmayanti</h4>
 										</a>
 									</div>
 									<div class="media-body pemerintah-besar-body ">
 										<h4 class="media-heading text-center">Bendahara Subunit 5</h4>
-										<h4 class="text-center">Geofisika</h4>
+										<h4 class="text-center">Ilmu dan Industri Peternakan</h4>
 									</div>
 								</div>
 							</div>
@@ -420,13 +420,13 @@
 								<div class="media">
 									<div class="media-left ">
 										<a href="#">
-											<img class="media-object pemerintah-besar-gambar img-circle" src="img/sea.jpg" alt="Tidak ada">
-											<h4 class="nama text-center">Rina Hikmayanti</h4>
+											<img class="media-object pemerintah-besar-gambar img-circle" src="{{URL::to('assets/img/kknugm2015/randy.jpg')}}" alt="Tidak ada">
+											<h4 class="nama text-center">Randy Achmad Saputra</h4>
 										</a>
 									</div>
 									<div class="media-body pemerintah-besar-body ">
 										<h4 class="media-heading text-center">Sekertaris Subunit 5</h4>
-										<h4 class="text-center">Ilmu dan Industri Peternakan</h4>
+										<h4 class="text-center">Geofisika</h4>
 									</div>
 								</div>
 							</div>
@@ -435,7 +435,7 @@
 								<div class="media">
 									<div class="media-left ">
 										<a href="#">
-											<img class="media-object pemerintah-besar-gambar img-circle" src="img/sea.jpg" alt="Tidak ada">
+											<img class="media-object pemerintah-besar-gambar img-circle" src="{{URL::to('assets/img/kknugm2015/hana.jpg')}}" alt="Tidak ada">
 											<h4 class="nama text-center">Hana Nur Pratiwi</h4>
 										</a>
 									</div>
@@ -449,7 +449,7 @@
 								<div class="media">
 									<div class="media-left ">
 										<a href="#">
-											<img class="media-object pemerintah-besar-gambar img-circle" src="img/sea.jpg" alt="Tidak ada">
+											<img class="media-object pemerintah-besar-gambar img-circle" src="{{URL::to('assets/img/kknugm2015/eny.jpg')}}" alt="Tidak ada">
 											<h4 class="nama text-center">Eny Fatihatun Khasanah</h4>
 										</a>
 									</div>
@@ -463,7 +463,7 @@
 								<div class="media">
 									<div class="media-left ">
 										<a href="#">
-											<img class="media-object pemerintah-besar-gambar img-circle" src="img/sea.jpg" alt="Tidak ada">
+											<img class="media-object pemerintah-besar-gambar img-circle" src="{{URL::to('assets/img/kknugm2015/juli.jpg')}}" alt="Tidak ada">
 											<h4 class="nama text-center">Juli Triantoro</h4>
 										</a>
 									</div>
