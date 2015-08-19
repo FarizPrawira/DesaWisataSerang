@@ -120,7 +120,7 @@
 				</span>
 			</a>
 			<a href="{{URL::to('wisata/homestay')}}" class="menu-item">
-				<img src="{{URL::to('assets/img/homestay1.jpg')}}">
+				<img src="{{URL::to('assets/img/homestay.jpg')}}">
 				<span>
 					<h4>Home Stay</h4>
 					<p>Rumah inap pengunjung</p> 

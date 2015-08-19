@@ -1,0 +1,10 @@
+.screenshot{
+	position: relative;
+	margin: 10px;
+	padding: 0;
+}
+.screenshot img{
+	width: 150px;
+	height: auto;
+	border-radius: 3px;
+}

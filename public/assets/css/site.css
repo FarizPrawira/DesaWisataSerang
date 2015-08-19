@@ -9,7 +9,7 @@ box-shadow: 0 3px 5px rgba(0,0,0,0.2);
 */
 body{
 	overflow-x: hidden;
-	/*font-size: 2em;*/
+	font-size: 16px;
 }
 h1, h2{
 	font-family: 'Gloria Hallelujah';
@@ -18,8 +18,8 @@ h1, h2{
 h3, h4{
 	font-family: 'OpenSans-Semibold'
 }
-p, span, a{
-	font-family: 'OpenSans';
+p, .container span, .container a{
+	font-family: "Lora";
 }
 @font-face {
   font-family: 'Gloria Hallelujah';
@@ -37,6 +37,14 @@ p, span, a{
   src: url('../fonts/OpenSans-Regular.ttf');
 /*  src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff2') format('woff2'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
 */}
+@font-face {
+  font-family: 'DroidSerif';
+  src: url('../fonts/DroidSerif-Regular.ttf');
+}
+@font-face {
+  font-family: 'Lora';
+  src: url('../fonts/Lora-Regular.ttf');
+}
 @keyframes zoom{
     from {transform: scale(0);}
     to {transform: scale(1)}
@@ -535,7 +543,7 @@ hr{
 	height: auto;
 	width: 100%;
 }
-.full-img .close{
+.close{
 	position: absolute;
 	right: 0;
 	top: 0;
@@ -544,7 +552,7 @@ hr{
 	width: 20px;
 	height: 20px;
 }
-.full-img .close:hover{
+.close:hover{
 	cursor: pointer;
 }
 .galery .video{
@@ -638,16 +646,16 @@ h1.page-header{
 	display: block;
 	padding: 10px;
 }
-#Cdaftar .panel-body .btn{
+/*#Cdaftar .panel-body .btn{
 	padding: 0;
 	margin: 0;
-}
+}*/
 .panel-green{
 	border-color: rgba(38, 166, 91,1);
 }
-.panel-green hr{
+/*.panel-green hr{
 	border-color: rgba(200, 200, 200, 1);
-}
+}*/
 .panel-green .panel-heading{
 	background-color: rgba(38, 166, 91,1);
 	color: white;

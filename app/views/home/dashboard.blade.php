@@ -88,7 +88,7 @@
 			<ul class="list-unstyled">
 				<li id="Bdaftar" class="active"><i class="glyphicon glyphicon-list"></i> Daftar konten <span>({{Content::count();}})</span></li>
 				<hr/>
-				<li id="Bgalery">Galery </li>
+				<li id="Bgalery">Galeri </li>
 				<li id="Bartikel">Artikel </li>
 				<li id="Bkegiatan">Kegiatan </li>
 				<li id="Bpertanian">Pertanian </li>
@@ -158,7 +158,6 @@
 							</div>
 						</div>
 					</form>
-					<hr/>
 					<form class="form-horizontal" action="{{URL::to('galery/store')}}" method="post">
 						<input type="hidden" name="type" value="video">
 						<div class="form-group">
