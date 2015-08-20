@@ -18,7 +18,7 @@ h1, h2{
 h3, h4{
 	font-family: 'OpenSans-Semibold'
 }
-p, .container span, .container a{
+p{
 	font-family: "Lora";
 }
 @font-face {
@@ -487,7 +487,6 @@ hr{
 .media-object.pemerintah-besar-gambar{
 	width: 150px;
 	height: 150px;
-	border: 5px solid rgba(0, 0, 0, 0.5);
 }
 .media-body.pemerintah-besar-body{
 	width: 300px;
@@ -668,14 +667,19 @@ h1.page-header{
 .fix-content{
 	margin-top: 25px;
 }
-.fix-content h1,h2{
+.fix-content h1, h2{
 	margin-bottom: 25px;
 }
+.fix-content h3, h4{
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
 .fix-content canvas{
+	padding: 10px;
 	width: 100%;
 }
 .fix-content .thumbnail{
-	min-height: 29em;
+	height: 100%;
 	overflow-x: hidden;
 	overflow-y: hidden;
 }
@@ -696,6 +700,9 @@ button.desc{
 }
 
 /*TABLE*/
+table{
+	margin-top: 20px;
+}
 table th,td{
 	text-align: center;
 }
@@ -703,7 +710,8 @@ table img{
 	width: 100px;
 }
 table th{
-	background-color: #ecf0f1;
+	background-color: rgba(38, 166, 91,1);
+	color: white;
 }
 th h4{
 	margin: 0;
