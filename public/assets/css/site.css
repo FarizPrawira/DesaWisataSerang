@@ -19,24 +19,20 @@ h3, h4{
 	font-family: 'OpenSans-Semibold'
 }
 p{
-	font-family: "Lora";
+	font-family: "OpenSans";
 }
 @font-face {
   font-family: 'Gloria Hallelujah';
   src: url('../fonts/GloriaHallelujah.ttf');
-/*  src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff2') format('woff2'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
-*/}
+}
 @font-face {
   font-family: 'OpenSans-Semibold';
   src: url('../fonts/OpenSans-Semibold.ttf');
-/*  src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff2') format('woff2'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
-*/
 }
 @font-face {
   font-family: 'OpenSans';
   src: url('../fonts/OpenSans-Regular.ttf');
-/*  src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff2') format('woff2'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
-*/}
+}
 @font-face {
   font-family: 'DroidSerif';
   src: url('../fonts/DroidSerif-Regular.ttf');
@@ -245,21 +241,24 @@ p{
 }
 .timeline .timeline-item:hover{
 	cursor: pointer;
-	border-radius: 3px;
-	box-shadow: 0 0 20px rgba(0,0,0,0.4);
+    text-decoration: none;
 }
-.timeline .timeline-item:hover::after{
+/*
+.timeline .timeline-item:hover{
 	content: "Lanjut baca...";
+    font-size: 2em;
 	color: white;
 	width: 100%;
 	position: absolute;
-	padding: 10px;
+	padding-top: 50%;
 	text-align: center;
-	background-color: rgba(5,100,60,0.9);
+    text-shadow: 0 0 10px black;
 	bottom: 0;
 	left: 0;
+    top: 0;
 	font-style: italic;
 }
+*/
 .timeline .timeline-item>h4{
 	padding: 0 10px 0 10px;
 	margin-bottom: 0;
@@ -270,14 +269,20 @@ p{
 	overflow: hidden;
 	text-align: center;
 }
+.timeline a h4{
+    color: rgba(0,0,0,0.9);
+    font-weight: 700;
+}
+.timeline a:hover h4,h3,h2,h1{
+    color: rgba(0,0,0,0.9);
+}
 .timeline .timeline-item>img{
-	max-width: 100%;
-	padding: 0 10px 10px 10px;
+	width: 95%;
 }
 .timeline .timeline-item>p{
 	color: black;
 	height: 6em;
-	padding: 0 10px 0 10px;
+	padding: 10px 10px 0 10px;
 	border-bottom-right-radius: 3px;
 	border-bottom-left-radius: 3px;
 	text-align: left;
@@ -496,6 +501,9 @@ hr{
 	width: 300px;
 	height: 200px;
 }
+.media-body.pemerintah-besar-body{
+	mar
+}
 .media-left a{
 	color: #000000;
 	text-decoration: none;
@@ -596,11 +604,12 @@ h1.page-header{
     margin-top: -5px;
 }
 .sidebar-serang{
-	height: auto;
+	height: auto;  
 	color: white;
 	padding: 10px;
 	border-radius: 3px;
 	background-color: rgba(5,100,60,1);
+    box-shadow: -5px 5px 10px rgba(200,200,200,1);
 }
 .sidebar-serang li{
 	padding: 10px;
@@ -608,11 +617,11 @@ h1.page-header{
 }
 .sidebar-serang li:hover{
 	cursor: pointer;
-	color: rgba(38, 166, 91,1);
+	color: rgb(64, 240, 137);
 	border-radius: 3px;
 }
 .sidebar-serang li.active{
-	color: rgba(38, 166, 91,1);
+	color: rgb(64, 240, 137);
 }
 .sidebar-serang li.active:after{
 	position: absolute;
@@ -720,4 +729,43 @@ th h4{
 /*GLYPHCON*/
 i{
 	font-size: 0.8em;
+}
+/*EFFECTS*/
+.shadow-bot
+{
+  	position:relative;       
+}
+.shadow-bot:before, .shadow-bot:after
+{
+  z-index: -1;
+  position: absolute;
+  content: "";
+  bottom: 15px;
+  left: 10px;
+  width: 50%;
+  top: 80%;
+  max-width:300px;
+  background: #777;
+  -webkit-box-shadow: 0 15px 10px #777;
+  -moz-box-shadow: 0 15px 10px #777;
+  box-shadow: 0 15px 10px #777;
+  -webkit-transform: rotate(-3deg);
+  -moz-transform: rotate(-3deg);
+  -o-transform: rotate(-3deg);
+  -ms-transform: rotate(-3deg);
+  transform: rotate(-3deg);
+}
+.shadow-bot:after
+{
+  -webkit-transform: rotate(3deg);
+  -moz-transform: rotate(3deg);
+  -o-transform: rotate(3deg);
+  -ms-transform: rotate(3deg);
+  transform: rotate(3deg);
+  right: 10px;
+  left: auto;
+}
+/*ENDOF EFFECT*/
+.img img{
+    border-radius: 3px;
 }

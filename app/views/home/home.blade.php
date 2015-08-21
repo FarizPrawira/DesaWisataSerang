@@ -11,6 +11,7 @@
 	<link rel="stylesheet" href="{{URL::to('assets/css/owl.carousel.css')}}"/>
 	<link rel="stylesheet" href="{{URL::to('assets/css/owl.theme.css')}}"/>
 	<link rel="stylesheet" href="{{URL::to('assets/css/site.css')}}"/>
+    <link rel="icon" type="image/png" href="{{URL::to('assets/img/favicon.png')}}">
 </head>
 <body>
 	@include('home.header')
@@ -43,16 +44,16 @@
 		<!-- Timeline -->
 		<div class="container timeline">
 			<div class="row">
-				<div class="col-md-6">
+				<div class="col-md-5 col-md-offset-1">
 					<h2>Kegiatan</h2>
 					<?php foreach ($results["kegiatan"] as $kegiatan) {
 							// var_dump($content->description);die;
 						if ($kegiatan->type == "kegiatan") { ?>
-						<a href="{{URL::to('content/'.$kegiatan->id)}}" class="timeline-item">
-							<h4>{{$kegiatan->title}}</h4>
+						<a href="{{URL::to('content/'.$kegiatan->id)}}" class="timeline-item shadow-bot text-center">
+							<h3>{{$kegiatan->title}}</h3>
 							<?php foreach ($results["photo"] as $photo) {
 								if ($photo->content_id == $kegiatan->id) {
-									echo "<img src=".URL::to($photo->path).">";
+									echo "<img class='img-rounded' src=".URL::to($photo->path).">";
 									break; 
 								} 
 							} ?>
@@ -63,16 +64,16 @@
 					?>
 					<div class="loadmore-kegiatan"></div>
 				</div>
-				<div class="col-md-6">
+				<div class="col-md-5">
 					<h2>Artikel</h2>
 					<?php foreach ($results["artikel"] as $artikel) {
 							// var_dump($kegiatan->description);die;
 						if ($artikel->type == "artikel") { ?>
-						<a href="{{URL::to('content/'.$artikel->id)}}" class="timeline-item">
-							<h4>{{$artikel->title}}</h4>
+						<a href="{{URL::to('content/'.$artikel->id)}}" class="timeline-item shadow-bot  text-center">
+							<h3>{{$artikel->title}}</h3>
 							<?php foreach ($results["photo"] as $photo) {
 								if ($photo->content_id == $artikel->id) {
-									echo "<img src=".URL::to($photo->path).">";
+									echo "<img class='img-rounded' src=".URL::to($photo->path).">";
 									break; 
 								} 
 							} ?>
