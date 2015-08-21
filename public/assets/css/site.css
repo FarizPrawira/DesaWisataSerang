@@ -688,9 +688,6 @@ h1.page-header{
 .fix-content .thumbnail h4{
 	color: rgba(5,100,60,1);
 }
-.fix-content img{
-	border-radius: 3px;	
-}
 button.desc{
 	width: 100%;
 }
