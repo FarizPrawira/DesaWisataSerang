@@ -162,6 +162,7 @@ p{
 	background-color: transparent;
 }
 .menu-item span>p{
+	font-family: "OpenSans";
 	position: relative;
 	padding: 5px;
 	text-overflow: ellipsis;
@@ -331,7 +332,7 @@ hr{
 	height: 460px;
 	overflow: hidden;
 	position: relative;
-	background-color: rgba(0, 0, 0, 0.3);
+	background-color: rgba(0, 0, 0, 0.8);
 }
 .content-header img{
 	/*padding-top: 110px;*/
@@ -347,7 +348,7 @@ hr{
 .content-header span{
 	width: 100%;
 	height: 100%;
-	background-color: rgba(0, 0, 0, 0.3);
+	background-color: rgba(0, 0, 0, 0.5);
 	position: absolute;
 }
 .content-header span>h2{
@@ -484,6 +485,9 @@ hr{
 	padding: 5px 0 5px 0;
 }
 /*pemerintahan*/
+.media{
+	margin: 20px;
+}
 .media-object.pemerintah-besar-gambar{
 	width: 150px;
 	height: 150px;
@@ -496,7 +500,7 @@ hr{
 	color: #000000;
 	text-decoration: none;
 }
-.media-heading {
+.media-heading{
 	margin-top: 50px;
 	max-width: 200px;
 	position: relative;
@@ -513,9 +517,6 @@ hr{
 	content: "";
 	top:35%;
 	right:100%;
-}
-.main-container{
-  	margin-top: 60px;
 }
 /*galery*/
 .galery ul +ul{
@@ -596,9 +597,10 @@ h1.page-header{
 }
 .sidebar-serang{
 	height: auto;
-	color: black;
+	color: white;
 	padding: 10px;
 	border-radius: 3px;
+	background-color: rgba(5,100,60,1);
 }
 .sidebar-serang li{
 	padding: 10px;
@@ -606,9 +608,8 @@ h1.page-header{
 }
 .sidebar-serang li:hover{
 	cursor: pointer;
-	color: white;
+	color: rgba(38, 166, 91,1);
 	border-radius: 3px;
-	background-color: rgba(5,100,60,1);
 }
 .sidebar-serang li.active{
 	color: rgba(38, 166, 91,1);
@@ -625,9 +626,6 @@ h1.page-header{
 	left: 105%;
 	margin-top: 10px;
 }
-.sidebar-serang hr{
-	border-color: rgba(200, 200, 200, 1);
-}
 .sidebar-serang a{
 	color: black;
 }
@@ -635,7 +633,7 @@ h1.page-header{
 	text-decoration: none;
 	color: rgba(5,100,60,1);
 }
-.main-container {
+.main-container{
   	margin-top: 60px;
 }
 .form-group textarea{
@@ -689,6 +687,9 @@ h1.page-header{
 }
 .fix-content .thumbnail h4{
 	color: rgba(5,100,60,1);
+}
+.fix-content img{
+	border-radius: 3px;	
 }
 button.desc{
 	width: 100%;

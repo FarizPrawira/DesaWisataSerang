@@ -24,6 +24,7 @@
 				<img src="{{URL::to('assets/img/kuda2.jpg')}}" class="img-responsive">
 			</div>
 			<div class="col-md-6">
+				<p>
 				Banyak sekali wahana yang ataupun objek bermain yang terdapat di desa serang, purbalingga. 
 				Salah satu wahana yang terdapat di rest area lembah asri desa serang adalah kuda tunggang. 
 				Kuda tunggang merupakan kuda yang khusus untuk ditunggangi. Kuda tunggang ini telah lama menjadi wahana di rest area, 
@@ -32,15 +33,18 @@
 				Bagi yang takut kuda maupun takut terjatuh dari kuda jangan khawatir sebab sang pawang siap menjaga keselamatan anda. 
 				Selain merasakan sensasi berkuda juga anda bisa melihat pemandangan kebun strawberry yang membentang luas. 
 				Dan juga pemandangan pohon pinus di sekitar rest area. 
+				</p>
 			</div>
 		</div>
 		<br>
 		<div class="row">
 			<div class="col-md-offset-1 col-md-6">
+				<p>
 				Kuda tunggang ini biasanya beroperasi pada hari libur terutama libur sekolah  dan libur hari raya idul fitri ataupun libur panjang lainnya.  
 				Wahana ini merupakan wahana yang banyak diminati oleh anak-anak. Cukup dengan membayar Rp 15.000 rupiah anda sudah bisa berkeliling menggunakan kuda tunggang ini. 
 				Informasi tentang Kuda tunggang ini dapat diperoleh di Tourist Information Center yang berada di jalan Raya Serang bertempat di desa Serang Purbalingga 
 				atau dapat mengunjungi website desa Serang serangpurbalingga.desa.id atau desawisataserang.com
+				</p>
 			</div>
 			<div class="col-md-4">
 				<img src="{{URL::to('assets/img/kuda3.jpg')}}" class="img-responsive">
