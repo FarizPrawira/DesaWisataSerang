@@ -18,9 +18,12 @@
 	<div class="container fix-content">
 		<div class="row">
 			<div class="text-center">
-				<h1>Pemerintah Desa Serang</h1>
-				<h2>Tahun 2015</h2>
+				<h1>Pemerintahan Desa Serang</h1>
 			</div>
+            <ol class="breadcrumb">
+                <li><a href="">2014</a></li>
+                <li><a href="">2015</a></li>
+            </ol>
 			<div class="col-md-4 col-md-offset-4">
 				<div class="media">
 					<div class="media-center">
@@ -34,78 +37,9 @@
 					</div>
 				</div>
 			</div>
-			<div class="clearfix"></div>
-			<div class="col-md-4">
-				<div class="media">
-					<div class="media-center">
-						<a href="#">
-							<img class="media-object pemerintah-besar-gambar img-circle center-block" src="{{URL::to('assets/img/pemerintahan/tidakadafoto.jpg')}}" alt="Tidak ada">
-							
-						</a>
-					</div>
-					<div class="media-body">
-						<h3 class="text-center">Kusmanto</h3>
-						<p class="text-center">Kepala Dusun 1</p>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-4">
-				<div class="media">
-					<div class="media-center">
-						<a href="#">
-							<img class="media-object pemerintah-besar-gambar img-circle center-block" src="{{URL::to('assets/img/pemerintahan/martowiyono.jpg')}}" alt="Tidak ada">
-							
-						</a>
-					</div>
-					<div class="media-body">
-						<h3 class="text-center">Martowiyono</h3>
-						<p class="text-center">Kepala Dusun 2</p>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-4">
-				<div class="media">
-					<div class="media-center">
-						<a href="#">
-							<img class="media-object pemerintah-besar-gambar img-circle center-block" src="{{URL::to('assets/img/pemerintahan/marhadi.jpg')}}" alt="Tidak ada">
-							
-						</a>
-					</div>
-					<div class="media-body">
-						<h3 class="text-center">Marhadi</h3>
-						<p class="text-center">Kepala Dusun 3</p>
-					</div>
-				</div>
-			</div>
-			<div class="clearfix"></div>
-			<div class="col-md-4">
-				<div class="media">
-					<div class="media-center">
-						<a href="#">
-							<img class="media-object pemerintah-besar-gambar img-circle center-block" src="{{URL::to('assets/img/pemerintahan/mugirin.jpg')}}" alt="Tidak ada">
-							
-						</a>
-					</div>
-					<div class="media-body">
-						<h3 class="text-center">Mugirin</h3>
-						<p class="text-center">Kepala Dusun 4</p>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-4">
-				<div class="media">
-					<div class="media-center">
-						<a href="#">
-							<img class="media-object pemerintah-besar-gambar img-circle center-block" src="{{URL::to('assets/img/pemerintahan/karpono.jpg')}}" alt="Tidak ada">
-						</a>
-					</div>
-					<div class="media-body">
-						<h3 class="text-center">Karpono</h3>
-						<p class="text-center">Kepala Dusun 5</p>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-4">
+            <div class="clearfix"></div>
+            <div class="breadcrumb">Perangkat Desa</div>
+            <div class="col-md-4">
 				<div class="media">
 					<div class="media-center">
 						<a href="#">
@@ -119,7 +53,6 @@
 					</div>
 				</div>
 			</div>
-			<div class="clearfix"></div>
 			<div class="col-md-4">
 				<div class="media">
 					<div class="media-center">
@@ -148,12 +81,12 @@
 					</div>
 				</div>
 			</div>
+            <div class="clearfix"></div>
 			<div class="col-md-4">
 				<div class="media">
 					<div class="media-center">
 						<a href="#">
-							<img class="media-object pemerintah-besar-gambar img-circle center-block" src="{{URL::to('assets/img/pemerintahan/suroso.jpg')}}" alt="Tidak ada">
-							
+							<img class="media-object pemerintah-besar-gambar img-circle center-block" src="{{URL::to('assets/img/pemerintahan/suroso.jpg')}}" alt="Tidak ada">							
 						</a>
 					</div>
 					<div class="media-body">
@@ -162,7 +95,6 @@
 					</div>
 				</div>
 			</div>
-			<div class="clearfix"></div>
 			<div class="col-md-4">
 				<div class="media">
 					<div class="media-center">
@@ -177,9 +109,77 @@
 					</div>
 				</div>
 			</div>
-			<div class="clearfix"></div>
-		</div>
-	</div>
+            <div class="clearfix"></div>
+            <div class="breadcrumb">Kepala Desun</div>
+			<div class="col-md-4">
+				<div class="media">
+					<div class="media-center">
+						<a href="#">
+							<img class="media-object pemerintah-besar-gambar img-circle center-block" src="{{URL::to('assets/img/pemerintahan/tidakadafoto.jpg')}}" alt="Tidak ada">
+						</a>
+					</div>
+					<div class="media-body">
+						<h3 class="text-center">Kusmanto</h3>
+						<p class="text-center">Kepala Dusun 1</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="media">
+					<div class="media-center">
+						<a href="#">
+							<img class="media-object pemerintah-besar-gambar img-circle center-block" src="{{URL::to('assets/img/pemerintahan/martowiyono.jpg')}}" alt="Tidak ada">
+						</a>
+					</div>
+					<div class="media-body">
+						<h3 class="text-center">Martowiyono</h3>
+						<p class="text-center">Kepala Dusun 2</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="media">
+					<div class="media-center">
+						<a href="#">
+							<img class="media-object pemerintah-besar-gambar img-circle center-block" src="{{URL::to('assets/img/pemerintahan/marhadi.jpg')}}" alt="Tidak ada">
+							
+						</a>
+					</div>
+					<div class="media-body">
+						<h3 class="text-center">Marhadi</h3>
+						<p class="text-center">Kepala Dusun 3</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="media">
+					<div class="media-center">
+						<a href="#">
+							<img class="media-object pemerintah-besar-gambar img-circle center-block" src="{{URL::to('assets/img/pemerintahan/mugirin.jpg')}}" alt="Tidak ada">
+							
+						</a>
+					</div>
+					<div class="media-body">
+						<h3 class="text-center">Mugirin</h3>
+						<p class="text-center">Kepala Dusun 4</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="media">
+					<div class="media-center">
+						<a href="#">
+							<img class="media-object pemerintah-besar-gambar img-circle center-block" src="{{URL::to('assets/img/pemerintahan/karpono.jpg')}}" alt="Tidak ada">
+						</a>
+					</div>
+					<div class="media-body">
+						<h3 class="text-center">Karpono</h3>
+						<p class="text-center">Kepala Dusun 5</p>
+					</div>
+				</div>
+			</div>
+        </div>
+    </div>
 	<!-- CONTENT END -->
 	
 	@include('home.footer')

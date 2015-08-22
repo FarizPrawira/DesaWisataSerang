@@ -26,7 +26,7 @@
 			<div class="col-sm-12 galery">
 				<ul class="list-inline">
 					<?php foreach ($results['video'] as $video): ?>
-					<li>
+					<li class="col-md-3">
 						<div class="video" data-slide-number="16">
 							<div class="embed-responsive embed-responsive-16by9" >
 								<iframe src="{{URL::to($video->path)}}" allowfullscreen main ></iframe>

@@ -97,9 +97,6 @@
 		</div>
 		<div class="col-md-10">
 			<div class="panel panel-green" id="Cdaftar">
-				<div class="panel-heading">
-					Daftar konten
-				</div>
 				<div class="panel-body">
 					<ul class="list-unstyled">
 						<?php foreach ($results["content"] as $content) { ?>						
@@ -135,9 +132,6 @@
 			</div>
 
 			<div class="panel panel-green" id="Cgalery">
-				<div class="panel-heading">
-					Galeri
-				</div>
 				<div class="panel-body">
 					<form class="form-horizontal" action="{{URL::to('galery/store')}}" method="post" enctype="multipart/form-data" file="true">
 						<input type="hidden" name="type" value="image">
@@ -179,9 +173,6 @@
 			</div>
 
 			<div class="panel panel-green" id="Cartikel">
-				<div class="panel-heading">
-					Artikel
-				</div>
 				<div class="panel-body">
 					<form class="form-horizontal" action="{{URL::to('content/store')}}" method="post" enctype="multipart/form-data" file="true">
 						<input type="hidden" name="type" value="artikel">
@@ -215,11 +206,7 @@
 					</form>
 				</div>
 			</div>
-
 			<div class="panel panel-green" id="Ckegiatan">
-				<div class="panel-heading">
-					Kegiatan
-				</div>
 				<div class="panel-body">
 					<form class="form-horizontal" action="{{URL::to('content/store')}}" method="post" enctype="multipart/form-data" file="true">
 						<input type="hidden" name="type" value="kegiatan">
@@ -287,9 +274,6 @@
 			</div>
 
 			<div class="panel panel-green" id="Cpertanian">
-				<div class="panel-heading">
-					Pertanian
-				</div>
 				<div class="panel-body">
 					<form class="form-horizontal" action="{{URL::to('pertanian/store')}}" method="post">
 						<div class="form-group">
@@ -380,9 +364,6 @@
 			</div>
 
 			<div class="panel panel-green" id="Cpeternakan">
-				<div class="panel-heading">
-					Peternakan
-				</div>
 				<div class="panel-body">
 					<form class="form-horizontal" action="{{URL::to('peternakan/store')}}" method="post">
 						<div class="form-group">							
@@ -440,9 +421,6 @@
 			</div>
 
 			<div class="panel panel-green" id="Cpaketwisata">
-				<div class="panel-heading">
-					Paket Wisata
-				</div>
 				<div class="panel-body">
 					<form class="form-horizontal" action="{{URL::to('tic/update/1')}}" method="post">
 						<div class="form-group">
