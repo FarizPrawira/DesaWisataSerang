@@ -66,7 +66,7 @@ p{
 	border-radius: 0;
 	margin: 0;
 	border: 0;
-	z-index: 103;
+	z-index: 1003;
 }
 .navbar ul{
 	margin: 0;
@@ -80,7 +80,7 @@ p{
 	font-weight: normal;
 	font-size: 20px;
 	padding: 16px 0 16px 0;
-	z-index: 101;
+	z-index: 1001;
 	position: relative;
 	display: inline-block;
 	list-style: none;
@@ -105,7 +105,7 @@ p{
 	text-align: center;
 	color: white;
 	font-size: 20px;
-	z-index: 101;
+	z-index: 1001;
 	position: relative;
 	text-decoration: none;
 }
@@ -116,7 +116,7 @@ p{
 	background-color: rgba(255,255,255,1);
 	position: fixed;
 	margin-top: 60px;
-	z-index: 102;
+	z-index: 1002;
 	padding: 30px 20px 20px 30px;
 	border-bottom: 3px solid rgba(207,0,15,1);
 }
@@ -552,7 +552,7 @@ hr{
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	z-index: 102;
+	z-index: 1002;
 	max-height: auto;
 	max-width: 100%;
 	background-color: white;
@@ -782,3 +782,16 @@ i{
 .img img{
     border-radius: 3px;
 }
+
+/*Galery edit*/
+.screenshot{
+	position: relative;
+	margin: 10px;
+	padding: 0;
+}
+.screenshot img{
+	width: 150px;
+	height: auto;
+	border-radius: 3px;
+}
+/*Galery edit end*/

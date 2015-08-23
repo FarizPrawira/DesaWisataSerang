@@ -97,8 +97,8 @@
 
 	<?php 
 	function truncDescription($description) {
-		if (strlen($description) > 250) {
-			$description = substr($description, 0, 230);
+		if (strlen($description) > 190) {
+			$description = substr($description, 0, 180);
 			$description.="...";
 		}
 		return $description;
