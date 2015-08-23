@@ -18,7 +18,7 @@
 
 	<div class="container">
 		<div class="row">
-			<center><h2>PETA PARIWISATA & KEPENDUDUKAN DESA SERANG</h2></center>
+			<center><h1>PETA PARIWISATA & KEPENDUDUKAN DESA SERANG</h1></center>
 		</div>
 		<center>
 			<div id="map">
@@ -240,7 +240,7 @@
 		};
 
 		info.update = function (props) {
-			this._div.innerHTML = '<h3>INFORMASI</h3>' +  (props ?
+			this._div.innerHTML = '<h1>INFORMASI</h1>' +  (props ?
 				'<b>' + props.dusun + '</b>' + '<br/>' + props.rwrt0 +'<br/>' + props.rtrw00 +
 				'<br/>' + 'Jumlah Penduduk = ' + props.total + ' Jiwa ' + 
 				'<br/>' + 'Laki-Laki = ' + props.co + ' Jiwa ' + 
