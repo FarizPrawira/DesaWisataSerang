@@ -137,6 +137,7 @@
 			<div class="panel panel-green" id="Cgalery">
 				<div class="panel-heading">
 					Galeri
+					<a href="{{URL::to('content/galery-edit')}}" class="btn btn-primary" style="float: right; padding:0 6px 0 6px;">Edit Galery</a>
 				</div>
 				<div class="panel-body">
 					<form class="form-horizontal" action="{{URL::to('galery/store')}}" method="post" enctype="multipart/form-data" file="true">
