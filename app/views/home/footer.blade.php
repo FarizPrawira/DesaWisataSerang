@@ -2,13 +2,12 @@
 <div class="footer">
 	<div class="row">
 		<div class="col-md-3">
-			<h4>Tentang Situs ini</h4>
+			<h4>Hubungi Kami di</h4>
 			<hr/>
 			<ul class="list-unstyled">
-				<li><a href="">Peta Situs</a></li>
-				<li><a href="">Peta Desa Serang</a></li>
-				<li><a href="">Peta Wisata</a></li>
-				<li><a href="">Hubungi kami</a></li>
+				<li><h5><i class="fa fa-phone"></i> 0852-9101-3121</h5></a></li>
+				<li><a href="mailto:serang_pbg@ymail.com" target="_blank"><h5><i class="fa fa-envelope-o"></i> serang_pbg@ymail.com</h5></a></li>
+				<li><a href="https://www.google.co.id/maps/place/Serang,+Karangreja,+Purbalingga+Regency,+Central+Java/" target="_blank"><h5><i class="fa fa-map-marker"></i> Jl. Raya Serang Km 07 Rt 03/04, Purbalingga, Jawa Tengah 53357</h5></a></li>
 			</ul>
 		</div>
 
