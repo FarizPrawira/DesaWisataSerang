@@ -16,9 +16,10 @@
 	<!-- CONTENT -->
 	<div class="container main-container timeline">
 		<div class="row">
+			<h2>Artikel Desa Serang</h2>
 			<?php 
 			foreach ($results['content'] as $post): ?>
-			<div class="col-md-2">
+			<div class="col-md-3">
 				<a href="{{URL::to('content/'.$post->id)}}" class="timeline-item shadow-bot text-center">
 					<!-- <div class="timeline-item"> -->
 					<h5>{{$post->title}}</h5>
@@ -47,8 +48,8 @@
 
 	<?php 
 	function truncDescription($description) {
-		if (strlen($description) > 120) {
-			$description = substr($description, 0, 100);
+		if (strlen($description) > 140) {
+			$description = substr($description, 0, 130);
 			$description.="...";
 		}
 		return $description;
