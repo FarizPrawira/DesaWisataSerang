@@ -24,26 +24,30 @@
 				<img src="{{URL::to('assets/img/homestay2.jpg')}}" class="img-responsive">
 			</div>
 			<div class="col-md-6">
-				Homestay mungkin banyak orang yang telah tahu istilah ini namun tidak sedikit pula yang tidak tahu istilah ini. 
-				Homestay adalah Suatu penginapan yang menyewakan suatu tempat atau bangunan secara keseluruhan yang biasanya berbentuk sebuah rumah dan disewakan secara harian maupun bulanan. 
-				Pada umumnya penginapan ini menyediakan lebih dari satu kamar, menyediakan sarapan, terdapat fasilitas dapur, ruang makan, ruang keluarga, 
-				kamar mandi, dan fasilitas-fasiltas lainnya yang dapat dinikmati secara privat seperti anda tinggal dirumah sendiri. 
-				Tipe penginapan ini sangat cocok bagi Anda yang berlibur ke luar kota bersama keluarga maupun beramai-ramai. 
-				Di Desa Serang ini juga terdapat home stay. Home Stay yang ada di Desa Serang beragam ada yang besar maupun yang kecil 
-				selain ukurannya harganya pun beragam ada yang mahal dan juga ada yang murah. 
+				<p align="justify">
+					Homestay mungkin banyak orang yang telah tahu istilah ini namun tidak sedikit pula yang tidak tahu istilah ini. 
+					Homestay adalah Suatu penginapan yang menyewakan suatu tempat atau bangunan secara keseluruhan yang biasanya berbentuk sebuah rumah dan disewakan secara harian maupun bulanan. 
+					Pada umumnya penginapan ini menyediakan lebih dari satu kamar, menyediakan sarapan, terdapat fasilitas dapur, ruang makan, ruang keluarga, 
+					kamar mandi, dan fasilitas-fasiltas lainnya yang dapat dinikmati secara privat seperti anda tinggal dirumah sendiri. 
+					Tipe penginapan ini sangat cocok bagi Anda yang berlibur ke luar kota bersama keluarga maupun beramai-ramai. 
+					Di Desa Serang ini juga terdapat home stay. Home Stay yang ada di Desa Serang beragam ada yang besar maupun yang kecil 
+					selain ukurannya harganya pun beragam ada yang mahal dan juga ada yang murah. 
+				</p>
 			</div>
 		</div>
 		<br>
 		<div class="row">
 			<div class="col-md-offset-1 col-md-6">
-				Homestay di desa serang biasanya pada hari libur sering digunakan Sekolah-sekolah untuk mengisi kegiatan liburan untuk memberikan pengetahuan 
-				kepada anak muridnya bagaimana menjadi seorang petani mulai dari memetik hasil panen dan terkadang ada juga yang ikut juga menjual strawberry. 
-				Selain digunakan oleh para murid sekolah, Homestay ini biasanya digunakan untuk liburan keluarga. 
-				Wisata di Desa serang memang cocok untuk wisata keluarga. Banyak Wisata yang dapat dikunjungi seperti 
-				Kebun Strawberry, Kuda Tunggang, Rest area dan masih banyak lagi wisata atau wahana yang dapat dicoba bersama keluarga. 
-				Karena banyak wisata maupun wahana yang ada di Desa Serang, bagi anda yang ingin menjelajahi desa Serang dapat menyewa homestay yang ada di desa Serang ini. 
-				Sehingga dapat merasakan setiap jengkal tempat wisata yang ada di Desa Serang. 
-				Maka dari itu ajak sekeluarga anda berlibur ke desa Serang untuk merasakan hawa segar daerah pegunungan.
+				<p align="justify">
+					Homestay di desa serang biasanya pada hari libur sering digunakan Sekolah-sekolah untuk mengisi kegiatan liburan untuk memberikan pengetahuan 
+					kepada anak muridnya bagaimana menjadi seorang petani mulai dari memetik hasil panen dan terkadang ada juga yang ikut juga menjual strawberry. 
+					Selain digunakan oleh para murid sekolah, Homestay ini biasanya digunakan untuk liburan keluarga. 
+					Wisata di Desa serang memang cocok untuk wisata keluarga. Banyak Wisata yang dapat dikunjungi seperti 
+					Kebun Strawberry, Kuda Tunggang, Rest area dan masih banyak lagi wisata atau wahana yang dapat dicoba bersama keluarga. 
+					Karena banyak wisata maupun wahana yang ada di Desa Serang, bagi anda yang ingin menjelajahi desa Serang dapat menyewa homestay yang ada di desa Serang ini. 
+					Sehingga dapat merasakan setiap jengkal tempat wisata yang ada di Desa Serang. 
+					Maka dari itu ajak sekeluarga anda berlibur ke desa Serang untuk merasakan hawa segar daerah pegunungan.
+				</p>
 			</div>
 			<div class="col-md-4">
 				<img src="{{URL::to('assets/img/homestay3.jpg')}}" class="img-responsive">
