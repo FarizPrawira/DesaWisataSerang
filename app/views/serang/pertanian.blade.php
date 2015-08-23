@@ -9,13 +9,13 @@
 	<link rel="stylesheet" href="{{URL::to('vendor/font-awesome/css/font-awesome.min.css')}}"/>
 	<link rel="stylesheet" href="{{URL::to('vendor/bootstrap/dist/css/bootstrap.min.css')}}"/>
 	<link rel="stylesheet" href="{{URL::to('assets/css/site.css')}}"/>
-    <link rel="icon" type="image/png" href="{{URL::to('assets/img/favicon.png')}}">
+	<link rel="icon" type="image/png" href="{{URL::to('assets/img/favicon.png')}}">
 </head>
 <body>
 	@include('home.header')
 	<!-- CONTENT -->
 	<div class="container fix-content">
-		<h1 class="text-center">Hasil Pertanian Desa Serang</h1>
+		<h1 class="text-center">Hasil Pertanian Desa Serang {{$pertanian->tahun}}</h1>
 		<p>
 			Desa Serang merupakan desa yang berada di dataran tinggi. Desa Serang sangat cocok untuk bercocok tanam. Desa Serang sebagai tempat yang cocok untuk bercocok tanam dimanfaatkan oleh warganya sebagai lahan pertanian. Pertanian yang berkembang di Desa Serang sangatlah beragam, antara lain Kobis, Chesim, Wortel, Sawi, Ubi Kayu, Ubi Jalar, Tomat, Strawberry dan lain-lain.
 			Mayoritas masyarakat Desa Serang mengelola pertanian masih menggunakan adat/kultur telah ada sejak dulu.
@@ -24,9 +24,12 @@
 		<div class="row">
 			<ol class="breadcrumb">
 				<?php foreach ($results["tahun"] as $tahun) {
-					if ($tahun->tahun == $pertanian->tahun) { $active = "active";	}
-					else{ $active = "";	}
-					echo"<li class='".$active."'><a href=".URL::to('serang/pertanian/'.$tahun->tahun).">".$tahun->tahun."</a></li>";	
+					if ($tahun->tahun == $pertanian->tahun) {
+						echo"<li class='active'>".$tahun->tahun."</li>";
+					}
+					else{ 
+						echo"<li><a href=".URL::to('serang/pertanian/'.$tahun->tahun).">".$tahun->tahun."</a></li>";
+					}
 				} ?>
 			</ol>
 		</div>

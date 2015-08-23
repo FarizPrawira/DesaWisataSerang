@@ -21,7 +21,7 @@
 	</div>
 	<div class="container fix-content">
 		<div class="row">
-			<div class="col-md-4">
+			<div class="col-md-offset-1 col-md-4">
 				<img src="{{URL::to('assets/img/stroberi3.jpg')}}" class="img-responsive">
 			</div>
 			<div class="col-md-6">

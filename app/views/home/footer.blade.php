@@ -17,13 +17,13 @@
 			<hr/>
 			<ul class="list-unstyled list-inline">
 				<li>
-					<a href="https://www.facebook.com/">
+					<a href="https://facebook.com/strawberryserang">
 						<span>
 							<i class="fa fa-facebook fa-2x"></i>
 							Facebook
 						</span>
 					</a>
-				</li>
+				</li><!-- 
 				<li>
 					<a href="https://twitter.com/">
 						<span>
@@ -31,7 +31,7 @@
 							Twitter
 						</span>
 					</a>
-				</li>
+				</li> -->
 				<li>
 					<a href="https://instagram.com/exploreserangpbg/">
 						<span>
@@ -39,7 +39,7 @@
 							Instagram
 						</span>
 					</a>
-				</li>
+				</li><!-- 
 				<li>
 					<a href="https://googleplus.com/">
 						<span>
@@ -55,7 +55,7 @@
 							Youtube
 						</span>
 					</a>
-				</li>
+				</li> -->
 			</ul>
 		</div>
 

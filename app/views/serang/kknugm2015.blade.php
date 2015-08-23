@@ -70,7 +70,6 @@
 									<div class="media-left ">
 										<a href="#">
 											<img class="media-object pemerintah-besar-gambar img-circle" src="{{URL::to('assets/img/kknugm2015/diva.jpg')}}" alt="Tidak ada">
-										
 										</a>
 									</div>
 									<div class="media-body pemerintah-besar-body ">
@@ -85,7 +84,6 @@
 									<div class="media-left ">
 										<a href="#">
 											<img class="media-object pemerintah-besar-gambar img-circle" src="{{URL::to('assets/img/kknugm2015/sarah.jpg')}}" alt="Tidak ada">
-											
 										</a>
 									</div>
 									<div class="media-body pemerintah-besar-body ">
@@ -100,7 +98,6 @@
 									<div class="media-left ">
 										<a href="#">
 											<img class="media-object pemerintah-besar-gambar img-circle" src="{{URL::to('assets/img/kknugm2015/fakhri.jpg')}}" alt="Tidak ada">
-											
 										</a>
 									</div>
 									<div class="media-body pemerintah-besar-body ">
@@ -116,7 +113,6 @@
 									<div class="media-left ">
 										<a href="#">
 											<img class="media-object pemerintah-besar-gambar img-circle" src="{{URL::to('assets/img/kknugm2015/putri.jpg')}}" alt="Tidak ada">
-											
 										</a>
 									</div>
 									<div class="media-body pemerintah-besar-body ">
@@ -131,7 +127,6 @@
 									<div class="media-left ">
 										<a href="#">
 											<img class="media-object pemerintah-besar-gambar img-circle" src="{{URL::to('assets/img/kknugm2015/yuli.jpg')}}" alt="Tidak ada">
-											
 										</a>
 									</div>
 									<div class="media-body pemerintah-besar-body ">
@@ -149,7 +144,6 @@
 									<div class="media-left ">
 										<a href="#">
 											<img class="media-object pemerintah-besar-gambar img-circle" src="{{URL::to('assets/img/kknugm2015/fariz.jpg')}}" alt="Tidak ada">
-											
 										</a>
 									</div>
 									<div class="media-body pemerintah-besar-body ">
@@ -164,7 +158,6 @@
 									<div class="media-left ">
 										<a href="#">
 											<img class="media-object pemerintah-besar-gambar img-circle" src="{{URL::to('assets/img/kknugm2015/melvi.jpg')}}" alt="Tidak ada">
-											
 										</a>
 									</div>
 									<div class="media-body pemerintah-besar-body ">
@@ -179,7 +172,6 @@
 									<div class="media-left ">
 										<a href="#">
 											<img class="media-object pemerintah-besar-gambar img-circle" src="{{URL::to('assets/img/kknugm2015/tiara.jpg')}}" alt="Tidak ada">
-											
 										</a>
 									</div>
 									<div class="media-body pemerintah-besar-body ">
@@ -195,7 +187,6 @@
 									<div class="media-left ">
 										<a href="#">
 											<img class="media-object pemerintah-besar-gambar img-circle" src="{{URL::to('assets/img/kknugm2015/amar.jpg')}}" alt="Tidak ada">
-											
 										</a>
 									</div>
 									<div class="media-body pemerintah-besar-body ">
@@ -210,7 +201,6 @@
 									<div class="media-left ">
 										<a href="#">
 											<img class="media-object pemerintah-besar-gambar img-circle" src="{{URL::to('assets/img/kknugm2015/tea.jpg')}}" alt="Tidak ada">
-											
 										</a>
 									</div>
 									<div class="media-body pemerintah-besar-body ">
@@ -225,7 +215,6 @@
 									<div class="media-left ">
 										<a href="#">
 											<img class="media-object pemerintah-besar-gambar img-circle" src="{{URL::to('assets/img/kknugm2015/vervita.jpg')}}" alt="Tidak ada">
-											
 										</a>
 									</div>
 									<div class="media-body pemerintah-besar-body ">
@@ -243,7 +232,6 @@
 									<div class="media-left ">
 										<a href="#">
 											<img class="media-object pemerintah-besar-gambar img-circle" src="{{URL::to('assets/img/kknugm2015/adit.jpg')}}" alt="Tidak ada">
-											
 										</a>
 									</div>
 									<div class="media-body pemerintah-besar-body ">
@@ -258,7 +246,6 @@
 									<div class="media-left ">
 										<a href="#">
 											<img class="media-object pemerintah-besar-gambar img-circle" src="{{URL::to('assets/img/kknugm2015/vivi.jpg')}}" alt="Tidak ada">
-											
 										</a>
 									</div>
 									<div class="media-body pemerintah-besar-body ">
@@ -273,7 +260,6 @@
 									<div class="media-left ">
 										<a href="#">
 											<img class="media-object pemerintah-besar-gambar img-circle" src="{{URL::to('assets/img/kknugm2015/bella.jpg')}}" alt="Tidak ada">
-											
 										</a>
 									</div>
 									<div class="media-body pemerintah-besar-body ">
@@ -289,7 +275,6 @@
 									<div class="media-left ">
 										<a href="#">
 											<img class="media-object pemerintah-besar-gambar img-circle" src="{{URL::to('assets/img/kknugm2015/lukman.jpg')}}" alt="Tidak ada">
-											
 										</a>
 									</div>
 									<div class="media-body pemerintah-besar-body ">
@@ -304,7 +289,6 @@
 									<div class="media-left ">
 										<a href="#">
 											<img class="media-object pemerintah-besar-gambar img-circle" src="{{URL::to('assets/img/kknugm2015/dias.jpg')}}" alt="Tidak ada">
-											
 										</a>
 									</div>
 									<div class="media-body pemerintah-besar-body ">
@@ -319,7 +303,6 @@
 									<div class="media-left ">
 										<a href="#">
 											<img class="media-object pemerintah-besar-gambar img-circle" src="{{URL::to('assets/img/kknugm2015/iid.jpg')}}" alt="Tidak ada">
-											
 										</a>
 									</div>
 									<div class="media-body pemerintah-besar-body ">
@@ -337,11 +320,10 @@
 									<div class="media-left ">
 										<a href="#">
 											<img class="media-object pemerintah-besar-gambar img-circle" src="{{URL::to('assets/img/kknugm2015/asep.jpg')}}" alt="Tidak ada">
-											
 										</a>
 									</div>
 									<div class="media-body pemerintah-besar-body ">
-										<h4 class="text-left">Asep Mulya Dian DP</h4>
+										<h4 class="text-left">Asep Mulyana Dian DP</h4>
 										<p class="text-left">Koordinator Mahasiswa Subunit 4</p>
 										<p class="text-left">Penyuluhan dan Komunikasi Pertanian</p>
 									</div>
@@ -352,7 +334,6 @@
 									<div class="media-left ">
 										<a href="#">
 											<img class="media-object pemerintah-besar-gambar img-circle" src="{{URL::to('assets/img/kknugm2015/ida.jpg')}}" alt="Tidak ada">
-											
 										</a>
 									</div>
 									<div class="media-body pemerintah-besar-body ">
@@ -367,7 +348,6 @@
 									<div class="media-left ">
 										<a href="#">
 											<img class="media-object pemerintah-besar-gambar img-circle" src="{{URL::to('assets/img/kknugm2015/silo.jpg')}}" alt="Tidak ada">
-											
 										</a>
 									</div>
 									<div class="media-body pemerintah-besar-body ">
@@ -383,7 +363,6 @@
 									<div class="media-left ">
 										<a href="#">
 											<img class="media-object pemerintah-besar-gambar img-circle" src="{{URL::to('assets/img/kknugm2015/wika.jpg')}}" alt="Tidak ada">
-											
 										</a>
 									</div>
 									<div class="media-body pemerintah-besar-body ">
@@ -398,7 +377,6 @@
 									<div class="media-left ">
 										<a href="#">
 											<img class="media-object pemerintah-besar-gambar img-circle" src="{{URL::to('assets/img/kknugm2015/fince.jpg')}}" alt="Tidak ada">
-											
 										</a>
 									</div>
 									<div class="media-body pemerintah-besar-body ">
@@ -416,7 +394,6 @@
 									<div class="media-left ">
 										<a href="#">
 											<img class="media-object pemerintah-besar-gambar img-circle" src="{{URL::to('assets/img/kknugm2015/ogi.jpg')}}" alt="Tidak ada">
-											
 										</a>
 									</div>
 									<div class="media-body pemerintah-besar-body ">
@@ -431,7 +408,6 @@
 									<div class="media-left ">
 										<a href="#">
 											<img class="media-object pemerintah-besar-gambar img-circle" src="{{URL::to('assets/img/kknugm2015/rina.jpg')}}" alt="Tidak ada">
-											
 										</a>
 									</div>
 									<div class="media-body pemerintah-besar-body ">
@@ -446,7 +422,6 @@
 									<div class="media-left ">
 										<a href="#">
 											<img class="media-object pemerintah-besar-gambar img-circle" src="{{URL::to('assets/img/kknugm2015/randy.jpg')}}" alt="Tidak ada">
-											
 										</a>
 									</div>
 									<div class="media-body pemerintah-besar-body ">
@@ -462,7 +437,6 @@
 									<div class="media-left ">
 										<a href="#">
 											<img class="media-object pemerintah-besar-gambar img-circle" src="{{URL::to('assets/img/kknugm2015/hana.jpg')}}" alt="Tidak ada">
-											
 										</a>
 									</div>
 									<div class="media-body pemerintah-besar-body ">
@@ -477,7 +451,6 @@
 									<div class="media-left ">
 										<a href="#">
 											<img class="media-object pemerintah-besar-gambar img-circle" src="{{URL::to('assets/img/kknugm2015/eny.jpg')}}" alt="Tidak ada">
-											
 										</a>
 									</div>
 									<div class="media-body pemerintah-besar-body ">
@@ -492,7 +465,6 @@
 									<div class="media-left ">
 										<a href="#">
 											<img class="media-object pemerintah-besar-gambar img-circle" src="{{URL::to('assets/img/kknugm2015/juli.jpg')}}" alt="Tidak ada">
-											
 										</a>
 									</div>
 									<div class="media-body pemerintah-besar-body ">
