@@ -69,7 +69,7 @@
 					<?php foreach ($results["artikel"] as $artikel) {
 							// var_dump($kegiatan->description);die;
 						if ($artikel->type == "artikel") { ?>
-						<a href="{{URL::to('content/'.$artikel->id)}}" class="timeline-item shadow-bot  text-center">
+						<a href="{{URL::to('content/'.$artikel->id)}}" class="timeline-item shadow-bot text-center">
 							<h3>{{$artikel->title}}</h3>
 							<?php foreach ($results["photo"] as $photo) {
 								if ($photo->content_id == $artikel->id) {
@@ -86,7 +86,7 @@
 			</div>
 			<div class="row loadmore">
 				<button id="loadmore">
-					<p class="text-center">Loadmore <span class="glyphicon glyphicon-refresh"></span></p>
+					<p class="text-center">Sebelumnya <span class="glyphicon glyphicon-arrow-down"></span></p>
 				</button>
 			</div>
 		</div>
@@ -157,7 +157,7 @@
 		.done(function(response){
 			if (response.kegiatan[kegiatan] === undefined && response.artikel[artikel] === undefined) {
 				$('.loadmore').html('');
-				$('.loadmore').append("Data Habis")
+				$('.loadmore').append("")
 			};
 			if (response.kegiatan[kegiatan] !== undefined) {
 				while (response.kegiatan[kegiatan].id != response.photo[i].content_id) {
@@ -170,9 +170,9 @@
 					description = description.concat("...");
 				};
 				$('.loadmore-kegiatan').append('\
-					<a href="content/'+response.kegiatan[kegiatan].id+'" class="timeline-item load-kegiatan">\
-					<h4>'+response.kegiatan[kegiatan++].title+'</h4>\
-					<img src='+photoKeg+'>\
+					<a href="content/'+response.kegiatan[kegiatan].id+'" class="timeline-item load-kegiatan shadow-bot text-center">\
+					<h3>'+response.kegiatan[kegiatan++].title+'</h3>\
+					<img src='+photoKeg+' class="img-rounded">\
 					<p>'+description+'</p>\
 					</a>\
 					');
@@ -189,9 +189,9 @@
 					description = description.concat("...");
 				};
 				$('.loadmore-artikel').append('\
-					<a href="content/'+response.artikel[artikel].id+'" class="timeline-item load-artikel">\
-					<h4>'+response.artikel[artikel++].title+'</h4>\
-					<img src='+photoAr+'>\
+					<a href="content/'+response.artikel[artikel].id+'" class="timeline-item load-artikel shadow-bot text-center">\
+					<h3>'+response.artikel[artikel++].title+'</h3>\
+					<img src='+photoAr+' class="img-rounded">\
 					<p>'+description+'</p>\
 					</a>\
 					');

@@ -86,13 +86,13 @@
 	<div class="container main-container">
 		<div class="col-md-2 sidebar-serang">
 			<ul class="list-unstyled">
-				<li id="Bdaftar" class="active">Daftar konten <span>({{Content::count();}})</span></li>
-				<li id="Bgalery">Galeri </li>
-				<li id="Bartikel">Artikel </li>
-				<li id="Bkegiatan">Kegiatan </li>
-				<li id="Bpertanian">Pertanian </li>
-				<li id="Bpeternakan">Peternakan </li>
-				<li id="Bpaketwisata">Paket wisata </li>
+				<li id="Bdaftar" class="active"><i class="glyphicon glyphicon-home"></i> Daftar konten<span>({{Content::count();}})</span></li>
+				<li id="Bgalery"><i class="glyphicon glyphicon-picture"></i> Galeri </li>
+				<li id="Bartikel"><i class="glyphicon glyphicon-file"></i> Artikel </li>
+				<li id="Bkegiatan"><i class="glyphicon glyphicon-time"></i> Kegiatan</li>
+				<li id="Bpertanian"><i class="glyphicon glyphicon-grain"></i> Pertanian </li>
+				<li id="Bpeternakan"><i class="glyphicon glyphicon-cutlery"></i> Peternakan </li>
+				<li id="Bpaketwisata"><i class="glyphicon glyphicon-tree-conifer"></i> Paket wisata </li>
 			</ul>
 		</div>
 		<div class="col-md-10">

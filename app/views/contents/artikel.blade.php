@@ -16,19 +16,18 @@
 	<!-- CONTENT -->
 	<div class="container main-container timeline">
 		<div class="row">
-			<h2>Artikel Desa Serang</h2>
 			<?php 
 			foreach ($results['content'] as $post): ?>
-			<div class="col-md-3">
-				<a href="{{URL::to('content/'.$post->id)}}" class="timeline-item">
+			<div class="col-md-2">
+				<a href="{{URL::to('content/'.$post->id)}}" class="timeline-item shadow-bot text-center">
 					<!-- <div class="timeline-item"> -->
-					<h4>{{$post->title}}</h4>
+					<h5>{{$post->title}}</h5>
 					<?php foreach ($results['photo'] as $photo):
 					if ($photo->content_id == $post->id){ ?>
-					<img src="{{URL::to($photo->path)}}" class="related-image">
+					<img src="{{URL::to($photo->path)}}" class="related-image img-rounded">
 					<?php break; }
 					endforeach ?>
-					<p>{{truncDescription($post->description)}}</p>
+					<p class="smaller">{{truncDescription($post->description)}}</p>
 					<!-- </div> -->
 				</a>
 			</div>
@@ -37,7 +36,13 @@
 			<div class="clearfix"></div>
 		</div>
 	</div>
+    <div class="row loadmore">
+        <button id="loadmore">
+            <p class="text-center">Sebelumnya <span class="glyphicon glyphicon-arrow-down"></span></p>
+        </button>
+    </div>
 	<!-- CONTENT END-->
+    
 	@include('home.footer')
 
 	<?php 
