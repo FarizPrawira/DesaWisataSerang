@@ -13,7 +13,7 @@
 	<link rel="stylesheet" href="{{URL::to('vendor/jquery-ui/jquery-ui.theme.min.css')}}"/>
 	<link rel="stylesheet" href="{{URL::to('assets/css/dropzone.min.css')}}"/>
 	<link rel="stylesheet" href="{{URL::to('assets/css/site.css')}}"/>
-    <link rel="icon" type="image/png" href="{{URL::to('assets/img/favicon.png')}}">
+	<link rel="icon" type="image/png" href="{{URL::to('assets/img/favicon.png')}}">
 </head>
 <body>
 	@include('home.header')
@@ -52,7 +52,7 @@
 				<div class="panel-body">
 					<!-- LIST GAMBAR -->
 					<div class="row">
-						<h3 class="text-center">Gambar</h3>
+						<h1 class="text-center">Gambar</h1>
 						<ul class="list-unstyled list-inline">
 							<?php foreach ($galeries as $galery) { 
 								if ($galery->type == "image") { ?>
@@ -66,18 +66,15 @@
 								<?php	} 
 							}?>
 						</ul>
-<!-- 						<button id="loadmore">
-							<p class="text-center">Loadmore <span class="glyphicon glyphicon-refresh"></span></p>
-						</button> -->
 					</div>
 					<!-- END OF LIST -->
 					<!-- LIST VIDEO -->
 					<div class="row galery">
-						<h3 class="text-center">Video</h3>
-						<ul class="list-unstyled list-inline">
+						<h1 class="text-center">Video</h1>
+						<ul class="list-inline">
 							<?php foreach ($galeries as $galery) { 
 								if ($galery->type == "video") { ?>
-								<li class="screenshot">
+								<li class="col-md-3">
 									<div class="video" data-slide-number="16">
 										<div class="embed-responsive embed-responsive-16by9" >
 											<iframe src="{{URL::to($galery->path)}}" allowfullscreen main ></iframe>
@@ -91,29 +88,25 @@
 								<?php	} 
 							} ?>
 						</ul>
-<!-- 						<button id="loadmore">
-							<p class="text-center">Loadmore <span class="glyphicon glyphicon-refresh"></span></p>
-						</button> -->
 					</div>
 					<!-- END OF LIST -->
 				</div>
 			</div>
 		</div> 
 	</div>
-</div>
 
-@include('home.footer')
-<script>
-$(function() {
-	$("#KegDateStart").datepicker({
-		dateFormat: 'dd/M/yy',
-		monthNamesShort: [ "Jan", "Feb", "Mar", "Apr", "Mei", "Jun", "Jul", "Agus", "Sep", "Okt", "Nov", "Des" ] 
+	@include('home.footer')
+	<script>
+	$(function() {
+		$("#KegDateStart").datepicker({
+			dateFormat: 'dd/M/yy',
+			monthNamesShort: [ "Jan", "Feb", "Mar", "Apr", "Mei", "Jun", "Jul", "Agus", "Sep", "Okt", "Nov", "Des" ] 
+		});
+		$("#KegDateEnd").datepicker({
+			dateFormat: 'dd/M/yy',
+			monthNamesShort: [ "Jan", "Feb", "Mar", "Apr", "Mei", "Jun", "Jul", "Agus", "Sep", "Okt", "Nov", "Des" ] 
+		});
 	});
-	$("#KegDateEnd").datepicker({
-		dateFormat: 'dd/M/yy',
-		monthNamesShort: [ "Jan", "Feb", "Mar", "Apr", "Mei", "Jun", "Jul", "Agus", "Sep", "Okt", "Nov", "Des" ] 
-	});
-});
-</script>
+	</script>
 </body>
 </html>

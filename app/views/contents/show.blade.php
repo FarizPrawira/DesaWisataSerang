@@ -75,12 +75,12 @@
 			<h2>{{ucfirst($content->type)}} Terkait</h2>
 			<?php foreach ($results['related-post'] as $post): ?>
 			<div class="col-md-3">
-				<a href="{{URL::to('content/'.$post->id)}}" class="timeline-item">
+				<a href="{{URL::to('content/'.$post->id)}}" class="timeline-item shadow-bot text-center">
 					<!-- <div class="timeline-item"> -->
 					<h4>{{$post->title}}</h4>
 					<?php foreach ($results['related-photo'] as $photo):
 					if ($photo->content_id == $post->id){ ?>
-					<img src="{{URL::to($photo->path)}}" class="related-image">
+					<img src="{{URL::to($photo->path)}}" class="img-rounded">
 					<?php break; }
 					endforeach ?>
 					<p>{{truncDescription($post->description)}}</p>
