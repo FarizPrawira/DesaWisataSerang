@@ -9,6 +9,7 @@
 	<link rel="stylesheet" href="{{URL::to('vendor/bootstrap/dist/css/bootstrap.min.css')}}"/>
 	<link rel="stylesheet" href="{{URL::to('vendor/font-awesome/css/font-awesome.min.css')}}"/>
 	<link rel="stylesheet" href="{{URL::to('assets/css/site.css')}}"/>
+	<link rel="icon" type="image/png" href="{{URL::to('assets/img/favicon.png')}}">
 </head>
 <body>
 	@include('home.header')
@@ -16,11 +17,11 @@
 	<!-- CONTENT -->
 	<div class="content-header">
 		<img src="{{URL::to('assets/img/stroberi1.jpg')}}">
-		<span><h2 class="text-center">Kebun Petik Stroberi</h2></span>
+		<span><h2 class="text-center">Kebun Petik Strawberry</h2></span>
 	</div>
 	<div class="container fix-content">
 		<div class="row">
-			<div class="col-md-offset-1 col-md-4">
+			<div class="col-md-4">
 				<img src="{{URL::to('assets/img/stroberi3.jpg')}}" class="img-responsive">
 			</div>
 			<div class="col-md-6">

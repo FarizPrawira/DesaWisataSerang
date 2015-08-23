@@ -1,5 +1,7 @@
 /bootstrap/compiled.php
 /vendor
+/app/config
+/Front/dicobaya
 /public/assets/img
 /public/galeries
 /public/uploads
@@ -10,3 +12,4 @@ composer.lock
 .DS_Store
 Thumbs.db
 *.rar
+*.zip

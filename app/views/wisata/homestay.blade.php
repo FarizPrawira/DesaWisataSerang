@@ -9,6 +9,7 @@
 	<link rel="stylesheet" href="{{URL::to('vendor/font-awesome/css/font-awesome.min.css')}}"/>
 	<link rel="stylesheet" href="{{URL::to('vendor/bootstrap/dist/css/bootstrap.min.css')}}"/>
 	<link rel="stylesheet" href="{{URL::to('assets/css/site.css')}}"/>
+	<link rel="icon" type="image/png" href="{{URL::to('assets/img/favicon.png')}}">
 </head>
 <body>
 	@include('home.header')
@@ -31,7 +32,7 @@
 					kamar mandi, dan fasilitas-fasiltas lainnya yang dapat dinikmati secara privat seperti anda tinggal dirumah sendiri. 
 					Tipe penginapan ini sangat cocok bagi Anda yang berlibur ke luar kota bersama keluarga maupun beramai-ramai. 
 					Di Desa Serang ini juga terdapat home stay. Home Stay yang ada di Desa Serang beragam ada yang besar maupun yang kecil 
-					selain ukurannya harganya pun beragam ada yang mahal dan juga ada yang murah. 
+					selain ukurannya harganya pun beragam ada yang mahal dan juga ada yang murah.
 				</p>
 			</div>
 		</div>

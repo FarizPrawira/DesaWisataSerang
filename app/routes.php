@@ -28,7 +28,6 @@ Route::group(['before' => 'auth'], function()
 	Route::get('content/edit/{id}', 'ContentsController@edit');
 	Route::post('content/destroy/{id}', array('as' => 'deleteContent', 'uses' => 'ContentsController@destroy'));
 	Route::post('content/destroyPhoto/{id}', array('as' => 'deletePhoto', 'uses' => 'ContentsController@destroyPhoto'));
-	Route::post('content/destroyGalery/{id}', array('as' => 'deleteGalery', 'uses' => 'GaleriesController@destroy'));
 });
 
 //===========================Content===============================//
@@ -36,7 +35,6 @@ Route::post('content/store', 'ContentsController@store');
 Route::get('content/kegiatan', 'ContentsController@showKegiatan');
 Route::get('content/artikel', 'ContentsController@showArtikel');
 Route::post('content/update/{id}', 'ContentsController@update');
-Route::get('content/galery-edit', 'GaleriesController@index');
 Route::get('content/{id}', 'ContentsController@show');
 //=================================================================//
 

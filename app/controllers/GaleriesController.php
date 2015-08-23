@@ -10,7 +10,8 @@ class GaleriesController extends \BaseController {
 	public function index()
 	{
 		$galeries = Galery::all();
-		return View::make('home.galery-edit', compact('galeries'));
+
+		return View::make('galeries.index', compact('galeries'));
 	}
 
 	/**
@@ -129,7 +130,8 @@ class GaleriesController extends \BaseController {
 	public function destroy($id)
 	{
 		Galery::destroy($id);
-		return Redirect::back()->with('sukses', "Berhasil Menhapus Galery");
+
+		return Redirect::route('galeries.index');
 	}
 
 }

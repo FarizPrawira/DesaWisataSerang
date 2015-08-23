@@ -13,6 +13,7 @@
 	<link rel="stylesheet" href="{{URL::to('vendor/jquery-ui/jquery-ui.theme.min.css')}}"/>
 	<link rel="stylesheet" href="{{URL::to('assets/css/dropzone.min.css')}}"/>
 	<link rel="stylesheet" href="{{URL::to('assets/css/site.css')}}"/>
+    <link rel="icon" type="image/png" href="{{URL::to('assets/img/favicon.png')}}">
 </head>
 <body>
 	@include('home.header')

@@ -9,6 +9,7 @@
 	<link rel="stylesheet" href="{{URL::to('vendor/bootstrap/dist/css/bootstrap.min.css')}}"/>
 	<link rel="stylesheet" href="{{URL::to('vendor/font-awesome/css/font-awesome.min.css')}}"/>
 	<link rel="stylesheet" href="{{URL::to('assets/css/site.css')}}"/>
+	<link rel="icon" type="image/png" href="{{URL::to('assets/img/favicon.png')}}">
 </head>
 <body>
 	@include('home.header')
@@ -32,7 +33,7 @@
 					Dengan kuda tunggang ini kita bisa merasakan sensasi berkuda bagi yang belum pernah menunggang kuda. 
 					Bagi yang takut kuda maupun takut terjatuh dari kuda jangan khawatir sebab sang pawang siap menjaga keselamatan anda. 
 					Selain merasakan sensasi berkuda juga anda bisa melihat pemandangan kebun strawberry yang membentang luas. 
-					Dan juga pemandangan pohon pinus di sekitar rest area. 
+					Dan juga pemandangan pohon pinus di sekitar rest area.
 				</p>
 			</div>
 		</div>

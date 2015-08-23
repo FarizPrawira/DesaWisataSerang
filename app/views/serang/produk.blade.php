@@ -9,6 +9,7 @@
 	<link rel="stylesheet" href="{{URL::to('vendor/font-awesome/css/font-awesome.min.css')}}"/>
 	<link rel="stylesheet" href="{{URL::to('vendor/bootstrap/dist/css/bootstrap.min.css')}}"/>
 	<link rel="stylesheet" href="{{URL::to('assets/css/site.css')}}"/>
+    <link rel="icon" type="image/png" href="{{URL::to('assets/img/favicon.png')}}">
 </head>
 <body>
 	@include('home.header')
@@ -30,7 +31,7 @@
 			</p>
 		</div>
 		<div class="clearfix"></div>
-		<h2 class="col-md-offset-1">Gethuk Strawberry</h2>
+		<h2 class="col-md-offset-1 text-center">Gethuk Strawberry</h2>
 		<div class="row">
 			<div class="col-md-offset-1 col-md-4">
 				<img src="{{URL::to('assets/img/produk/getukstroberi.jpg')}}" class="img-responsive">
@@ -49,7 +50,7 @@
 			</div>
 		</div>
 		<br>
-		<h2 class="col-md-offset-7">Keripik Daun Strawberry</h2>
+		<h2 class="col-md-offset-1 text-center">Keripik Daun Strawberry</h2>
 		<div class="row">
 			<div class="col-md-offset-1 col-md-6">
 				<p align="justify">
@@ -65,7 +66,7 @@
 			</div>
 		</div>
 		<br>
-		<h2 class="col-md-offset-1">Sirup Strawberry</h2>
+		<h2 class="col-md-offset-1 text-center">Sirup Strawberry</h2>
 		<div class="row">
 			<div class="col-md-offset-1 col-md-4">
 				<img src="{{URL::to('assets/img/produk/sirupstroberi.jpg')}}" class="img-responsive">
