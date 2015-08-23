@@ -282,7 +282,7 @@ p{
 .timeline a{
     text-decoration: none;
 }
-.timeline a:hover h5,h4,h3,h2,h1{
+.timeline a:hover h5,.timeline a:hover h4,.timeline a:hover h3,.timeline a:hover h2,.timeline a:hover h1{
     color: rgba(0,0,0,0.9);
 }
 .timeline .timeline-item>img{
@@ -312,7 +312,7 @@ p{
 	box-shadow: 0 -3px 5px rgba(0,0,0,0.2);
 }
 
-.footer h1, h2, h3, h4{
+.footer h1,.footer  h2,.footer  h3,.footer h4{
 	margin-bottom: 20px;
     color: rgba(255,255,255,1);
 }
@@ -514,9 +514,6 @@ hr{
 	width: 300px;
 	height: 200px;
 }
-.media-body.pemerintah-besar-body{
-	mar
-}
 .media-left a{
 	color: #000000;
 	text-decoration: none;
@@ -687,10 +684,10 @@ h1.page-header{
 .fix-content{
 	margin-top: 25px;
 }
-.fix-content h1, h2{
+.fix-content h1, fix-content h2{
 	margin-bottom: 25px;
 }
-.fix-content h3, h4{
+.fix-content h3, .fix-content h4{
 	margin-bottom: 0;
 	padding-bottom: 0;
 }
