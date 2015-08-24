@@ -42,59 +42,61 @@
 	</div>
 	<?php } ?>
 	<!-- SUCCESS INPUT END-->
-
-	<div class="container main-container">
+    <div class="container-fluid">
 		<div class="col-md-12">
-			<div class="panel panel-default" id="Cgaleri">
-				<div class="panel-heading">
-					Galeri
-				</div>
-				<div class="panel-body">
-					<!-- LIST GAMBAR -->
-					<div class="row">
-						<h1 class="text-center">Gambar</h1>
-						<ul class="list-unstyled list-inline">
-							<?php foreach ($galeries as $galery) { 
-								if ($galery->type == "image") { ?>
-								<li class="screenshot">
-									<img src="{{URL::to($galery->path)}}">
-									{{ Form::open(array('route' => array('deleteGalery', $galery->id), 'role'=>'form')) }}
-									<button class="close" type="submit" class="delete" name="delete">X</button>
-									{{ Form::close() }}
-									<!-- <span class="close">x</span> -->
-								</li>
-								<?php	} 
-							}?>
-						</ul>
-					</div>
-					<!-- END OF LIST -->
-					<!-- LIST VIDEO -->
-					<div class="row galery">
-						<h1 class="text-center">Video</h1>
-						<ul class="list-inline">
-							<?php foreach ($galeries as $galery) { 
-								if ($galery->type == "video") { ?>
-								<li class="col-md-3">
-									<div class="video" data-slide-number="16">
-										<div class="embed-responsive embed-responsive-16by9" >
-											<iframe src="{{URL::to($galery->path)}}" allowfullscreen main ></iframe>
-										</div>
-									</div>
-									{{ Form::open(array('route' => array('deleteGalery', $galery->id), 'role'=>'form')) }}
-									<button class="close" type="submit" class="delete" name="delete">X</button>
-									{{ Form::close() }}
-									<!-- <span class="close">x</span> -->
-								</li>
-								<?php	} 
-							} ?>
-						</ul>
-					</div>
-					<!-- END OF LIST -->
-				</div>
+            <!-- LIST GAMBAR -->
+            <div class="row galery">
+                <h3 class="text-left"><i class="glyphicon glyphicon-picture"></i> Gambar</h3>
+                <ul class="list-unstyled list-inline">
+                    <?php foreach ($galeries as $galery) { 
+                        if ($galery->type == "image") { ?>
+                        <li class="screenshot">
+                            <img src="{{URL::to($galery->path)}}">
+                            {{ Form::open(array('route' => array('deleteGalery', $galery->id), 'role'=>'form')) }}
+                            <button class="btn-close delete" type="submit" name="delete">X</button>
+                            {{ Form::close() }}
+                            <!-- <span class="close">x</span> -->
+                        </li>
+                        <?php	} 
+                    }?>
+                </ul>
+            </div>
+            <div class="row loadmore">
+				<button id="loadmore">
+					<p class="text-center">Muat lagi <span class="glyphicon glyphicon-arrow-down"></span></p>
+				</button>
 			</div>
-		</div> 
-	</div>
-
+            <hr/>
+            <!-- END OF LIST -->
+            <!-- LIST VIDEO -->
+            <div class="row galery">
+                <h3 class="text-left"><i class="glyphicon glyphicon-facetime-video"></i> Video</h3>
+                <ul class="list-inline">
+                    <?php foreach ($galeries as $galery) { 
+                        if ($galery->type == "video") { ?>
+                        <li class="col-md-3">
+                            <div class="video" data-slide-number="16">
+                                <div class="embed-responsive embed-responsive-16by9" >
+                                    <iframe src="{{URL::to($galery->path)}}" allowfullscreen main ></iframe>
+                                </div>
+                            </div>
+                            {{ Form::open(array('route' => array('deleteGalery', $galery->id), 'role'=>'form')) }}
+                            <button class="btn-close" type="submit" class="delete" name="delete">X</button>
+                            {{ Form::close() }}
+                            <!-- <span class="close">x</span> -->
+                        </li>
+                        <?php	} 
+                    } ?>
+                </ul>
+            </div>
+            <div class="row loadmore">
+				<button id="loadmore">
+					<p class="text-center">Muat lagi <span class="glyphicon glyphicon-arrow-down"></span></p>
+				</button>
+			</div>
+            <!-- END OF LIST -->
+        </div>
+    </div>
 	@include('home.footer')
 	<script>
 	$(function() {

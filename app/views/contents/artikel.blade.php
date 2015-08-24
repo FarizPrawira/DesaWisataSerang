@@ -38,7 +38,7 @@
 	</div>
     <div class="row loadmore">
         <button id="loadmore">
-            <p class="text-center">Sebelumnya <span class="glyphicon glyphicon-arrow-down"></span></p>
+            <p class="text-center">Sebelumnya ↓</p>
         </button>
     </div>
 	<!-- CONTENT END-->

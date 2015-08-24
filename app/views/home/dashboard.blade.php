@@ -83,7 +83,7 @@
 	<!-- SUCCESS INPUT END-->
 
 	<!-- CONTENT -->
-	<div class="container main-container">
+	<div class="container fix-content">
 		<div class="col-md-2 sidebar-serang">
 			<ul class="list-unstyled">
 				<li id="Bdaftar" class="active"><i class="glyphicon glyphicon-home"></i> Daftar konten<span>({{Content::count();}})</span></li>
@@ -132,7 +132,7 @@
 			</div>
 
 			<div class="panel panel-green" id="Cgalery">
-					<a href="{{URL::to('content/galery-edit')}}" class="btn" style="float: right;">Edit Galery</a>
+					<a href="{{URL::to('content/galery-edit')}}" class="btn" style="float: right;"><i class="glyphicon glyphicon-scissors"></i> Edit Galery</a>
 				<div class="panel-body">
 					<form class="form-horizontal" action="{{URL::to('galery/store')}}" method="post" enctype="multipart/form-data" file="true">
 						<input type="hidden" name="type" value="image">
