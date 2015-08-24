@@ -243,24 +243,40 @@ p{
 	cursor: pointer;
     text-decoration: none;
 }
-.timeline .timeline-item:hover::after, .timeline .timeline-item:hover::before{
+.timeline .timeline-item:hover::after{
 	content: "Lanjut baca...";
-    font-size: 1em;
+    font-size: 1.25em;
 	color: white;
-    background-color: rgba(0,0,0,0.2);
+    background-color: transparent;
 	width: 100%;
+    height: 1.30em;
+/*    text-shadow: 0 0 3px black;*/
 	position: absolute;
     z-index: 1;
-	padding-top: 50%;
 	text-align: center;
+	left: 0;
+    right: 0;
+    top: 45%;
+    transform: rotate(0);
+    box-shadow: none;
+    transition: color 0.3s;
+    font-weight: 500;
+    max-width: none;
+}
+.timeline .timeline-item:hover::before{
+	content: "";
+    background-color: rgba(0,0,0,0.3);
+	width: 100%;
+    height: 100%;
+	position: absolute;
+    z-index: 1;
 	bottom: 0;
 	left: 0;
     right: 0;
     top: 0;
-    transform: translate(0,0);
+    transform: rotate(0);
     box-shadow: none;
     transition: color 0.5s;
-    font-weight: 700;
     max-width: none;
 }
 .timeline .timeline-item>h3{
@@ -292,6 +308,7 @@ p{
 	width: 95%;
 }
 .timeline .timeline-item>p{
+	max-height: 6em;
 	padding: 5px 5px 0 5px;
 	border-bottom-right-radius: 3px;
 	border-bottom-left-radius: 3px;
