@@ -38,12 +38,12 @@
 								<div class="media">
 									<div class="media-left ">
 										<a href="#">
-											<img class="media-object pemerintah-besar-gambar img-circle" src="img/sea.jpg" alt="Tidak ada">
-											<h3 class="nama text-center">Sugito</h3>
+											<img class="media-object pemerintah-besar-gambar img-circle" src="{{URL::to('assets/img/kknugm2015/ani.jpg')}}" alt="Tidak ada">
 										</a>	
 									</div>
 									<div class="media-body pemerintah-besar-body ">
-										<h3 class="media-heading text-center">Kepala Desa</h3>
+										<h3 class="text-left">Ani Widiastuti, S.P., M.P., Ph.D.</h3>
+										<h4 class="text-left">Dosen Pembimbing Lapangan</h4>
 									</div>
 								</div>
 							</div>
@@ -51,12 +51,59 @@
 								<div class="media">
 									<div class="media-left ">
 										<a href="#">
-											<img class="media-object pemerintah-besar-gambar img-circle" src="img/sea.jpg" alt="Tidak ada">
-											<h3 class="nama text-center">Sugito</h3>
+											<img class="media-object pemerintah-besar-gambar img-circle" src="{{URL::to('assets/img/kknugm2015/eda.jpg')}}" alt="Tidak ada">											
 										</a>	
 									</div>
 									<div class="media-body pemerintah-besar-body ">
-										<h3 class="media-heading text-center">Kepala Desa</h3>
+										<h3 class="text-left">Pranedya Atria</h3>
+										<h4 class="text-left">Koordinator Mahasiswa Unit</h4>
+										<p class="text-left">Subunit 1</p>
+									</div>
+								</div>
+							</div>
+							<div class="clearfix"></div>
+							<ol class="breadcrumb">
+								<li><h3>Subunit 1</h3></li>
+							</ol>
+							<div class="col-md-4">
+								<div class="media">
+									<div class="media-left ">
+										<a href="#">
+											<img class="media-object pemerintah-besar-gambar img-circle" src="{{URL::to('assets/img/kknugm2015/diva.jpg')}}" alt="Tidak ada">
+										</a>
+									</div>
+									<div class="media-body pemerintah-besar-body ">
+										<h4 class="text-left">Diva Alfiansyah</h4>
+										<p class="text-left">Koordinator Mahasiswa Subunit 1</p>
+										<p class="text-left">Geofisika</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="media">
+									<div class="media-left ">
+										<a href="#">
+											<img class="media-object pemerintah-besar-gambar img-circle" src="{{URL::to('assets/img/kknugm2015/sarah.jpg')}}" alt="Tidak ada">
+										</a>
+									</div>
+									<div class="media-body pemerintah-besar-body ">
+										<h4 class="text-left">Sarah Wulan</h4>
+										<p class="text-left">Bendahara Subunit 1 </p>
+										<p class="text-left">Ilmu Ekonomi</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="media">
+									<div class="media-left ">
+										<a href="#">
+											<img class="media-object pemerintah-besar-gambar img-circle" src="{{URL::to('assets/img/kknugm2015/fakhri.jpg')}}" alt="Tidak ada">
+										</a>
+									</div>
+									<div class="media-body pemerintah-besar-body ">
+										<h4 class="text-left">Fakhri Hawari Arifin</h4>
+										<p class="text-left">Sekertaris Subunit 1</p>
+										<p class="text-left">Ilmu Komputer</p>
 									</div>
 								</div>
 							</div>
@@ -65,12 +112,13 @@
 								<div class="media">
 									<div class="media-left ">
 										<a href="#">
-											<img class="media-object pemerintah-besar-gambar img-circle" src="img/aborigin.jpg" alt="Tidak ada">
-											<h4 class="nama text-center">Kusmanto</h4>
+											<img class="media-object pemerintah-besar-gambar img-circle" src="{{URL::to('assets/img/kknugm2015/putri.jpg')}}" alt="Tidak ada">
 										</a>
 									</div>
 									<div class="media-body pemerintah-besar-body ">
-										<h4 class="media-heading text-center">Kepala Dusun 1 </h4>
+										<h4 class="text-left">Dyah Putri Puspitasari</h4>
+										<p class="text-left">Koordinator Mahasiswa Kluster Soshum</p>
+										<p class="text-left">Sosiologi</p>
 									</div>
 								</div>
 							</div>
@@ -78,12 +126,30 @@
 								<div class="media">
 									<div class="media-left ">
 										<a href="#">
-											<img class="media-object pemerintah-besar-gambar img-circle" src="img/sea.jpg" alt="Tidak ada">
-											<h4 class="nama text-center">Martowiyono</h4>
+											<img class="media-object pemerintah-besar-gambar img-circle" src="{{URL::to('assets/img/kknugm2015/yuli.jpg')}}" alt="Tidak ada">
 										</a>
 									</div>
 									<div class="media-body pemerintah-besar-body ">
-										<h4 class="media-heading text-center">Kepala Dusun 2 </h4>
+										<h4 class="text-left">Yuli Perwita Sari</h4>
+										<p class="text-left">Teknologi Pangan dan Hasil Pertanian</p>
+									</div>
+								</div>
+							</div>
+							<div class="clearfix"></div>
+							<ol class="breadcrumb">
+								<li><h3>Subunit 2</h3></li>
+							</ol>
+							<div class="col-md-4">
+								<div class="media">
+									<div class="media-left ">
+										<a href="#">
+											<img class="media-object pemerintah-besar-gambar img-circle" src="{{URL::to('assets/img/kknugm2015/fariz.jpg')}}" alt="Tidak ada">
+										</a>
+									</div>
+									<div class="media-body pemerintah-besar-body ">
+										<h4 class="text-left">Fariz Prawira</h4>
+										<p class="text-left">Koordinator Mahasiswa Subunit 2</p>
+										<p class="text-left">Ilmu Komputer</p>
 									</div>
 								</div>
 							</div>
@@ -91,12 +157,27 @@
 								<div class="media">
 									<div class="media-left ">
 										<a href="#">
-											<img class="media-object pemerintah-besar-gambar img-circle" src="img/sea.jpg" alt="Tidak ada">
-											<h4 class="nama text-center">Marhadi</h4>
+											<img class="media-object pemerintah-besar-gambar img-circle" src="{{URL::to('assets/img/kknugm2015/melvi.jpg')}}" alt="Tidak ada">
 										</a>
 									</div>
 									<div class="media-body pemerintah-besar-body ">
-										<h4 class="media-heading text-center">Kepala Dusun 3 </h4>
+										<h4 class="text-left">Moria Melviani Harefa</h4>
+										<p class="text-left">Bendahara Subunit 2</p>
+										<p class="text-left">Bidan Pendidik</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="media">
+									<div class="media-left ">
+										<a href="#">
+											<img class="media-object pemerintah-besar-gambar img-circle" src="{{URL::to('assets/img/kknugm2015/tiara.jpg')}}" alt="Tidak ada">
+										</a>
+									</div>
+									<div class="media-body pemerintah-besar-body ">
+										<h4 class="text-left">Tiara Mawarni</h4>
+										<p class="text-left">Sekertaris Subunit 2</p>
+										<p class="text-left">Manejemen dan Kebijakan Publik</p>
 									</div>
 								</div>
 							</div>
@@ -105,12 +186,13 @@
 								<div class="media">
 									<div class="media-left ">
 										<a href="#">
-											<img class="media-object pemerintah-besar-gambar img-circle" src="img/sea.jpg" alt="Tidak ada">
-											<h4 class="nama text-center">Mugirin</h4>
+											<img class="media-object pemerintah-besar-gambar img-circle" src="{{URL::to('assets/img/kknugm2015/amar.jpg')}}" alt="Tidak ada">
 										</a>
 									</div>
 									<div class="media-body pemerintah-besar-body ">
-										<h4 class="media-heading text-center">Kepala Dusun 4 </h4>
+										<h4 class="text-left">Muamar Mujab</h4>
+										<p class="text-left">Koordinator Mahasiswa Kluster Saintek</p>
+										<p class="text-left">Teknik Geodesi</p>
 									</div>
 								</div>
 							</div>
@@ -118,12 +200,13 @@
 								<div class="media">
 									<div class="media-left ">
 										<a href="#">
-											<img class="media-object pemerintah-besar-gambar img-circle" src="img/sea.jpg" alt="Tidak ada">
-											<h4 class="nama text-center">Karpono</h4>
+											<img class="media-object pemerintah-besar-gambar img-circle" src="{{URL::to('assets/img/kknugm2015/tea.jpg')}}" alt="Tidak ada">
 										</a>
 									</div>
 									<div class="media-body pemerintah-besar-body ">
-										<h4 class="media-heading text-center">Kepala Dusun 5 </h4>
+										<h4 class="text-left">Tiara Firda Sani</h4>
+										<p class="text-left">Sekertaris Unit</p>
+										<p class="text-left">Ilmu Komunikasi</p>
 									</div>
 								</div>
 							</div>
@@ -131,12 +214,58 @@
 								<div class="media">
 									<div class="media-left ">
 										<a href="#">
-											<img class="media-object pemerintah-besar-gambar img-circle" src="img/sea.jpg" alt="Tidak ada">
-											<h4 class="nama text-center">Sukandar</h4>
+											<img class="media-object pemerintah-besar-gambar img-circle" src="{{URL::to('assets/img/kknugm2015/vervita.jpg')}}" alt="Tidak ada">
 										</a>
 									</div>
 									<div class="media-body pemerintah-besar-body ">
-										<h4 class="media-heading text-center"> Sekretaris Desa </h4>
+										<h4 class="text-left">Verfita Sela Ragadisa</h4>
+										<p class="text-left">Ilmu Hama dan Penyakit Tumbuhan</p>
+									</div>
+								</div>
+							</div>
+							<div class="clearfix"></div>
+							<ol class="breadcrumb">
+								<li><h3>Subunit 3</h3></li>
+							</ol>
+							<div class="col-md-4">
+								<div class="media">
+									<div class="media-left ">
+										<a href="#">
+											<img class="media-object pemerintah-besar-gambar img-circle" src="{{URL::to('assets/img/kknugm2015/adit.jpg')}}" alt="Tidak ada">
+										</a>
+									</div>
+									<div class="media-body pemerintah-besar-body ">
+										<h4 class="text-left">Handaru Aditya Kusuma</h4>
+										<p class="text-left">Koordinator Mahasiswa Subunit 3</p>
+										<p class="text-left">Pembangunan Wilayah</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="media">
+									<div class="media-left ">
+										<a href="#">
+											<img class="media-object pemerintah-besar-gambar img-circle" src="{{URL::to('assets/img/kknugm2015/vivi.jpg')}}" alt="Tidak ada">
+										</a>
+									</div>
+									<div class="media-body pemerintah-besar-body ">
+										<h4 class="text-left">Viviane Annisa</h4>
+										<p class="text-left">Bendahara Subunit 3</p>
+										<p class="text-left">Farmasi</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="media">
+									<div class="media-left ">
+										<a href="#">
+											<img class="media-object pemerintah-besar-gambar img-circle" src="{{URL::to('assets/img/kknugm2015/bella.jpg')}}" alt="Tidak ada">
+										</a>
+									</div>
+									<div class="media-body pemerintah-besar-body ">
+										<h4 class="text-left">Bella Hayu Nurhayati</h4>
+										<p class="text-left">Sekertaris Subunit 3</p>
+										<p class="text-left">Teknologi Pangan dan Hasil Pertanian</p>
 									</div>
 								</div>
 							</div>
@@ -145,12 +274,13 @@
 								<div class="media">
 									<div class="media-left ">
 										<a href="#">
-											<img class="media-object pemerintah-besar-gambar img-circle" src="img/sea.jpg" alt="Tidak ada">
-											<h4 class="nama text-center">Giriyanti Yulistinah</h4>
+											<img class="media-object pemerintah-besar-gambar img-circle" src="{{URL::to('assets/img/kknugm2015/lukman.jpg')}}" alt="Tidak ada">
 										</a>
 									</div>
 									<div class="media-body pemerintah-besar-body ">
-										<h4 class="media-heading text-center">Kepala Urusan Pemerintahan </h4>
+										<h4 class="text-left">Lukman Adi Cahyo</h4>
+										<p class="text-left">Koordinator Mahasiswa Kluster Agro</p>
+										<p class="text-left">Ilmu Hama dan Penyakit Tumbuhan</p>
 									</div>
 								</div>
 							</div>
@@ -158,12 +288,13 @@
 								<div class="media">
 									<div class="media-left ">
 										<a href="#">
-											<img class="media-object pemerintah-besar-gambar img-circle" src="img/sea.jpg" alt="Tidak ada">
-											<h4 class="nama text-center">Joko Purnomo Sidik</h4>
+											<img class="media-object pemerintah-besar-gambar img-circle" src="{{URL::to('assets/img/kknugm2015/dias.jpg')}}" alt="Tidak ada">
 										</a>
 									</div>
 									<div class="media-body pemerintah-besar-body ">
-										<h4 class="media-heading text-center">Kepala Urusan Pembangunan </h4>
+										<h4 class="text-left">Dias Haryu</h4>
+										<p class="text-left">Bendahara Unit</p>
+										<p class="text-left">Manejemen dan Kebijakan Publik</p>
 									</div>
 								</div>
 							</div>
@@ -171,12 +302,58 @@
 								<div class="media">
 									<div class="media-left ">
 										<a href="#">
-											<img class="media-object pemerintah-besar-gambar img-circle" src="img/sea.jpg" alt="Tidak ada">
-											<h4 class="nama text-center">Suroso</h4>
+											<img class="media-object pemerintah-besar-gambar img-circle" src="{{URL::to('assets/img/kknugm2015/iid.jpg')}}" alt="Tidak ada">
 										</a>
 									</div>
 									<div class="media-body pemerintah-besar-body ">
-										<h4 class="media-heading text-center">Kepala Urusan Keuangan </h4>
+										<h4 class="text-left">Maulida Tri Agustina M</h4>
+										<p class="text-left">Kimia</p>
+									</div>
+								</div>
+							</div>
+							<div class="clearfix"></div>
+							<ol class="breadcrumb">
+								<li><h3>Subunit 4</h3></li>
+							</ol>
+							<div class="col-md-4">
+								<div class="media">
+									<div class="media-left ">
+										<a href="#">
+											<img class="media-object pemerintah-besar-gambar img-circle" src="{{URL::to('assets/img/kknugm2015/asep.jpg')}}" alt="Tidak ada">
+										</a>
+									</div>
+									<div class="media-body pemerintah-besar-body ">
+										<h4 class="text-left">Asep Mulyana Dian DP</h4>
+										<p class="text-left">Koordinator Mahasiswa Subunit 4</p>
+										<p class="text-left">Penyuluhan dan Komunikasi Pertanian</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="media">
+									<div class="media-left ">
+										<a href="#">
+											<img class="media-object pemerintah-besar-gambar img-circle" src="{{URL::to('assets/img/kknugm2015/ida.jpg')}}" alt="Tidak ada">
+										</a>
+									</div>
+									<div class="media-body pemerintah-besar-body ">
+										<h4 class="text-left">Ida Nur Fatimah</p>
+										<p class="text-left">Bendahara Subunit 4</p>
+										<p class="text-left">Matematika</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="media">
+									<div class="media-left ">
+										<a href="#">
+											<img class="media-object pemerintah-besar-gambar img-circle" src="{{URL::to('assets/img/kknugm2015/silo.jpg')}}" alt="Tidak ada">
+										</a>
+									</div>
+									<div class="media-body pemerintah-besar-body ">
+										<h4 class="text-left">Susilo Utomo</h4>
+										<p class="text-left">Sekertaris Subunit 4</p>
+										<p class="text-left">Tenik Geodesi</p>
 									</div>
 								</div>
 							</div>
@@ -185,12 +362,114 @@
 								<div class="media">
 									<div class="media-left ">
 										<a href="#">
-											<img class="media-object pemerintah-besar-gambar img-circle" src="img/sea.jpg" alt="Tidak ada">
-											<h4 class="nama text-center">Wahyo</h4>
+											<img class="media-object pemerintah-besar-gambar img-circle" src="{{URL::to('assets/img/kknugm2015/wika.jpg')}}" alt="Tidak ada">
 										</a>
 									</div>
 									<div class="media-body pemerintah-besar-body ">
-										<h4 class="media-heading text-center">Kepala Urusan Umum </h4>
+										<h4 class="text-left">Wikara Dyah Widayaka</h4>
+										<p class="text-left">Bendahara Unit</p>
+										<p class="text-left">Ilmu Ekonomi</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="media">
+									<div class="media-left ">
+										<a href="#">
+											<img class="media-object pemerintah-besar-gambar img-circle" src="{{URL::to('assets/img/kknugm2015/fince.jpg')}}" alt="Tidak ada">
+										</a>
+									</div>
+									<div class="media-body pemerintah-besar-body ">
+										<h4 class="text-left">Fince Febriani Zalukhu</h4>
+										<p class="text-left">Bidan Pendidik</p>
+									</div>
+								</div>
+							</div>
+							<div class="clearfix"></div>
+							<ol class="breadcrumb">
+								<li><h3>Subunit 5</h3></li>
+							</ol>
+							<div class="col-md-4">
+								<div class="media">
+									<div class="media-left ">
+										<a href="#">
+											<img class="media-object pemerintah-besar-gambar img-circle" src="{{URL::to('assets/img/kknugm2015/ogi.jpg')}}" alt="Tidak ada">
+										</a>
+									</div>
+									<div class="media-body pemerintah-besar-body ">
+										<h4 class="text-left">Ogi Yoga Abi Kuncoro</h4>
+										<p class="text-left">Koordinator Mahasiswa Subunit 5</p>
+										<p class="text-left">Ilmu Komputer</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="media">
+									<div class="media-left ">
+										<a href="#">
+											<img class="media-object pemerintah-besar-gambar img-circle" src="{{URL::to('assets/img/kknugm2015/rina.jpg')}}" alt="Tidak ada">
+										</a>
+									</div>
+									<div class="media-body pemerintah-besar-body ">
+										<h4 class="text-left">Rina Hikmayanti</h4>
+										<p class="text-left">Bendahara Subunit 5</p>
+										<p class="text-left">Ilmu dan Industri Peternakan</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="media">
+									<div class="media-left ">
+										<a href="#">
+											<img class="media-object pemerintah-besar-gambar img-circle" src="{{URL::to('assets/img/kknugm2015/randy.jpg')}}" alt="Tidak ada">
+										</a>
+									</div>
+									<div class="media-body pemerintah-besar-body ">
+										<h4 class="text-left">Randy Achmad Saputra</h4>
+										<p class="text-left">Sekertaris Subunit 5</p>
+										<p class="text-left">Geofisika</p>
+									</div>
+								</div>
+							</div>
+							<div class="clearfix"></div>
+							<div class="col-md-4">
+								<div class="media">
+									<div class="media-left ">
+										<a href="#">
+											<img class="media-object pemerintah-besar-gambar img-circle" src="{{URL::to('assets/img/kknugm2015/hana.jpg')}}" alt="Tidak ada">
+										</a>
+									</div>
+									<div class="media-body pemerintah-besar-body ">
+										<h4 class="text-left">Hana Nur Pratiwi</h4>
+										<p class="text-left">Koordinator Mahasiswa Kluster Medika</p>
+										<p class="text-left">Farmasi</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="media">
+									<div class="media-left ">
+										<a href="#">
+											<img class="media-object pemerintah-besar-gambar img-circle" src="{{URL::to('assets/img/kknugm2015/eny.jpg')}}" alt="Tidak ada">
+										</a>
+									</div>
+									<div class="media-body pemerintah-besar-body ">
+										<h4 class="text-left">Eny Fatihatun Khasanah</h4>
+										<p class="text-left">Sekertaris Unit</p>
+										<p class="text-left">Sosiologi</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="media">
+									<div class="media-left ">
+										<a href="#">
+											<img class="media-object pemerintah-besar-gambar img-circle" src="{{URL::to('assets/img/kknugm2015/juli.jpg')}}" alt="Tidak ada">
+										</a>
+									</div>
+									<div class="media-body pemerintah-besar-body ">
+										<h4 class="text-left">Juli Triantoro</h4>
+										<p class="text-left">Teknik Pertanian</p>
 									</div>
 								</div>
 							</div>

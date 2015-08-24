@@ -45,18 +45,15 @@
 		<div class="container timeline">
 			<div class="row">
 				<div class="col-md-5 col-md-offset-1">
-					<h2>Kegiatan</h2>
+					<h2 class="text-center">Kegiatan</h2><br/>
 					<?php foreach ($results["kegiatan"] as $kegiatan) {
 							// var_dump($content->description);die;
 						if ($kegiatan->type == "kegiatan") { ?>
 						<a href="{{URL::to('content/'.$kegiatan->id)}}" class="timeline-item shadow-bot text-center">
 							<h3>{{$kegiatan->title}}</h3>
-							<?php foreach ($results["photo"] as $photo) {
-								if ($photo->content_id == $kegiatan->id) {
-									echo "<img class='img-rounded' src=".URL::to($photo->path).">";
-									break; 
-								} 
-							} ?>
+                            <p class="c-gray">{{$kegiatan->updated_at}}</p>
+							
+                            <p>{{$kegiatan->dateStart}} — {{$kegiatan->dateEnd}}</p>
 							<p>{{truncDescription($kegiatan->description)}}</p>
 						</a>
 						<?php }
@@ -65,12 +62,13 @@
 					<div class="loadmore-kegiatan"></div>
 				</div>
 				<div class="col-md-5">
-					<h2>Artikel</h2>
+					<h2 class="text-center">Artikel</h2><br/>
 					<?php foreach ($results["artikel"] as $artikel) {
 							// var_dump($kegiatan->description);die;
 						if ($artikel->type == "artikel") { ?>
 						<a href="{{URL::to('content/'.$artikel->id)}}" class="timeline-item shadow-bot text-center">
 							<h3>{{$artikel->title}}</h3>
+                            <p class="c-gray">{{$kegiatan->updated_at}}</p>
 							<?php foreach ($results["photo"] as $photo) {
 								if ($photo->content_id == $artikel->id) {
 									echo "<img class='img-rounded' src=".URL::to($photo->path).">";
@@ -86,7 +84,7 @@
 			</div>
 			<div class="row loadmore">
 				<button id="loadmore">
-					<p class="text-center">Sebelumnya <span class="glyphicon glyphicon-arrow-down"></span></p>
+					<p class="text-center">Sebelumnya ↓</p>
 				</button>
 			</div>
 		</div>

@@ -26,8 +26,16 @@
 			</div>
 			<div class="col-md-6">
 				<p align="justify">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec massa nec lectus sollicitudin aliquet. Curabitur dignissim, magna quis tincidunt dictum, erat tortor venenatis orci, vel ornare diam elit eget lorem. Suspendisse in ante et dolor ornare ultricies eget eu tortor. Duis sapien tellus, malesuada in consectetur ac, vestibulum eget urna. Suspendisse pretium, lorem in gravida placerat, felis ante congue urna, ultricies mattis ante nunc et mauris. Sed interdum nisi sed laoreet finibus. Vestibulum consequat ante eget convallis fermentum. Vivamus augue mauris, sollicitudin eu ligula cursus, vestibulum tempor orci.
-					Fusce sit amet velit volutpat, maximus ipsum in, vestibulum eros. In id laoreet nisi, eu pretium ante. Morbi enim mi, facilisis sit amet eleifend vitae, sagittis a ante. Donec eu tristique nisl, vel consectetur nisl. Vestibulum convallis elementum nisi ac mollis. Mauris at ante sit amet mi egestas tempus maximus vel dolor. Pellentesque nec venenatis lectus. Mauris id sollicitudin ante. Etiam dapibus ipsum blandit urna elementum placerat. Curabitur a commodo ipsum, vitae ullamcorper mauris. Donec vestibulum felis pharetra metus iaculis, nec dapibus libero vestibulum. Duis eu leo pulvinar, condimentum mauris vitae, porttitor ligula.
+					Di Desa Serang ini terdapat hutan pinus yang cukup luas dan bertempat dibeberapa lokasi. 
+					Hutan pinus merupakan salah satu tempat objek wisata atau tempat yang sering dikunjungi oleh wisatawan 
+					yang berasal dari luar maupun dalam purbalingga. Hutan Pinus ini biasanya di jadikan untuk wisata 
+					keluarga pada saat liburan Sekolah maupun libur lebaran. Tempat yang sejuk dan pemandangan yang indah 
+					membuat hutan pinus cocok untuk wisata keluarga. Di dalam Hutan Pinus para pengunjung tidak hanya ada 
+					pemandagann hutan yang indah namun juga terdapat kuda tunggang. Dengan kuda tunggang ini anda bisa 
+					berkeliling hutan pinus dan mearasakan sensasi berkuda dalam hutan. Selain untuk wisata Keluarga, 
+					Hutan pinus juga sering digunakan untuk aktivitas Outbond. Outbond yang berisi banyak game-game yang 
+					menyenangkan. Ada juga permainan Giant Swing, bagi anda yang ingin mersakan sensasi jatuh dari 
+					ketinggian 20-25 meter diatas tanah.
 				</p>
 			</div>
 		</div>
@@ -35,8 +43,14 @@
 		<div class="row">
 			<div class="col-md-offset-1  col-md-6">
 				<p align="justify">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec massa nec lectus sollicitudin aliquet. Curabitur dignissim, magna quis tincidunt dictum, erat tortor venenatis orci, vel ornare diam elit eget lorem. Suspendisse in ante et dolor ornare ultricies eget eu tortor. Duis sapien tellus, malesuada in consectetur ac, vestibulum eget urna. Suspendisse pretium, lorem in gravida placerat, felis ante congue urna, ultricies mattis ante nunc et mauris. Sed interdum nisi sed laoreet finibus. Vestibulum consequat ante eget convallis fermentum. Vivamus augue mauris, sollicitudin eu ligula cursus, vestibulum tempor orci.
-					Fusce sit amet velit volutpat, maximus ipsum in, vestibulum eros. In id laoreet nisi, eu pretium ante. Morbi enim mi, facilisis sit amet eleifend vitae, sagittis a ante. Donec eu tristique nisl, vel consectetur nisl. Vestibulum convallis elementum nisi ac mollis. Mauris at ante sit amet mi egestas tempus maximus vel dolor. Pellentesque nec venenatis lectus. Mauris id sollicitudin ante. Etiam dapibus ipsum blandit urna elementum placerat. Curabitur a commodo ipsum, vitae ullamcorper mauris. Donec vestibulum felis pharetra metus iaculis, nec dapibus libero vestibulum. Duis eu leo pulvinar, condimentum mauris vitae, porttitor ligula.
+					Permainan ini sangat memacu adrenalin anda. Bagi anda yang suka tantangan permainan Giant Swing ini 
+					wajib anda coba. Cukup datang Ke hutan Pinus dan membayar beberapa ribu rupiah anda sudah dapat 
+					mencoba permainan Giant Swing. Di hutan pinus selain untuk berpiknik bersama keluarga, menaiki kuda 
+					tunggang, melakukan out bound atau bermain Giant Swing. Hutan Pinus juga dapat digunakan sebagai Camping 
+					Ground. Tempatnya yang luas dan keadaan yang nyaman membuat hutan pinus ini menjadi tempat yang cocok 
+					untuk camping. Hutan Pinus di Desa Serang berdekatan dengan wisata petik Strawberry, jika sudah capek 
+					bisa mampir ke Kebun Strawberry untuk membeli oleh-oleh Strawberry asli desa Serang atau anda bisa 
+					mencoba untuk memetik buah strawberry sendiri.  
 				</p>
 			</div>
 			<div class="col-md-4">
@@ -45,7 +59,7 @@
 		</div>
 	</div>	
 	<!-- CONTENT END -->
-	
+
 	@include('home.footer')
 </body>
 </html>

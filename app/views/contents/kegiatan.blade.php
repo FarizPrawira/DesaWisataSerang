@@ -15,18 +15,19 @@
 	@include('home.header')
 	<!-- CONTENT -->
 	<div class="container fix-content">
-		<div class="row"> 
+		<div class="row kegiatan"> 
             <div class="col-md-12">
                 <ul class="list-unstyled list-inline">
+                    <li class="btn btn-default"><b><i class="glyphicon glyphicon-list"></i> Daftar kegiatan</b></li>
                     <li id="Blomba" class="btn btn-default active">Lomba <span>({{Content::where('tag','lomba')->count();}})</span></li>
                     <li id="Bacara" class="btn btn-default">Acara <span>({{Content::where('tag','acara')->count();}})</span></li>
                     <li id="Bsosial" class="btn btn-default">Sosialisasi <span>({{Content::where('tag','sosial')->count();}})</span></li>
                 </ul>
             </div>
-			<div class="col-md-12" >
+			<div class="col-md-12">
 				<?php foreach ($results['tag'] as $tag): ?>
-				<div id="C{{$tag->tag}}">				
-                    <table class="table table-striped table-bordered">
+				<div id="C{{$tag->tag}}">		
+                    <table class="table table-striped">
                         <tr>
                             <th class="text-left">Judul</th>
                             <th class="text-left" id="desc">Deskripsi</th>
@@ -38,10 +39,10 @@
                         if ($tag->tag == $kegiatan->tag) { ?>
                         <tr>
                             <td class="text-left"><a href="{{URL::to('content/'.$kegiatan->id)}}">{{$kegiatan->title}}</a></td>
-                            <td class="text-left">{{truncDescription($kegiatan->description)}}</td>
+                            <td class="text-left" width="500px">{{truncDescription($kegiatan->description)}}</td>
                             <td class="text-left">{{$kegiatan->cp}}</td>
                             <td class="text-left">{{$kegiatan->lokasi}}</td>
-                            <td class="text-left">{{$kegiatan->dateStart}} <br>sampai<br> {{$kegiatan->dateEnd}}</td>
+                            <td class="text-left">{{$kegiatan->dateStart}} —  {{$kegiatan->dateEnd}}</td>
                         </tr>
                         <?php }
                         endforeach ?>

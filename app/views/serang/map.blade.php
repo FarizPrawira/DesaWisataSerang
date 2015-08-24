@@ -12,6 +12,7 @@
 	<link rel="stylesheet" href="{{URL::to('vendor/bootstrap/dist/css/bootstrap.min.css')}}"/>
 	<link rel="stylesheet" href="{{URL::to('assets/css/agency.css')}}">
 	<link rel="stylesheet" href="{{URL::to('assets/css/site.css')}}"/>
+    <link rel="icon" type="image/png" href="{{URL::to('assets/img/favicon.png')}}">
 </head>
 <body>
 	@include('home.header')
@@ -24,11 +25,12 @@
 			<div id="map">
 			</div>
 			<div>
-				<button class="btn btn-success" onclick="locateUser()"> <!-- onclick: untuk memanggil fungsi javascript -->
-					My Location
+                <br/>
+				<button class="btn btn-default" onclick="locateUser()"> <!-- onclick: untuk memanggil fungsi javascript -->
+					Lokasiku <i class="glyphicon glyphicon-map-marker"></i>
 				</button>
-				<button class="btn btn-success" onclick="myFunction()"> <!-- onclick: untuk memanggil fungsi javascript -->
-					Back to My Map
+				<button class="btn btn-default" onclick="myFunction()"> <!-- onclick: untuk memanggil fungsi javascript -->
+					Kembalikan layar <i class="glyphicon glyphicon-refresh"></i>
 				</button>
 			</center>
 		</div>
@@ -240,7 +242,7 @@
 		};
 
 		info.update = function (props) {
-			this._div.innerHTML = '<h1>INFORMASI</h1>' +  (props ?
+			this._div.innerHTML = '<h3>INFORMASI</h3><hr/>' +  (props ?
 				'<b>' + props.dusun + '</b>' + '<br/>' + props.rwrt0 +'<br/>' + props.rtrw00 +
 				'<br/>' + 'Jumlah Penduduk = ' + props.total + ' Jiwa ' + 
 				'<br/>' + 'Laki-Laki = ' + props.co + ' Jiwa ' + 

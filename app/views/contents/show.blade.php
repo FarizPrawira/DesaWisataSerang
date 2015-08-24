@@ -33,10 +33,10 @@
             <div id="dateKeg">
                 <br/>
                 <p>Akan dilaksanakan pada:</p>
-                <h4><i class="glyphicon glyphicon-calendar"></i> {{$content->dateStart}} — {{$content->dateEnd}}</h4>
+                <h4><i class="glyphicon glyphicon-calendar"></i> <b class="c-green">{{$content->dateStart}}</b> — <b class="c-red">{{$content->dateEnd}}</b></h4>
             </div>
-            <br/>
-            Share
+            <br/><br/><br/>
+            Bagikan
             <div id="share-buttons">
                 <!-- Facebook -->
                 <a href="http://www.facebook.com/sharer.php?u={{Request::url()}}" target="_blank">
@@ -55,7 +55,7 @@
         <div class="col-md-7">
             <ul class="list-unstyled list-inline">
                 <?php foreach ($content->photos as $photo) { ?>
-                <img src="{{URL::to($photo->path)}}" class="img-responsive img-rounded">
+                <img src="{{URL::to($photo->path)}}" class="img-responsive img-rounded p-30">
                 <?php break; } ?>
             </ul>
         </div>

@@ -9,24 +9,22 @@
 	<link rel="stylesheet" href="{{URL::to('vendor/font-awesome/css/font-awesome.min.css')}}"/>
 	<link rel="stylesheet" href="{{URL::to('vendor/bootstrap/dist/css/bootstrap.min.css')}}"/>
 	<link rel="stylesheet" href="{{URL::to('assets/css/site.css')}}"/>
-    <link rel="icon" type="image/png" href="{{URL::to('assets/img/favicon.png')}}">
+	<link rel="icon" type="image/png" href="{{URL::to('assets/img/favicon.png')}}">
 </head>
 <body>
 	@include('home.header')
 	<!-- CONTENT -->
 	<div class="container fix-content">
-		<h1 class="text-center">Hasil Peternakan Desa Serang</h1>
-		<p>
-		<!-- 	Desa Serang merupakan desa yang berada di dataran tinggi. Desa Serang sangat cocok untuk bercocok tanam. Desa Serang sebagai tempat yang cocok untuk bercocok tanam dimanfaatkan oleh warganya sebagai lahan pertanian. Pertanian yang berkembang di Desa Serang sangatlah beragam, antara lain Kobis, Chesim, Wortel, Sawi, Ubi Kayu, Ubi Jalar, Tomat, Strawberry dan lain-lain.
-			Mayoritas masyarakat Desa Serang mengelola pertanian masih menggunakan adat/kultur telah ada sejak dulu. -->
-		</p>
-		<br/>
+		<h1 class="text-center">Hasil Peternakan Desa Serang {{$peternakan->tahun}}</h1>
 		<div class="row">
 			<ol class="breadcrumb">
 				<?php foreach ($results["tahun"] as $tahun) {
-					if ($tahun->tahun == $peternakan->tahun) { $active = "active";	}
-					else{ $active = "";	}
-					echo"<li class='".$active."'><a href=".URL::to('serang/peternakan/'.$tahun->tahun).">".$tahun->tahun."</a></li>";	
+					if ($tahun->tahun == $peternakan->tahun) {
+						echo"<li class='active'>".$tahun->tahun."</li>";
+					}
+					else{
+						echo"<li><a href=".URL::to('serang/peternakan/'.$tahun->tahun).">".$tahun->tahun."</a></li>";
+					}
 				} ?>
 			</ol>
 		</div>
@@ -136,7 +134,7 @@
 									<th class="text-center">Jumlah Produk Ternak</th>
 								</tr>
 								<tr>
-									<td id="daging">{{$peternakan->daging}}</td>
+									<td id="daging">{{$peternakan->daging}} kg/th</td>
 								</tr>
 							</tbody>	
 						</table>

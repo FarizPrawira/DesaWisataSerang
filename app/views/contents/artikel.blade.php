@@ -14,14 +14,15 @@
 <body>
 	@include('home.header')
 	<!-- CONTENT -->
-	<div class="container main-container timeline">
+	<div class="container fix-content timeline">
 		<div class="row">
 			<?php 
 			foreach ($results['content'] as $post): ?>
-			<div class="col-md-2">
+			<div class="col-md-3">
 				<a href="{{URL::to('content/'.$post->id)}}" class="timeline-item shadow-bot text-center">
 					<!-- <div class="timeline-item"> -->
 					<h5>{{$post->title}}</h5>
+                    <p class="smaller">{{$post->updated_at}}</p>
 					<?php foreach ($results['photo'] as $photo):
 					if ($photo->content_id == $post->id){ ?>
 					<img src="{{URL::to($photo->path)}}" class="related-image img-rounded">
@@ -47,8 +48,8 @@
 
 	<?php 
 	function truncDescription($description) {
-		if (strlen($description) > 120) {
-			$description = substr($description, 0, 100);
+		if (strlen($description) > 140) {
+			$description = substr($description, 0, 130);
 			$description.="...";
 		}
 		return $description;

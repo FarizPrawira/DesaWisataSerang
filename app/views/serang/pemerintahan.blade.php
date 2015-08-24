@@ -9,7 +9,7 @@
 	<link rel="stylesheet" href="{{URL::to('vendor/bootstrap/dist/css/bootstrap.min.css')}}"/>
 	<link rel="stylesheet" href="{{URL::to('vendor/font-awesome/css/font-awesome.min.css')}}"/>
 	<link rel="stylesheet" href="{{URL::to('assets/css/site.css')}}"/>
-    <link rel="icon" type="image/png" href="{{URL::to('assets/img/favicon.png')}}">
+	<link rel="icon" type="image/png" href="{{URL::to('assets/img/favicon.png')}}">
 </head>
 <body>
 	@include('home.header')
@@ -19,11 +19,11 @@
 		<div class="row">
 			<div class="text-center">
 				<h1>Pemerintahan Desa Serang</h1>
-			</div>
-            <ol class="breadcrumb">
-                <li><a href="">2014</a></li>
-                <li><a href="">2015</a></li>
-            </ol>
+			</div><!-- 
+			<ol class="breadcrumb">
+				<li><a href="">2014</a></li>
+				<li><a href="">2015</a></li>
+			</ol> -->
 			<div class="col-md-4 col-md-offset-4">
 				<div class="media">
 					<div class="media-center">
@@ -37,9 +37,9 @@
 					</div>
 				</div>
 			</div>
-            <div class="clearfix"></div>
-            <div class="breadcrumb">Perangkat Desa</div>
-            <div class="col-md-4">
+			<div class="clearfix"></div>
+			<div class="breadcrumb"><h3>Perangkat Desa</h3></div>
+			<div class="col-md-4">
 				<div class="media">
 					<div class="media-center">
 						<a href="#">
@@ -81,7 +81,7 @@
 					</div>
 				</div>
 			</div>
-            <div class="clearfix"></div>
+			<div class="clearfix"></div>
 			<div class="col-md-4">
 				<div class="media">
 					<div class="media-center">
@@ -109,8 +109,8 @@
 					</div>
 				</div>
 			</div>
-            <div class="clearfix"></div>
-            <div class="breadcrumb">Kepala Desun</div>
+			<div class="clearfix"></div>
+			<div class="breadcrumb"><h3>Kepala Desun</h3></div>
 			<div class="col-md-4">
 				<div class="media">
 					<div class="media-center">
@@ -178,8 +178,8 @@
 					</div>
 				</div>
 			</div>
-        </div>
-    </div>
+		</div>
+	</div>
 	<!-- CONTENT END -->
 	
 	@include('home.footer')
