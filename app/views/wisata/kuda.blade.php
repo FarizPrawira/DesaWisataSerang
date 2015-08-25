@@ -44,7 +44,7 @@
 					Kuda tunggang ini biasanya beroperasi pada hari libur terutama libur sekolah  dan libur hari raya idul fitri ataupun libur panjang lainnya.  
 					Wahana ini merupakan wahana yang banyak diminati oleh anak-anak. Cukup dengan membayar Rp 15.000 rupiah anda sudah bisa berkeliling menggunakan kuda tunggang ini. 
 					Informasi tentang Kuda tunggang ini dapat diperoleh di Tourist Information Center yang berada di jalan Raya Serang bertempat di desa Serang Purbalingga 
-					atau dapat mengunjungi website desa Serang serangpurbalingga.desa.id atau desawisataserang.com
+					atau dapat mengunjungi website desa Serang serangpurbalingga.desa.id.
 				</p>
 			</div>
 			<div class="col-md-4">

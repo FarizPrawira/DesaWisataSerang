@@ -46,7 +46,7 @@
 		<div class="col-md-12">
             <!-- LIST GAMBAR -->
             <div class="row galery">
-                <h3 class="text-left"><i class="glyphicon glyphicon-picture"></i> Gambar</h3>
+                <h3 class="text-center breadcrumb">Gambar</h3>
                 <ul class="list-unstyled list-inline">
                     <?php foreach ($galeries as $galery) { 
                         if ($galery->type == "image") { ?>
@@ -63,14 +63,13 @@
             </div>
             <div class="row loadmore">
 				<button id="loadmore">
-					<p class="text-center">Muat lagi <span class="glyphicon glyphicon-arrow-down"></span></p>
+					<p class="text-center">Muat lagi ↓</p>
 				</button>
 			</div>
-            <hr/>
             <!-- END OF LIST -->
             <!-- LIST VIDEO -->
             <div class="row galery">
-                <h3 class="text-left"><i class="glyphicon glyphicon-facetime-video"></i> Video</h3>
+                <h3 class="text-center breadcrumb">Video</h3>
                 <ul class="list-inline">
                     <?php foreach ($galeries as $galery) { 
                         if ($galery->type == "video") { ?>
@@ -91,7 +90,7 @@
             </div>
             <div class="row loadmore">
 				<button id="loadmore">
-					<p class="text-center">Muat lagi <span class="glyphicon glyphicon-arrow-down"></span></p>
+					<p class="text-center">Muat lagi ↓</p>
 				</button>
 			</div>
             <!-- END OF LIST -->
