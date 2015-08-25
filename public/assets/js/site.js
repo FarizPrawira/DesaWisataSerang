@@ -8,6 +8,7 @@ $(document).ready(function() {
     $("#Cpeternakan").hide();
     $("#Cpaketwisata").hide();
     // KEGIATAN MENU
+    $("#Clomba").hide();
     $("#Cacara").hide();
     $("#Csosial").hide();
 
@@ -18,29 +19,45 @@ $(document).ready(function() {
     });
 
     // MENU KEGIATAN
+    $("#Bdaftarkeg").click(function(){
+        $("#Cdaftarkeg").show();
+        $("#Cacara").hide();
+        $("#Clomba").hide();
+        $("#Csosial").hide();
+        $("#Bdaftarkeg").addClass("active");
+        $("#Bacara").removeClass("active");
+        $("#Blomba").removeClass("active");
+        $("#Bsosial").removeClass("active");
+    });
     $("#Bacara").click(function(){
         $("#Cacara").show();
         $("#Clomba").hide();
         $("#Csosial").hide();
+        $("#Cdaftarkeg").hide();
         $("#Bacara").addClass("active");
         $("#Blomba").removeClass("active");
         $("#Bsosial").removeClass("active");
+        $("#Bdaftarkeg").removeClass("active");
     });
     $("#Blomba").click(function(){
         $("#Clomba").show();
         $("#Cacara").hide();
         $("#Csosial").hide();
+        $("#Cdaftarkeg").hide();
         $("#Blomba").addClass("active");
         $("#Bacara").removeClass("active");
         $("#Bsosial").removeClass("active");
+        $("#Bdaftarkeg").removeClass("active");
     });
     $("#Bsosial").click(function(){
         $("#Csosial").show();
         $("#Clomba").hide();
         $("#Cacara").hide();
+        $("#Cdaftarkeg").hide();
         $("#Bsosial").addClass("active");
         $("#Blomba").removeClass("active");
         $("#Bacara").removeClass("active");
+        $("#Bdaftarkeg").removeClass("active");
     });
     // END MENU KEGIATAN
 
