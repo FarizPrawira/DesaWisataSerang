@@ -15,7 +15,7 @@
 	@include('home.header')
 	<!-- CONTENT -->
 	<div class="container fix-content">
-		<div class="row kegiatan"> 
+		<div class="row"> 
       <div class="col-md-12">
         <ul class="list-unstyled list-inline">
           <li id="Bdaftarkeg" class="btn btn-default active"><b><i class="glyphicon glyphicon-list"></i> Daftar kegiatan <span>({{Content::where('type','kegiatan')->count();}})</span></b></li>
@@ -24,8 +24,8 @@
           <li id="Bsosial" class="btn btn-default">Sosialisasi <span>({{Content::where('tag','sosial')->count();}})</span></li>
         </ul>
       </div>
-    </div>
-    <div>
+    
+    <div class="col-md-12">
       <div id="Cdaftarkeg">   
         <table class="table table-striped">
           <tr>
@@ -37,11 +37,11 @@
           </tr>
           <?php foreach($results['content'] as $kegiatan){ ?>
           <tr>
-            <td class="text-left" width="200px"><a href="{{URL::to('content/'.$kegiatan->id)}}">{{$kegiatan->title}}</a></td>
-            <td class="text-left" width="400px">{{truncDescription($kegiatan->description)}}</td>
-            <td class="text-left" width="150px">{{$kegiatan->cp}}</td>
+            <td class="text-left"><a href="{{URL::to('content/'.$kegiatan->id)}}">{{$kegiatan->title}}</a></td>
+            <td class="text-left" >{{truncDescription($kegiatan->description)}}</td>
+            <td class="text-left">{{$kegiatan->cp}}</td>
             <td class="text-left">{{$kegiatan->lokasi}}</td>
-            <td class="text-left" width="250px">{{$kegiatan->dateStart}} —  {{$kegiatan->dateEnd}}</td>
+            <td class="text-left">{{$kegiatan->dateStart}} — {{$kegiatan->dateEnd}}</td>
           </tr>
           <?php } ?>
         </table>
@@ -59,17 +59,18 @@
           <?php foreach ($results['content'] as $kegiatan): 
           if ($tag->tag == $kegiatan->tag) { ?>
           <tr>
-            <td class="text-left" width="200px"><a href="{{URL::to('content/'.$kegiatan->id)}}">{{$kegiatan->title}}</a></td>
-            <td class="text-left" width="400px">{{truncDescription($kegiatan->description)}}</td>
-            <td class="text-left" width="150px">{{$kegiatan->cp}}</td>
+            <td class="text-left"><a href="{{URL::to('content/'.$kegiatan->id)}}">{{$kegiatan->title}}</a></td>
+            <td class="text-left">{{truncDescription($kegiatan->description)}}</td>
+            <td class="text-left">{{$kegiatan->cp}}</td>
             <td class="text-left">{{$kegiatan->lokasi}}</td>
-            <td class="text-left" width="250px">{{$kegiatan->dateStart}} —  {{$kegiatan->dateEnd}}</td>
+            <td class="text-left">{{$kegiatan->dateStart}} — {{$kegiatan->dateEnd}}</td>
           </tr>
           <?php }
           endforeach ?>
         </table>
       </div>
     </div>
+        </div>
     <?php 
     endforeach ?>
   </div>

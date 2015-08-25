@@ -22,16 +22,9 @@
     <?php break; } ?>
     <span><h2 class="text-center">{{$content->title}}</h2></span>
   </div>
-  <div class="container-fluid image-list">
-    <?php foreach ($content->photos as $photo) { ?>
-    <a class="list" data-lightbox="image-list" href="{{URL::to($photo->path)}}">
-      <img src="{{URL::to($photo->path)}}" class="img-responsive">
-    </a>
-    <?php } ?>
-  </div>
+  
   <div class="container fix-content">
-    <div class="container-fluid">
-      <div class="col-md-3 text-center" id="share-buttons">
+      <div class="col-md-2" id="share-buttons">
         <a href="http://www.facebook.com/sharer.php?u={{Request::url()}}" target="_blank">
           <i class="fa fa-facebook fa-2x"></i>
         </a>
@@ -46,16 +39,23 @@
         <?php
         $tanggal = strtotime($content->created_at);
         $tanggal = date('d F Y G:i', $tanggal);
-        echo "<p class='smaller'>Ditampilkan pada ".$tanggal."</p><br/>";
+        echo "<p class='smaller c-gray sub-text'>Ditampilkan pada ".$tanggal."</p><br/>";
         ?>
-        {{nl2br($content->description)}}
+        <p>{{nl2br($content->description)}}</p>
+        <div class="image-list">
+            <?php foreach ($content->photos as $photo) { ?>
+            <a class="list" data-lightbox="image-list" href="{{URL::to($photo->path)}}">
+              <img src="{{URL::to($photo->path)}}" class="img-responsive">
+            </a>
+            <?php } ?>
+        </div>
       </div>
-    </div>
+      <div class="clearfix"></div>    
   </div>
   <!-- Artikel Terbaru -->
   <div class="container timeline">
     <div class="row">
-      <h2>{{ucfirst($content->type)}} Terbaru</h2>
+      <h3 class="col-md-2 c-gray">{{ucfirst($content->type)}} Terbaru</h3>
       <?php foreach ($results['related-post'] as $post): ?>
       <div class="col-md-3">
         <a href="{{URL::to('content/'.$post->id)}}" class="timeline-item shadow-bot text-center">
@@ -72,6 +72,7 @@
       </div>
       <?php 
       endforeach ?>
+        <div class="clearfix"></div>
     </div>
   </div>
   <?php 
@@ -96,7 +97,6 @@
         <h4><i class="glyphicon glyphicon-calendar"></i> <b class="c-green">{{$content->dateStart}}</b> — <b class="c-red">{{$content->dateEnd}}</b></h4>
       </div>
       <br/><br/><br/>
-      Bagikan
       <div id="share-buttons">
         <!-- Facebook -->
         <a href="http://www.facebook.com/sharer.php?u={{Request::url()}}" target="_blank">
@@ -138,5 +138,12 @@
    return $description;
  }
  ?>
+<script>
+    lightbox.option({
+      'resizeDuration': 10000,
+      'wrapAround': true,
+        'resizeDuration' : 0
+    })
+</script>
 </body>
 </html>

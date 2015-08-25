@@ -92,7 +92,7 @@ class ContentsController extends \BaseController {
 		->where('type',$content['type'])
 		->whereNotIn('id', [$id])
 		->orderBy('created_at', 'DESC')
-		->limit(4)
+		->limit(3)
 		->get();
 		$results["related-photo"] = DB::table('photos')->get();
 		return View::make('contents.show', compact('content'))->with('results', $results);

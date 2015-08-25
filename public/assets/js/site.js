@@ -191,7 +191,6 @@ $(document).ready(function() {
         $("#listartikel").hide();
     });
 
-    $("#listwisata").hide();
     $("#menuwisata").click(function(){
         if($("#menuwisata").hasClass("active")==true){
             $("#menuwisata").removeClass("active");
@@ -201,7 +200,6 @@ $(document).ready(function() {
             $("#menukegiatan").removeClass("active");
             $("#menuartikel").removeClass("active");
         }
-        $("#img1").hover()
         $("#listwisata").slideToggle("fast");
         $("#listkegiatan").hide();
         $("#listserang").hide();
