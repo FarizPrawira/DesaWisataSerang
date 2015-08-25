@@ -17,7 +17,8 @@ Route::get('coba', function()
 });
 
 Route::get('/', 'HomeController@showHome');
-Route::get('loadmore', 'HomeController@loadmore');
+Route::get('loadKegiatan', 'HomeController@loadKegiatan');
+Route::get('loadArtikel', 'HomeController@loadArtikel');
 Route::post('user/login', 'UsersController@submitLogin');
 Route::get('user/logout', 'UsersController@sendLogout');
 Route::get('dashboard', 'UsersController@showDashboard');

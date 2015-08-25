@@ -20,12 +20,12 @@ class HomeController extends BaseController {
 		$results["artikel"] = DB::table('contents')
 								->where('type','artikel')
 								->orderBy('created_at','DESC')
-								->limit(4)
+								->limit(5)
 								->get();
 		$results["kegiatan"] = DB::table('contents')
 								->where('type','kegiatan')
 								->orderBy('created_at','DESC')
-								->limit(4)
+								->limit(3)
 								->get();
 		$results["photo"] = DB::table('photos')->get();
 		return View::make('home.home')->with('results', $results);
@@ -37,12 +37,17 @@ class HomeController extends BaseController {
 		// 	}
 		// }
 	}
-	public function loadmore()
+	public function loadArtikel()
 	{
 		$results["artikel"] = DB::table('contents')
 								->where('type','artikel')
 								->orderBy('created_at','DESC')
 								->get();
+		$results["photo"] = DB::table('photos')->get();
+		return Response::json($results);
+	}
+	public function loadKegiatan()
+	{
 		$results["kegiatan"] = DB::table('contents')
 								->where('type','kegiatan')
 								->orderBy('created_at','DESC')

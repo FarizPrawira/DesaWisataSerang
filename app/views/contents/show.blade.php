@@ -66,7 +66,7 @@
           <img src="{{URL::to($photo->path)}}" class="img-rounded">
           <?php break; }
           endforeach ?>
-          <p>{{truncDescription($post->description)}}</p>
+          <p class="smaller">{{truncDescription($post->description)}}</p>
           <!-- </div> -->
         </a>
       </div>
