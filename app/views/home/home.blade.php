@@ -51,6 +51,12 @@
 						<a href="{{URL::to('content/'.$kegiatan->id)}}" class="timeline-item shadow-bot text-center">
 							<h3>{{$kegiatan->title}}</h3>
 							<p class="c-gray">{{$kegiatan->updated_at}}</p>
+							<?php /*foreach ($results["photo"] as $photo) {
+								if ($photo->content_id == $kegiatan->id) {
+									echo "<img class='img-rounded' src=".URL::to($photo->path).">";
+									break; 
+								} 
+							} */?>
 							<p>{{$kegiatan->dateStart}} — {{$kegiatan->dateEnd}}</p>
 							<p>{{truncDescription($kegiatan->description)}}</p>
 						</a>
