@@ -44,19 +44,13 @@
 		<!-- Timeline -->
 		<div class="container timeline">
 			<div class="row">
-				<div class="col-md-5 col-md-offset-1">
+				<div class="col-md-5 col-md-offset-1 text-center">
 					<h2 class="text-center">Kegiatan</h2><br/>
 					<?php foreach ($results["kegiatan"] as $kegiatan) {
 						if ($kegiatan->type == "kegiatan") { ?>
 						<a href="{{URL::to('content/'.$kegiatan->id)}}" class="timeline-item shadow-bot text-center">
 							<h3>{{$kegiatan->title}}</h3>
 							<p class="c-gray">{{$kegiatan->updated_at}}</p>
-							<?php /*foreach ($results["photo"] as $photo) {
-								if ($photo->content_id == $kegiatan->id) {
-									echo "<img class='img-rounded' src=".URL::to($photo->path).">";
-									break; 
-								} 
-							} */?>
 							<p>{{$kegiatan->dateStart}} — {{$kegiatan->dateEnd}}</p>
 							<p>{{truncDescription($kegiatan->description)}}</p>
 						</a>
@@ -64,8 +58,11 @@
 					}
 					?>
 					<div class="loadmore-kegiatan"></div>
+					<button id="loadKegiatan">
+						<p>Kegiatan Sebelumnya ↓</p>
+					</button>
 				</div>
-				<div class="col-md-5">
+				<div class="col-md-5 text-center">
 					<h2 class="text-center">Artikel</h2><br/>
 					<?php foreach ($results["artikel"] as $artikel) {
 						if ($artikel->type == "artikel") { ?>
@@ -83,12 +80,10 @@
 						<?php }
 					} ?>
 					<div class="loadmore-artikel"></div>
+					<button id="loadArtikel">
+						<p>Artikel Sebelumnya ↓</p>
+					</button>
 				</div>
-			</div>
-			<div class="row loadmore">
-				<button id="loadmore">
-					<p class="text-center">Sebelumnya ↓</p>
-				</button>
 			</div>
 		</div>
 	</div>
@@ -143,65 +138,86 @@
 	});
 	</script>
 	<script>
-	var kegiatan = 4;
-	var artikel = 4;
+	var kegiatan = 5;
+	var artikel = 3;
 	var description = "";
-	var photoKeg = "";
 	var photoAr = "";
-	var i = 0;
-	$('#loadmore').click(function(event){
+	// AJAX load kegiatan
+	$('#loadKegiatan').click(function(event){
 		$.ajax({
-			url: '{{URL::to("loadmore")}}',
+			url: '{{URL::to("loadKegiatan")}}',
 			method: 'GET',
 			dataType: 'json'
 		})
 		.done(function(response){
-			if (response.kegiatan[kegiatan] === undefined && response.artikel[artikel] === undefined) {
-				$('.loadmore').html('');
-				$('.loadmore').append("")
-			};
-			if (response.kegiatan[kegiatan] !== undefined) {
-				while (response.kegiatan[kegiatan].id != response.photo[i].content_id) {
-					i++;
-				}
-				photoKeg = response.photo[i].path;
-				description = response.kegiatan[kegiatan].description;
-				if (description.length > 250) {
-					description = description.substr(0, 230);
-					description = description.concat("...");
+			for(var loop = 0; loop < 5; loop++) {
+				var i = 0;
+				if (response.kegiatan.length <= kegiatan) {
+					$('#loadKegiatan').html('');
 				};
-				$('.loadmore-kegiatan').append('\
-					<a href="content/'+response.kegiatan[kegiatan].id+'" class="timeline-item load-kegiatan shadow-bot text-center">\
-					<h3>'+response.kegiatan[kegiatan++].title+'</h3>\
-					<img src='+photoKeg+' class="img-rounded">\
-					<p>'+description+'</p>\
-					</a>\
-					');
-			};
-			i = 0;
-			if (response.artikel[artikel] !== undefined) {
-				while (response.artikel[artikel].id != response.photo[i].content_id) {
-					i++;
-				}
-				photoAr = response.photo[i].path;
-				description = response.artikel[artikel].description;
-				if (description.length > 250) {
-					description = description.substr(0, 230);
-					description = description.concat("...");
+				if (response.kegiatan[kegiatan] !== undefined) {
+					while (response.kegiatan[kegiatan].id != response.photo[i].content_id) {
+						i++;
+					}
+					photoKeg = response.photo[i].path;
+					description = response.kegiatan[kegiatan].description;
+					if (description.length > 190) {
+						description = description.substr(0, 280);
+						description = description.concat("...");
+					};
+					$('.loadmore-kegiatan').append('\
+						<a href="content/'+response.kegiatan[kegiatan].id+'" class="timeline-item shadow-bot text-center">\
+						<h3>'+response.kegiatan[kegiatan].title+'</h3>\
+						<p class="c-gray">'+response.kegiatan[kegiatan].updated_at+'</p>\
+						<p>'+response.kegiatan[kegiatan].dateStart+' — '+response.kegiatan[kegiatan].dateEnd+'</p>\
+						<p>'+description+'</p>\
+						</a>\
+						');
 				};
-				$('.loadmore-artikel').append('\
-					<a href="content/'+response.artikel[artikel].id+'" class="timeline-item load-artikel shadow-bot text-center">\
-					<h3>'+response.artikel[artikel++].title+'</h3>\
-					<img src='+photoAr+' class="img-rounded">\
-					<p>'+description+'</p>\
-					</a>\
-					');
-			};
+				kegiatan++;
+			}
+		}) .fail(function(){
+			alert("error");
+		});
+	});
+	// AJAX load artikel
+	$('#loadArtikel').click(function(event){
+		$.ajax({
+			url: '{{URL::to("loadArtikel")}}',
+			method: 'GET',
+			dataType: 'json'
 		})
-.fail(function(){
-	alert("error");
-});
-});
+		.done(function(response){
+			for(var loop = 0; loop < 5; loop++) {
+				var i = 0;
+				if (response.artikel.length <= artikel) {
+					$('#loadArtikel').html('');
+				};
+				if (response.artikel[artikel] !== undefined) {
+					while (response.artikel[artikel].id != response.photo[i].content_id) {
+						i++;
+					}
+					photoAr = response.photo[i].path;
+					description = response.artikel[artikel].description;
+					if (description.length > 190) {
+						description = description.substr(0, 280);
+						description = description.concat("...");
+					};
+					$('.loadmore-artikel').append('\
+						<a href="content/'+response.artikel[artikel].id+'" class="timeline-item shadow-bot text-center">\
+						<h3>'+response.artikel[artikel].title+'</h3>\
+						<p class="c-gray">'+response.artikel[artikel].updated_at+'</p>\
+						<img src='+photoAr+' class="img-rounded">\
+						<p>'+description+'</p>\
+						</a>\
+						');
+				};
+				artikel++;
+			}
+		}) .fail(function(){
+			alert("error");
+		});
+	});
 	// <?php if(Session::has('script')) echo Session::get('script');?>
 	</script>
 </body>
