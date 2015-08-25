@@ -11,7 +11,7 @@
 	<link rel="stylesheet" href="{{URL::to('assets/css/owl.carousel.css')}}"/>
 	<link rel="stylesheet" href="{{URL::to('assets/css/owl.theme.css')}}"/>
 	<link rel="stylesheet" href="{{URL::to('assets/css/site.css')}}"/>
-    <link rel="icon" type="image/png" href="{{URL::to('assets/img/favicon.png')}}">
+	<link rel="icon" type="image/png" href="{{URL::to('assets/img/favicon.png')}}">
 </head>
 <body>
 	@include('home.header')
@@ -47,13 +47,11 @@
 				<div class="col-md-5 col-md-offset-1">
 					<h2 class="text-center">Kegiatan</h2><br/>
 					<?php foreach ($results["kegiatan"] as $kegiatan) {
-							// var_dump($content->description);die;
 						if ($kegiatan->type == "kegiatan") { ?>
 						<a href="{{URL::to('content/'.$kegiatan->id)}}" class="timeline-item shadow-bot text-center">
 							<h3>{{$kegiatan->title}}</h3>
-                            <p class="c-gray">{{$kegiatan->updated_at}}</p>
-							
-                            <p>{{$kegiatan->dateStart}} — {{$kegiatan->dateEnd}}</p>
+							<p class="c-gray">{{$kegiatan->updated_at}}</p>
+							<p>{{$kegiatan->dateStart}} — {{$kegiatan->dateEnd}}</p>
 							<p>{{truncDescription($kegiatan->description)}}</p>
 						</a>
 						<?php }
@@ -64,11 +62,10 @@
 				<div class="col-md-5">
 					<h2 class="text-center">Artikel</h2><br/>
 					<?php foreach ($results["artikel"] as $artikel) {
-							// var_dump($kegiatan->description);die;
 						if ($artikel->type == "artikel") { ?>
 						<a href="{{URL::to('content/'.$artikel->id)}}" class="timeline-item shadow-bot text-center">
 							<h3>{{$artikel->title}}</h3>
-                            <p class="c-gray">{{$kegiatan->updated_at}}</p>
+							<p class="c-gray">{{$kegiatan->updated_at}}</p>
 							<?php foreach ($results["photo"] as $photo) {
 								if ($photo->content_id == $artikel->id) {
 									echo "<img class='img-rounded' src=".URL::to($photo->path).">";
@@ -195,10 +192,10 @@
 					');
 			};
 		})
-		.fail(function(){
-			alert("error");
-		});
-	});
+.fail(function(){
+	alert("error");
+});
+});
 	// <?php if(Session::has('script')) echo Session::get('script');?>
 	</script>
 </body>
