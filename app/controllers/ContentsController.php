@@ -185,6 +185,7 @@ class ContentsController extends \BaseController {
 		$results["content"] = DB::table('contents')
 		->where('type', 'artikel')
 		->orderBy('created_at', 'DESC')
+		->limit(8)
 		->get();
 		$results["photo"] = DB::table('photos')->get();
 		return View::make('contents.artikel')->with('results', $results);

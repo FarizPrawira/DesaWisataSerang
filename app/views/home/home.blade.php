@@ -188,7 +188,7 @@
 			dataType: 'json'
 		})
 		.done(function(response){
-			for(var loop = 0; loop < 5; loop++) {
+			for(var loop = 0; loop < 3; loop++) {
 				var i = 0;
 				if (response.artikel.length <= artikel) {
 					$('#loadArtikel').html('');

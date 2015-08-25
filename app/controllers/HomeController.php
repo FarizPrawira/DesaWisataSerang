@@ -20,12 +20,12 @@ class HomeController extends BaseController {
 		$results["artikel"] = DB::table('contents')
 								->where('type','artikel')
 								->orderBy('created_at','DESC')
-								->limit(5)
+								->limit(3)
 								->get();
 		$results["kegiatan"] = DB::table('contents')
 								->where('type','kegiatan')
 								->orderBy('created_at','DESC')
-								->limit(3)
+								->limit(5)
 								->get();
 		$results["photo"] = DB::table('photos')->get();
 		return View::make('home.home')->with('results', $results);

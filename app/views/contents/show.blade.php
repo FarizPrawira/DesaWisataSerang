@@ -52,10 +52,10 @@
       </div>
     </div>
   </div>
-  <!-- Artikel Terkait -->
+  <!-- Artikel Terbaru -->
   <div class="container timeline">
     <div class="row">
-      <h2>{{ucfirst($content->type)}} Terkait</h2>
+      <h2>{{ucfirst($content->type)}} Terbaru</h2>
       <?php foreach ($results['related-post'] as $post): ?>
       <div class="col-md-3">
         <a href="{{URL::to('content/'.$post->id)}}" class="timeline-item shadow-bot text-center">
