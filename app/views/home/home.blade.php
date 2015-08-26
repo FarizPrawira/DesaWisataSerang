@@ -34,7 +34,7 @@
 			</div>
 			<div class="content-item">
 				<img src="{{URL::to('assets/img/4.jpg')}}">
-				<h1>Warga yang ramah-ramah</h1>
+				<h1>Masyarakat yang baik, ramah, dan menyenangkan!</h1>
 			</div>
 			<div class="content-item">
 				<img src="{{URL::to('assets/img/5.jpg')}}">
@@ -45,7 +45,7 @@
 		<div class="container timeline">
 			<div class="row">
 				<div class="col-md-5 col-md-offset-1 text-center">
-					<h2 class="text-center">Kegiatan</h2><br/>
+					<h2 class="text-center p-10">Kegiatan</h2><br/>
 					<?php foreach ($results["kegiatan"] as $kegiatan) {
 						if ($kegiatan->type == "kegiatan") { ?>
 						<a href="{{URL::to('content/'.$kegiatan->id)}}" class="timeline-item shadow-bot text-center">
@@ -63,7 +63,7 @@
 					</button>
 				</div>
 				<div class="col-md-5 text-center">
-					<h2 class="text-center">Artikel</h2><br/>
+					<h2 class="text-center p-10">Artikel</h2><br/>
 					<?php foreach ($results["artikel"] as $artikel) {
 						if ($artikel->type == "artikel") { ?>
 						<a href="{{URL::to('content/'.$artikel->id)}}" class="timeline-item shadow-bot text-center">

@@ -4,7 +4,7 @@
 */
 
 .owl-theme .owl-controls{
-	margin-top: -30px;
+	margin-top: -50px;
 	text-align: center;
 }
 
@@ -37,13 +37,13 @@
 
 .owl-theme .owl-controls .owl-page{
 	display: inline-block;
-	zoom: 1;
+/*	zoom: 1;*/
 	*display: inline;/*IE7 life-saver */
 }
 .owl-theme .owl-controls .owl-page span{
 	display: block;
-	width: 12px;
-	height: 12px;
+	width: 15px;
+	height: 15px;
 	margin: 5px 7px;
 	filter: Alpha(Opacity=50);/*IE7 fix*/
 	opacity: 0.3;
@@ -51,13 +51,16 @@
 	-moz-border-radius: 20px;
 	border-radius: 20px;
 	background: white;
-	box-shadow: 3px 3px 3px black;
+	box-shadow: 3px 3px 10px black;
+    
 }
 
 .owl-theme .owl-controls .owl-page.active span,
 .owl-theme .owl-controls.clickable .owl-page:hover span{
 	filter: Alpha(Opacity=100);/*IE7 fix*/
 	opacity: 0.9;
+    width: 20px; height: 20px;
+    margin-top: 3px;
 }
 
 /* If PaginationNumbers is true */

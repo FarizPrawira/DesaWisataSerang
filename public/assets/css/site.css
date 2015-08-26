@@ -56,6 +56,7 @@ p.sub-text{
     from {transform: scale(0);}
     to {transform: scale(1)}
 }
+
 .header{
 	position: relative;
 	width: 100%;
@@ -110,6 +111,29 @@ p.sub-text{
 	background-color: rgba(255, 40, 40, 1);
 	box-shadow: 0 5px 0 rgba(255, 40, 40, 1);
 }
+@media only screen and (max-width: 760px) {
+    .navbar .menu-link li, .navbar .menu-link li>a{
+        width: auto;
+        height: auto;
+        font-size: 1em;
+        padding: 5px;        
+    }
+    .navbar #logo{
+        display: none;
+    }
+    .menu-item img{
+        display: none;
+    }
+    .menu-item{
+        max-height: 60px;
+    }
+    .menu-item span{
+        max-height: 60px;
+    }
+    .menu-item span>p{
+        display: none;
+    }
+}
 .navbar .menu-link li>a{
 	width: 150px;
 	height: 60px;
@@ -142,7 +166,11 @@ p.sub-text{
 	border-radius: 3px;
 	width: inherit;
 	height: inherit;
+    width: 100%;
+	height: 100%;
+	position: absolute;
 }
+
 /*text element*/
 .menu-item span{
 	position: absolute;
@@ -180,11 +208,6 @@ p.sub-text{
 	font-size: 0.8em;
 	opacity: 0;
 	border-top: 1px solid rgba(255,255,255,0.5);
-}
-.menu-item img{
-	width: 100%;
-	height: 100%;
-	position: absolute;
 }
 .menu-item:hover{
 	color: white;
@@ -236,7 +259,7 @@ p.sub-text{
 	transform: translateY(-50%);
 	width: 100%;
 	color: white;
-	text-shadow: 0 0 15px rgba(0,0,0,1);
+	text-shadow: 0 0 10px rgba(0,0,0,1), 0 0 20px rgba(0,0,0,1), 0 0 30px rgba(0,0,0,1);
 	font-size: 4em;
 }
 .timeline .timeline-item{
@@ -276,7 +299,7 @@ p.sub-text{
 }
 .timeline .timeline-item:hover::before{
 	content: "";
-    background-color: rgba(0,0,0,0.1);
+    background-color: rgba(38, 166, 91, 0.2);
 	width: 100%;
     height: 100%;
 	position: absolute;
@@ -312,9 +335,11 @@ p.sub-text{
     text-decoration: none;
     color: black;
 }
+/*
 .timeline a:hover h5,.timeline a:hover h4,.timeline a:hover h3,.timeline a:hover h2,.timeline a:hover h1{
     color: rgba(0,0,0,0.9);
 }
+*/
 .timeline .timeline-item>img{
 	width: 95%;
 }
