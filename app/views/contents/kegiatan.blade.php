@@ -24,55 +24,54 @@
           <li id="Bsosial" class="btn btn-default">Sosialisasi <span>({{Content::where('tag','sosial')->count();}})</span></li>
         </ul>
       </div>
-    
-    <div class="col-md-12">
-      <div id="Cdaftarkeg">   
-        <table class="table table-striped">
-          <tr>
-            <th class="text-left">Judul</th>
-            <th class="text-left" id="desc">Deskripsi</th>
-            <th class="text-left">CP</th>
-            <th class="text-left">Lokasi</th>
-            <th class="text-left">Tanggal</th>
-          </tr>
-          <?php foreach($results['content'] as $kegiatan){ ?>
-          <tr>
-            <td class="text-left"><a href="{{URL::to('content/'.$kegiatan->id)}}">{{$kegiatan->title}}</a></td>
-            <td class="text-left" >{{truncDescription($kegiatan->description)}}</td>
-            <td class="text-left">{{$kegiatan->cp}}</td>
-            <td class="text-left">{{$kegiatan->lokasi}}</td>
-            <td class="text-left">{{$kegiatan->dateStart}} — {{$kegiatan->dateEnd}}</td>
-          </tr>
-          <?php } ?>
-        </table>
-      </div>
-      <?php foreach ($results['tag'] as $tag): ?>
-      <div id="C{{$tag->tag}}">
-        <table class="table table-striped">
-          <tr>
-            <th class="text-left">Judul</th>
-            <th class="text-left" id="desc">Deskripsi</th>
-            <th class="text-left">CP</th>
-            <th class="text-left">Lokasi</th>
-            <th class="text-left">Tanggal</th>
-          </tr>
-          <?php foreach ($results['content'] as $kegiatan): 
-          if ($tag->tag == $kegiatan->tag) { ?>
-          <tr>
-            <td class="text-left"><a href="{{URL::to('content/'.$kegiatan->id)}}">{{$kegiatan->title}}</a></td>
-            <td class="text-left">{{truncDescription($kegiatan->description)}}</td>
-            <td class="text-left">{{$kegiatan->cp}}</td>
-            <td class="text-left">{{$kegiatan->lokasi}}</td>
-            <td class="text-left">{{$kegiatan->dateStart}} — {{$kegiatan->dateEnd}}</td>
-          </tr>
-          <?php }
-          endforeach ?>
-        </table>
+      <div class="col-md-12">
+        <div id="Cdaftarkeg">   
+          <table class="table table-striped">
+            <tr>
+              <th class="text-left">Judul</th>
+              <th class="text-left" id="desc">Deskripsi</th>
+              <th class="text-left">CP</th>
+              <th class="text-left">Lokasi</th>
+              <th class="text-left">Tanggal</th>
+            </tr>
+            <?php foreach($results['content'] as $kegiatan){ ?>
+            <tr>
+              <td class="text-left"><a href="{{URL::to('content/'.$kegiatan->id)}}">{{$kegiatan->title}}</a></td>
+              <td class="text-left" >{{truncDescription($kegiatan->description)}}</td>
+              <td class="text-left">{{$kegiatan->cp}}</td>
+              <td class="text-left">{{$kegiatan->lokasi}}</td>
+              <td class="text-left">{{$kegiatan->dateStart}} — {{$kegiatan->dateEnd}}</td>
+            </tr>
+            <?php } ?>
+          </table>
+        </div>
+        <?php foreach ($results['tag'] as $tag): ?>
+        <div id="C{{$tag->tag}}">
+          <table class="table table-striped">
+            <tr>
+              <th class="text-left">Judul</th>
+              <th class="text-left" id="desc">Deskripsi</th>
+              <th class="text-left">CP</th>
+              <th class="text-left">Lokasi</th>
+              <th class="text-left">Tanggal</th>
+            </tr>
+            <?php foreach ($results['content'] as $kegiatan): 
+            if ($tag->tag == $kegiatan->tag) { ?>
+            <tr>
+              <td class="text-left"><a href="{{URL::to('content/'.$kegiatan->id)}}">{{$kegiatan->title}}</a></td>
+              <td class="text-left">{{truncDescription($kegiatan->description)}}</td>
+              <td class="text-left">{{$kegiatan->cp}}</td>
+              <td class="text-left">{{$kegiatan->lokasi}}</td>
+              <td class="text-left">{{$kegiatan->dateStart}} — {{$kegiatan->dateEnd}}</td>
+            </tr>
+            <?php }
+            endforeach ?>
+          </table>
+        </div>
+        <?php 
+        endforeach ?>
       </div>
     </div>
-        </div>
-    <?php 
-    endforeach ?>
   </div>
   <!-- CONTENT END-->
   @include('home.footer')
