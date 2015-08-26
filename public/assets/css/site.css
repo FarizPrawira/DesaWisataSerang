@@ -116,7 +116,8 @@ p.sub-text{
         width: auto;
         height: auto;
         font-size: 1em;
-        padding: 5px;        
+        padding: 5px; 
+        padding-top: 15px;
     }
     .navbar #logo{
         display: none;
@@ -407,8 +408,7 @@ hr{
 	height: 460px;
 	overflow: hidden;
 	position: relative;
-	background-color: rgba(207,0,15,1);
-    border-radius: 0;
+	background-color: rgba(0,0,0,0.7);
 }
 .content-header img{
 	position: absolute;
@@ -884,4 +884,19 @@ i{
 }
 .p-30{
     padding: 30px;
+}
+.middle{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.middle img#login_logo{
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-70%,-130%);
+    z-index: -1;
+    
 }

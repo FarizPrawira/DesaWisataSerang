@@ -30,27 +30,32 @@
 
 	<!-- LOGIN FORM -->
 	<?php	if(!Auth::check()){ ?>
-	<div class="modal-dialog modal-sm">
-		<div class="modal-content">
-			<div class="modal-header">
-				<h4 class="modal-title" id="myModalLabel">Dashboard Desa Serang</h4>
-			</div>
-			<div class="modal-body">
-				<form action="{{URL::to('user/login')}}" method="post">
-					<div class="form-group">
-						<input type="text" class="form-control" name="username" id="username" placeholder="Username">
-					</div>
-					<div class="form-group">
-						<input type="password" class="form-control" name="password" id="password" placeholder="Password">
-					</div>
-					<div class="text-right">
-						<button type="submit" class="btn btn-primary">Masuk</button>
-						<a href="{{URL::to('')}}" type="button" class="btn btn-link">Batal</a>
-					</div>
-				</form>
-			</div>
-		</div>
-	</div>
+    <div class="middle">
+        <div class="row">
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="myModalLabel">Dashboard Desa Serang</h4>
+                    </div>
+                    <div class="modal-body">
+                        <form action="{{URL::to('user/login')}}" method="post">
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="username" id="username" placeholder="Username">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" name="password" id="password" placeholder="Password">
+                            </div>
+                            <div class="text-right">
+                                <button type="submit" class="btn btn-primary">Masuk</button>
+                                <a href="{{URL::to('')}}" type="button" class="btn btn-link">Batal</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <img src="{{URL::to('assets/img/logo_warna.png')}}" id="login_logo">
+        </div> 
+    </div>
 	<?php }	
 	// LOGIN FORM END 
 	// ALREADY LOGIN

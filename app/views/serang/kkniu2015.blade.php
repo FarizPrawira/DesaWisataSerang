@@ -17,8 +17,8 @@
 	<!-- CONTENT -->
 	<div class="container">
 		<div class="row">	
-			<h3>KKN - PPM</h3>
-			<p>Kuliah Kerja Nyata - Pembelajaran dan Pemberdayaan Masyarakat</p>
+			<h1 class="text-center">KKN - PPM</h1>
+			<h4 class="text-center">Kuliah Kerja Nyata - Pembelajaran dan Pemberdayaan Masyarakat</h4>
 			<div>
 				<!-- Nav tabs -->
 				<ul class="nav nav-tabs" role="tablist">

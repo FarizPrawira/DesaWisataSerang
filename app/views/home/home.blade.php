@@ -68,7 +68,7 @@
 						if ($artikel->type == "artikel") { ?>
 						<a href="{{URL::to('content/'.$artikel->id)}}" class="timeline-item shadow-bot text-center">
 							<h3>{{$artikel->title}}</h3>
-							<p class="c-gray">{{$kegiatan->updated_at}}</p>
+							<p class="c-gray">{{$artikel->updated_at}}</p>
 							<?php foreach ($results["photo"] as $photo) {
 								if ($photo->content_id == $artikel->id) {
 									echo "<img class='img-rounded' src=".URL::to($photo->path).">";
