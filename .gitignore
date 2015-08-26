@@ -2,7 +2,6 @@
 /vendor
 /app/config
 /Front/dicobaya
-/public/assets/img
 /public/galeries
 /public/uploads
 composer.phar
