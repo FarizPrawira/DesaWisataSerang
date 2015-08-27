@@ -132,8 +132,8 @@
    <table class="table table-striped table-bordered">
      <tbody class="text-center">
        <tr>
-         <th></th>
-         <th class="text-center">Wisata</th>
+         <th>Wisata</th>
+         <th class="text-center"></th>
          <th class="text-center">Jumlah orang (minimal)</th>
          <th class="text-center">Harga</th>
        </tr>
