@@ -1,6 +1,6 @@
 <?php
 
-$hostmachine = ['ASUS-PC',];
+$hostmachine = ['ASUS-PC', 'OGI-HP-P229AX'];
 $is_local= in_array(gethostname(), $hostmachine);
 $dbname = ($is_local)? 'desa_serang' : 'desa_serang';
 $dbuser = ($is_local)? 'root' : 'DesaSerangMaster';

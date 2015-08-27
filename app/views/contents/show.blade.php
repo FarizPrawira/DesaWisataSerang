@@ -90,7 +90,7 @@
       $tanggal = date('d F Y G:i', $tanggal);
       echo "<p class='smaller'>Ditampilkan pada ".$tanggal."</p><br/>";
       ?>
-      <p><b>{{nl2br($content->description)}}</b></p>
+      <p>{{nl2br($content->description)}}</p>
       <div id="dateKeg">
         <br/>
         <p>Akan dilaksanakan pada:</p>

@@ -19,77 +19,77 @@
 		<div class="row">
 			<h2 class="text-center">Paket Wisata</h2>
 			<table class="table table-striped">
-				<tbody class="text-center">
+				<tbody class="text-left">
 					<tr>
-						<th></th>
-						<th class="text-center">Wisata</th>
-						<th class="text-center">Harga</th>
-						<th class="text-center">Fasilitas</th>
-						<th class="text-center">Keterangan</th>
+						<th>Wisata</th>
+						<th class="text-left"></th>
+						<th class="text-left">Harga</th>
+						<th class="text-left">Fasilitas</th>
+						<th class="text-left">Keterangan</th>
 					</tr>
 					<?php foreach ($tics as $tic): ?>	
 					<tr>
-						<td><img src="{{URL::to('assets/img/facebook/agrokids.jpg')}}"></td>
-						<td><b>Agro Kids</b></td>
-						<td>Rp.{{$tic->agroBiaya}}</td>
-						<td>{{nl2br($tic->agroFasilitas)}}</td>
-						<td>{{$tic->agroKet}}</td>
+						<td class="text-right"><img src="{{URL::to('assets/img/facebook/agrokids.jpg')}}"></td>
+						<td class="text-left"><b>Agro Kids</b></td>
+						<td class="text-left">Rp.{{$tic->agroBiaya}}</td>
+						<td class="text-left">{{nl2br($tic->agroFasilitas)}}</td>
+						<td class="text-left">{{$tic->agroKet}}</td>
 					</tr>
 					<tr>
-						<td><img src="{{URL::to('assets/img/facebook/campingground.jpg')}}"></td>
-						<td><b>Camping Ground</b></td>
-						<td>Rp.{{$tic->campBiaya}}</td>
-						<td>{{nl2br($tic->campFasilitas)}}</td>
-						<td>{{$tic->campKet}}</td>
+						<td class="text-right"><img src="{{URL::to('assets/img/facebook/campingground.jpg')}}"></td>
+						<td class="text-left"><b>Camping Ground</b></td>
+						<td class="text-left">Rp.{{$tic->campBiaya}}</td>
+						<td class="text-left">{{nl2br($tic->campFasilitas)}}</td>
+						<td class="text-left">{{$tic->campKet}}</td>
 					</tr>
 					<tr>
-						<td><img src="{{URL::to('assets/img/facebook/homestaypelajar.jpg')}}"></td>
-						<td><b>HomeStay Pelajar </b></td>
-						<td>Rp.{{$tic->homeBiaya}}</td>
-						<td>{{nl2br($tic->homeFasilitas)}}</td>
-						<td>{{$tic->homeKet}}</td>
+						<td class="text-right"><img src="{{URL::to('assets/img/facebook/homestaypelajar.jpg')}}"></td>
+						<td class="text-left"><b>HomeStay Pelajar </b></td>
+						<td class="text-left">Rp.{{$tic->homeBiaya}}</td>
+						<td class="text-left">{{nl2br($tic->homeFasilitas)}}</td>
+						<td class="text-left">{{$tic->homeKet}}</td>
 					</tr>
 					<tr>
-						<td><img src="{{URL::to('assets/img/facebook/tracking.jpg')}}"></td>
-						<td><b>Tracking</b></td>
-						<td>Rp.{{$tic->trackBiaya}}</td>
-						<td>{{nl2br($tic->trackFasilitas)}}</td>
-						<td>{{$tic->trackKet}}</td>
+						<td class="text-right"><img src="{{URL::to('assets/img/facebook/tracking.jpg')}}"></td>
+						<td class="text-left"><b>Tracking</b></td>
+						<td class="text-left">Rp.{{$tic->trackBiaya}}</td>
+						<td class="text-left">{{nl2br($tic->trackFasilitas)}}</td>
+						<td class="text-left">{{$tic->trackKet}}</td>
 					</tr>
 					<tr>
-						<td><img src="{{URL::to('assets/img/facebook/outbound.jpg')}}"></td>
-						<td><b>Outbound</b></td>
-						<td>Rp.{{$tic->outBiaya}}</td>
-						<td>{{nl2br($tic->outFasilitas)}}</td>
-						<td>{{$tic->outKet}}</td>
+						<td class="text-right"><img src="{{URL::to('assets/img/facebook/outbound.jpg')}}"></td>
+						<td class="text-left"><b>Outbound</b></td>
+						<td class="text-left">Rp.{{$tic->outBiaya}}</td>
+						<td class="text-left">{{nl2br($tic->outFasilitas)}}</td>
+						<td class="text-left">{{$tic->outKet}}</td>
 					</tr>
 					<tr>
-						<td><img src="{{URL::to('assets/img/facebook/paintball.jpg')}}"></td>
-						<td><b>Paint Ball</b></td>
-						<td>Rp.{{$tic->paintBiaya}}</td>
-						<td>{{nl2br($tic->paintFasilitas)}}</td>
-						<td>{{$tic->paintKet}}</td>
+						<td class="text-right"><img src="{{URL::to('assets/img/facebook/paintball.jpg')}}"></td>
+						<td class="text-left"><b>Paint Ball</b></td>
+						<td class="text-left">Rp.{{$tic->paintBiaya}}</td>
+						<td class="text-left">{{nl2br($tic->paintFasilitas)}}</td>
+						<td class="text-left">{{$tic->paintKet}}</td>
 					</tr>
 					<tr>
-						<td><img src="{{URL::to('assets/img/facebook/rapeling.jpg')}}"></td>
-						<td><b>Rapeling</b></td>
-						<td>Rp.{{$tic->rapelBiaya}}</td>
-						<td>{{nl2br($tic->rapelFasilitas)}}</td>
-						<td>{{$tic->rapelKet}}</td>
+						<td class="text-right"><img src="{{URL::to('assets/img/facebook/rapeling.jpg')}}"></td>
+						<td class="text-left"><b>Rapeling</b></td>
+						<td class="text-left">Rp.{{$tic->rapelBiaya}}</td>
+						<td class="text-left">{{nl2br($tic->rapelFasilitas)}}</td>
+						<td class="text-left">{{$tic->rapelKet}}</td>
 					</tr>
 					<tr>
-						<td><img src="{{URL::to('assets/img/facebook/familygath.jpg')}}"></td>
-						<td><b>Family Gathering</b></td>
-						<td>Rp.{{$tic->familyBiaya}}</td>
-						<td>{{nl2br($tic->familyFasilitas)}}</td>
-						<td>{{$tic->familyKet}}</td>
+						<td class="text-right"><img src="{{URL::to('assets/img/facebook/familygath.jpg')}}"></td>
+						<td class="text-left"><b>Family Gathering</b></td>
+						<td class="text-left">Rp.{{$tic->familyBiaya}}</td>
+						<td class="text-left">{{nl2br($tic->familyFasilitas)}}</td>
+						<td class="text-left">{{$tic->familyKet}}</td>
 					</tr>
 					<tr>
-						<td><img src="{{URL::to('assets/img/facebook/pendakian.jpg')}}"></td>
-						<td><b>Pendakian Gn Selamet</b></td>
-						<td>Rp.{{$tic->pendakianBiaya}}</td>
-						<td>{{nl2br($tic->pendakianFasilitas)}}</td>
-						<td>{{$tic->pendakianKet}}</td>
+						<td class="text-right"><img src="{{URL::to('assets/img/facebook/pendakian.jpg')}}"></td>
+						<td class="text-left"><b>Pendakian Gn Selamet</b></td>
+						<td class="text-left">Rp.{{$tic->pendakianBiaya}}</td>
+						<td class="text-left">{{nl2br($tic->pendakianFasilitas)}}</td>
+						<td class="text-left">{{$tic->pendakianKet}}</td>
 					</tr>
 					<?php 
 					endforeach ?>

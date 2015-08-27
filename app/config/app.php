@@ -1,6 +1,6 @@
 <?php
 
-$hostmachine = ['ASUS-PC',];
+$hostmachine = ['ASUS-PC', 'OGI-HP-P229AX'];
 $debug = in_array(gethostname(), $hostmachine);
 
 return array(
