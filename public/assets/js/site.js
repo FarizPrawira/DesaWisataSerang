@@ -206,6 +206,13 @@ $(document).ready(function() {
         $("#listartikel").hide();
     });
 
+    // $(".content .container").click(function(){
+    //     $("#listwisata").hide();
+    //     $("#listkegiatan").hide();
+    //     $("#listserang").hide();
+    //     $("#listartikel").hide();
+    //  });
+
     //Handles the carousel thumbnails
     $('[id^=carousel-selector-]').click(function() {
         var id_selector = $(this).attr("id");

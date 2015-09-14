@@ -2,10 +2,10 @@
 <div class="header">
 	<div class="container-fluid navbar">
 		<ul id="logo">
-			<li><a href="{{URL::to('')}}"><img src="{{URL::to('assets/img/header/logo.png')}}"/></a></li>
+			<li><a href="{{URL::to('')}}"><img src="{{URL::to('assets/img/header/Logo.png')}}"/></a></li>
 		</ul>
 		<ul class="menu-link">
-			<li id="menuserang">Desa Serang <span class="caret"></span></li>
+			<li id="menuserang">Serang <span class="caret"></span></li>
 			<li id="menuwisata">Wisata <span class="caret"></span></li>
 			<a href="{{URL::to('content/kegiatan')}}"><li id="menukegiatan">Kegiatan</li></a>
 			<a href="{{URL::to('content/artikel')}}"><li id="menuartikel">Artikel</li></a>

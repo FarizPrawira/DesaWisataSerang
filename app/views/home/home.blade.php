@@ -11,47 +11,46 @@
 	<link rel="stylesheet" href="{{URL::to('assets/css/owl.carousel.css')}}"/>
 	<link rel="stylesheet" href="{{URL::to('assets/css/owl.theme.css')}}"/>
 	<link rel="stylesheet" href="{{URL::to('assets/css/site.css')}}"/>
-	<link rel="icon" type="image/png" href="{{URL::to('assets/img/favicon.png')}}">
+	<link rel="icon" type="image/png" href="{{URL::to('assets/img/favicon.png')}}"/>
 </head>
 <body>
 	@include('home.header')
-
-	<!-- CONTENT -->
-	<div class="content">
-		<!-- Carousel -->
-		<div id="owl-example" class="owl-carousel">
-			<div class="content-item">
-				<img src="{{URL::to('assets/img/1.jpg')}}">
-				<h1>Petik strowberi sendiri</h1>
-			</div>
-			<div class="content-item">
-				<img src="{{URL::to('assets/img/2.jpg')}}">
-				<h1>Home stay</h1>
-			</div>
-			<div class="content-item">
-				<img src="{{URL::to('assets/img/3.jpg')}}">
-				<h1>Pemandangan alam yang indah</h1>
-			</div>
-			<div class="content-item">
-				<img src="{{URL::to('assets/img/4.jpg')}}">
-				<h1>Masyarakat yang baik, ramah, dan menyenangkan!</h1>
-			</div>
-			<div class="content-item">
-				<img src="{{URL::to('assets/img/5.jpg')}}">
-				<h1>Tempat foto-foto bersama</h1>
-			</div>
+    <!-- Carousel -->
+	<div id="owl-example" class="owl-carousel">
+		<div class="content-item">
+			<img src="{{URL::to('assets/img/1.jpg')}}">
+			<h1>Strawberry setiap hari!</h1>
 		</div>
+		<div class="content-item">
+			<img src="{{URL::to('assets/img/2.jpg')}}">
+			<h1>Petik Strawberry langsung di ladangnya</h1>
+		</div>
+		<div class="content-item">
+			<img src="{{URL::to('assets/img/3.jpg')}}">
+			<h1>Pemandangan alam yang indah</h1>
+		</div>
+		<div class="content-item">
+			<img src="{{URL::to('assets/img/4.jpg')}}">
+			<h1>Masyarakat yang baik, ramah, dan menyenangkan!</h1>
+		</div>
+		<div class="content-item">
+			<img src="{{URL::to('assets/img/5.jpg')}}">
+			<h1>Outbond! Tantang diri Anda!</h1>
+		</div>
+	</div>
+	<!-- CONTENT -->
+	<div class="content">		
 		<!-- Timeline -->
 		<div class="container timeline">
 			<div class="row">
 				<div class="col-md-5 col-md-offset-1 text-center">
-					<h2 class="text-center p-10">Kegiatan</h2><br/>
+					<h2 class="text-center p-10">Kegiatan <i class="glyphicon glyphicon-pushpin c-red"></i></h2><br/>
 					<?php foreach ($results["kegiatan"] as $kegiatan) {
 						if ($kegiatan->type == "kegiatan") { ?>
 						<a href="{{URL::to('content/'.$kegiatan->id)}}" class="timeline-item shadow-bot text-center">
 							<h3>{{$kegiatan->title}}</h3>
 							<p class="c-gray">{{$kegiatan->updated_at}}</p>
-							<p>{{$kegiatan->dateStart}} — {{$kegiatan->dateEnd}}</p>
+							<p class="c-red">{{$kegiatan->dateStart}} — {{$kegiatan->dateEnd}}</p>
 							<p>{{truncDescription($kegiatan->description)}}</p>
 						</a>
 						<?php }
@@ -63,7 +62,7 @@
 					</button>
 				</div>
 				<div class="col-md-5 text-center">
-					<h2 class="text-center p-10">Artikel</h2><br/>
+					<h2 class="text-center p-10">Artikel <i class="glyphicon glyphicon-pushpin c-red"></i></h2><br/>
 					<?php foreach ($results["artikel"] as $artikel) {
 						if ($artikel->type == "artikel") { ?>
 						<a href="{{URL::to('content/'.$artikel->id)}}" class="timeline-item shadow-bot text-center">

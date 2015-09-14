@@ -58,9 +58,10 @@
       <h3 class="col-md-2 c-gray">{{ucfirst($content->type)}} Terbaru</h3>
       <?php foreach ($results['related-post'] as $post): ?>
       <div class="col-md-3">
-        <a href="{{URL::to('content/'.$post->id)}}" class="timeline-item shadow-bot text-center">
+        <a href="{{URL::to('content/'.$post->id)}}" class="timeline-item shadow-bot">
           <!-- <div class="timeline-item"> -->
-          <h4>{{$post->title}}</h4>
+          <h3>{{$post->title}}</h3>
+          <p class="c-gray">{{$post->updated_at}}</p>
           <?php foreach ($results['related-photo'] as $photo):
           if($photo->content_id == $post->id){ ?>
           <img src="{{URL::to($photo->path)}}" class="img-rounded">

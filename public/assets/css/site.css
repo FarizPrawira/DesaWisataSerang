@@ -5,23 +5,27 @@ green = rgba(5,100,60,1); dark
 green = rgba(38, 166, 91,1); light
 purple = #272E40;
 brown = #BBB36B; light
+gray = rgba(171, 183, 183, 1);
 box-shadow: 0 3px 5px rgba(0,0,0,0.2);
 */
 body{
 	overflow-x: hidden;
 	font-size: 16px;
 }
-h1, h2{
+h1{
 	font-family: 'Gloria Hallelujah';
 	color: rgba(0,0,0,0.9);
 }
-h3, h4{
-/*	font-family: 'OpenSans-Semibold'*/
+h2, h3, h4{
+	font-family: 'OpenSans-Regular'
+}
+h2{
+	color: rgba(0,0,0,0.9);
 }
 p{
-	font-family: "OpenSans";
+	font-family: "OpenSans-Regular";
 }
-p.sub-text{
+p.sub-text, .footer ul{
     font-family: "OpenSans-Light";
 }
 @font-face {
@@ -33,7 +37,7 @@ p.sub-text{
   src: url('../fonts/OpenSans-Semibold.ttf');
 }
 @font-face {
-  font-family: 'OpenSans';
+  font-family: 'OpenSans-Regular';
   src: url('../fonts/OpenSans-Regular.ttf');
 }
 @font-face {
@@ -56,7 +60,10 @@ p.sub-text{
     from {transform: scale(0);}
     to {transform: scale(1)}
 }
-
+/*owl carousel modifier*/
+.owl-carousel{
+	background-color: rgba(171, 183, 183, 0.9);
+}
 .header{
 	position: relative;
 	width: 100%;
@@ -65,15 +72,15 @@ p.sub-text{
 	padding: 0;
 }
 .navbar .active{
-	background-color: rgba(240,0,0,1); /*red light*/
+/*	background-color: rgba(240,0,0,1); red light*/
 	box-shadow: 0 5px 0 rgba(240,0,0,1);
 }
 .navbar{
 	min-height: 60px;
-	background-color: rgba(207,0,15,1); /*red default*/
-	color: white;
+/*	background-color: rgba(207,0,15,1); red default*/
+    background-color: rgba(255,255,255,1);
 	position: fixed;
-	box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+	box-shadow: 0 3px 10px rgba(0,0,0,0.1);
 	width: inherit;
 	border-radius: 0;
 	margin: 0;
@@ -88,14 +95,21 @@ p.sub-text{
 	width: 150px;
 	min-height: 60px;
 	text-align: center;
-	color: white;
+	color: rgba(0,0,0,0.9);
 	font-weight: normal;
-	font-size: 20px;
+	font-size: 21px;
 	padding: 16px 0 16px 0;
 	z-index: 1001;
 	position: relative;
 	display: inline-block;
 	list-style: none;
+}
+.navbar .menu-link li:hover{
+	cursor: pointer;
+	color: white;
+	background-color: rgba(255, 40, 40, 1);
+	box-shadow: 0 5px 0 rgba(255, 40, 40, 1);
+    transition: background-color 0.2s, box-shadow 0.2s;
 }
 .navbar #logo{
 	padding: 0;
@@ -105,19 +119,28 @@ p.sub-text{
 .navbar #logo img{
 	height: 45px;
 }
-.navbar .menu-link li:hover{
-	cursor: pointer;
-	color: white;
-	background-color: rgba(255, 40, 40, 1);
-	box-shadow: 0 5px 0 rgba(255, 40, 40, 1);
-}
 @media only screen and (max-width: 760px) {
     .navbar .menu-link li, .navbar .menu-link li>a{
         width: auto;
         height: auto;
-        font-size: 1em;
-        padding: 5px; 
-        padding-top: 15px;
+        font-size: 0.9em;
+        padding: 5px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        margin: 0;
+    }
+    .menu-list{
+        margin: 0;
+    }
+    .header{
+        min-height: 60px;
+    }
+    .navbar{
+        min-height: 60px;
+    }
+    .content-header{
+        min-height: 300px;
+        background-color: transparent;
     }
     .navbar #logo{
         display: none;
@@ -126,13 +149,21 @@ p.sub-text{
         display: none;
     }
     .menu-item{
-        max-height: 60px;
+        max-height: 40px;
+        background-color: rgba(207,0,15,1);
+        border-radius: 3px;
     }
     .menu-item span{
-        max-height: 60px;
+        max-height: 40px;
+    }
+    .menu-item span>h4{
+        font-size: 0.9em;
     }
     .menu-item span>p{
         display: none;
+    }
+    .navbar .menu-link li{
+        min-height: 20px;
     }
 }
 .navbar .menu-link li>a{
@@ -158,8 +189,8 @@ p.sub-text{
 }
 .menu-item{
 	position: relative;
-	width: 160px;
-	height: 120px;
+	width: 140px;
+	height: 100px;
 	margin: 5px;
 	display: inline-block;
 }
@@ -175,8 +206,8 @@ p.sub-text{
 /*text element*/
 .menu-item span{
 	position: absolute;
-	width: 160px;
-	height: 120px;
+	width: 140px;
+	height: 100px;
 	padding: 10px;
 	overflow: hidden;
 	text-align: center;
@@ -188,7 +219,7 @@ p.sub-text{
 .menu-item span>h4{
 	position: relative;
 	width: 100%;
-	padding: 5px;
+	padding: 3px;
 	/*white-space: nowrap;
 	text-overflow: ellipsis;
 	overflow: hidden;*/
@@ -198,9 +229,9 @@ p.sub-text{
 	background-color: transparent;
 }
 .menu-item span>p{
-	font-family: "OpenSans";
+	font-family: "OpenSans-Light";
 	position: relative;
-	padding: 5px;
+	padding: 3px;
 	text-overflow: ellipsis;
 	overflow: hidden;
 	white-space: nowrap;
@@ -235,9 +266,9 @@ p.sub-text{
 /*content*/
 .content{
 	position: relative;
+	box-shadow: 0 -6px 10px rgba(0,0,0,0.1);
 }
 .content-item{
-	background-color: white;
 	width: 100%;
 	height: 600px;
 	text-align: center;
@@ -251,16 +282,19 @@ p.sub-text{
 	left: -100%;
 	right: -100%;
 	margin: auto;
-	min-height: 600px;
+	min-height: 100%;
 	width: 100%;
+    z-index: -1;
 }
 .content-item h1{
 	position: absolute;
 	top: 50%;
 	transform: translateY(-50%);
 	width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
 	color: white;
-	text-shadow: 0 0 10px rgba(0,0,0,1), 0 0 20px rgba(0,0,0,1), 0 0 30px rgba(0,0,0,1);
+	text-shadow: 0 0 10px rgba(0,0,0,0.7), 0 0 20px rgba(0,0,0,0.7), 0 0 30px rgba(0,0,0,0.7);
 	font-size: 4em;
 }
 .timeline .timeline-item{
@@ -277,42 +311,12 @@ p.sub-text{
 .timeline .timeline-item:hover{
 	cursor: pointer;
     text-decoration: none;
+    border-top: 10px solid rgba(207,0,15,0.7);;
+    box-sizing: border-box;
+    transition: border 0.1s ease-in-out;
 }
-.timeline .timeline-item:hover::after{
-	content: "";
-    font-size: 3em;
-	color: white;
-    text-shadow: 0 0 10px black;
-    background-color: transparent;
-	width: 100%;
-    height: 1.30em;
-/*    text-shadow: 0 0 3px black;*/
-	position: absolute;
-    z-index: 1;
-	text-align: center;
-	left: 0;
-    right: 0;
-    top: 40%;
-    transform: rotate(0);
-    box-shadow: none;
-    font-weight: 500;
-    max-width: none;
-}
-.timeline .timeline-item:hover::before{
-	content: "";
-    background-color: rgba(38, 166, 91, 0.2);
-	width: 100%;
-    height: 100%;
-	position: absolute;
-    z-index: 1;
-	bottom: 0;
-	left: 0;
-    right: 0;
-    top: 0;
-    transform: rotate(0);
-    box-shadow: none;
-    transition: color 0.5s;
-    max-width: none;
+.timeline .timeline-item:hover>h3{
+	font-family: 'OpenSans-Semibold';
 }
 .timeline .timeline-item>h3{
 	padding: 0 5px 0 5px;
@@ -394,6 +398,9 @@ p.sub-text{
 	margin-left: -10px;
 	font-size: 10px;
 }
+.footer ul{
+	font-size: 0.9em;
+}
 #loadmore, #loadKegiatan, #loadArtikel{
 	margin-top: 100px;
 	background-color: transparent;
@@ -405,10 +412,10 @@ hr{
 }
 .content-header{
 	width: auto;
-	height: 460px;
+	min-height: 460px;
 	overflow: hidden;
 	position: relative;
-	background-color: rgba(0,0,0,0.7);
+	background-color: transparent;
 }
 .content-header img{
 	position: absolute;
@@ -423,7 +430,7 @@ hr{
 .content-header span{
 	width: 100%;
 	height: 100%;
-	background-color: rgba(0, 0, 0, 0.3);
+	background-color: rgba(171, 183, 183, 0.9);
 	position: absolute;
 }
 .content-header span>h2{
@@ -556,7 +563,7 @@ hr{
 }
 .instapic-box{
 	background-color: white;
-	border-radius: 10px;
+	border-radius: 3px;
 	margin-top: 10px;
 	overflow: hidden;
 	height: 1%;
@@ -793,7 +800,7 @@ button.desc{
 }
 /*TABLE*/
 table{
-	margin-top: 10px;
+	margin-top: 15px;
 }
 table th, table td{
 	text-align: center;
@@ -802,8 +809,8 @@ table img{
 	width: 100px;
 }
 table th{
-	background-color: rgba(38, 166, 91,1);
-	color: white;
+	background-color: rgba(171, 183, 183, 0.5);
+	color: rgba(0,0,0,1);
 }
 th h4{
 	margin: 0;
@@ -898,5 +905,4 @@ i{
     left: 50%;
     transform: translate(-70%,-130%);
     z-index: -1;
-    
 }

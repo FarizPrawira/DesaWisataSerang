@@ -5,9 +5,9 @@
 			<h4>Hubungi Kami di</h4>
 			<hr/>
 			<ul class="list-unstyled">
-				<li><h5><i class="fa fa-phone"></i> 0852-9101-3121</h5></a></li>
-				<li><a href="mailto:serang_pbg@ymail.com" target="_blank"><h5><i class="fa fa-envelope-o"></i> serang_pbg@ymail.com</h5></a></li>
-				<li><a href="https://www.google.co.id/maps/place/Serang,+Karangreja,+Purbalingga+Regency,+Central+Java/" target="_blank"><h5><i class="fa fa-map-marker"></i> Jl. Raya Serang km 07 RT/RW 03/04, Purbalingga, Jawa Tengah 53357</h5></a></li>
+				<li><i class="fa fa-phone"></i> 0852-9101-3121</a></li>
+				<li><a href="mailto:serang_pbg@ymail.com" target="_blank"><i class="fa fa-envelope-o"></i> serang_pbg@ymail.com</a></li>
+				<li><a href="https://www.google.co.id/maps/place/Serang,+Karangreja,+Purbalingga+Regency,+Central+Java/" target="_blank"><i class="fa fa-map-marker"></i> Jl. Raya Serang km 07 RT/RW 03/04, Purbalingga, Jawa Tengah 53357</a></li>
 			</ul>
 		</div>
 
